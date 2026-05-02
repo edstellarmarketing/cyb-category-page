@@ -7,7 +7,7 @@ import { CustomersPartners } from "@/components/CustomersPartners";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { HeroSlider } from "@/components/HeroSlider";
-import { MoreOnMediaTek } from "@/components/MoreOnMediaTek";
+import { MoreResources } from "@/components/MoreResources";
 import { OurApproach } from "@/components/OurApproach";
 import { ProductNewsCards } from "@/components/ProductNewsCards";
 import { ScrollToTop } from "@/components/ScrollToTop";
@@ -29,7 +29,7 @@ export default function Home() {
         <CorporatePricing />
         <OurApproach />
         <ClientVoices />
-        <MoreOnMediaTek />
+        <MoreResources />
         <ContactForm />
       </main>
       <Footer />

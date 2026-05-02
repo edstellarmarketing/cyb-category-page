@@ -4,7 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* MediaTek custom font family — Riona Sans, self-hosted */
+/* Custom font family — Riona Sans, self-hosted */
 @font-face {
   font-family: "Riona Sans Light";
   src: url("/fonts/RionaSans-Light.woff") format("woff");
@@ -66,7 +66,7 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --font-heading: var(--font-sans);
 
-  /* MediaTek brand tokens */
+  /* Brand tokens */
   --color-mtk-orange: #6366F1;
   --color-mtk-orange-hover: #4F46E5;
   --color-mtk-coral: #ef6b51;
@@ -209,7 +209,7 @@
   }
 }
 
-/* MediaTek-specific keyframes & utilities */
+/* Page-specific keyframes & utilities */
 @keyframes mtk-arrow-anim {
   0% { opacity: 1; transform: translateX(0); }
   5% { transform: translateX(-0.1rem); }
@@ -243,7 +243,7 @@
   animation: mtk-arrow-fixed-anim 2.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
 
-/* Page container — matches MediaTek responsive max-widths */
+/* Page container — responsive max-widths */
 .mtk-page-center {
   width: 100%;
   margin-left: auto;

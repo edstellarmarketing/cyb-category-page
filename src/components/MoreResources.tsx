@@ -36,7 +36,7 @@ const CARDS: MoreCard[] = [
   },
 ];
 
-export function MoreOnMediaTek() {
+export function MoreResources() {
   return (
     <section className="bg-[#0c0c0c] py-16 text-white md:py-20">
       <div className="mtk-page-center">

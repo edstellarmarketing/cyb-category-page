@@ -1,4 +1,4 @@
-// Strongly-typed content shapes used by the MediaTek clone sections.
+// Strongly-typed content shapes used by the page sections.
 
 export type Slide = {
   eyebrow: string;

@@ -58,17 +58,6 @@ export function MenuIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-/** MediaTek logo wordmark, orange italic-style */
-export function MediaTekLogoIcon(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg {...baseProps(props)} viewBox="0 0 130 16" width={130} height={16} fill="#6366F1" aria-label="MediaTek">
-      <text x="0" y="13" fontFamily="'Riona Sans Bold', Helvetica, Arial, sans-serif" fontSize="14" fontStyle="italic" fontWeight="800" fill="#6366F1" letterSpacing="0.5">
-        MEDIATEK
-      </text>
-    </svg>
-  );
-}
-
 export function FacebookIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...baseProps(props)} viewBox="0 0 24 24">
@@ -109,11 +98,3 @@ export function ThreadsIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-/** Decorative MediaTek brand mark used in hero card overlays */
-export function MediaTekMarkIcon(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg {...baseProps(props)} viewBox="0 0 60 60">
-      <rect x="2" y="2" width="56" height="56" rx="8" fill="none" stroke="currentColor" strokeWidth="2" />
-    </svg>
-  );
-}
