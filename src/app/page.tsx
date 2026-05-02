@@ -11,6 +11,7 @@ import { MoreOnMediaTek } from "@/components/MoreOnMediaTek";
 import { OurApproach } from "@/components/OurApproach";
 import { ProductNewsCards } from "@/components/ProductNewsCards";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { TrainingProgramTabs } from "@/components/TrainingProgramTabs";
 import { WelcomeStrip } from "@/components/WelcomeStrip";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSlider />
         <WelcomeStrip />
+        <TrainingProgramTabs />
         <ChipChangesTabber />
         <BusinessNewsCards />
         <ProductNewsCards />
