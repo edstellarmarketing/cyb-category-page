@@ -1,9 +1,37 @@
+import { BusinessNewsCards } from "@/components/BusinessNewsCards";
+import { ChipChangesTabber } from "@/components/ChipChangesTabber";
+import { ClientVoices } from "@/components/ClientVoices";
+import { ContactForm } from "@/components/ContactForm";
+import { CorporatePricing } from "@/components/CorporatePricing";
+import { CustomersPartners } from "@/components/CustomersPartners";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { HeroSlider } from "@/components/HeroSlider";
+import { MoreOnMediaTek } from "@/components/MoreOnMediaTek";
+import { OurApproach } from "@/components/OurApproach";
+import { ProductNewsCards } from "@/components/ProductNewsCards";
+import { ScrollToTop } from "@/components/ScrollToTop";
+import { WelcomeStrip } from "@/components/WelcomeStrip";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <p className="text-muted-foreground">
-        Clone target not yet built. Run <code className="font-mono text-foreground">/clone-website</code> to start.
-      </p>
-    </main>
+    <>
+      <Header />
+      <main className="flex-1">
+        <HeroSlider />
+        <WelcomeStrip />
+        <ChipChangesTabber />
+        <BusinessNewsCards />
+        <ProductNewsCards />
+        <CustomersPartners />
+        <CorporatePricing />
+        <OurApproach />
+        <ClientVoices />
+        <MoreOnMediaTek />
+        <ContactForm />
+      </main>
+      <Footer />
+      <ScrollToTop />
+    </>
   );
 }

@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Cybersecurity Training | Edstellar",
+  description:
+    "Edstellar delivers instructor-led cybersecurity training to corporate teams worldwide, from CISSP and CEH to cloud, AI, and governance programs.",
+  icons: {
+    icon: [
+      { url: "/seo/favicon.png", type: "image/png" },
+    ],
+    shortcut: "/seo/favicon.png",
+    apple: "/seo/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -23,11 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className="h-full antialiased">
+      <body className="min-h-full flex flex-col bg-white text-black">
+        {children}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none fixed inset-0 z-50 mtk-page-glow"
+        />
+      </body>
     </html>
   );
 }
