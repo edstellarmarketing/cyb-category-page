@@ -105,7 +105,7 @@ const LEARNING_PATHS: LearningPath[] = [
       "From log analysis to incident triage, Security+, CySA+, Splunk and SIEM/SOAR fundamentals build the L1→L3 SOC career ladder.",
     image: "/images/cyber/path-soc.jpg",
     imageAlt: "SOC analyst",
-    href: "https://www.edstellar.com/learning-paths/soc-analyst",
+    href: "/learning-paths/soc-analyst",
   },
   {
     label: "PENETRATION TESTER",
@@ -564,7 +564,7 @@ export function ChipChangesTabber() {
                     {path.cardDescription}
                   </p>
                   <a
-                    href="#contact"
+                    href={path.href}
                     className="group/cta mt-7 inline-flex items-center gap-2 rounded-full bg-[#6366F1] px-6 py-3 text-[14px] uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#4F46E5]"
                     style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
                   >
