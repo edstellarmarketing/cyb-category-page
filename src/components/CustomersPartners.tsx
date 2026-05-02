@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ClientLogosStrip } from "@/components/ClientLogosStrip";
 import { ArrowRightIcon } from "@/components/icons";
 import type { CustomerCard } from "@/types/content";
 
@@ -122,7 +123,7 @@ export function CustomersPartners() {
               height={579}
               sizes="(max-width: 767px) 100vw, 80vw"
               className="h-auto w-full"
-              style={{ filter: "hue-rotate(210deg) saturate(2)" }}
+              style={{ filter: "hue-rotate(35deg) saturate(1.25) brightness(1.05)" }}
               priority={false}
             />
             {TRAINING_LOCATIONS.map((loc) => (
@@ -138,14 +139,16 @@ export function CustomersPartners() {
                   aspectRatio: "1 / 1",
                   minWidth: "4px",
                   minHeight: "4px",
-                  backgroundColor: "#6366F1",
+                  backgroundColor: "rgb(197, 232, 38)",
                   transform: "translate(-50%, -50%)",
                   boxShadow:
-                    "0 0 0 1px rgba(99,102,241,0.25), 0 0 6px rgba(99,102,241,0.5)",
+                    "0 0 0 1px rgba(197,232,38,0.3), 0 0 6px rgba(197,232,38,0.6)",
                 }}
               />
             ))}
           </div>
+
+          <ClientLogosStrip />
         </div>
       </div>
     </section>

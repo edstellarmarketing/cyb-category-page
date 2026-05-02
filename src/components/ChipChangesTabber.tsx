@@ -189,59 +189,59 @@ type Trainer = {
 
 const TRAINERS: Trainer[] = [
   {
-    name: "Deepak",
-    role: "Cloud & DevOps trainer",
-    location: "Pune, India",
-    rating: "4.9",
-    reviews: 312,
-    trainingSince: 2014,
-    experience: 14,
-    bio: "Cloud architect with hands-on delivery across BFSI and SaaS. Specialises in multi-cloud migration, Kubernetes platform engineering, and cloud-native security.",
-    certs: ["AWS Solutions Architect", "CKA", "Terraform"],
-    image: "/images/cyber/trainer-deepak.jpg",
-  },
-  {
-    name: "Devi",
-    role: "Data Science & ML trainer",
-    location: "Hyderabad, India",
-    rating: "4.8",
-    reviews: 264,
-    trainingSince: 2016,
-    experience: 11,
-    bio: "Lead Data Scientist with deep expertise in deep learning, NLP and MLOps. Has shipped production ML across pharma, retail and financial-services clients.",
-    certs: ["TensorFlow Cert.", "Azure AI Engineer", "Databricks ML"],
-    image: "/images/cyber/trainer-devi.jpg",
-  },
-  {
-    name: "Akash",
-    role: "Cybersecurity trainer",
+    name: "Akash Iyer",
+    role: "Offensive security & red-team trainer",
     location: "Bengaluru, India",
     rating: "4.9",
     reviews: 411,
     trainingSince: 2012,
     experience: 16,
-    bio: "Offensive-security practitioner running red-team and pen-test programs for global enterprises. Mapping training to MITRE ATT&CK and live SOC scenarios.",
-    certs: ["CISSP", "OSCP", "CEH"],
+    bio: "Offensive-security practitioner running red-team and penetration-testing programs for Fortune 500 banks and SaaS firms. Maps every cohort to MITRE ATT&CK and live SOC scenarios.",
+    certs: ["CISSP", "OSCP", "CEH v13"],
     image: "/images/cyber/trainer-akash.jpg",
   },
   {
-    name: "Sudha",
-    role: "Microsoft & Azure trainer",
-    location: "Hyderabad, India",
+    name: "Priya Krishnan",
+    role: "SOC & threat-intelligence trainer",
+    location: "Pune, India",
     rating: "4.9",
-    reviews: 228,
-    trainingSince: 2013,
+    reviews: 327,
+    trainingSince: 2014,
     experience: 13,
-    bio: "Microsoft-stack specialist covering Azure cloud, Power Platform and M365 modern workplace. Trains enterprise teams on adoption, governance and security.",
-    certs: ["MCT", "Azure Solutions Architect", "M365 Expert"],
+    bio: "Former SOC lead at a Tier-1 Indian bank. Builds blue-team programs covering SIEM tuning, threat hunting, and incident response across BFSI, healthcare and SaaS clients.",
+    certs: ["GCIA", "GCIH", "CySA+"],
+    image: "/images/cyber/trainer-devi.jpg",
+  },
+  {
+    name: "Sarah Mitchell",
+    role: "GRC & compliance trainer",
+    location: "London, United Kingdom",
+    rating: "4.8",
+    reviews: 264,
+    trainingSince: 2011,
+    experience: 17,
+    bio: "ISO 27001 Lead Auditor with deep delivery across UK, EU and Middle East enterprises. Specialises in NIS2, DORA, GDPR audit readiness and ISMS implementation.",
+    certs: ["CISM", "CRISC", "ISO 27001 LA"],
+    image: "/images/cyber/trainer-deepak.jpg",
+  },
+  {
+    name: "Marcus Chen",
+    role: "Cloud security & zero-trust trainer",
+    location: "Singapore",
+    rating: "4.9",
+    reviews: 298,
+    trainingSince: 2013,
+    experience: 14,
+    bio: "Multi-cloud security architect serving APAC banks and SaaS leaders. Trains engineering teams on AWS / Azure / GCP hardening, container security and zero-trust network design.",
+    certs: ["CCSP", "AWS Security Specialty", "Azure Security Engineer"],
     image: "/images/cyber/trainer-sudha.jpg",
   },
 ];
 
 const TRAINER_STATS = [
-  { stat: "1,500+", label: "Verified IT & Technical trainers" },
+  { stat: "1,500+", label: "Verified cybersecurity trainers" },
   { stat: "12+ yrs", label: "Average industry experience" },
-  { stat: "60+", label: "Vendor certifications represented" },
+  { stat: "40+", label: "Cybersecurity certifications represented" },
   { stat: "4.8 ★", label: "Average learner rating" },
 ];
 
@@ -300,16 +300,18 @@ export function ChipChangesTabber() {
                   className="mb-4 text-[26px] leading-[1.1] sm:text-[30px] lg:text-[34px]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
-                  Trainers to meet your IT &amp; Technical needs
+                  Trainers to meet your cybersecurity needs
                 </h3>
                 <p
                   className="text-[15px] leading-[1.5] text-mtk-gray-500 md:text-[17px]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
-                  Hand-picked, certified and verified trainers, every Edstellar
-                  trainer brings vendor certifications, deep practitioner
-                  experience, and a track record of high-impact corporate
-                  sessions.
+                  A global bench of hand-picked cybersecurity practitioners,
+                  spanning India, Singapore, the UK and beyond. Every
+                  Edstellar trainer brings vendor certifications, deep
+                  practitioner experience across SOC, offensive security,
+                  cloud security and GRC, and a track record of high-impact
+                  corporate cohorts.
                 </p>
               </div>
               <a
