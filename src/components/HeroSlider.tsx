@@ -221,27 +221,27 @@ export function HeroSlider() {
         className="shrink-0 border-t border-white/10 bg-[#0c0c0c]/95"
         aria-label="Slide categories"
       >
-        <div className="grid grid-cols-2 gap-x-8 gap-y-4 px-6 py-3 uppercase tracking-widest md:px-24 lg:grid-cols-4">
+        <div className="flex snap-x snap-proximity scroll-pl-6 gap-x-6 overflow-x-auto py-3 pl-6 pr-6 uppercase tracking-widest [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:grid sm:snap-none sm:grid-cols-2 sm:gap-x-8 sm:gap-y-4 sm:overflow-visible sm:px-6 md:px-24 lg:grid-cols-4">
           {SLIDES.map((s, i) => (
             <button
               key={i}
               type="button"
               onClick={() => setActive(i)}
               aria-label={`Go to slide ${i + 1}: ${s.stripLabel}`}
-              className={`relative flex flex-col pt-2 text-left transition-colors ${
+              className={`relative flex min-w-[170px] shrink-0 snap-start flex-col pt-2 text-left transition-colors sm:min-w-0 sm:shrink ${
                 i === active
                   ? "border-t-2 border-[#6366F1]"
                   : "border-t-2 border-transparent hover:border-white/30"
               }`}
             >
               <span
-                className="text-[13px] leading-tight text-white"
+                className="break-words text-[12px] leading-tight text-white sm:text-[13px]"
                 style={{ fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif", fontWeight: 700 }}
               >
                 {s.stripLabel}
               </span>
               <span
-                className="mt-0.5 text-[11px] font-normal normal-case leading-tight tracking-normal text-white/55"
+                className="mt-0.5 break-words text-[11px] font-normal normal-case leading-tight tracking-normal text-white/55"
                 style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
               >
                 {s.stripSub}
