@@ -196,10 +196,10 @@ export function WelcomeStrip() {
       <div className="mtk-page-center pt-10 pb-20 sm:pt-12 sm:pb-24">
       <div className="text-left">
         <h1
-          className="max-w-xl text-[34px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
+          className="max-w-2xl text-[34px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
           style={{ color: "#1B1D52", fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
-          Corporate Cybersecurity Training Programs
+          Customized Cybersecurity Training Programs for Enterprise teams
         </h1>
       </div>
 

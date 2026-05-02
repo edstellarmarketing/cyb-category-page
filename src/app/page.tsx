@@ -4,6 +4,7 @@ import { ClientVoices } from "@/components/ClientVoices";
 import { ContactForm } from "@/components/ContactForm";
 import { CorporatePricing } from "@/components/CorporatePricing";
 import { CustomersPartners } from "@/components/CustomersPartners";
+import { CyberCoE } from "@/components/CyberCoE";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { HeroSlider } from "@/components/HeroSlider";
@@ -21,14 +22,15 @@ export default function Home() {
       <main className="flex-1">
         <HeroSlider />
         <WelcomeStrip />
+        <CyberCoE />
         <TrainingProgramTabs />
         <ChipChangesTabber />
-        <BusinessNewsCards />
         <ProductNewsCards />
         <CustomersPartners />
         <CorporatePricing />
         <OurApproach />
         <ClientVoices />
+        <BusinessNewsCards />
         <MoreResources />
         <ContactForm />
       </main>

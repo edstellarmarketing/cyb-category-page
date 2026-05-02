@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { EdstellarTwoPaths } from "@/components/EdstellarTwoPaths";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
@@ -22,6 +23,79 @@ type Stage = {
   milestoneBody: string;
   badge: string;
 };
+
+const MILESTONE_BG: Record<string, string> = {
+  "01": "#C5E826", // lime, foundations
+  "02": "#A5D8FF", // sky, SIEM analytics
+  "03": "#FED7AA", // peach, threat hunting
+  "04": "#FECDD3", // rose, incident response
+  "05": "#DDD6FE", // lavender, leadership
+};
+
+function MilestoneIcon({ stage }: { stage: string }) {
+  const common = {
+    width: 16,
+    height: 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 2.2,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+  };
+  switch (stage) {
+    case "01":
+      // Shield with check, foundational protection
+      return (
+        <svg {...common} aria-hidden="true">
+          <path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z" />
+          <path d="M9 12l2 2 4-4" />
+        </svg>
+      );
+    case "02":
+      // Bar-chart / activity dashboard for SIEM
+      return (
+        <svg {...common} aria-hidden="true">
+          <path d="M4 20V10" />
+          <path d="M10 20V4" />
+          <path d="M16 20v-7" />
+          <path d="M22 20H2" />
+        </svg>
+      );
+    case "03":
+      // Crosshair / target for threat hunting
+      return (
+        <svg {...common} aria-hidden="true">
+          <circle cx="12" cy="12" r="9" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v4" />
+          <path d="M12 18v4" />
+          <path d="M2 12h4" />
+          <path d="M18 12h4" />
+        </svg>
+      );
+    case "04":
+      // Lightning bolt for incident response
+      return (
+        <svg {...common} aria-hidden="true">
+          <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" />
+        </svg>
+      );
+    case "05":
+      // Trophy for senior / lead operator
+      return (
+        <svg {...common} aria-hidden="true">
+          <path d="M8 21h8" />
+          <path d="M12 17v4" />
+          <path d="M7 4h10v5a5 5 0 0 1-10 0V4z" />
+          <path d="M7 6H4a3 3 0 0 0 3 3" />
+          <path d="M17 6h3a3 3 0 0 1-3 3" />
+        </svg>
+      );
+    default:
+      return null;
+  }
+}
 
 const STAGES: Stage[] = [
   {
@@ -349,19 +423,7 @@ export default function SocAnalystLearningPathPage() {
                       "'Riona Sans Light', Helvetica, Arial, sans-serif",
                   }}
                 >
-                  SOC analyst learning path for{" "}
-                  <span className="relative inline-block">
-                    <span className="relative z-10">enterprise teams</span>
-                    <span
-                      aria-hidden="true"
-                      className="absolute bottom-1 left-0 right-0 -z-0 h-2.5 sm:h-3"
-                      style={{
-                        backgroundColor: LIME,
-                        opacity: 0.55,
-                      }}
-                    />
-                  </span>
-                  .
+                  SOC Analyst Learning Path for Corporate Cybersecurity Teams
                 </h1>
                 <p
                   className="mt-6 max-w-2xl text-[16px] leading-[1.6] sm:text-[18px]"
@@ -371,11 +433,11 @@ export default function SocAnalystLearningPathPage() {
                       "'Riona Sans Light', Helvetica, Arial, sans-serif",
                   }}
                 >
-                  Standardise blue-team capability across your security teams
-                  with a structured five-stage curriculum that combines
-                  mentor-led instruction, hands-on SIEM and SOAR labs,
-                  certification milestones and measurable risk-reduction
-                  outcomes.
+                  Edstellar standardises blue-team capability across your
+                  security teams with a structured five-stage curriculum that
+                  combines Edstellar mentor-led instruction, hands-on SIEM
+                  and SOAR labs, certification milestones and measurable
+                  risk-reduction outcomes for your organisation.
                 </p>
 
                 <div
@@ -516,6 +578,8 @@ export default function SocAnalystLearningPathPage() {
           </div>
         </section>
 
+        <EdstellarTwoPaths />
+
         <section className="bg-white py-16 md:py-20">
           <div className="mtk-page-center">
             <div className="max-w-3xl">
@@ -527,16 +591,7 @@ export default function SocAnalystLearningPathPage() {
                     "'Riona Sans Light', Helvetica, Arial, sans-serif",
                 }}
               >
-                The five-stage{" "}
-                <span className="relative inline-block">
-                  <span className="relative z-10">SOC analyst journey</span>
-                  <span
-                    aria-hidden="true"
-                    className="absolute bottom-1 left-0 right-0 -z-0 h-2.5 sm:h-3"
-                    style={{ backgroundColor: LIME, opacity: 0.55 }}
-                  />
-                </span>
-                .
+                The five-stage SOC analyst journey.
               </h2>
               <p
                 className="mt-5 text-[16px] leading-[1.6] sm:text-[18px]"
@@ -675,11 +730,15 @@ export default function SocAnalystLearningPathPage() {
                         </p>
                         <div className="mt-4 flex items-center gap-3">
                           <span
+                            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full"
+                            style={{
+                              backgroundColor:
+                                MILESTONE_BG[s.num] ?? LIME,
+                              color: NAVY,
+                            }}
                             aria-hidden="true"
-                            className="inline-flex h-8 w-8 items-center justify-center rounded-full"
-                            style={{ backgroundColor: LIME, color: NAVY }}
                           >
-                            ✓
+                            <MilestoneIcon stage={s.num} />
                           </span>
                           <p
                             className="text-[14px] sm:text-[15px]"
@@ -952,16 +1011,7 @@ export default function SocAnalystLearningPathPage() {
                       "'Riona Sans Light', Helvetica, Arial, sans-serif",
                   }}
                 >
-                  Outcomes and{" "}
-                  <span className="relative inline-block">
-                    <span className="relative z-10">measurable ROI</span>
-                    <span
-                      aria-hidden="true"
-                      className="absolute bottom-1 left-0 right-0 -z-0 h-2.5 sm:h-3"
-                      style={{ backgroundColor: LIME, opacity: 0.55 }}
-                    />
-                  </span>
-                  .
+                  Outcomes and measurable ROI.
                 </h2>
                 <p
                   className="mt-5 text-[16px] leading-[1.6] sm:text-[18px]"
@@ -1057,16 +1107,7 @@ export default function SocAnalystLearningPathPage() {
                       "'Riona Sans Light', Helvetica, Arial, sans-serif",
                   }}
                 >
-                  Customise the SOC path for your{" "}
-                  <span className="relative inline-block">
-                    <span className="relative z-10">enterprise stack</span>
-                    <span
-                      aria-hidden="true"
-                      className="absolute bottom-1 left-0 right-0 -z-0 h-2.5 sm:h-3"
-                      style={{ backgroundColor: LIME, opacity: 0.6 }}
-                    />
-                  </span>
-                  .
+                  Customise the SOC path for your enterprise stack.
                 </h2>
                 <p
                   className="mt-5 text-[16px] leading-[1.6] text-white/85 sm:text-[18px]"

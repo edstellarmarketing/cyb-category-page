@@ -245,9 +245,111 @@ const TRAINER_STATS = [
   { stat: "4.8 ★", label: "Average learner rating" },
 ];
 
+type Program = {
+  category: string;
+  title: string;
+  duration: string;
+  delivery: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  href: string;
+};
+
+const PROGRAMS: Program[] = [
+  {
+    category: "Identity & Access",
+    title: "CyberArk Training",
+    duration: "16 - 24 hrs",
+    delivery: "Instructor-led (On-site/Virtual)",
+    description:
+      "Master Privileged Access Management, vault administration, PSM, CPM and policy-driven credential rotation.",
+    image: "/images/cyber/course-iam.jpg",
+    imageAlt: "CyberArk training",
+    href: "https://www.edstellar.com/course/cyberark-training",
+  },
+  {
+    category: "Threat Defense",
+    title: "Ransomware Prevention",
+    duration: "8 - 16 hrs",
+    delivery: "Instructor-led (On-site/Virtual)",
+    description:
+      "Identify ransomware threats, prevent system breaches and build a resilient response playbook for your team.",
+    image: "/images/cyber/cert-secplus.jpg",
+    imageAlt: "Ransomware prevention",
+    href: "https://www.edstellar.com/course/ransomware-prevention-training",
+  },
+  {
+    category: "Offensive Security",
+    title: "Advanced Cybersecurity Threat Simulation",
+    duration: "24 - 32 hrs",
+    delivery: "Instructor-led (On-site/Virtual)",
+    description:
+      "Hands-on red-team simulation lab covering APTs, lateral movement, AD attacks and post-exploitation in realistic enterprise environments.",
+    image: "/images/cyber/cert-oscp.jpg",
+    imageAlt: "Threat simulation",
+    href: "https://www.edstellar.com/course/advanced-cybersecurity-threat-simulation-training",
+  },
+  {
+    category: "Data Privacy",
+    title: "Personally Identifiable Information (PII)",
+    duration: "8 - 16 hrs",
+    delivery: "Instructor-led (On-site/Virtual)",
+    description:
+      "Identify and classify sensitive PII, apply data-minimization controls and align with GDPR, DPDP and CCPA obligations.",
+    image: "/images/cyber/cert-gdpr.jpg",
+    imageAlt: "PII training",
+    href: "https://www.edstellar.com/course/personally-identifiable-information-pii-training",
+  },
+  {
+    category: "Certification",
+    title: "CISSP Certification Bootcamp",
+    duration: "40 hrs",
+    delivery: "Instructor-led (On-site/Virtual)",
+    description:
+      "Cover all eight CBK domains with practitioner instructors, full mock exams and a first-attempt pass guarantee.",
+    image: "/images/cyber/cert-cissp.jpg",
+    imageAlt: "CISSP bootcamp",
+    href: "https://www.edstellar.com/category/cybersecurity-training",
+  },
+  {
+    category: "Cloud Security",
+    title: "Certified Cloud Security Professional (CCSP)",
+    duration: "32 hrs",
+    delivery: "Instructor-led (On-site/Virtual)",
+    description:
+      "Multi-cloud security architecture, identity, data protection and operations across AWS, Azure and GCP.",
+    image: "/images/cyber/course-cloud.jpg",
+    imageAlt: "CCSP training",
+    href: "https://www.edstellar.com/category/cybersecurity-training",
+  },
+  {
+    category: "Ethical Hacking",
+    title: "CEH v13 (AI-Augmented)",
+    duration: "40 hrs",
+    delivery: "Instructor-led (On-site/Virtual)",
+    description:
+      "EC-Council's flagship offensive-security program with AI-augmented labs and live red-team scenarios.",
+    image: "/images/cyber/cert-ceh.jpg",
+    imageAlt: "CEH v13",
+    href: "https://www.edstellar.com/category/cybersecurity-training",
+  },
+  {
+    category: "GRC",
+    title: "ISO 27001 Lead Auditor",
+    duration: "40 hrs",
+    delivery: "Instructor-led (On-site/Virtual)",
+    description:
+      "Lead ISMS audits end to end, scope, evidence, findings and reporting, against the ISO 27001:2022 standard.",
+    image: "/images/cyber/course-grc.jpg",
+    imageAlt: "ISO 27001 Lead Auditor",
+    href: "https://www.edstellar.com/category/cybersecurity-training",
+  },
+];
+
 export function ChipChangesTabber() {
   const [activeTab, setActiveTab] = useState<
-    "domains" | "paths" | "delivery" | "trainers"
+    "domains" | "programs" | "paths" | "delivery" | "trainers"
   >("domains");
   const [activePath, setActivePath] = useState(0);
   const path = LEARNING_PATHS[activePath];
@@ -259,14 +361,15 @@ export function ChipChangesTabber() {
           className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
-          One catalog. Every cyber discipline.
+          Every cybersecurity discipline your enterprise needs, in one trusted catalog.
         </h2>
         <p
           className="mt-3 text-[18px] sm:text-[21px] text-white"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
-          Browse Edstellar&apos;s IT &amp; Technical training portfolio organized by domain, or
-          jump straight to a role-based learning path.
+          Edstellar partners with enterprise security leaders to deliver
+          measurable workforce capability across every cybersecurity domain,
+          program, learning path and delivery mode you need.
         </p>
 
         <div
@@ -275,6 +378,7 @@ export function ChipChangesTabber() {
         >
           {([
             { id: "domains", label: "TRAINING DOMAINS" },
+            { id: "programs", label: "96 CYBERSECURITY PROGRAMS" },
             { id: "paths", label: "LEARNING PATHS" },
             { id: "delivery", label: "DELIVERY" },
             { id: "trainers", label: "TRAINERS" },
@@ -422,6 +526,123 @@ export function ChipChangesTabber() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        ) : activeTab === "programs" ? (
+          <div className="mt-2 rounded-2xl bg-white p-6 text-black sm:p-8 md:p-10">
+            <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+              <div className="max-w-3xl">
+                <h3
+                  className="mb-4 text-[26px] leading-[1.1] sm:text-[30px] lg:text-[34px]"
+                  style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+                >
+                  96 enterprise-grade cybersecurity programs, ready to deploy
+                </h3>
+                <p
+                  className="text-[15px] leading-[1.5] text-mtk-gray-500 md:text-[17px]"
+                  style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+                >
+                  A live catalog of {TOTAL_TRAININGS}+ cybersecurity programs across {DOMAINS.length} domains, delivered live, on-site or virtual, every program backed by vendor-certified trainers and a pass guarantee on certification tracks.
+                </p>
+              </div>
+              <a
+                href="https://www.edstellar.com/category/cybersecurity-training"
+                target="_blank"
+                rel="noopener"
+                className="group/cta inline-flex shrink-0 items-center gap-2 self-start rounded-full bg-[#6366F1] px-6 py-3 text-[14px] uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#4F46E5] md:self-center"
+                style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
+              >
+                View all programs
+                <ArrowRightIcon
+                  width={16}
+                  height={16}
+                  className="transition-transform group-hover/cta:translate-x-0.5"
+                />
+              </a>
+            </div>
+
+            <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {PROGRAMS.map((p) => (
+                <a
+                  key={p.title}
+                  href={p.href}
+                  target="_blank"
+                  rel="noopener"
+                  className="mtk-arrow-link group flex h-full flex-col overflow-hidden rounded-xl border border-mtk-gray-200 bg-white transition-all hover:-translate-y-0.5 hover:border-[#6366F1]/40 hover:shadow-md"
+                >
+                  <div className="relative aspect-[3/2] overflow-hidden bg-[#0c0c0c]">
+                    <Image
+                      src={p.image}
+                      alt={p.imageAlt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 25vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    />
+                    <span
+                      className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-sm border border-white/30 bg-black/40 px-2.5 py-1 text-[10px] uppercase tracking-[0.14em] text-white backdrop-blur-sm"
+                      style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
+                    >
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#6366F1]" />
+                      {p.category}
+                    </span>
+                  </div>
+                  <div className="flex flex-1 flex-col gap-2 px-5 py-5">
+                    <h4
+                      className="text-[17px] leading-[1.25] text-black"
+                      style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
+                    >
+                      {p.title}
+                    </h4>
+                    <div
+                      className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] text-mtk-gray-500"
+                      style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+                    >
+                      <span className="inline-flex items-center gap-1">
+                        <span className="h-1 w-1 rounded-full bg-[#6366F1]" /> {p.duration}
+                      </span>
+                      <span className="inline-flex items-center gap-1">
+                        <span className="h-1 w-1 rounded-full bg-[#6366F1]" /> {p.delivery}
+                      </span>
+                    </div>
+                    <p
+                      className="text-[13px] leading-[1.45] text-mtk-gray-500"
+                      style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+                    >
+                      {p.description}
+                    </p>
+                    <span
+                      className="mt-auto inline-flex items-center gap-1.5 pt-3 text-[12px] uppercase tracking-[0.14em] text-[#6366F1]"
+                      style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
+                    >
+                      View course
+                      <ArrowRightIcon className="mtk-arrow" width={14} height={14} />
+                    </span>
+                  </div>
+                </a>
+              ))}
+            </div>
+
+            <div
+              className="mt-8 flex flex-col items-center justify-between gap-4 rounded-xl border border-mtk-gray-200 bg-[#F5F3FF] px-5 py-4 text-center md:flex-row md:text-left"
+            >
+              <p
+                className="text-[14px] text-mtk-gray-500 md:text-[15px]"
+                style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+              >
+                Looking for a specific certification, vendor track or
+                role-based program? Our team can match you to any of the
+                {" "}{TOTAL_TRAININGS}+ live cybersecurity programs in the catalog.
+              </p>
+              <a
+                href="https://www.edstellar.com/category/cybersecurity-training"
+                target="_blank"
+                rel="noopener"
+                className="inline-flex shrink-0 items-center gap-2 rounded-full border-2 border-[#6366F1] px-5 py-2 text-[12px] uppercase tracking-[0.12em] text-[#6366F1] transition-colors hover:bg-[#6366F1] hover:text-white"
+                style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
+              >
+                View all programs
+                <ArrowRightIcon width={14} height={14} />
+              </a>
             </div>
           </div>
         ) : activeTab === "delivery" ? (

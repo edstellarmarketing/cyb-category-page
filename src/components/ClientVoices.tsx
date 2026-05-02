@@ -70,7 +70,7 @@ export function ClientVoices() {
               className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
               style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
             >
-              Client voices
+              Proven impact from enterprise cybersecurity leaders
             </h2>
             <p
               className="mt-4 max-w-3xl text-[17px] leading-[1.4] sm:text-[19px]"

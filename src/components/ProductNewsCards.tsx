@@ -127,13 +127,13 @@ export function ProductNewsCards() {
           className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
-          Hand-picked cybersecurity courses
+          Industry-aligned cybersecurity courses your security team can trust
         </h2>
         <p
           className="mt-4 max-w-3xl text-[17px] leading-[1.35] sm:text-[19px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
-          A small slice of Edstellar&apos;s 200+ corporate cybersecurity programs, delivered live, on-site or virtual, with a pass guarantee on certification tracks.
+          A curated selection from Edstellar&apos;s 200+ enterprise cybersecurity programs, delivered live, on-site or virtual, and backed by a pass guarantee on certification tracks.
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

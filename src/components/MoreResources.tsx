@@ -44,13 +44,13 @@ export function MoreResources() {
           className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
-          Build resilient teams
+          Build resilient cybersecurity teams that scale with your enterprise
         </h2>
         <p
           className="mt-4 max-w-3xl text-[17px] leading-[1.35] sm:text-[19px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
-          More ways to upskill your security workforce.
+          Edstellar gives security leaders proven ways to upskill their workforce, codify capability, and keep pace with an evolving threat landscape.
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

@@ -49,7 +49,7 @@ export function OurApproach() {
               className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
               style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
             >
-              Our approach
+              A proven approach trusted by enterprise security leaders
             </h2>
             <p
               className="mt-4 max-w-3xl text-[17px] leading-[1.4] sm:text-[19px]"
