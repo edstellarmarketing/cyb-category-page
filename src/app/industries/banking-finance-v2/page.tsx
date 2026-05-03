@@ -7,6 +7,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { ArrowRightIcon } from "@/components/icons";
 import { BankingFinanceCoursesCarousel } from "@/components/industry/BankingFinanceCoursesCarousel";
 import { BankingFinanceTestimonialsCarousel } from "@/components/industry/BankingFinanceTestimonialsCarousel";
+import { BankingFinanceCapabilityPath } from "@/components/industry/BankingFinanceCapabilityPath";
 
 export const metadata: Metadata = {
   title:
@@ -145,6 +146,7 @@ const PAIN_POINTS: PainPoint[] = [
 type Service = {
   title: string;
   body: string;
+  outcome: string;
   tags: string[];
   image: string;
   imageAlt: string;
@@ -154,6 +156,8 @@ const SERVICES: Service[] = [
   {
     title: "Customer Experience and Relationship Management",
     body: "Build relationship managers, advisors, and service teams who turn every conversation into customer trust, with instructor-led communication, empathy, and complaint-resolution programs.",
+    outcome:
+      "Lift NPS, CSAT, and customer retention across branches and contact centres.",
     tags: ["Advisory Conversations", "Service Excellence", "NPS"],
     image: "/images/cyber/bfsi-card-1.jpg",
     imageAlt:
@@ -162,6 +166,8 @@ const SERVICES: Service[] = [
   {
     title: "Sales and Revenue Enablement",
     body: "Cross-sell, upsell, and product-selling capability for branch and contact-centre teams, anchored on real BFSI scenarios and instructor-led role-plays.",
+    outcome:
+      "Improve cross-sell, upsell, and conversion per relationship manager.",
     tags: ["Cross-sell", "Branch Sales", "Negotiation"],
     image: "/images/cyber/bfsi-card-6.jpg",
     imageAlt:
@@ -170,6 +176,8 @@ const SERVICES: Service[] = [
   {
     title: "Leadership and Branch Management",
     body: "Senior-leader, regional, and branch-manager development programs that lift P&L, operations, and people leadership across distributed BFSI teams.",
+    outcome:
+      "Strengthen branch P&L, leader retention, and customer-experience scores.",
     tags: ["Leadership", "Branch Ops", "P&L"],
     image: "/images/cyber/hero-governance.jpg",
     imageAlt:
@@ -178,6 +186,8 @@ const SERVICES: Service[] = [
   {
     title: "Workforce Productivity and Operations",
     body: "Frontline productivity, contact-centre service, AML and KYC, operational resilience, and process-excellence programs delivered as instructor-led cohorts at scale.",
+    outcome:
+      "Reduce operational errors and accelerate frontline productivity at scale.",
     tags: ["Productivity", "Operations", "AML / KYC"],
     image: "/images/cyber/bfsi-card-3.jpg",
     imageAlt:
@@ -186,6 +196,8 @@ const SERVICES: Service[] = [
   {
     title: "Digital and Functional Skills",
     body: "Core banking, payments, risk modelling, GenAI in banking, and digital-tooling capability for risk, audit, and frontline teams entering the modern BFSI stack.",
+    outcome:
+      "Accelerate digital and AI adoption across core banking, risk, and ops teams.",
     tags: ["Core Banking", "GenAI", "Risk"],
     image: "/images/cyber/bfsi-card-4.jpg",
     imageAlt:
@@ -193,11 +205,15 @@ const SERVICES: Service[] = [
   },
 ];
 
+type RoleIconKey = "handshake" | "building" | "headset" | "trending";
+
 type RoleJourney = {
   role: string;
   goals: string;
   modules: string[];
+  outcomes: string[];
   href: string;
+  iconKey: RoleIconKey;
 };
 
 const ROLE_JOURNEYS: RoleJourney[] = [
@@ -210,7 +226,13 @@ const ROLE_JOURNEYS: RoleJourney[] = [
       "Objection handling and consultative communication",
       "Compliance and suitability obligations on the desk",
     ],
+    outcomes: [
+      "Stronger product fluency in 4 to 6 weeks",
+      "Higher conversion on advisory conversations",
+      "Tighter compliance and suitability discipline",
+    ],
     href: "/#learning-paths",
+    iconKey: "handshake",
   },
   {
     role: "Branch Managers",
@@ -221,7 +243,13 @@ const ROLE_JOURNEYS: RoleJourney[] = [
       "Customer-experience standards and escalation protocols",
       "Risk, compliance, and audit-readiness for the branch",
     ],
+    outcomes: [
+      "Lifted branch P&L performance",
+      "Tighter risk and audit-readiness",
+      "Higher engagement and retention on the branch team",
+    ],
     href: "/#learning-paths",
+    iconKey: "building",
   },
   {
     role: "Customer Service Teams",
@@ -232,7 +260,13 @@ const ROLE_JOURNEYS: RoleJourney[] = [
       "Complaint handling and recovery conversations",
       "AML / KYC and fraud-awareness for service teams",
     ],
+    outcomes: [
+      "Higher NPS and CSAT, lower churn",
+      "Faster complaint resolution and recovery",
+      "Lower error rates on KYC and service tasks",
+    ],
     href: "/#learning-paths",
+    iconKey: "headset",
   },
   {
     role: "Sales Teams",
@@ -243,9 +277,65 @@ const ROLE_JOURNEYS: RoleJourney[] = [
       "Negotiation and value articulation against competitor offers",
       "Pipeline discipline and CRM hygiene",
     ],
+    outcomes: [
+      "More cross-sell and upsell per RM",
+      "Stronger negotiation and value articulation",
+      "Cleaner CRM hygiene and pipeline forecasting",
+    ],
     href: "/#learning-paths",
+    iconKey: "trending",
   },
 ];
+
+function RoleIcon({ iconKey }: { iconKey: RoleIconKey }) {
+  const common = {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 2.2,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    "aria-hidden": true,
+  };
+  switch (iconKey) {
+    case "handshake":
+      return (
+        <svg {...common}>
+          <path d="M3 12h3l3-3 4 4-3 3" />
+          <path d="M14 9l4 4 3-3" />
+          <path d="M9 13l3-3 3 3 3 3" />
+        </svg>
+      );
+    case "building":
+      return (
+        <svg {...common}>
+          <rect x="4" y="3" width="16" height="18" rx="1.5" />
+          <path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2" />
+          <path d="M10 21v-3h4v3" />
+        </svg>
+      );
+    case "headset":
+      return (
+        <svg {...common}>
+          <path d="M4 13a8 8 0 0 1 16 0" />
+          <path d="M4 13v3a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2z" />
+          <path d="M20 13v3a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2z" />
+          <path d="M14 19a2 2 0 0 1-2 2h-1" />
+        </svg>
+      );
+    case "trending":
+      return (
+        <svg {...common}>
+          <path d="M3 17l6-6 4 4 8-8" />
+          <path d="M14 7h7v7" />
+        </svg>
+      );
+    default:
+      return null;
+  }
+}
 
 type ScalePillar = {
   title: string;
@@ -279,40 +369,6 @@ const SCALE_PILLARS: ScalePillar[] = [
   },
 ];
 
-type ProcessStep = {
-  num: string;
-  title: string;
-  body: string;
-};
-
-const PROCESS_STEPS: ProcessStep[] = [
-  {
-    num: "01",
-    title: "Assess workforce skill gaps",
-    body: "Diagnose current-state capability across roles, branches, and lines of business with structured assessments and stakeholder interviews.",
-  },
-  {
-    num: "02",
-    title: "Map role-based competencies",
-    body: "Build a competency framework mapped to each BFSI role, calibrated against your business priorities and regulatory obligations.",
-  },
-  {
-    num: "03",
-    title: "Design learning journeys",
-    body: "Curate role-specific learning journeys blending instructor-led training, hands-on labs, and reinforcement, customised to your stack.",
-  },
-  {
-    num: "04",
-    title: "Deliver at scale",
-    body: "Roll out cohort-based, instructor-led programs across distributed branches, in 10 languages, with a single Edstellar program manager.",
-  },
-  {
-    num: "05",
-    title: "Track performance impact",
-    body: "Measure before and after KPIs (NPS, onboarding time, compliance readiness, revenue per RM) and report board-ready outcomes.",
-  },
-];
-
 type CaseStudyMini = {
   badge: string;
   title: string;
@@ -338,10 +394,12 @@ const CASE_STUDIES_MINI: CaseStudyMini[] = [
 ];
 
 const CASE_BULLETS = [
-  "75% reduction in review effort against the original audit plan",
-  "45% faster delivery, completed in 6 weeks against a 12-week target",
-  "70% cost reduction across the program portfolio",
-  "18 programs requalified at scale with no reduction in quality or rigor",
+  "Cut compliance review effort by 75% against the original audit plan",
+  "Delivered in 6 weeks against the 12-week target, 45% faster turnaround",
+  "Reduced program-portfolio cost by 70% across the rollout",
+  "Increased frontline productivity across compliance teams post-program",
+  "Reduced onboarding time for new analysts on all 18 programs",
+  "Improved internal customer-satisfaction scores on compliance responses",
 ];
 
 type BusinessOutcome = {
@@ -1036,6 +1094,59 @@ export default function IndustryBankingFinanceV2Page() {
                     >
                       {s.body}
                     </p>
+
+                    <div
+                      className="mt-5 flex items-start gap-3 rounded-xl border-l-4 px-4 py-3"
+                      style={{
+                        borderColor: LIME,
+                        backgroundColor: NAVY_BG_5,
+                      }}
+                    >
+                      <span
+                        aria-hidden="true"
+                        className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full"
+                        style={{ backgroundColor: LIME, color: NAVY }}
+                      >
+                        <svg
+                          width="11"
+                          height="11"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M3 17l6-6 4 4 8-8" />
+                          <path d="M14 7h7v7" />
+                        </svg>
+                      </span>
+                      <div>
+                        <p
+                          className="text-[10.5px] uppercase tracking-[0.16em]"
+                          style={{
+                            color: NAVY,
+                            fontFamily:
+                              "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                            fontWeight: 700,
+                          }}
+                        >
+                          Business outcome
+                        </p>
+                        <p
+                          className="mt-1 text-[13px] leading-[1.5] sm:text-[13.5px]"
+                          style={{
+                            color: NAVY,
+                            fontFamily:
+                              "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                            fontWeight: 600,
+                          }}
+                        >
+                          {s.outcome}
+                        </p>
+                      </div>
+                    </div>
+
                     <div className="mt-5 flex flex-wrap gap-2">
                       {s.tags.map((t) => (
                         <span
@@ -1118,22 +1229,10 @@ export default function IndustryBankingFinanceV2Page() {
                   <div className="flex items-center gap-3">
                     <span
                       aria-hidden="true"
-                      className="inline-flex h-9 w-9 items-center justify-center rounded-full"
+                      className="inline-flex h-10 w-10 items-center justify-center rounded-full"
                       style={{ backgroundColor: LIME, color: NAVY }}
                     >
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2.4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <circle cx="12" cy="8" r="3.5" />
-                        <path d="M5 21a7 7 0 0 1 14 0" />
-                      </svg>
+                      <RoleIcon iconKey={r.iconKey} />
                     </span>
                     <h3
                       className="text-[18px] sm:text-[19px]"
@@ -1178,10 +1277,62 @@ export default function IndustryBankingFinanceV2Page() {
                       </li>
                     ))}
                   </ul>
+
+                  <div
+                    className="mt-5 rounded-xl p-4"
+                    style={{ backgroundColor: NAVY_BG_5 }}
+                  >
+                    <p
+                      className="text-[10.5px] uppercase tracking-[0.16em]"
+                      style={{
+                        color: NAVY,
+                        fontFamily:
+                          "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                        fontWeight: 700,
+                      }}
+                    >
+                      Typical outcomes
+                    </p>
+                    <ul className="mt-2.5 space-y-2">
+                      {r.outcomes.map((o) => (
+                        <li key={o} className="flex items-start gap-2">
+                          <span
+                            aria-hidden="true"
+                            className="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full"
+                            style={{ backgroundColor: LIME, color: NAVY }}
+                          >
+                            <svg
+                              width="9"
+                              height="9"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="3.4"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M5 13l4 4L19 7" />
+                            </svg>
+                          </span>
+                          <p
+                            className="text-[12.5px] leading-[1.45] sm:text-[13px]"
+                            style={{
+                              color: BODY,
+                              fontFamily:
+                                "'Riona Sans Regular', Helvetica, Arial, sans-serif",
+                            }}
+                          >
+                            {o}
+                          </p>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
                   <Link
                     href={r.href}
                     aria-label={`View Learning Path for ${r.role}`}
-                    className="group/cta mt-auto inline-flex items-center gap-1.5 self-start pt-6 text-[12.5px] uppercase tracking-[0.1em] transition-colors"
+                    className="group/cta mt-auto inline-flex items-center gap-1.5 self-start pt-5 text-[12.5px] uppercase tracking-[0.1em] transition-colors"
                     style={{
                       color: NAVY,
                       fontFamily:
@@ -1219,7 +1370,7 @@ export default function IndustryBankingFinanceV2Page() {
                     "'Riona Sans Light', Helvetica, Arial, sans-serif",
                 }}
               >
-                Training Delivery Across Distributed BFSI Teams.
+                Scalable Training Delivery Across Distributed BFSI Teams
               </h2>
               <p
                 className="mt-5 text-[16px] leading-[1.6] sm:text-[18px]"
@@ -1290,101 +1441,8 @@ export default function IndustryBankingFinanceV2Page() {
           </div>
         </section>
 
-        {/* Section 7 — Workforce Capability Development Approach (process) */}
-        <section
-          className="py-16 md:py-20"
-          style={{ backgroundColor: NAVY }}
-        >
-          <div className="mtk-page-center">
-            <div className="mx-auto max-w-3xl text-center">
-              <h2
-                className="text-[32px] leading-[1.08] text-white sm:text-[40px] lg:text-[46px]"
-                style={{
-                  fontFamily:
-                    "'Riona Sans Light', Helvetica, Arial, sans-serif",
-                }}
-              >
-                Our Workforce Capability Development Approach.
-              </h2>
-              <p
-                className="mt-5 text-[16px] leading-[1.6] text-white/85 sm:text-[18px]"
-                style={{
-                  fontFamily:
-                    "'Riona Sans Light', Helvetica, Arial, sans-serif",
-                }}
-              >
-                A five-step process Edstellar runs end-to-end, from skill-gap
-                diagnosis to board-ready performance reporting.
-              </p>
-            </div>
-
-            <ol className="relative mt-12 grid grid-cols-1 gap-6 md:grid-cols-5 md:gap-3 lg:gap-4">
-              <span
-                aria-hidden="true"
-                className="pointer-events-none absolute hidden md:block"
-                style={{
-                  top: "20px",
-                  left: "10%",
-                  right: "10%",
-                  height: "2px",
-                  backgroundImage:
-                    "repeating-linear-gradient(to right, rgba(197,232,38,0.5) 0 6px, transparent 6px 12px)",
-                }}
-              />
-              {PROCESS_STEPS.map((s) => (
-                <li key={s.num} className="relative z-10 text-center">
-                  <span
-                    className="mx-auto inline-flex h-10 w-10 items-center justify-center rounded-full text-[14px]"
-                    style={{
-                      backgroundColor: LIME,
-                      color: NAVY,
-                      fontFamily:
-                        "'Riona Sans Bold', Helvetica, Arial, sans-serif",
-                      fontWeight: 700,
-                    }}
-                  >
-                    {s.num}
-                  </span>
-                  <h3
-                    className="mt-4 text-[15px] text-white sm:text-[16px]"
-                    style={{
-                      fontFamily:
-                        "'Riona Sans Bold', Helvetica, Arial, sans-serif",
-                      fontWeight: 700,
-                    }}
-                  >
-                    {s.title}
-                  </h3>
-                  <p
-                    className="mx-auto mt-2 max-w-[220px] text-[13px] leading-[1.5] text-white/75 sm:text-[13.5px]"
-                    style={{
-                      fontFamily:
-                        "'Riona Sans Light', Helvetica, Arial, sans-serif",
-                    }}
-                  >
-                    {s.body}
-                  </p>
-                </li>
-              ))}
-            </ol>
-
-            <div className="mt-12 text-center">
-              <Link
-                href="#contact"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-[13px] uppercase tracking-[0.1em] transition-opacity hover:opacity-90 sm:text-[14px]"
-                style={{
-                  color: NAVY,
-                  fontFamily:
-                    "'Riona Sans Bold', Helvetica, Arial, sans-serif",
-                  fontWeight: 600,
-                }}
-              >
-                Get a workforce assessment
-                <ArrowRightIcon width={16} height={16} />
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Section 7 — From Fragmented Skills to High-Performing BFSI Workforces */}
+        <BankingFinanceCapabilityPath />
 
         {/* Section 8 — Proven results: featured case + key outcomes + mini cards */}
         <section
