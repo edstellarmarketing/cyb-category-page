@@ -5,6 +5,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { ArrowRightIcon } from "@/components/icons";
+import { BankingFinanceCoursesCarousel } from "@/components/industry/BankingFinanceCoursesCarousel";
+import { BankingFinanceTestimonialsCarousel } from "@/components/industry/BankingFinanceTestimonialsCarousel";
 
 export const metadata: Metadata = {
   title:
@@ -77,23 +79,67 @@ type Stat = {
 
 const APPROACH_STATS: Stat[] = [
   {
-    stat: "−38%",
-    label: "Reduction in annual training time (indicative range)",
+    stat: "38%",
+    label: "Faster onboarding for frontline staff",
   },
   {
-    stat: "−44%",
-    label: "Reduction in compliance training seat time (indicative range)",
+    stat: "44%",
+    label: "Improvement in customer-handling efficiency",
   },
-  { stat: "14+", label: "Years of L&D expertise across BFSI" },
-  { stat: "60+", label: "Countries served by Edstellar" },
+  { stat: "14+", label: "Years of BFSI training experience" },
+  { stat: "60+", label: "Enterprise clients standardised on Edstellar" },
 ];
 
-const PAIN_POINTS = [
-  "Compliance programs that meet requirements but do not change behaviour on the desk.",
-  "Technology rollouts (core banking, payments, risk platforms) that launch before teams are ready to use them.",
-  "Onboarding inconsistency across branches and regional hubs, slowing time-to-competency.",
-  "Relationship managers and advisors who know products but struggle with client-needs conversations.",
-  "Limited visibility linking learning investment to revenue, retention, and risk outcomes.",
+type DifferentApproachPoint = {
+  title: string;
+  body: string;
+};
+
+const DIFFERENT_APPROACH_POINTS: DifferentApproachPoint[] = [
+  {
+    title: "Distributed branch workforce",
+    body: "Thousands of frontline staff across regional offices need consistent capability, not one-off training events.",
+  },
+  {
+    title: "High customer-interaction roles",
+    body: "Relationship managers, advisors, and service teams convert capability into trust on every conversation.",
+  },
+  {
+    title: "Constant product and regulatory evolution",
+    body: "New products, frameworks, and compliance obligations land faster than annual training cycles can absorb.",
+  },
+  {
+    title: "Service quality across geographies",
+    body: "Brand promise depends on the same standard of delivery in every branch, language, and channel.",
+  },
+];
+
+type PainPoint = {
+  challenge: string;
+  impact: string;
+};
+
+const PAIN_POINTS: PainPoint[] = [
+  {
+    challenge: "Complex product portfolios",
+    impact: "Harder onboarding, slower time-to-competency",
+  },
+  {
+    challenge: "Customer expectations rising",
+    impact: "Service gaps, lower NPS, churn risk",
+  },
+  {
+    challenge: "Workforce inconsistency across branches",
+    impact: "Brand dilution, uneven customer experience",
+  },
+  {
+    challenge: "Compliance pace outstrips training cycles",
+    impact: "Audit-readiness gaps and regulatory exposure",
+  },
+  {
+    challenge: "Limited visibility on training ROI",
+    impact: "Unclear value, underfunded learning budgets",
+  },
 ];
 
 type Service = {
@@ -106,72 +152,188 @@ type Service = {
 
 const SERVICES: Service[] = [
   {
-    title: "Managed Learning Services",
-    body: "End-to-end ownership of training delivery, scheduling, vendor governance, and reporting across regions, languages, and lines of business.",
-    tags: ["Managed Training", "Vendor Sourcing", "Reporting"],
-    image: "/images/cyber/bfsi-card-2.jpg",
-    imageAlt:
-      "Edstellar instructor leading a banking training session with a BFSI cohort in a corporate learning room",
-  },
-  {
-    title: "Leadership and Inclusion",
-    body: "Senior-leader development, branch and regional manager programs, and inclusion programs for distributed BFSI teams.",
-    tags: ["Leadership", "Inclusion", "Manager Effectiveness"],
-    image: "/images/cyber/hero-governance.jpg",
-    imageAlt:
-      "Senior banking leaders in a boardroom session during an Edstellar leadership and inclusion program",
-  },
-  {
-    title: "Technical and Risk Performance",
-    body: "Core banking, payments, treasury, KYC and AML, risk modelling, IFRS 9 / Basel, and operational-resilience capability.",
-    tags: ["Core Banking", "Risk", "AML / KYC"],
-    image: "/images/cyber/bfsi-card-3.jpg",
-    imageAlt:
-      "BFSI compliance and capital-gains documentation reviewed during an Edstellar risk and AML / KYC capability program",
-  },
-  {
-    title: "Sales and Service Performance",
-    body: "Relationship management, advisory conversations, branch sales, contact-centre service, and customer-experience programs.",
-    tags: ["Advisory", "Branch Sales", "Service"],
+    title: "Customer Experience and Relationship Management",
+    body: "Build relationship managers, advisors, and service teams who turn every conversation into customer trust, with instructor-led communication, empathy, and complaint-resolution programs.",
+    tags: ["Advisory Conversations", "Service Excellence", "NPS"],
     image: "/images/cyber/bfsi-card-1.jpg",
     imageAlt:
-      "Customer transacting at a branch service counter, illustrating Edstellar's BFSI sales and service performance program",
+      "BFSI relationship manager engaging a customer at a branch service counter during an Edstellar capability program",
   },
   {
-    title: "Advisory",
-    body: "L&D consulting, workforce strategy, role architecture, and capability frameworks for banks, NBFCs, capital markets, and insurance.",
-    tags: ["L&D Consulting", "Workforce Strategy"],
-    image: "/images/cyber/bfsi-card-4.jpg",
-    imageAlt:
-      "Conceptual financial-advisory image of an investor figure perched on a stack of euro coins, representing Edstellar's BFSI advisory practice",
-  },
-  {
-    title: "AI and Innovation",
-    body: "AI-readiness, GenAI in banking, model-risk awareness, and responsible-AI training for risk, audit, and frontline teams.",
-    tags: ["GenAI", "Model Risk", "AI Readiness"],
+    title: "Sales and Revenue Enablement",
+    body: "Cross-sell, upsell, and product-selling capability for branch and contact-centre teams, anchored on real BFSI scenarios and instructor-led role-plays.",
+    tags: ["Cross-sell", "Branch Sales", "Negotiation"],
     image: "/images/cyber/bfsi-card-6.jpg",
     imageAlt:
-      "Capital-markets candlestick chart with moving averages, illustrating Edstellar's AI, GenAI, and model-risk readiness programs for BFSI",
+      "Capital-markets candlestick chart, illustrating Edstellar's BFSI sales and revenue enablement program",
+  },
+  {
+    title: "Leadership and Branch Management",
+    body: "Senior-leader, regional, and branch-manager development programs that lift P&L, operations, and people leadership across distributed BFSI teams.",
+    tags: ["Leadership", "Branch Ops", "P&L"],
+    image: "/images/cyber/hero-governance.jpg",
+    imageAlt:
+      "Senior banking leaders in a boardroom session during an Edstellar leadership and branch-management program",
+  },
+  {
+    title: "Workforce Productivity and Operations",
+    body: "Frontline productivity, contact-centre service, AML and KYC, operational resilience, and process-excellence programs delivered as instructor-led cohorts at scale.",
+    tags: ["Productivity", "Operations", "AML / KYC"],
+    image: "/images/cyber/bfsi-card-3.jpg",
+    imageAlt:
+      "BFSI compliance and operations documentation reviewed during an Edstellar workforce productivity and operations program",
+  },
+  {
+    title: "Digital and Functional Skills",
+    body: "Core banking, payments, risk modelling, GenAI in banking, and digital-tooling capability for risk, audit, and frontline teams entering the modern BFSI stack.",
+    tags: ["Core Banking", "GenAI", "Risk"],
+    image: "/images/cyber/bfsi-card-4.jpg",
+    imageAlt:
+      "Conceptual investor figurine on a stack of euro coins, illustrating Edstellar's digital and functional skills program for BFSI",
   },
 ];
 
-type Pillar = {
+type RoleJourney = {
+  role: string;
+  goals: string;
+  modules: string[];
+  href: string;
+};
+
+const ROLE_JOURNEYS: RoleJourney[] = [
+  {
+    role: "Relationship Managers",
+    goals: "Product knowledge, advisory conversations, communication",
+    modules: [
+      "Client-needs discovery and advisory framing",
+      "Product knowledge across deposits, lending, wealth, insurance",
+      "Objection handling and consultative communication",
+      "Compliance and suitability obligations on the desk",
+    ],
+    href: "/#learning-paths",
+  },
+  {
+    role: "Branch Managers",
+    goals: "Leadership, operations, P&L, customer experience",
+    modules: [
+      "Branch P&L and operating-model fundamentals",
+      "People leadership and performance management",
+      "Customer-experience standards and escalation protocols",
+      "Risk, compliance, and audit-readiness for the branch",
+    ],
+    href: "/#learning-paths",
+  },
+  {
+    role: "Customer Service Teams",
+    goals: "Service excellence, contact-centre, complaint handling",
+    modules: [
+      "Service-quality standards and tone-of-voice",
+      "Contact-centre process and CRM mastery",
+      "Complaint handling and recovery conversations",
+      "AML / KYC and fraud-awareness for service teams",
+    ],
+    href: "/#learning-paths",
+  },
+  {
+    role: "Sales Teams",
+    goals: "Product selling, cross-sell, negotiation, advisory",
+    modules: [
+      "Solution selling for BFSI products and segments",
+      "Cross-sell and upsell playbooks tied to customer lifecycle",
+      "Negotiation and value articulation against competitor offers",
+      "Pipeline discipline and CRM hygiene",
+    ],
+    href: "/#learning-paths",
+  },
+];
+
+type ScalePillar = {
   title: string;
   body: string;
 };
 
-const PILLARS: Pillar[] = [
+const SCALE_PILLARS: ScalePillar[] = [
   {
-    title: "Speed",
-    body: "Rapid capability deployment that keeps pace with your roadmap, your regulators, and your people, so teams are always ready for what is next.",
+    title: "Multi-location rollout",
+    body: "Single program delivered consistently across 100+ countries and across regional hubs, branches, and contact centres.",
   },
   {
-    title: "Relevance",
-    body: "Programs designed against how the BFSI desk actually works, with real compliance, risk, and customer-conversation requirements built in.",
+    title: "Standardised instructor-led delivery",
+    body: "Every cohort learns from vendor-certified BFSI practitioners, calibrated to the same role-based competency standards.",
   },
   {
-    title: "Quality",
-    body: "Sixty plus years of combined practice delivering proven learning methodology, simplified by an Edstellar platform built for enterprise scale.",
+    title: "Blended learning",
+    body: "Live instructor-led sessions, hands-on labs, and on-the-job reinforcement that protect knowledge transfer to the desk.",
+  },
+  {
+    title: "Flexible delivery formats",
+    body: "On-site at your branches, live virtual across regions, or hybrid cohorts coordinated by a single Edstellar program manager.",
+  },
+  {
+    title: "10 languages",
+    body: "Programs delivered in English, Español, 普通話, Deutsch, العربية, Português, हिंदी, Français, 日本語, and Italiano.",
+  },
+  {
+    title: "Customised to your stack",
+    body: "Curriculum tailored to your core banking system, products, SOPs, and regulatory regime, not a one-size-fits-all catalogue.",
+  },
+];
+
+type ProcessStep = {
+  num: string;
+  title: string;
+  body: string;
+};
+
+const PROCESS_STEPS: ProcessStep[] = [
+  {
+    num: "01",
+    title: "Assess workforce skill gaps",
+    body: "Diagnose current-state capability across roles, branches, and lines of business with structured assessments and stakeholder interviews.",
+  },
+  {
+    num: "02",
+    title: "Map role-based competencies",
+    body: "Build a competency framework mapped to each BFSI role, calibrated against your business priorities and regulatory obligations.",
+  },
+  {
+    num: "03",
+    title: "Design learning journeys",
+    body: "Curate role-specific learning journeys blending instructor-led training, hands-on labs, and reinforcement, customised to your stack.",
+  },
+  {
+    num: "04",
+    title: "Deliver at scale",
+    body: "Roll out cohort-based, instructor-led programs across distributed branches, in 10 languages, with a single Edstellar program manager.",
+  },
+  {
+    num: "05",
+    title: "Track performance impact",
+    body: "Measure before and after KPIs (NPS, onboarding time, compliance readiness, revenue per RM) and report board-ready outcomes.",
+  },
+];
+
+type CaseStudyMini = {
+  badge: string;
+  title: string;
+  outcome: string;
+};
+
+const CASE_STUDIES_MINI: CaseStudyMini[] = [
+  {
+    badge: "Top-5 retail bank",
+    title: "Frontline onboarding cut from 12 to 7 weeks",
+    outcome: "1,200+ relationship managers onboarded across 8 regions on a unified instructor-led journey.",
+  },
+  {
+    badge: "Global insurer",
+    title: "Service-NPS lifted by 18 points in two quarters",
+    outcome: "Branch-service teams completed a customer-experience cohort with weekly coaching and call audits.",
+  },
+  {
+    badge: "Capital markets group",
+    title: "AML / KYC capability standardised across 6 markets",
+    outcome: "350+ ops analysts certified on a single role-based AML / KYC curriculum, audit-ready in 9 weeks.",
   },
 ];
 
@@ -180,6 +342,38 @@ const CASE_BULLETS = [
   "45% faster delivery, completed in 6 weeks against a 12-week target",
   "70% cost reduction across the program portfolio",
   "18 programs requalified at scale with no reduction in quality or rigor",
+];
+
+type BusinessOutcome = {
+  title: string;
+  body: string;
+};
+
+const BUSINESS_OUTCOMES: BusinessOutcome[] = [
+  {
+    title: "Higher customer satisfaction",
+    body: "Instructor-led service-excellence programs lift NPS, CSAT, and retention across branches and contact centres.",
+  },
+  {
+    title: "More cross-sell and upsell",
+    body: "Role-based selling journeys equip RMs and branch teams to convert every conversation into measurable revenue.",
+  },
+  {
+    title: "Faster frontline onboarding",
+    body: "Standardised curriculum cuts time-to-productivity for new hires across regions and lines of business.",
+  },
+  {
+    title: "Workforce consistency at scale",
+    body: "One capability standard, delivered the same way in every language, branch, and geography.",
+  },
+  {
+    title: "Stronger leadership pipeline",
+    body: "Senior-leader, regional, and branch-manager journeys build the bench for the next ten years of growth.",
+  },
+  {
+    title: "Faster digital adoption",
+    body: "Functional-skill cohorts on core banking, payments, and GenAI accelerate the move to a modern BFSI stack.",
+  },
 ];
 
 export default function IndustryBankingFinanceV2Page() {
@@ -222,7 +416,7 @@ export default function IndustryBankingFinanceV2Page() {
           />
 
           <div className="relative z-10">
-            <div className="mtk-page-center pt-10 pb-14 md:pt-14 md:pb-20">
+            <div className="mtk-page-center pt-8 pb-10 md:pt-10 md:pb-12">
               <nav
                 aria-label="Breadcrumb"
                 className="mb-6 text-[12px] uppercase tracking-[0.14em] text-white/60 sm:text-[13px]"
@@ -262,27 +456,29 @@ export default function IndustryBankingFinanceV2Page() {
 
               <div className="max-w-3xl">
                 <h1
-                  className="text-[34px] leading-[1.05] sm:text-[44px] lg:text-[56px]"
+                  className="text-[28px] leading-[1.08] sm:text-[36px] lg:text-[44px]"
                   style={{
                     fontFamily:
                       "'Riona Sans Light', Helvetica, Arial, sans-serif",
                   }}
                 >
-                  Workforce Training and Capability Building for the Banking and Finance Industry
+                  Build High-Performing BFSI Workforces at Scale with Role-Based Capability Development
                 </h1>
                 <p
-                  className="mt-5 max-w-2xl text-[15px] leading-[1.6] text-white/80 sm:text-[16.5px]"
+                  className="mt-4 max-w-2xl text-[14px] leading-[1.55] text-white/80 sm:text-[15.5px]"
                   style={{
                     fontFamily:
                       "'Riona Sans Light', Helvetica, Arial, sans-serif",
                   }}
                 >
-                  Edstellar builds workforce capability for banks, NBFCs,
-                  capital markets, and insurance carriers, calibrated for
-                  regulated, multi-region environments.
+                  Edstellar partners with banks, NBFCs, capital markets, and
+                  insurance carriers to standardise skills, accelerate
+                  frontline productivity, and lift customer experience through
+                  instructor-led, role-based capability programs in 10
+                  languages across 100+ countries.
                 </p>
 
-                <div className="mt-10 md:mt-12">
+                <div className="mt-9 md:mt-11">
                   <p
                     className="text-[11px] uppercase tracking-[0.16em] text-white/55"
                     style={{
@@ -298,7 +494,7 @@ export default function IndustryBankingFinanceV2Page() {
                       <li
                         key={mode.title}
                         aria-label={mode.ariaLabel}
-                        className="flex items-start gap-3 rounded-xl border px-4 py-3 backdrop-blur-sm"
+                        className="flex items-start gap-3 rounded-xl border px-3.5 py-2.5 backdrop-blur-sm"
                         style={{
                           borderColor: "rgba(255,255,255,0.16)",
                           backgroundColor: "rgba(255,255,255,0.06)",
@@ -348,7 +544,7 @@ export default function IndustryBankingFinanceV2Page() {
                   </ul>
                 </div>
 
-                <div className="mt-6">
+                <div className="mt-4">
                   <p
                     className="text-[11px] uppercase tracking-[0.16em] text-white/55"
                     style={{
@@ -359,7 +555,7 @@ export default function IndustryBankingFinanceV2Page() {
                   >
                     Global delivery
                   </p>
-                  <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13px] sm:text-[13.5px]">
+                  <div className="mt-2 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13px] sm:text-[13.5px]">
                     <div className="group relative inline-flex items-center gap-1.5">
                       <span
                         aria-hidden="true"
@@ -459,10 +655,10 @@ export default function IndustryBankingFinanceV2Page() {
                   </div>
                 </div>
 
-                <div className="mt-7 flex flex-wrap gap-3">
+                <div className="mt-5 flex flex-wrap gap-3">
                   <Link
                     href="#contact"
-                    className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-[12.5px] uppercase tracking-[0.1em] transition-opacity hover:opacity-90 sm:text-[13.5px]"
+                    className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-[12px] uppercase tracking-[0.1em] transition-opacity hover:opacity-90 sm:text-[13px]"
                     style={{
                       color: NAVY,
                       fontFamily:
@@ -471,11 +667,11 @@ export default function IndustryBankingFinanceV2Page() {
                     }}
                   >
                     Request a Quote
-                    <ArrowRightIcon width={16} height={16} />
+                    <ArrowRightIcon width={14} height={14} />
                   </Link>
                   <Link
                     href="#contact"
-                    className="inline-flex items-center gap-2 rounded-full border-2 border-white/40 px-6 py-3 text-[12.5px] uppercase tracking-[0.1em] text-white transition-colors hover:bg-white/10 sm:text-[13.5px]"
+                    className="inline-flex items-center gap-2 rounded-full border-2 border-white/40 px-5 py-2.5 text-[12px] uppercase tracking-[0.1em] text-white transition-colors hover:bg-white/10 sm:text-[13px]"
                     style={{
                       fontFamily:
                         "'Riona Sans Bold', Helvetica, Arial, sans-serif",
@@ -508,7 +704,7 @@ export default function IndustryBankingFinanceV2Page() {
                       "'Riona Sans Light', Helvetica, Arial, sans-serif",
                   }}
                 >
-                  Banking and finance demands a different approach to learning.
+                  Why BFSI Workforce Development Needs a Different Approach.
                 </h2>
                 <p
                   className="mt-6 max-w-xl text-[16px] leading-[1.65] sm:text-[17px]"
@@ -518,16 +714,72 @@ export default function IndustryBankingFinanceV2Page() {
                       "'Riona Sans Light', Helvetica, Arial, sans-serif",
                   }}
                 >
-                  BFSI institutions face industry forces that move faster than
-                  annual planning cycles. Edstellar partners with banks,
-                  NBFCs, and insurance carriers to build capability at the
-                  speed of business change, with a Learning Velocity approach
-                  calibrated for regulated, multi-region environments. In
-                  this sector, that capacity is no longer aspirational, it is
-                  a competitive requirement.
+                  Banking, NBFCs, and insurance carriers run distributed,
+                  customer-facing, regulated workforces. Generic content
+                  libraries do not move that needle. Edstellar's instructor-led,
+                  role-based capability model is purpose-built for the way
+                  BFSI organisations actually scale.
                 </p>
+                <ul className="mt-6 space-y-4">
+                  {DIFFERENT_APPROACH_POINTS.map((p) => (
+                    <li key={p.title} className="flex items-start gap-3">
+                      <span
+                        aria-hidden="true"
+                        className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full"
+                        style={{ backgroundColor: LIME, color: NAVY }}
+                      >
+                        <svg
+                          width="13"
+                          height="13"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M5 13l4 4L19 7" />
+                        </svg>
+                      </span>
+                      <div>
+                        <p
+                          className="text-[15px] sm:text-[16px]"
+                          style={{
+                            color: NAVY,
+                            fontFamily:
+                              "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                            fontWeight: 700,
+                          }}
+                        >
+                          {p.title}
+                        </p>
+                        <p
+                          className="mt-1 text-[13.5px] leading-[1.55] sm:text-[14.5px]"
+                          style={{
+                            color: BODY,
+                            fontFamily:
+                              "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                          }}
+                        >
+                          {p.body}
+                        </p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
               <div className="lg:col-span-6">
+                <p
+                  className="mb-4 text-[11px] uppercase tracking-[0.16em]"
+                  style={{
+                    color: MUTED,
+                    fontFamily:
+                      "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                    fontWeight: 700,
+                  }}
+                >
+                  BFSI workforce capability, measured
+                </p>
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   {APPROACH_STATS.map((s) => (
                     <div
@@ -536,7 +788,7 @@ export default function IndustryBankingFinanceV2Page() {
                       style={{ borderColor: BORDER }}
                     >
                       <p
-                        className="text-[36px] leading-none sm:text-[40px]"
+                        className="text-[36px] leading-none sm:text-[42px]"
                         style={{
                           color: NAVY,
                           fontFamily:
@@ -546,11 +798,11 @@ export default function IndustryBankingFinanceV2Page() {
                         {s.stat}
                       </p>
                       <p
-                        className="mt-3 text-[13px] leading-[1.5] sm:text-[14px]"
+                        className="mt-3 text-[13.5px] leading-[1.45] sm:text-[14.5px]"
                         style={{
                           color: BODY,
                           fontFamily:
-                            "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                            "'Riona Sans Regular', Helvetica, Arial, sans-serif",
                         }}
                       >
                         {s.label}
@@ -559,15 +811,17 @@ export default function IndustryBankingFinanceV2Page() {
                   ))}
                 </div>
                 <p
-                  className="mt-5 text-[12px] leading-[1.6]"
+                  className="mt-5 text-[12.5px] leading-[1.6]"
                   style={{
                     color: MUTED,
                     fontFamily:
                       "'Riona Sans Light', Helvetica, Arial, sans-serif",
                   }}
                 >
-                  Indicative ranges from Edstellar BFSI engagements 2023–2025.
-                  Verify with your Edstellar advisor before citing.
+                  Instructor-led delivery, role-based curriculum, multi-location
+                  rollout. Indicative ranges from Edstellar BFSI engagements
+                  2023&ndash;2025. Verify with your Edstellar advisor before
+                  citing.
                 </p>
               </div>
             </div>
@@ -593,8 +847,19 @@ export default function IndustryBankingFinanceV2Page() {
                 </div>
               </div>
               <div className="lg:col-span-7">
+                <p
+                  className="text-[11px] uppercase tracking-[0.18em]"
+                  style={{
+                    color: MUTED,
+                    fontFamily:
+                      "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                    fontWeight: 700,
+                  }}
+                >
+                  Key Workforce Challenges
+                </p>
                 <h2
-                  className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
+                  className="mt-3 text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
                   style={{
                     color: NAVY,
                     fontFamily:
@@ -611,40 +876,47 @@ export default function IndustryBankingFinanceV2Page() {
                       "'Riona Sans Light', Helvetica, Arial, sans-serif",
                   }}
                 >
-                  Senior leaders across the banking and financial industry
-                  consistently deal with:
+                  CHROs, L&amp;D heads, and business leaders consistently see
+                  the same five gaps when capability does not move at the speed
+                  of the business.
                 </p>
-                <ul className="mt-6 space-y-4">
+                <ul className="mt-6 space-y-3">
                   {PAIN_POINTS.map((p) => (
-                    <li key={p} className="flex items-start gap-3">
-                      <span
-                        aria-hidden="true"
-                        className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full"
-                        style={{ backgroundColor: LIME, color: NAVY }}
-                      >
-                        <svg
-                          width="13"
-                          height="13"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="3"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
+                    <li
+                      key={p.challenge}
+                      className="rounded-xl border bg-white p-4 sm:p-5"
+                      style={{ borderColor: BORDER }}
+                    >
+                      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+                        <p
+                          className="text-[14.5px] sm:text-[15.5px]"
+                          style={{
+                            color: NAVY,
+                            fontFamily:
+                              "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                            fontWeight: 700,
+                          }}
                         >
-                          <path d="M5 13l4 4L19 7" />
-                        </svg>
-                      </span>
-                      <p
-                        className="text-[14.5px] leading-[1.6] sm:text-[15.5px]"
-                        style={{
-                          color: BODY,
-                          fontFamily:
-                            "'Riona Sans Light', Helvetica, Arial, sans-serif",
-                        }}
-                      >
-                        {p}
-                      </p>
+                          {p.challenge}
+                        </p>
+                        <span
+                          aria-hidden="true"
+                          className="hidden text-[14px] sm:inline"
+                          style={{ color: MUTED }}
+                        >
+                          →
+                        </span>
+                        <p
+                          className="text-[13.5px] leading-[1.5] sm:text-[14.5px]"
+                          style={{
+                            color: BODY,
+                            fontFamily:
+                              "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                          }}
+                        >
+                          {p.impact}
+                        </p>
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -657,8 +929,8 @@ export default function IndustryBankingFinanceV2Page() {
                   }}
                 >
                   These are not training problems. They are performance and
-                  readiness challenges that stem from capability gaps.
-                  Edstellar treats them that way.
+                  readiness gaps Edstellar closes with instructor-led,
+                  role-based capability development at scale.
                 </p>
                 <Link
                   href="#contact"
@@ -678,7 +950,7 @@ export default function IndustryBankingFinanceV2Page() {
           </div>
         </section>
 
-        {/* Section 4 — How we serve */}
+        {/* Section 4 — Capability Areas */}
         <section
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
@@ -693,7 +965,7 @@ export default function IndustryBankingFinanceV2Page() {
                     "'Riona Sans Light', Helvetica, Arial, sans-serif",
                 }}
               >
-                How Edstellar serves banks, capital markets, and insurers.
+                Capability Areas We Build for BFSI Organizations.
               </h2>
               <p
                 className="mt-5 text-[16px] leading-[1.6] sm:text-[18px]"
@@ -703,8 +975,9 @@ export default function IndustryBankingFinanceV2Page() {
                     "'Riona Sans Light', Helvetica, Arial, sans-serif",
                 }}
               >
-                Solutions purpose-built for the realities of regulated, complex,
-                multi-region BFSI institutions.
+                Five capability clusters delivered as instructor-led,
+                role-based programs and customised to your products,
+                stack, and SOPs.
               </p>
             </div>
 
@@ -787,7 +1060,237 @@ export default function IndustryBankingFinanceV2Page() {
           </div>
         </section>
 
-        {/* Section 5 — Our approach: speed, relevance, quality */}
+        {/* Section 5 — Role-Based Learning Journeys */}
+        <section className="bg-white py-16 md:py-20">
+          <div className="mtk-page-center">
+            <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between md:gap-8">
+              <div className="max-w-3xl">
+                <h2
+                  className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
+                  style={{
+                    color: NAVY,
+                    fontFamily:
+                      "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                  }}
+                >
+                  Role-Based Learning Journeys.
+                </h2>
+                <p
+                  className="mt-5 text-[16px] leading-[1.6] sm:text-[18px]"
+                  style={{
+                    color: BODY,
+                    fontFamily:
+                      "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                  }}
+                >
+                  How distinct BFSI roles progress through Edstellar&apos;s
+                  instructor-led, customised capability programs, with each
+                  journey calibrated to the role&apos;s daily decisions, KPIs,
+                  and customer interactions.
+                </p>
+              </div>
+              <Link
+                href="/#learning-paths"
+                className="group/cta inline-flex shrink-0 items-center gap-2 self-start rounded-full px-5 py-3 text-[12.5px] uppercase tracking-[0.1em] text-white transition-opacity hover:opacity-90 sm:text-[13px] md:self-end"
+                style={{
+                  backgroundColor: NAVY,
+                  fontFamily:
+                    "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                  fontWeight: 600,
+                }}
+              >
+                View all learning paths
+                <ArrowRightIcon
+                  width={14}
+                  height={14}
+                  className="transition-transform group-hover/cta:translate-x-0.5"
+                />
+              </Link>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+              {ROLE_JOURNEYS.map((r) => (
+                <article
+                  key={r.role}
+                  className="flex flex-col rounded-2xl border bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-md"
+                  style={{ borderColor: BORDER }}
+                >
+                  <div className="flex items-center gap-3">
+                    <span
+                      aria-hidden="true"
+                      className="inline-flex h-9 w-9 items-center justify-center rounded-full"
+                      style={{ backgroundColor: LIME, color: NAVY }}
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <circle cx="12" cy="8" r="3.5" />
+                        <path d="M5 21a7 7 0 0 1 14 0" />
+                      </svg>
+                    </span>
+                    <h3
+                      className="text-[18px] sm:text-[19px]"
+                      style={{
+                        color: NAVY,
+                        fontFamily:
+                          "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                        fontWeight: 700,
+                      }}
+                    >
+                      {r.role}
+                    </h3>
+                  </div>
+                  <p
+                    className="mt-3 text-[13px] leading-[1.5] sm:text-[13.5px]"
+                    style={{
+                      color: MUTED,
+                      fontFamily:
+                        "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                    }}
+                  >
+                    {r.goals}
+                  </p>
+                  <ul className="mt-4 space-y-2.5">
+                    {r.modules.map((m) => (
+                      <li key={m} className="flex items-start gap-2">
+                        <span
+                          aria-hidden="true"
+                          className="mt-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
+                          style={{ backgroundColor: NAVY }}
+                        />
+                        <p
+                          className="text-[13px] leading-[1.5] sm:text-[13.5px]"
+                          style={{
+                            color: BODY,
+                            fontFamily:
+                              "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                          }}
+                        >
+                          {m}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href={r.href}
+                    aria-label={`View Learning Path for ${r.role}`}
+                    className="group/cta mt-auto inline-flex items-center gap-1.5 self-start pt-6 text-[12.5px] uppercase tracking-[0.1em] transition-colors"
+                    style={{
+                      color: NAVY,
+                      fontFamily:
+                        "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                      fontWeight: 700,
+                    }}
+                  >
+                    View Learning Path
+                    <ArrowRightIcon
+                      width={14}
+                      height={14}
+                      className="transition-transform group-hover/cta:translate-x-0.5"
+                    />
+                  </Link>
+                </article>
+              ))}
+            </div>
+
+            <BankingFinanceCoursesCarousel />
+          </div>
+        </section>
+
+        {/* Section 6 — Training Delivery at Scale */}
+        <section
+          className="py-16 md:py-20"
+          style={{ backgroundColor: "#F7F8FC" }}
+        >
+          <div className="mtk-page-center">
+            <div className="max-w-3xl">
+              <h2
+                className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
+                style={{
+                  color: NAVY,
+                  fontFamily:
+                    "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                }}
+              >
+                Training Delivery Across Distributed BFSI Teams.
+              </h2>
+              <p
+                className="mt-5 text-[16px] leading-[1.6] sm:text-[18px]"
+                style={{
+                  color: BODY,
+                  fontFamily:
+                    "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                }}
+              >
+                Banking is branch-heavy, multi-region, and multi-language.
+                Edstellar runs instructor-led, customised programs across
+                every location, in every language, to a single capability
+                standard.
+              </p>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {SCALE_PILLARS.map((p) => (
+                <article
+                  key={p.title}
+                  className="rounded-2xl border bg-white p-6"
+                  style={{ borderColor: BORDER }}
+                >
+                  <div className="flex items-center gap-3">
+                    <span
+                      aria-hidden="true"
+                      className="inline-flex h-8 w-8 items-center justify-center rounded-full"
+                      style={{ backgroundColor: LIME, color: NAVY }}
+                    >
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                    <h3
+                      className="text-[16px] sm:text-[17px]"
+                      style={{
+                        color: NAVY,
+                        fontFamily:
+                          "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                        fontWeight: 700,
+                      }}
+                    >
+                      {p.title}
+                    </h3>
+                  </div>
+                  <p
+                    className="mt-3 text-[13.5px] leading-[1.55] sm:text-[14.5px]"
+                    style={{
+                      color: BODY,
+                      fontFamily:
+                        "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                    }}
+                  >
+                    {p.body}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section 7 — Workforce Capability Development Approach (process) */}
         <section
           className="py-16 md:py-20"
           style={{ backgroundColor: NAVY }}
@@ -801,7 +1304,7 @@ export default function IndustryBankingFinanceV2Page() {
                     "'Riona Sans Light', Helvetica, Arial, sans-serif",
                 }}
               >
-                Our approach: speed, relevance, and quality.
+                Our Workforce Capability Development Approach.
               </h2>
               <p
                 className="mt-5 text-[16px] leading-[1.6] text-white/85 sm:text-[18px]"
@@ -810,49 +1313,60 @@ export default function IndustryBankingFinanceV2Page() {
                     "'Riona Sans Light', Helvetica, Arial, sans-serif",
                 }}
               >
-                Rooted in Learning Velocity, Edstellar's approach helps your
-                BFSI workforce adapt faster than market conditions change.
+                A five-step process Edstellar runs end-to-end, from skill-gap
+                diagnosis to board-ready performance reporting.
               </p>
             </div>
 
-            <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
-              {PILLARS.map((p) => (
-                <article
-                  key={p.title}
-                  className="rounded-2xl border p-7"
-                  style={{
-                    borderColor: "rgba(255,255,255,0.12)",
-                    backgroundColor: "rgba(255,255,255,0.05)",
-                  }}
-                >
-                  <div className="flex items-center gap-3">
-                    <span
-                      aria-hidden="true"
-                      className="inline-flex h-2.5 w-2.5 rounded-full"
-                      style={{ backgroundColor: LIME }}
-                    />
-                    <h3
-                      className="text-[20px] sm:text-[22px] text-white"
-                      style={{
-                        fontFamily:
-                          "'Riona Sans Regular', Helvetica, Arial, sans-serif",
-                      }}
-                    >
-                      {p.title}
-                    </h3>
-                  </div>
+            <ol className="relative mt-12 grid grid-cols-1 gap-6 md:grid-cols-5 md:gap-3 lg:gap-4">
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute hidden md:block"
+                style={{
+                  top: "20px",
+                  left: "10%",
+                  right: "10%",
+                  height: "2px",
+                  backgroundImage:
+                    "repeating-linear-gradient(to right, rgba(197,232,38,0.5) 0 6px, transparent 6px 12px)",
+                }}
+              />
+              {PROCESS_STEPS.map((s) => (
+                <li key={s.num} className="relative z-10 text-center">
+                  <span
+                    className="mx-auto inline-flex h-10 w-10 items-center justify-center rounded-full text-[14px]"
+                    style={{
+                      backgroundColor: LIME,
+                      color: NAVY,
+                      fontFamily:
+                        "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                      fontWeight: 700,
+                    }}
+                  >
+                    {s.num}
+                  </span>
+                  <h3
+                    className="mt-4 text-[15px] text-white sm:text-[16px]"
+                    style={{
+                      fontFamily:
+                        "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                      fontWeight: 700,
+                    }}
+                  >
+                    {s.title}
+                  </h3>
                   <p
-                    className="mt-4 text-[14px] leading-[1.65] text-white/80 sm:text-[15px]"
+                    className="mx-auto mt-2 max-w-[220px] text-[13px] leading-[1.5] text-white/75 sm:text-[13.5px]"
                     style={{
                       fontFamily:
                         "'Riona Sans Light', Helvetica, Arial, sans-serif",
                     }}
                   >
-                    {p.body}
+                    {s.body}
                   </p>
-                </article>
+                </li>
               ))}
-            </div>
+            </ol>
 
             <div className="mt-12 text-center">
               <Link
@@ -865,14 +1379,14 @@ export default function IndustryBankingFinanceV2Page() {
                   fontWeight: 600,
                 }}
               >
-                Talk to an expert
+                Get a workforce assessment
                 <ArrowRightIcon width={16} height={16} />
               </Link>
             </div>
           </div>
         </section>
 
-        {/* Section 6 — Proven results */}
+        {/* Section 8 — Proven results: featured case + key outcomes + mini cards */}
         <section
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
@@ -886,16 +1400,39 @@ export default function IndustryBankingFinanceV2Page() {
                   "'Riona Sans Light', Helvetica, Arial, sans-serif",
               }}
             >
-              Proven results in BFSI.
+              Proven Results in BFSI.
             </h2>
+            <p
+              className="mt-5 max-w-3xl text-[16px] leading-[1.6] sm:text-[17px]"
+              style={{
+                color: BODY,
+                fontFamily:
+                  "'Riona Sans Light', Helvetica, Arial, sans-serif",
+              }}
+            >
+              Indicative case-study patterns drawn from Edstellar engagements
+              with global banks, NBFCs, capital markets, and insurance
+              carriers. Named cases publish as customers approve disclosure.
+            </p>
 
             <div className="mt-8 grid items-stretch gap-6 lg:grid-cols-12 lg:gap-8">
               <article
                 className="rounded-2xl border bg-white p-7 sm:p-9 md:p-10 lg:col-span-7"
                 style={{ borderColor: BORDER }}
               >
+                <p
+                  className="text-[11px] uppercase tracking-[0.16em]"
+                  style={{
+                    color: MUTED,
+                    fontFamily:
+                      "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                    fontWeight: 700,
+                  }}
+                >
+                  Featured case study
+                </p>
                 <h3
-                  className="text-[22px] leading-[1.2] sm:text-[26px] lg:text-[30px]"
+                  className="mt-3 text-[22px] leading-[1.2] sm:text-[26px] lg:text-[30px]"
                   style={{
                     color: NAVY,
                     fontFamily:
@@ -915,62 +1452,63 @@ export default function IndustryBankingFinanceV2Page() {
                 >
                   A global BFSI institution needed to assess how well 18 legacy
                   risk-and-compliance programs reflected a newly introduced
-                  governance framework. The review was theoretically possible,
-                  but consumed enormous SME capacity, introduced inconsistency
-                  across reviewers, and pushed timelines well beyond what
-                  stakeholders could accept.
-                </p>
-                <p
-                  className="mt-4 text-[14.5px] leading-[1.65] sm:text-[15.5px]"
-                  style={{
-                    color: BODY,
-                    fontFamily:
-                      "'Riona Sans Light', Helvetica, Arial, sans-serif",
-                  }}
-                >
-                  Edstellar used the platform and the practice together to
-                  build a digital SME anchored on the institution's own
-                  governance content, interpreting the framework conceptually,
-                  not just matching keywords. Human SMEs validated early
-                  outputs before scaling, ensuring every recommendation was
-                  accurate, defensible, and aligned to the institution's
-                  precise language and risk taxonomy.
+                  governance framework. Edstellar used the platform and the
+                  practice together to build a digital SME anchored on the
+                  institution&apos;s own governance content, interpreting the
+                  framework conceptually, not just matching keywords. Human
+                  SMEs validated early outputs before scaling.
                 </p>
 
-                <ul className="mt-6 space-y-3">
-                  {CASE_BULLETS.map((b) => (
-                    <li key={b} className="flex items-start gap-3">
-                      <span
-                        aria-hidden="true"
-                        className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full"
-                        style={{ backgroundColor: LIME, color: NAVY }}
-                      >
-                        <svg
-                          width="13"
-                          height="13"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="3"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
+                <div
+                  className="mt-6 rounded-xl p-5 sm:p-6"
+                  style={{ backgroundColor: NAVY_BG_5 }}
+                >
+                  <p
+                    className="text-[11px] uppercase tracking-[0.16em]"
+                    style={{
+                      color: NAVY,
+                      fontFamily:
+                        "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                      fontWeight: 700,
+                    }}
+                  >
+                    Key outcomes
+                  </p>
+                  <ul className="mt-4 space-y-3">
+                    {CASE_BULLETS.map((b) => (
+                      <li key={b} className="flex items-start gap-3">
+                        <span
+                          aria-hidden="true"
+                          className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full"
+                          style={{ backgroundColor: LIME, color: NAVY }}
                         >
-                          <path d="M5 13l4 4L19 7" />
-                        </svg>
-                      </span>
-                      <p
-                        className="text-[14px] leading-[1.55] sm:text-[15px]"
-                        style={{
-                          color: BODY,
-                          fontFamily:
-                            "'Riona Sans Light', Helvetica, Arial, sans-serif",
-                        }}
-                      >
-                        {b}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
+                          <svg
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="3"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M5 13l4 4L19 7" />
+                          </svg>
+                        </span>
+                        <p
+                          className="text-[14px] leading-[1.55] sm:text-[15px]"
+                          style={{
+                            color: BODY,
+                            fontFamily:
+                              "'Riona Sans Regular', Helvetica, Arial, sans-serif",
+                          }}
+                        >
+                          {b}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
                 <Link
                   href="#contact"
@@ -985,38 +1523,136 @@ export default function IndustryBankingFinanceV2Page() {
                   Read the case study
                   <ArrowRightIcon width={16} height={16} />
                 </Link>
-
-                <p
-                  className="mt-6 text-[12px] leading-[1.55]"
-                  style={{
-                    color: MUTED,
-                    fontFamily:
-                      "'Riona Sans Light', Helvetica, Arial, sans-serif",
-                  }}
-                >
-                  Indicative case-study pattern from Edstellar BFSI
-                  engagements. Named cases publish as customers approve
-                  disclosure.
-                </p>
               </article>
 
-              <div className="lg:col-span-5">
-                <div
-                  className="relative h-full overflow-hidden rounded-2xl border shadow-sm"
-                  style={{
-                    borderColor: BORDER,
-                    minHeight: "320px",
-                  }}
-                >
-                  <Image
-                    src="/images/cyber/course-grc.jpg"
-                    alt="BFSI risk-and-compliance auditor reviewing a governance audit checklist during an Edstellar capability program"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                    className="object-cover"
-                  />
-                </div>
+              <div className="grid gap-6 lg:col-span-5">
+                {CASE_STUDIES_MINI.map((c) => (
+                  <article
+                    key={c.title}
+                    className="rounded-2xl border bg-white p-6"
+                    style={{ borderColor: BORDER }}
+                  >
+                    <span
+                      className="inline-block rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.12em]"
+                      style={{
+                        backgroundColor: LIME,
+                        color: NAVY,
+                        fontFamily:
+                          "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                        fontWeight: 700,
+                      }}
+                    >
+                      {c.badge}
+                    </span>
+                    <h3
+                      className="mt-3 text-[17px] leading-[1.25] sm:text-[18px]"
+                      style={{
+                        color: NAVY,
+                        fontFamily:
+                          "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                        fontWeight: 700,
+                      }}
+                    >
+                      {c.title}
+                    </h3>
+                    <p
+                      className="mt-2 text-[13.5px] leading-[1.55] sm:text-[14px]"
+                      style={{
+                        color: BODY,
+                        fontFamily:
+                          "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                      }}
+                    >
+                      {c.outcome}
+                    </p>
+                  </article>
+                ))}
               </div>
+            </div>
+
+            <BankingFinanceTestimonialsCarousel />
+          </div>
+        </section>
+
+        {/* Section 9 — Business Outcomes */}
+        <section className="bg-white py-16 md:py-20">
+          <div className="mtk-page-center">
+            <div className="max-w-3xl">
+              <h2
+                className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
+                style={{
+                  color: NAVY,
+                  fontFamily:
+                    "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                }}
+              >
+                Business Impact for BFSI Organizations.
+              </h2>
+              <p
+                className="mt-5 text-[16px] leading-[1.6] sm:text-[18px]"
+                style={{
+                  color: BODY,
+                  fontFamily:
+                    "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                }}
+              >
+                Edstellar programs are designed against the metrics your CHRO,
+                CFO, and business leaders already report on, not generic
+                course-completion stats.
+              </p>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {BUSINESS_OUTCOMES.map((o) => (
+                <article
+                  key={o.title}
+                  className="rounded-2xl border bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-md"
+                  style={{ borderColor: BORDER }}
+                >
+                  <div className="flex items-center gap-3">
+                    <span
+                      aria-hidden="true"
+                      className="inline-flex h-8 w-8 items-center justify-center rounded-full"
+                      style={{ backgroundColor: LIME, color: NAVY }}
+                    >
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M3 17l6-6 4 4 8-8" />
+                        <path d="M14 7h7v7" />
+                      </svg>
+                    </span>
+                    <h3
+                      className="text-[16px] sm:text-[17px]"
+                      style={{
+                        color: NAVY,
+                        fontFamily:
+                          "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                        fontWeight: 700,
+                      }}
+                    >
+                      {o.title}
+                    </h3>
+                  </div>
+                  <p
+                    className="mt-3 text-[13.5px] leading-[1.55] sm:text-[14.5px]"
+                    style={{
+                      color: BODY,
+                      fontFamily:
+                        "'Riona Sans Light', Helvetica, Arial, sans-serif",
+                    }}
+                  >
+                    {o.body}
+                  </p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
@@ -1058,10 +1694,50 @@ export default function IndustryBankingFinanceV2Page() {
                   }}
                 >
                   Edstellar has helped BFSI institutions close capability
-                  gaps, accelerate compliance readiness, and prove ROI for more
-                  than 60 years of combined practice. Tell us about what looks
-                  like ROI for your organisation.
+                  gaps, accelerate compliance readiness, and prove ROI for
+                  more than 60 years of combined practice. Pick the entry
+                  point that fits your conversation today.
                 </p>
+
+                <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                  <Link
+                    href="#contact"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-[12.5px] uppercase tracking-[0.1em] transition-opacity hover:opacity-90 sm:text-[13px]"
+                    style={{
+                      color: NAVY,
+                      fontFamily:
+                        "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                      fontWeight: 600,
+                    }}
+                  >
+                    Request a Custom Training Plan
+                    <ArrowRightIcon width={14} height={14} />
+                  </Link>
+                  <Link
+                    href="#contact"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/40 px-5 py-3 text-[12.5px] uppercase tracking-[0.1em] text-white transition-colors hover:bg-white/10 sm:text-[13px]"
+                    style={{
+                      fontFamily:
+                        "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                      fontWeight: 600,
+                    }}
+                  >
+                    Talk to a BFSI Expert
+                    <ArrowRightIcon width={14} height={14} />
+                  </Link>
+                  <Link
+                    href="#contact"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/40 px-5 py-3 text-[12.5px] uppercase tracking-[0.1em] text-white transition-colors hover:bg-white/10 sm:text-[13px]"
+                    style={{
+                      fontFamily:
+                        "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                      fontWeight: 600,
+                    }}
+                  >
+                    Get a Workforce Assessment
+                    <ArrowRightIcon width={14} height={14} />
+                  </Link>
+                </div>
               </div>
 
               <div className="lg:col-span-7">
