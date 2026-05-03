@@ -251,7 +251,7 @@ function PathRow({
   const ringBg = variant === "reactive" ? RED_BG : LIME_BG;
   const sectionBg = variant === "reactive" ? RED_PANEL : LIME_PANEL;
   const arrowMarkerId =
-    variant === "reactive" ? "tp-arrow-red" : "tp-arrow-navy";
+    variant === "reactive" ? "tp2-arrow-red" : "tp2-arrow-navy";
 
   return (
     <div
@@ -457,7 +457,7 @@ function PathRow({
   );
 }
 
-export function EdstellarTwoPaths() {
+export function EdstellarTwoPathsV2() {
   return (
     <section className="bg-white py-16 md:py-20">
       <div className="mtk-page-center">
@@ -480,9 +480,10 @@ export function EdstellarTwoPaths() {
                 "'Riona Sans Light', Helvetica, Arial, sans-serif",
             }}
           >
-            See how Edstellar&apos;s structured SOC analyst journey replaces
-            the reactive firefighting most security teams live with today,
-            and turns it into a proactive, business-aligned operating model.
+            See how Edstellar&apos;s structured SOC analyst learning journey
+            replaces the reactive firefighting most security teams live with
+            today, and turns it into a proactive, business-aligned operating
+            model the board can read.
           </p>
         </div>
 

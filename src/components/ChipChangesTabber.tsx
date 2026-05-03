@@ -105,7 +105,7 @@ const LEARNING_PATHS: LearningPath[] = [
       "From log analysis to incident triage, Security+, CySA+, Splunk and SIEM/SOAR fundamentals build the L1→L3 SOC career ladder.",
     image: "/images/cyber/path-soc.jpg",
     imageAlt: "SOC analyst",
-    href: "/learning-paths/soc-analyst",
+    href: "/learning-paths/soc-analyst-v2",
   },
   {
     label: "PENETRATION TESTER",

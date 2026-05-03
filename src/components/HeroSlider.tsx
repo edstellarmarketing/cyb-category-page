@@ -10,7 +10,9 @@ type HeroSlide = {
   titleLine2: string;
   description: string;
   primaryCta: string;
+  primaryHref?: string;
   secondaryCta: string;
+  secondaryHref?: string;
   image: string;
   imageAlt: string;
   stripLabel: string;
@@ -38,6 +40,7 @@ const SLIDES: HeroSlide[] = [
     description:
       "BFSI leaders rely on Edstellar's instructor-led cybersecurity training to upskill SOC, pen-test and GRC employees on PCI-DSS, RBI / SEBI guidelines, fraud analytics and Zero-Trust banking. Cybersecurity training programs designed for corporate security teams, delivered virtually or on-site, with hands-on labs and vendor-certified instructors.",
     primaryCta: "Explore BFSI Cybersecurity",
+    primaryHref: "/industries/banking-finance-v2",
     secondaryCta: "Talk to an Expert",
     image: "/images/cyber/hero-industry-bfsi.jpg",
     imageAlt: "BFSI cybersecurity training",
@@ -175,7 +178,7 @@ export function HeroSlider() {
             </p>
             <div className="flex flex-wrap gap-3">
               <a
-                href="#contact"
+                href={slide.primaryHref ?? "#contact"}
                 className="group inline-flex items-center gap-2 rounded-full bg-[#6366F1] px-6 py-2.5 text-[14px] uppercase tracking-[0.08em] text-white transition-colors hover:bg-[#4F46E5]"
                 style={{ fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif", fontWeight: 600 }}
               >
@@ -187,7 +190,7 @@ export function HeroSlider() {
                 />
               </a>
               <a
-                href="#contact"
+                href={slide.secondaryHref ?? "#contact"}
                 className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-2.5 text-[14px] uppercase tracking-[0.08em] text-white transition-colors hover:bg-white hover:text-black"
                 style={{ fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif", fontWeight: 600 }}
               >
