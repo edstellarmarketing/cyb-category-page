@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@/components/icons";
 
 const RED = "#EF6B51";
+const RED_FADED = "#B47D6F";
 const RED_BG = "#FFF1ED";
 const RED_PANEL = "#FFF7F5";
 const RED_BORDER = "#FCD2C5";
@@ -15,6 +16,7 @@ const NAVY = "#1B1D52";
 const BORDER = "#E3E6F0";
 const BODY = "#374151";
 const MUTED = "#6B7280";
+const TITLE_MUTED = "#62657F";
 
 type PathNode = {
   title: string;
@@ -25,14 +27,14 @@ type PathNode = {
 
 const CURRENT_NODES: PathNode[] = [
   {
-    title: "Skill gaps across branches",
+    title: "Skill gaps",
     caption: "Inconsistent fundamentals",
     hoverLabel: "What is broken",
     hoverBody:
       "Frontline staff carry uneven product, service, and risk fundamentals between regions.",
   },
   {
-    title: "Low frontline productivity",
+    title: "Low productivity",
     caption: "Time-to-competency drag",
     hoverLabel: "What is broken",
     hoverBody:
@@ -46,7 +48,7 @@ const CURRENT_NODES: PathNode[] = [
       "NPS and CSAT vary materially between branches, channels, and contact centres.",
   },
   {
-    title: "Training disconnected from KPIs",
+    title: "Training disconnected",
     caption: "Unclear ROI on learning",
     hoverLabel: "What is broken",
     hoverBody:
@@ -56,35 +58,35 @@ const CURRENT_NODES: PathNode[] = [
 
 const OPTIMIZED_NODES: PathNode[] = [
   {
-    title: "Assess Workforce Skills",
+    title: "Assess Skills",
     caption: "Diagnose current state",
     hoverLabel: "What Edstellar does",
     hoverBody:
       "Structured assessments and stakeholder interviews map gaps across roles, branches, and lines of business.",
   },
   {
-    title: "Map Role-Based Capabilities",
+    title: "Map Capabilities",
     caption: "Future-state framework",
     hoverLabel: "What Edstellar does",
     hoverBody:
       "Competency framework calibrated to BFSI roles, regulatory regime, and the business KPIs your board reads.",
   },
   {
-    title: "Design Learning Journeys",
-    caption: "Customised + role-based",
+    title: "Design Journeys",
+    caption: "Role-based design",
     hoverLabel: "What Edstellar does",
     hoverBody:
       "Instructor-led journeys blending live sessions, labs, and reinforcement, customised to your stack and SOPs.",
   },
   {
-    title: "Deliver Training at Scale",
-    caption: "Multi-location, 10 languages",
+    title: "Deliver at Scale",
+    caption: "10 languages, 100+ countries",
     hoverLabel: "What Edstellar does",
     hoverBody:
       "Cohort-based instructor-led delivery across branches and regions, coordinated by a single Edstellar program manager.",
   },
   {
-    title: "Track Performance Impact",
+    title: "Track Impact",
     caption: "Board-ready KPIs",
     hoverLabel: "What Edstellar does",
     hoverBody:
@@ -236,18 +238,25 @@ function PathRow({
   panelTitle,
   panelEyebrow,
 }: RowProps) {
-  const accent = variant === "current" ? RED : NAVY;
-  const ringBg = variant === "current" ? RED_BG : LIME_BG;
-  const sectionBg = variant === "current" ? RED_PANEL : LIME_PANEL;
-  const sectionBorder = variant === "current" ? RED_BORDER : LIME_BORDER;
-  const arrowMarkerId =
-    variant === "current" ? "bfsi-arrow-red" : "bfsi-arrow-navy";
-  const dashArray = variant === "current" ? "4 6" : "2 5";
-  const Icon = variant === "current" ? CurrentIcon : OptimizedIcon;
+  const isCurrent = variant === "current";
+  const accent = isCurrent ? RED_FADED : NAVY;
+  const headerDot = isCurrent ? RED : NAVY;
+  const titleColor = isCurrent ? TITLE_MUTED : NAVY;
+  const captionColor = isCurrent ? "#9CA3AF" : MUTED;
+  const ringBg = isCurrent ? "#FBEFEC" : LIME_BG;
+  const sectionBg = isCurrent ? RED_PANEL : LIME_PANEL;
+  const sectionBorder = isCurrent ? RED_BORDER : LIME_BORDER;
+  const arrowMarkerId = isCurrent ? "bfsi-arrow-red" : "bfsi-arrow-navy";
+  const dashArray = isCurrent ? "5 12" : "2 5";
+  const lineOpacity = isCurrent ? 0.4 : 0.85;
+  const iconOpacity = isCurrent ? 0.75 : 1;
+  const Icon = isCurrent ? CurrentIcon : OptimizedIcon;
 
   return (
     <div
-      className="rounded-2xl border p-6 sm:p-8"
+      className={`rounded-2xl border p-6 sm:p-8 ${
+        isCurrent ? "bfsi-card-current" : "bfsi-card-optimized"
+      }`}
       style={{
         borderColor: sectionBorder,
         backgroundColor: sectionBg,
@@ -257,7 +266,7 @@ function PathRow({
         <span
           aria-hidden="true"
           className="inline-block h-2.5 w-2.5 rounded-full"
-          style={{ backgroundColor: accent }}
+          style={{ backgroundColor: headerDot }}
         />
         <p
           className="text-[12px] uppercase tracking-[0.14em] sm:text-[13px]"
@@ -292,7 +301,8 @@ function PathRow({
       </div>
 
       <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-stretch lg:gap-6">
-        <div className="relative flex-1">
+        <div className="flex flex-1 flex-col justify-center">
+          <div className="relative w-full">
           {/* Horizontal track on md+ */}
           {variant === "current" ? (
             <svg
@@ -315,12 +325,13 @@ function PathRow({
                 </marker>
               </defs>
               <line
+                className="bfsi-line-current"
                 x1="0"
                 y1="6"
                 x2="990"
                 y2="6"
                 stroke={accent}
-                strokeOpacity="0.55"
+                strokeOpacity={lineOpacity}
                 strokeDasharray={dashArray}
                 strokeWidth="2"
                 markerEnd={`url(#${arrowMarkerId})`}
@@ -352,12 +363,13 @@ function PathRow({
                 </linearGradient>
               </defs>
               <path
+                className="bfsi-line-optimized"
                 d="M0 50 Q 250 -10 500 30 T 990 10"
                 fill="none"
                 stroke="url(#bfsi-arc-stroke)"
-                strokeOpacity="0.85"
+                strokeOpacity={lineOpacity}
                 strokeDasharray={dashArray}
-                strokeWidth="2"
+                strokeWidth="2.5"
                 markerEnd={`url(#${arrowMarkerId})`}
               />
             </svg>
@@ -374,7 +386,7 @@ function PathRow({
           />
 
           <ol
-            className={`relative grid grid-cols-1 gap-5 md:gap-2 lg:gap-3 ${
+            className={`relative grid grid-cols-1 gap-6 md:gap-6 lg:gap-10 ${
               variant === "current" ? "md:grid-cols-4" : "md:grid-cols-5"
             }`}
           >
@@ -389,6 +401,7 @@ function PathRow({
                     borderColor: accent,
                     color: accent,
                     backgroundColor: ringBg,
+                    opacity: iconOpacity,
                   }}
                 >
                   <Icon idx={i} />
@@ -399,9 +412,9 @@ function PathRow({
                   aria-label={`${n.title} — ${n.hoverLabel}: ${n.hoverBody}`}
                 >
                   <p
-                    className="text-[13px] leading-[1.25] sm:text-[13.5px]"
+                    className="text-[13.5px] leading-[1.25] sm:text-[14px]"
                     style={{
-                      color: NAVY,
+                      color: titleColor,
                       fontFamily:
                         "'Riona Sans Bold', Helvetica, Arial, sans-serif",
                       fontWeight: 700,
@@ -412,7 +425,7 @@ function PathRow({
                   <p
                     className="mt-1 text-[11.5px] leading-[1.35] sm:text-[12px]"
                     style={{
-                      color: MUTED,
+                      color: captionColor,
                       fontFamily:
                         "'Riona Sans Light', Helvetica, Arial, sans-serif",
                     }}
@@ -456,6 +469,7 @@ function PathRow({
               </li>
             ))}
           </ol>
+          </div>
         </div>
 
         <aside
@@ -515,11 +529,56 @@ function PathRow({
   );
 }
 
+const PATH_HOVER_CSS = `
+  .bfsi-line-current,
+  .bfsi-line-optimized {
+    transition: stroke-opacity 200ms ease, stroke-width 200ms ease;
+  }
+  @keyframes bfsi-flow-smooth {
+    from { stroke-dashoffset: 0; }
+    to { stroke-dashoffset: -28; }
+  }
+  @keyframes bfsi-flow-erratic {
+    0%   { stroke-dashoffset: 0; }
+    8%   { stroke-dashoffset: -12; }
+    16%  { stroke-dashoffset: -4; }
+    28%  { stroke-dashoffset: -28; }
+    36%  { stroke-dashoffset: -18; }
+    48%  { stroke-dashoffset: -44; }
+    56%  { stroke-dashoffset: -34; }
+    70%  { stroke-dashoffset: -62; }
+    78%  { stroke-dashoffset: -52; }
+    90%  { stroke-dashoffset: -78; }
+    100% { stroke-dashoffset: -68; }
+  }
+  .bfsi-card-current:hover .bfsi-line-current,
+  .bfsi-card-current:focus-within .bfsi-line-current {
+    animation: bfsi-flow-erratic 1.5s steps(8, end) infinite;
+    stroke-opacity: 0.85;
+    stroke-width: 2.5;
+  }
+  .bfsi-card-optimized:hover .bfsi-line-optimized,
+  .bfsi-card-optimized:focus-within .bfsi-line-optimized {
+    animation: bfsi-flow-smooth 1.8s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .bfsi-card-current:hover .bfsi-line-current,
+    .bfsi-card-current:focus-within .bfsi-line-current,
+    .bfsi-card-optimized:hover .bfsi-line-optimized,
+    .bfsi-card-optimized:focus-within .bfsi-line-optimized {
+      animation: none;
+      stroke-opacity: inherit;
+      stroke-width: inherit;
+    }
+  }
+`;
+
 export function BankingFinanceCapabilityPath() {
   return (
     <section className="bg-white py-16 md:py-20">
+      <style dangerouslySetInnerHTML={{ __html: PATH_HOVER_CSS }} />
       <div className="mtk-page-center">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="max-w-3xl">
           <h2
             className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
             style={{
@@ -542,7 +601,55 @@ export function BankingFinanceCapabilityPath() {
           </p>
         </div>
 
-        <div className="mt-12 space-y-6">
+        <div
+          className="mt-8 flex max-w-3xl items-start gap-3 rounded-2xl border-l-4 px-5 py-4 sm:items-center"
+          style={{
+            borderColor: LIME,
+            backgroundColor: "rgba(27, 29, 82, 0.04)",
+          }}
+        >
+          <span
+            aria-hidden="true"
+            className="mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full sm:mt-0"
+            style={{ backgroundColor: LIME, color: NAVY }}
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M5 12h14" />
+              <path d="M13 6l6 6-6 6" />
+            </svg>
+          </span>
+          <p
+            className="text-[14px] leading-[1.55] sm:text-[15px]"
+            style={{
+              color: NAVY,
+              fontFamily:
+                "'Riona Sans Regular', Helvetica, Arial, sans-serif",
+            }}
+          >
+            <strong
+              style={{
+                fontFamily:
+                  "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                fontWeight: 700,
+              }}
+            >
+              Here&apos;s how
+            </strong>{" "}
+            our capability-driven approach transforms BFSI workforce
+            performance.
+          </p>
+        </div>
+
+        <div className="mt-10 space-y-6">
           <PathRow
             variant="current"
             nodes={CURRENT_NODES}
