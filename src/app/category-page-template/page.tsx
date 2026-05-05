@@ -518,7 +518,7 @@ const SECTIONS: PageSection[] = [
     name: "CustomersPartners (Why Edstellar)",
     component: "CustomersPartners.tsx",
     goal:
-      "Answer the buyer's most important question: 'Why Edstellar over SANS, OffSec, EC-Council, Cybrary, or Infosec?' This section must land three convictions: (1) Edstellar builds programs, it doesn't sell catalog seats. (2) Edstellar vets trainers, not just lists them. (3) Edstellar tracks skill change, not just session completion. The global map and client logos provide geographic and social proof.",
+      "Answer the buyer's most important question: 'Why Edstellar over SANS, OffSec, EC-Council, Cybrary, or Infosec?' This section must land five convictions: (1) Edstellar builds programs, it doesn't sell catalog seats. (2) Edstellar vets trainers and offers a trial session before commitment. (3) Edstellar tracks skill change in CISO/board-level KPI language — MTTD, MTTR, vulnerability remediation rates. (4) Edstellar delivers at enterprise scale — parallel cohorts, multi-site, same week. (5) Every engagement has one named Learning Services Manager who owns it end to end. The global map, proof strip, and client logos provide geographic and social proof.",
     audience:
       "CISOs and Security Leaders comparing training vendors, L&D Heads finalizing a shortlist",
     fields: [
@@ -550,12 +550,12 @@ const SECTIONS: PageSection[] = [
       },
       {
         element: "Blockquote (positioning line)",
-        charLimit: "LOCKED",
-        keywords: [],
+        charLimit: "160–220",
+        keywords: ["MTTD", "CISO", "board", "skills delta", "vulnerability remediation"],
         notes:
-          "LOCKED: 'Most providers sell you a seat in a course. Edstellar builds the program, qualifies the trainer, and tracks the skill change your [teams] need.' Only update the bracket term.",
+          "First clause is LOCKED: 'Most providers sell you a seat in a course. Edstellar builds the program, qualifies the trainer, and delivers a post-program report your CISO can take to the board.' Second clause must name at least two board-level security KPIs: skills delta, MTTD improvement, MTTR, or vulnerability remediation rates. Do not use vague L&D language like 'tracks the skill change'. The blockquote must speak the language of a CISO presenting to a board.",
         example:
-          "Most providers sell you a seat in a course. Edstellar builds the program, qualifies the trainer, and tracks the skill change your security team needs.",
+          "Most providers sell you a seat in a course. Edstellar builds the program, qualifies the trainer, and delivers a post-program report your CISO can take to the board: skills delta, MTTD improvement, and vulnerability remediation rates.",
       },
       {
         element: "Pillar 1 — stat",
@@ -620,12 +620,21 @@ const SECTIONS: PageSection[] = [
       },
       {
         element: "Pillar 3 — copy",
-        charLimit: "115–165",
-        keywords: ["vetted", "multi-stage", "technical assessment", "certified"],
+        charLimit: "155–210",
+        keywords: ["vetted", "multi-stage", "technical assessment", "trial session", "interview"],
         notes:
-          "Explains the trainer vetting process. Must mention multi-stage vetting and client feedback.",
+          "Must cover the three-stage vetting process: technical assessment, live delivery evaluation, and ongoing client feedback. Must end with the trial session offer — 'Before committing your cohort, you can interview and run a trial session with your shortlisted trainer.' This sentence is the single most powerful trust signal for enterprise buyers and must not be omitted.",
         example:
-          "Every trainer passes a rigorous multi-stage vetting process: technical assessment, delivery evaluation, and ongoing client feedback. You get the curriculum and the caliber.",
+          "Every trainer passes a rigorous multi-stage vetting: technical assessment, live delivery evaluation, and ongoing client feedback. Before committing your cohort, you can interview and run a trial session with your shortlisted trainer.",
+      },
+      {
+        element: "Enterprise proof strip",
+        charLimit: "LOCKED structure — 4 items",
+        keywords: ["800+", "parallel cohorts", "Learning Services Manager", "Post-program", "skills delta"],
+        notes:
+          "A 4-cell horizontal strip rendered below the three pillars. Cells use gap-px grid to create thin divider lines. Content is LOCKED across all category pages — do not change stat values or labels. Each cell: stat (large indigo), label (navy, 13px), desc (gray, 12px). The four LOCKED cells are: (1) '800+' / 'Employees in a single rollout' / scale copy. (2) 'Multi-site' / 'Parallel cohorts, same week' / simultaneous delivery copy. (3) '1 dedicated' / 'Learning Services Manager' / accountability copy. (4) 'Post-program' / 'Delivery report for every cohort' / skills delta report copy. These address the four most common Fortune 100 procurement objections: Can you scale? Can you run multi-site? Who owns my engagement? How do you prove outcomes?",
+        example:
+          "800+ | Employees in a single rollout | Multi-site | Parallel cohorts, same week | 1 dedicated | Learning Services Manager | Post-program | Delivery report for every cohort",
       },
       {
         element: "Map caption",
@@ -645,11 +654,13 @@ const SECTIONS: PageSection[] = [
     rules: [
       "No eyebrow heading above the section heading. The H2 carries the section identity alone.",
       "Heading pattern is LOCKED — only update the category name.",
-      "Blockquote is LOCKED — only update the bracket term for the category.",
+      "Blockquote first clause is LOCKED. Second clause must name at least two board-level security KPIs (MTTD, MTTR, skills delta, vulnerability remediation rates). Never use vague L&D language like 'tracks the skill change' — the blockquote speaks to a CISO, not an L&D coordinator.",
       "Three pillars in this order: Programs (200+), Countries (100+), Trainers (1,500+).",
       "Pillar 1 sublabel LOCKED: 'Program design, not catalog selection'.",
       "Pillar 2 sublabel LOCKED: 'On-site or virtual, wherever you operate'.",
       "Pillar 3 sublabel LOCKED: 'Caliber you can trust'.",
+      "Pillar 3 copy MUST end with the trial session offer: 'Before committing your cohort, you can interview and run a trial session with your shortlisted trainer.' This is the single most effective trust signal for enterprise buyers and must not be omitted.",
+      "Enterprise proof strip is MANDATORY below the three pillars. Four LOCKED cells: 800+ scale, Multi-site parallel cohorts, 1 dedicated LSM, Post-program delivery report. Do not alter stat values or labels.",
       "ClientLogosStrip renders directly below the world map with no label.",
       "CTA button links to #contact and is center-aligned.",
       "Edstellar is NOT an accreditation body — never write 'Edstellar-certified' or 'certified by Edstellar'.",

@@ -25,88 +25,148 @@ const TRAINING_LOCATIONS: TrainingLocation[] = [
   { label: "Melbourne, Australia", x: 85.5, y: 82 },
 ];
 
+const TRAINER_AVATARS = [
+  { src: "/images/cyber/trainer-deepak.jpg", name: "Deepak" },
+  { src: "/images/cyber/trainer-devi.jpg",   name: "Devi"   },
+  { src: "/images/cyber/trainer-akash.jpg",  name: "Akash"  },
+  { src: "/images/cyber/trainer-sudha.jpg",  name: "Sudha"  },
+];
+
 const PILLARS = [
   {
     stat: "200+",
     label: "Cybersecurity Training Programs",
     sublabel: "Program design, not catalog selection",
     copy: "We design customized cybersecurity group training around your threat model, your stack, and your roles. Not selected from a generic catalog. Every employee training program is a design decision, not a menu pick.",
+    thumbnail: { src: "/images/cyber/hero-team-training.jpg", alt: "Cybersecurity group training session in progress" },
   },
   {
     stat: "100+",
     label: "Countries",
     sublabel: "On-site or virtual, wherever you operate",
     copy: "A vetted instructor in your office, in your language, aligned to your local compliance framework. Wherever your teams operate, Edstellar delivers in-region.",
+    thumbnail: { src: "/images/cyber/more-virtual-class.jpg", alt: "Virtual instructor-led training cohort" },
   },
   {
     stat: "1,500+",
     label: "Vetted Cybersecurity Trainers",
     sublabel: "Caliber you can trust",
-    copy: "Every trainer passes a rigorous multi-stage vetting process: technical assessment, delivery evaluation, and ongoing client feedback. You get the curriculum and the caliber.",
+    copy: "Every trainer passes a rigorous multi-stage vetting: technical assessment, live delivery evaluation, and ongoing client feedback. Before committing your cohort, you can interview and run a trial session with your shortlisted trainer.",
+    thumbnail: null,
   },
 ];
 
 export function CustomersPartners() {
   return (
-    <section className="bg-[#F8F9FB] py-16 md:py-24">
+    <section className="bg-[#EEF2FF] py-16 md:py-24">
       <div className="mtk-page-center">
 
-        {/* Heading */}
-        <h2
-          className="max-w-4xl text-[34px] leading-[1.08] text-[#1B1D52] sm:text-[40px] lg:text-[46px]"
-          style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
-        >
-          Why Edstellar is Trusted by Enterprises to Build Cybersecurity Capability
-        </h2>
+        {/* Top 2-col: heading + description */}
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-20">
+          <div>
+            <h2
+              className="text-[36px] leading-[1.08] text-[#1B1D52] sm:text-[44px] lg:text-[52px]"
+              style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+            >
+              Why Edstellar is Trusted by Enterprises to Build Cybersecurity Capability
+            </h2>
+            <blockquote
+              className="mt-8 border-l-4 border-[#C5E826] pl-5 text-[17px] leading-[1.5] text-[#1B1D52] sm:text-[18px]"
+              style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
+            >
+              Most providers sell you a seat in a course. Edstellar builds the program, qualifies the trainer, and delivers a post-program report your CISO can take to the board: skills delta, MTTD improvement, and vulnerability remediation rates.
+            </blockquote>
+          </div>
 
-        {/* Goal statement */}
-        <p
-          className="mt-6 max-w-2xl text-[16px] leading-[1.65] sm:text-[17px]"
-          style={{ color: "#4B5563", fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
-        >
-          Our goal at Edstellar is to help your security teams shift from reacting to threats to actively owning your organisation&apos;s cyber defence capability. Whether you are skilling new hires, upskilling existing employees, or reskilling lateral movers into security roles, every cybersecurity workforce development program we deliver is built by industry practitioners and mapped to the roles, tools, and compliance frameworks your business runs on.
-        </p>
+          <div className="flex items-center">
+            <p
+              className="text-[16px] leading-[1.75] text-[#4B5563] sm:text-[17px]"
+              style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+            >
+              Our goal at Edstellar is to help your security teams shift from reacting to threats to actively owning your organisation&apos;s cyber defence capability. Whether you are skilling new hires, upskilling existing employees, or reskilling lateral movers into security roles, every cybersecurity workforce development program we deliver is built by industry practitioners and mapped to the roles, tools, and compliance frameworks your business runs on.
+            </p>
+          </div>
+        </div>
 
-        {/* Bold positioning line — left accent treatment */}
-        <blockquote
-          className="mt-8 border-l-4 border-[#C5E826] pl-5 text-[19px] leading-[1.45] text-[#1B1D52] sm:text-[21px]"
-          style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
-        >
-          Most providers sell you a seat in a course. Edstellar builds the program, qualifies the trainer, and tracks the skill change your security team needs.
-        </blockquote>
-
-        {/* Proof pillars */}
-        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-3">
+        {/* 3 pillar cards — image thumbnail + left border accent */}
+        <div className="mt-14 grid grid-cols-1 gap-6 border-t border-[#6366F1]/20 pt-14 sm:grid-cols-3">
           {PILLARS.map((pillar) => (
             <div
               key={pillar.stat}
-              className="flex flex-col rounded-2xl border border-[#E3E6F0] bg-white px-7 pb-8 pt-7"
-              style={{ borderTop: "3px solid #6366F1" }}
+              className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm"
             >
-              <p
-                className="text-[50px] leading-none text-[#6366F1]"
-                style={{ fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif" }}
-              >
-                {pillar.stat}
-              </p>
-              <p
-                className="mt-3 text-[17px] leading-[1.25] text-[#111]"
-                style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
-              >
-                {pillar.label}
-              </p>
-              <p
-                className="mt-1.5 text-[11px] uppercase tracking-[0.14em] text-[#6366F1]"
-                style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
-              >
-                {pillar.sublabel}
-              </p>
-              <p
-                className="mt-4 text-[14px] leading-[1.55] text-[#6B7280]"
-                style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
-              >
-                {pillar.copy}
-              </p>
+              {/* Thumbnail */}
+              {pillar.thumbnail ? (
+                <div className="relative h-52 w-full shrink-0 overflow-hidden">
+                  <Image
+                    src={pillar.thumbnail.src}
+                    alt={pillar.thumbnail.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                  />
+                </div>
+              ) : (
+                /* Trainer avatar group */
+                <div className="flex h-52 w-full shrink-0 items-center justify-center bg-[#EEF2FF]">
+                  <div className="flex items-center">
+                    {TRAINER_AVATARS.map((t, i) => (
+                      <div
+                        key={t.name}
+                        className="relative h-16 w-16 overflow-hidden rounded-full border-[3px] border-white shadow-sm"
+                        style={{ marginLeft: i === 0 ? 0 : "-18px", zIndex: TRAINER_AVATARS.length - i }}
+                      >
+                        <Image
+                          src={t.src}
+                          alt={t.name}
+                          fill
+                          className="object-cover"
+                          sizes="64px"
+                        />
+                      </div>
+                    ))}
+                    <div
+                      className="relative -ml-[18px] flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-[3px] border-white bg-[#6366F1] shadow-sm"
+                      style={{ zIndex: 0 }}
+                    >
+                      <span
+                        className="text-[11px] leading-tight text-white"
+                        style={{ fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif" }}
+                      >
+                        +1.5k
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Content */}
+              <div className="flex flex-1 flex-col border-l-[3px] border-[#6366F1] px-6 pb-7 pt-6">
+                <p
+                  className="text-[52px] leading-none text-[#6366F1]"
+                  style={{ fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif" }}
+                >
+                  {pillar.stat}
+                </p>
+                <p
+                  className="mt-3 text-[17px] leading-[1.25] text-[#1B1D52]"
+                  style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
+                >
+                  {pillar.label}
+                </p>
+                <p
+                  className="mt-1.5 text-[11px] uppercase tracking-[0.14em] text-[#6366F1]"
+                  style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
+                >
+                  {pillar.sublabel}
+                </p>
+                <p
+                  className="mt-4 text-[14px] leading-[1.6] text-[#4B5563]"
+                  style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+                >
+                  {pillar.copy}
+                </p>
+              </div>
             </div>
           ))}
         </div>
@@ -114,7 +174,7 @@ export function CustomersPartners() {
         {/* Global reach map */}
         <div className="mt-16 md:mt-20">
           <p
-            className="text-center text-[11px] uppercase tracking-[0.2em] text-[#9CA3AF]"
+            className="text-center text-[11px] uppercase tracking-[0.2em] text-[#6366F1]/60"
             style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
           >
             Delivering in-region, in-language, across six continents
