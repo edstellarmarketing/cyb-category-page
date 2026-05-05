@@ -1,0 +1,250 @@
+[     130ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[     910ms] [LOG] [Fast Refresh] done in 884ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1040ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1122ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1332ms] [WARNING] Image with src "/images/cyber/hero-cyber-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1335ms] [WARNING] Image with src "/images/cyber/hero-industry-bfsi.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1347ms] [WARNING] Image with src "/images/cyber/hero-industry-healthcare.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1348ms] [WARNING] Image with src "/images/cyber/hero-ai-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1631ms] [WARNING] Image with src "/images/clients/taylor-francis.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   75783ms] [WARNING] Image with src "/images/clients/autodesk.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  410193ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  410839ms] [LOG] [Fast Refresh] done in 189ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  476854ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  477056ms] [LOG] [Fast Refresh] done in 64ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  487095ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  487301ms] [LOG] [Fast Refresh] done in 79ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  494012ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  494782ms] [LOG] [Fast Refresh] done in 881ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  494895ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  494975ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  495127ms] [WARNING] Image with src "/images/cyber/hero-cyber-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  495133ms] [WARNING] Image with src "/images/cyber/hero-industry-bfsi.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  495134ms] [WARNING] Image with src "/images/cyber/hero-industry-healthcare.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  495136ms] [WARNING] Image with src "/images/cyber/hero-ai-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  495276ms] [WARNING] Image with src "/images/clients/autodesk.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  536116ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  536634ms] [LOG] [Fast Refresh] done in 153ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  536825ms] [WARNING] Image with src "/images/clients/taylor-francis.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  556359ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  557116ms] [LOG] [Fast Refresh] done in 861ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  557240ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  557291ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  557474ms] [WARNING] Image with src "/images/cyber/hero-cyber-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  557476ms] [WARNING] Image with src "/images/cyber/hero-industry-bfsi.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  557479ms] [WARNING] Image with src "/images/cyber/hero-industry-healthcare.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  557482ms] [WARNING] Image with src "/images/cyber/hero-ai-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  557608ms] [WARNING] Image with src "/images/clients/autodesk.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  557610ms] [WARNING] Image with src "/images/clients/taylor-francis.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  651661ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  651842ms] [LOG] [Fast Refresh] done in 66ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  725297ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  725888ms] [LOG] [Fast Refresh] done in 207ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  764842ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  765106ms] [LOG] [Fast Refresh] done in 67ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  849040ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  849971ms] [LOG] [Fast Refresh] done in 411ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 1108409ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 1108458ms] [LOG] [Fast Refresh] done in 156ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 1295773ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 1295941ms] [LOG] [Fast Refresh] done in 275ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 1378296ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 1378518ms] [LOG] [Fast Refresh] done in 326ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 1873042ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 2827566ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3073417ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3073434ms] [LOG] [Fast Refresh] done in 124ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3185575ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3185759ms] [LOG] [Fast Refresh] done in 290ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3422214ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3422255ms] [LOG] [Fast Refresh] done in 141ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3600369ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3600498ms] [LOG] [Fast Refresh] done in 234ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3604336ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3604379ms] [LOG] [Fast Refresh] done in 189ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3606902ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3606948ms] [LOG] [Fast Refresh] done in 191ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3610722ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3610763ms] [LOG] [Fast Refresh] done in 187ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3612960ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3612996ms] [LOG] [Fast Refresh] done in 148ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3640244ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3640341ms] [LOG] [Fast Refresh] done in 200ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3643159ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3643193ms] [LOG] [Fast Refresh] done in 155ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3645676ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3645725ms] [LOG] [Fast Refresh] done in 203ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3651533ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3651581ms] [LOG] [Fast Refresh] done in 196ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3946801ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 3946960ms] [LOG] [Fast Refresh] done in 113ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 4031180ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 4031604ms] [LOG] [Fast Refresh] done in 144ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 4040567ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 4040950ms] [LOG] [Fast Refresh] done in 127ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 4416220ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 5924946ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 5925073ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 6042939ms] [LOG] [Fast Refresh] done in 117990ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 6545567ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 6545681ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 6545692ms] [LOG] [Fast Refresh] done in 119ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 6736323ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 6736823ms] [LOG] [Fast Refresh] done in 224ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 6828162ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 6828386ms] [LOG] [Fast Refresh] done in 141ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 6850267ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 6850656ms] [LOG] [Fast Refresh] done in 133ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7692489ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7693025ms] [LOG] [Fast Refresh] done in 174ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7705450ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7706072ms] [LOG] [Fast Refresh] done in 180ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7718657ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7719159ms] [LOG] [Fast Refresh] done in 280ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7862651ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7863070ms] [LOG] [Fast Refresh] done in 137ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7867694ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7868039ms] [LOG] [Fast Refresh] done in 138ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7871703ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7871867ms] [LOG] [Fast Refresh] done in 45ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7874956ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7875262ms] [LOG] [Fast Refresh] done in 117ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7879881ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7880219ms] [LOG] [Fast Refresh] done in 105ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7938214ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 7938341ms] [LOG] [Fast Refresh] done in 45ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8100966ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8101330ms] [LOG] [Fast Refresh] done in 138ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8104476ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8104881ms] [LOG] [Fast Refresh] done in 134ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8148718ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8150779ms] [LOG] [Fast Refresh] done in 2164ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8150890ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8150932ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8151149ms] [WARNING] Image with src "/images/cyber/hero-cyber-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8151150ms] [WARNING] Image with src "/images/cyber/hero-industry-bfsi.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8151150ms] [WARNING] Image with src "/images/cyber/hero-industry-healthcare.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8151154ms] [WARNING] Image with src "/images/cyber/hero-ai-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8151329ms] [WARNING] Image with src "/images/clients/autodesk.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8151330ms] [WARNING] Image with src "/images/clients/taylor-francis.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8447962ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8448487ms] [LOG] [Fast Refresh] done in 632ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8448596ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8448630ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8448898ms] [WARNING] Image with src "/images/cyber/hero-cyber-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8448904ms] [WARNING] Image with src "/images/cyber/hero-industry-bfsi.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8448905ms] [WARNING] Image with src "/images/cyber/hero-industry-healthcare.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8448906ms] [WARNING] Image with src "/images/cyber/hero-ai-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8449078ms] [WARNING] Image with src "/images/clients/autodesk.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8449080ms] [WARNING] Image with src "/images/clients/taylor-francis.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8520492ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8521071ms] [LOG] [Fast Refresh] done in 149ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8844808ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 8845291ms] [LOG] [Fast Refresh] done in 165ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9496457ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9497019ms] [LOG] [Fast Refresh] done in 153ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9520864ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9521448ms] [LOG] [Fast Refresh] done in 690ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9521572ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9521874ms] [LOG] [Fast Refresh] done in 412ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9521987ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9522125ms] [LOG] [Fast Refresh] done in 245ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9585678ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9585840ms] [LOG] [Fast Refresh] done in 165ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9585972ms] ReferenceError: MoreResources is not defined
+    at Home (C:\Users\Edstellar\Downloads\New folder (about://React/Server/76)%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__06m8z4r._.js?561:3715:298)
+    at resolveErrorDev (http://localhost:3001/_next/static/chunks/06~j_next_dist_compiled_react-server-dom-turbopack_0f2-fje._.js:1919:105)
+    at processFullStringRow (http://localhost:3001/_next/static/chunks/06~j_next_dist_compiled_react-server-dom-turbopack_0f2-fje._.js:2434:29)
+    at processFullBinaryRow (http://localhost:3001/_next/static/chunks/06~j_next_dist_compiled_react-server-dom-turbopack_0f2-fje._.js:2393:9)
+    at processBinaryChunk (http://localhost:3001/_next/static/chunks/06~j_next_dist_compiled_react-server-dom-turbopack_0f2-fje._.js:2502:221)
+    at progress (http://localhost:3001/_next/static/chunks/06~j_next_dist_compiled_react-server-dom-turbopack_0f2-fje._.js:2689:13)
+[ 9588897ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9589681ms] [LOG] [Fast Refresh] done in 46ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9589890ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9589958ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9590108ms] [WARNING] Image with src "/images/cyber/hero-cyber-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9590118ms] [WARNING] Image with src "/images/cyber/hero-industry-bfsi.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9590123ms] [WARNING] Image with src "/images/cyber/hero-industry-healthcare.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9590127ms] [WARNING] Image with src "/images/cyber/hero-ai-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9590754ms] [WARNING] Image with src "/images/clients/autodesk.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9590758ms] [WARNING] Image with src "/images/clients/taylor-francis.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9728751ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9728865ms] [LOG] [Fast Refresh] done in 202ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9841171ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9841242ms] [LOG] [Fast Refresh] done in 134ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9944102ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9944572ms] [LOG] [Fast Refresh] done in 137ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9962242ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[ 9962695ms] [LOG] [Fast Refresh] done in 144ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10133884ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10134078ms] [WARNING] [HMR] Invalid message: {"isTrusted":true}
+TypeError: Cannot convert undefined or null to object
+    at Object.keys (<anonymous>)
+    at extractModulesFromTurbopackMessage (http://localhost:3001/_next/static/chunks/06~j_next_dist_client_04yqy-2._.js:13631:39)
+    at TurbopackHmr.onTurbopackMessage (http://localhost:3001/_next/static/chunks/06~j_next_dist_client_04yqy-2._.js:13578:32)
+    at processMessage (http://localhost:3001/_next/static/chunks/06~j_next_dist_client_04yqy-2._.js:13936:30)
+    at WebSocket.handleMessage (http://localhost:3001/_next/static/chunks/06~j_next_dist_client_04yqy-2._.js:13335:52) @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10134081ms] [LOG] [Fast Refresh] done in 295ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10134190ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10134557ms] [LOG] [Fast Refresh] done in 468ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10134683ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10134771ms] [LOG] [Fast Refresh] done in 196ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10134879ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10135582ms] [LOG] [Fast Refresh] done in 805ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10209677ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10210039ms] [LOG] [Fast Refresh] done in 220ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10210200ms] ReferenceError: CyberCoE is not defined
+    at Home (C:\Users\Edstellar\Downloads\New folder (about://React/Server/76)%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__01daekk._.js?807:3692:298)
+    at resolveErrorDev (http://localhost:3001/_next/static/chunks/06~j_next_dist_compiled_react-server-dom-turbopack_0f2-fje._.js:1919:105)
+    at processFullStringRow (http://localhost:3001/_next/static/chunks/06~j_next_dist_compiled_react-server-dom-turbopack_0f2-fje._.js:2434:29)
+    at processFullBinaryRow (http://localhost:3001/_next/static/chunks/06~j_next_dist_compiled_react-server-dom-turbopack_0f2-fje._.js:2393:9)
+    at processBinaryChunk (http://localhost:3001/_next/static/chunks/06~j_next_dist_compiled_react-server-dom-turbopack_0f2-fje._.js:2502:221)
+    at progress (http://localhost:3001/_next/static/chunks/06~j_next_dist_compiled_react-server-dom-turbopack_0f2-fje._.js:2689:13)
+[10213793ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10214573ms] [LOG] [Fast Refresh] done in 47ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10214703ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10214764ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10214906ms] [WARNING] Image with src "/images/cyber/hero-cyber-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10214914ms] [WARNING] Image with src "/images/cyber/hero-industry-bfsi.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10214920ms] [WARNING] Image with src "/images/cyber/hero-industry-healthcare.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10214922ms] [WARNING] Image with src "/images/cyber/hero-ai-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10229401ms] [WARNING] Image with src "/images/clients/autodesk.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10252057ms] [WARNING] Image with src "/images/clients/taylor-francis.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10275962ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10276476ms] [LOG] [Fast Refresh] done in 153ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10308307ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10308733ms] [LOG] [Fast Refresh] done in 150ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10392735ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10393152ms] [LOG] [Fast Refresh] done in 84ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10396830ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10397233ms] [LOG] [Fast Refresh] done in 115ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10400759ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[10401079ms] [LOG] [Fast Refresh] done in 112ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431

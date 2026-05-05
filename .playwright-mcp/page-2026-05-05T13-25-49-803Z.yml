@@ -1,0 +1,1376 @@
+- main [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Edstellar" [ref=e7]
+      - navigation [ref=e8]:
+        - button "Training Programs" [ref=e10] [cursor=pointer]:
+          - link "Training Programs" [ref=e11]:
+            - /url: /corporate-training-courses
+          - img [ref=e13]
+        - button "Consulting" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17]: Consulting
+          - img [ref=e19]
+        - button "Managed Training" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: Managed Training
+          - img [ref=e25]
+        - link "Coaching" [ref=e27] [cursor=pointer]:
+          - /url: /coaching-solutions
+        - button "Platform" [ref=e29] [cursor=pointer]:
+          - generic [ref=e30]: Platform
+          - img [ref=e32]
+        - button "Company" [ref=e35] [cursor=pointer]:
+          - generic [ref=e36]: Company
+          - img [ref=e38]
+        - button "Resources" [ref=e41] [cursor=pointer]:
+          - generic [ref=e42]: Resources
+          - img [ref=e44]
+        - button "Search dropdown" [ref=e48] [cursor=pointer]:
+          - img [ref=e50]
+        - link "View Pricing" [ref=e55] [cursor=pointer]:
+          - /url: /corporate-training-pricing
+  - generic [ref=e56]:
+    - generic [ref=e57]:
+      - img "Corporate Cybersecurity Training Courses" [ref=e58]
+      - generic [ref=e61]:
+        - heading "Corporate Cybersecurity Training Courses" [level=1] [ref=e64]
+        - generic [ref=e65]: Empower your team to strengthen your organization's cyber resilience
+        - generic [ref=e66]:
+          - link "Browse Courses" [ref=e67] [cursor=pointer]:
+            - /url: "#courses"
+          - link "Enquire Now" [ref=e68] [cursor=pointer]:
+            - /url: /enquiry-form
+    - generic [ref=e72]:
+      - list [ref=e74]:
+        - listitem [ref=e75]:
+          - 'img "Microsoft: A Leading Company in Software, Cloud Computing, and Technology Solutions Worldwide" [ref=e76]'
+        - listitem [ref=e77]:
+          - 'img "Amazon: A Leading Company in Cloud, E-commerce & Retail" [ref=e78]'
+        - listitem [ref=e79]:
+          - 'img "Intel: A Leading Company in Software & Technology" [ref=e80]'
+        - listitem [ref=e81]:
+          - 'img "Adobe: A Leading Company In Digital Media and Creative Software Solutions" [ref=e82]'
+        - listitem [ref=e83]:
+          - 'img "MediaTek: Leading company in advanced semiconductor solutions, MediaTek connects and enriches the modern digital world." [ref=e84]'
+        - listitem [ref=e85]:
+          - 'img "Tata Chemicals Ltd: A Leading Company in Chemical Industry" [ref=e86]'
+        - listitem [ref=e87]:
+          - 'img "Johnson & Johnson: A Leading Company in Pharmaceuticals" [ref=e88]'
+        - listitem [ref=e89]:
+          - 'img "Godrej: A Leading Company in FMCG" [ref=e90]'
+        - listitem [ref=e91]:
+          - 'img "NRSC (National Remote Sensing Centre): A Leading Company in Scientific Research" [ref=e92]'
+        - listitem [ref=e93]:
+          - 'img "Sportskeeda: A Global Sports and Entertainment Content Platform" [ref=e94]'
+      - list [ref=e96]:
+        - listitem [ref=e97]:
+          - 'img "Total: A Leading Company in Energy & Petroleum" [ref=e98]'
+        - listitem [ref=e99]:
+          - 'img "VISA: Global digital payments technology company" [ref=e100]'
+        - listitem [ref=e101]:
+          - 'img "ABB: A Leading Company in Industrial Automation & Electrical Equipment" [ref=e102]'
+        - listitem [ref=e103]:
+          - 'img "Emerson : A Leading Company in Industrial Automation and Climate Solutions" [ref=e104]'
+        - listitem [ref=e105]:
+          - 'img "Aditya Birla Group: A global business group with impact across diverse sectors" [ref=e106]'
+        - listitem [ref=e107]:
+          - 'img "Autodesk: A Leading Company in Software & Technology" [ref=e108]'
+        - listitem [ref=e109]:
+          - 'img "Cummins Inc : Global leader in power and zero-emission tech." [ref=e110]'
+        - listitem [ref=e111]:
+          - 'img "Kellogg''s: A Leading Company in Food & Beverages" [ref=e112]'
+        - listitem [ref=e113]:
+          - 'img "NIIT : A Leading Company in Learning and Talent Development" [ref=e114]'
+        - listitem [ref=e115]:
+          - 'img "TVS Electronics: A Leading Company in Supply Chain & Manufacturing" [ref=e116]'
+    - generic [ref=e118]:
+      - link "Edstellar" [ref=e119] [cursor=pointer]:
+        - /url: /
+        - img "Edstellar" [ref=e120]
+      - link "Overview" [ref=e121] [cursor=pointer]:
+        - /url: "#overview"
+        - generic [ref=e122]: Overview
+      - link "Courses" [ref=e123] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e124]: Courses
+      - link "Target Audience" [ref=e125] [cursor=pointer]:
+        - /url: "#target-audience"
+        - generic [ref=e126]: Target Audience
+      - link "Our Approach" [ref=e127] [cursor=pointer]:
+        - /url: "#approach"
+        - generic [ref=e128]: Our Approach
+      - link "Training Delivery Methods" [ref=e129] [cursor=pointer]:
+        - /url: "#training-delivery-methods"
+        - generic [ref=e130]: Training Delivery Methods
+      - link "Trainers" [ref=e131] [cursor=pointer]:
+        - /url: "#trainers"
+        - generic [ref=e132]: Trainers
+      - link "Pricing" [ref=e133] [cursor=pointer]:
+        - /url: "#pricing"
+        - generic [ref=e134]: Pricing
+      - link "Coaching & Excellence" [ref=e135] [cursor=pointer]:
+        - /url: "#coaching-excellence"
+        - generic [ref=e136]: Coaching & Excellence
+      - link "Resources" [ref=e137] [cursor=pointer]:
+        - /url: "#resources"
+        - generic [ref=e138]: Resources
+    - generic [ref=e140]:
+      - generic [ref=e141]:
+        - link "Home" [ref=e142] [cursor=pointer]:
+          - /url: /
+        - img [ref=e144]
+        - link "All Courses" [ref=e146] [cursor=pointer]:
+          - /url: /corporate-training-courses
+        - img [ref=e148]
+        - link "IT & Technical" [ref=e150] [cursor=pointer]:
+          - /url: /type/it-technical-training
+        - img [ref=e152]
+        - paragraph [ref=e155]: Corporate Cybersecurity Training Courses
+      - generic [ref=e156]:
+        - generic [ref=e157]:
+          - generic [ref=e158]:
+            - heading "Elevate Your Organizational Security with Cybersecurity Training for Employees" [level=2] [ref=e160]
+            - paragraph [ref=e161]:
+              - text: Learn how Cybersecurity skills training courses drive success within your teams.
+              - text: ‍
+              - text: Cybersecurity empowers businesses to protect their digital assets and maintain uninterrupted operations through robust measures. Employees with cybersecurity skills and knowledge can effectively identify, mitigate, and prevent digital threats to safeguard critical data and infrastructure.
+            - paragraph [ref=e162]: Edstellar's instructor-led enterprise Cybersecurity training course equips employees with a comprehensive array of essential skills, including threat analysis, penetration testing, security auditing, encryption techniques, network defense, and incident response. Critical concepts employees will learn from Cybersecurity training include threat intelligence, vulnerability assessment, cryptography, access control, and ethical hacking.
+            - paragraph [ref=e163]: Explore our comprehensive list of instructor-led onsite/in-house or virtual/online Cybersecurity group training courses. Unlock the full potential of your teams and set the stage for your organization’s success.
+          - generic [ref=e164]:
+            - link "Browse Courses" [ref=e165] [cursor=pointer]:
+              - /url: "#courses"
+            - link "Enquire Now" [ref=e166] [cursor=pointer]:
+              - /url: /enquiry-form
+        - region "carousel" [ref=e168]:
+          - generic [ref=e169]:
+            - group "1 of 3" [ref=e170]:
+              - paragraph [ref=e173]:
+                - strong [ref=e174]: 40%
+                - text: decrease in cyber threats with cybersecurity training, fortifying digital defenses
+            - group [ref=e175]:
+              - paragraph [ref=e178]:
+                - strong [ref=e179]: $250
+                - text: billion estimated market value for cybersecurity solutions by 2030
+            - group [ref=e180]:
+              - paragraph [ref=e183]:
+                - strong [ref=e184]: 35%
+                - text: reduction in incident response times while minimizing potential damages and disruptions.
+          - button "next slide" [ref=e186] [cursor=pointer]
+          - generic [ref=e187]:
+            - button "Show slide 1 of 3" [pressed] [ref=e188] [cursor=pointer]
+            - button "Show slide 2 of 3" [ref=e189] [cursor=pointer]
+            - button "Show slide 3 of 3" [ref=e190] [cursor=pointer]
+    - generic [ref=e192]:
+      - generic [ref=e194]:
+        - heading "Instructor-led Cybersecurity Training Courses" [level=2] [ref=e195]
+        - paragraph [ref=e196]: Explore the complete list of Cybersecurity corporate training programs for employees. Take advantage of the wide array of Cybersecurity training topics, modules, and courses available, and equip your teams with the skills they need to succeed.
+      - generic [ref=e197]:
+        - generic [ref=e198]:
+          - generic [ref=e200]:
+            - heading "Filter" [level=3] [ref=e201]
+            - button "Clear All" [ref=e202] [cursor=pointer]
+          - generic [ref=e206]:
+            - heading "By Topic" [level=3] [ref=e207]
+            - generic [ref=e210] [cursor=pointer]: Cybersecurity Fundamentals & Architecture
+            - generic [ref=e213] [cursor=pointer]: Network Security
+            - generic [ref=e216] [cursor=pointer]: Cloud Security
+            - generic [ref=e219] [cursor=pointer]: Data Privacy & Security
+            - generic [ref=e222] [cursor=pointer]: Identity and Access Management (IAM)
+            - generic [ref=e225] [cursor=pointer]: Penetration Testing & Vulnerability Management
+            - heading "By Job Title" [level=3] [ref=e226]
+            - generic [ref=e229] [cursor=pointer]: Cybersecurity Specialists
+            - generic [ref=e232] [cursor=pointer]: Security Analysts
+            - generic [ref=e235] [cursor=pointer]: Penetration Testers
+            - generic [ref=e238] [cursor=pointer]: Cloud Security Engineers
+            - generic [ref=e241] [cursor=pointer]: IT Security Managers
+            - generic [ref=e244] [cursor=pointer]: Identity and Access Management Professionals
+            - heading "By Industry" [level=3] [ref=e245]
+            - generic [ref=e248] [cursor=pointer]: Information Technology
+            - generic [ref=e251] [cursor=pointer]: Banking Finance and Insurance
+            - generic [ref=e254] [cursor=pointer]: Healthcare and Pharmaceuticals
+            - generic [ref=e257] [cursor=pointer]: Telecommunications
+            - generic [ref=e260] [cursor=pointer]: Cloud Services
+            - generic [ref=e263] [cursor=pointer]: E-commerce
+            - heading "By Company Type" [level=3] [ref=e264]
+            - generic [ref=e267] [cursor=pointer]: Start-Ups
+            - generic [ref=e270] [cursor=pointer]: Enterprises
+            - generic [ref=e273] [cursor=pointer]: SaaS Companies
+            - generic [ref=e276] [cursor=pointer]: Tech Companies
+            - generic [ref=e279] [cursor=pointer]: B2B (Business-to-Business)
+            - generic [ref=e282] [cursor=pointer]: Service Based Companies
+        - generic [ref=e284]:
+          - generic [ref=e286]:
+            - textbox "Search Courses" [ref=e288]
+            - generic [ref=e289]: Page 1 of 9
+            - generic [ref=e290]: Showing 76 Results
+            - generic [ref=e292] [cursor=pointer]:
+              - text: "Sort By:"
+              - generic [ref=e293]: Default
+              - img [ref=e294]
+          - generic [ref=e296]:
+            - generic [ref=e298]:
+              - generic [ref=e299]:
+                - img "Personally Identifiable Information (PII)" [ref=e301]
+                - generic [ref=e302]: Cybersecurity
+              - generic [ref=e303]:
+                - link "Personally Identifiable Information (PII)" [ref=e304] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/personally-identifiable-information-pii-training
+                - generic [ref=e306]: 8 - 16 hrs
+                - generic [ref=e308]: Instructor-led (On-site/Virtual)
+                - list [ref=e310]:
+                  - listitem [ref=e311]: Identify and classify sensitive personal data accurately
+                  - listitem [ref=e312]: Apply best practices to protect and handle PII securely
+                  - listitem [ref=e313]: Ensure compliance with data privacy laws and policies
+                - link "View Program" [ref=e314] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/personally-identifiable-information-pii-training
+            - generic [ref=e316]:
+              - generic [ref=e317]:
+                - img "Ransomware Prevention" [ref=e319]
+                - generic [ref=e320]: Cybersecurity
+              - generic [ref=e321]:
+                - link "Ransomware Prevention" [ref=e322] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/ransomware-prevention-training
+                - generic [ref=e324]: 8 - 16 hrs
+                - generic [ref=e326]: Instructor-led (On-site/Virtual)
+                - list [ref=e328]:
+                  - listitem [ref=e329]: Identify ransomware threats and prevent system breaches
+                  - listitem [ref=e330]: Apply best practices to protect data and critical systems
+                  - listitem [ref=e331]: Respond quickly to ransomware attacks and minimize damage
+                - link "View Program" [ref=e332] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/ransomware-prevention-training
+            - generic [ref=e334]:
+              - generic [ref=e335]:
+                - img "Advanced Cybersecurity Threat Simulation" [ref=e337]
+                - generic [ref=e338]: Blockchain and Cryptocurrency
+              - generic [ref=e339]:
+                - link "Advanced Cybersecurity Threat Simulation" [ref=e340] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/advanced-cybersecurity-threat-simulation-training
+                - generic [ref=e342]: 32 - 40 hrs
+                - generic [ref=e344]: Instructor-led (On-site/Virtual)
+                - list [ref=e346]:
+                  - listitem [ref=e347]: Simulate real-world cyberattacks to test security readiness
+                  - listitem [ref=e348]: Strengthen threat detection and incident response skills
+                  - listitem [ref=e349]: Practice red teaming techniques in controlled environments
+                - link "View Program" [ref=e350] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/advanced-cybersecurity-threat-simulation-training
+            - generic [ref=e352]:
+              - generic [ref=e353]:
+                - img "Check Point - Automation Specialist Training" [ref=e355]
+                - generic [ref=e356]: Cybersecurity
+              - generic [ref=e357]:
+                - link "Check Point - Automation Specialist Training" [ref=e358] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/check-point-automation-specialist-training
+                - generic [ref=e360]: 16 - 24 hrs
+                - generic [ref=e362]: Instructor-led (On-site/Virtual)
+                - list [ref=e364]:
+                  - listitem [ref=e365]: Implement automated security workflows
+                  - listitem [ref=e366]: Master Check Point tools for security.
+                  - listitem [ref=e367]: Implement automated solutions to strengthen network security protocols
+                - link "View Program" [ref=e368] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/check-point-automation-specialist-training
+            - generic [ref=e370]:
+              - generic [ref=e371]:
+                - img "ForeScout Administrator Training" [ref=e373]
+                - generic [ref=e374]: Cybersecurity
+              - generic [ref=e375]:
+                - link "ForeScout Administrator Training" [ref=e376] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/forescout-administrator-training
+                - generic [ref=e378]: 24 - 32 hrs
+                - generic [ref=e380]: Instructor-led (On-site/Virtual)
+                - list [ref=e382]:
+                  - listitem [ref=e383]: Gain proficiency in ForeScout deployment
+                  - listitem [ref=e384]: Enhance network security posture
+                  - listitem [ref=e385]: Acquire knowledge to streamline endpoint visibility and control
+                - link "View Program" [ref=e386] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/forescout-administrator-training
+            - generic [ref=e388]:
+              - generic [ref=e389]:
+                - img "Cyberoam Training" [ref=e391]
+                - generic [ref=e392]: Cybersecurity
+              - generic [ref=e393]:
+                - link "Cyberoam Training" [ref=e394] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/cyberoam-training
+                - generic [ref=e396]: 32 - 40 hrs
+                - generic [ref=e398]: Instructor-led (On-site/Virtual)
+                - list [ref=e400]:
+                  - listitem [ref=e401]: Implement Cyberoam for network security
+                  - listitem [ref=e402]: Develop skills in managing Cyberoam
+                  - listitem [ref=e403]: Understand Cyberoam functionalities and features
+                - link "View Program" [ref=e404] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/cyberoam-training
+            - generic [ref=e406]:
+              - generic [ref=e407]:
+                - img "CyberArk Training" [ref=e409]
+                - generic [ref=e410]: Cybersecurity
+              - generic [ref=e411]:
+                - link "CyberArk Training" [ref=e412] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/cyberark-training
+                - generic [ref=e414]: 18 - 24 hrs
+                - generic [ref=e416]: Instructor-led (On-site/Virtual)
+                - list [ref=e418]:
+                  - listitem [ref=e419]: Enhanced Privileged Access Management (PAM)
+                  - listitem [ref=e420]: Implement privileged access management.
+                  - listitem [ref=e421]: Develop skills to effectively deploy and manage cyberark solutions.
+                - link "View Program" [ref=e422] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/cyberark-training
+            - generic [ref=e424]:
+              - generic [ref=e425]:
+                - img "ArcSight Training" [ref=e427]
+                - generic [ref=e428]: Cybersecurity
+              - generic [ref=e429]:
+                - link "ArcSight Training" [ref=e430] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/arcsight-training
+                - generic [ref=e432]: 32 - 40 hrs
+                - generic [ref=e434]: Instructor-led (On-site/Virtual)
+                - list [ref=e436]:
+                  - listitem [ref=e437]: Master ArcSight dashboard management.
+                  - listitem [ref=e438]: Master advanced threat detection.
+                  - listitem [ref=e439]: Enhance abilities to optimize security operations effectively.
+                - link "View Program" [ref=e440] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/arcsight-training
+            - generic [ref=e442]:
+              - generic [ref=e443]:
+                - img "BeyondTrust Password Safe Administration Training" [ref=e445]
+                - generic [ref=e446]: Cybersecurity
+              - generic [ref=e447]:
+                - link "BeyondTrust Password Safe Administration Training" [ref=e448] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/beyondtrust-password-safe-administration-training
+                - generic [ref=e450]: 16 - 24 hrs
+                - generic [ref=e452]: Instructor-led (On-site/Virtual)
+                - list [ref=e454]:
+                  - listitem [ref=e455]: Implement secure password management.
+                  - listitem [ref=e456]: Implement password management policies
+                  - listitem [ref=e457]: Develop strategies for mitigating password-related risks.
+                - link "View Program" [ref=e458] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/course/beyondtrust-password-safe-administration-training
+          - generic [ref=e459]:
+            - button "Prev" [disabled] [ref=e460]
+            - button "1" [ref=e461] [cursor=pointer]
+            - button "2" [ref=e462] [cursor=pointer]
+            - button "3" [ref=e463] [cursor=pointer]
+            - generic [ref=e464]: ...
+            - button "9" [ref=e465] [cursor=pointer]
+            - button "Next" [ref=e466] [cursor=pointer]
+    - generic [ref=e469]:
+      - heading "Who Can Take the Cybersecurity Training Courses" [level=2] [ref=e471]
+      - paragraph [ref=e473]: Edstellar offers a wide-range of Cybersecurity training courses for enterprise teams. Following are some of the job roles that benefit from our corporate Cybersecurity training programs.
+      - generic [ref=e476]:
+        - list [ref=e477]:
+          - listitem [ref=e478]: Chief Information Security Officers (CISO)
+          - listitem [ref=e479]: Security Analysts
+          - listitem [ref=e480]: Security Engineers
+        - list [ref=e481]:
+          - listitem [ref=e482]: Network Administrators
+          - listitem [ref=e483]: System Administrators
+          - listitem [ref=e484]: IT Managers
+    - generic [ref=e487]:
+      - generic [ref=e488]:
+        - heading "Importance of Cybersecurity Training Skills and Competencies for Employees" [level=2] [ref=e490]
+        - paragraph [ref=e492]: "Cybersecurity skills and competencies are vital for the success of any organization. Edstellar’s corporate Cybersecurity training classes help the business in the following ways:"
+        - generic [ref=e493]:
+          - heading "Critical Protection" [level=3] [ref=e494]
+          - paragraph [ref=e495]: Cybersecurity competency is paramount for safeguarding sensitive data, networks, and systems against evolving cyber threats. It forms a crucial defense barrier, preventing unauthorized access, data breaches, and potential cyberattacks.
+          - paragraph [ref=e496]: ‍
+          - heading "Proactive Risk Management" [level=3] [ref=e497]
+          - paragraph [ref=e498]: Cybersecurity competency empowers organizations to proactively identify, assess, and mitigate potential security risks. By implementing robust security measures and protocols, businesses can minimize vulnerabilities and prevent costly security incidents before they occur.
+          - paragraph [ref=e499]: ‍
+          - heading "Regulatory Compliance Assurance" [level=3] [ref=e500]
+          - paragraph [ref=e501]: Maintaining cybersecurity competency ensures compliance with industry regulations and data protection laws. By adhering to regulatory requirements, organizations can avoid legal penalties, reputational damage, and loss of customer trust associated with data breaches and non-compliance.
+          - paragraph [ref=e502]: ‍
+          - heading "Business Continuity Preservation" [level=3] [ref=e503]
+          - paragraph [ref=e504]: A strong cybersecurity posture contributes to the continuity of business operations, even in the face of cyber threats or attacks. Competent cybersecurity employees enable swift incident response, data recovery, and restoration of normal business functions, minimizing downtime and financial losses.
+          - paragraph [ref=e505]: ‍
+          - heading "Trust and Reputation Upholding" [level=3] [ref=e506]
+          - paragraph [ref=e507]: Cybersecurity competency is essential for upholding trust and preserving organizations' reputations. By demonstrating a commitment to protecting customer data and privacy, businesses can foster trust among stakeholders, enhance brand reputation, and maintain competitive advantage in the market.
+        - paragraph [ref=e509]: Invest in advancing your teams’ capabilities through our virtual and on-premise Cybersecurity training for organizations. Our comprehensive Cybersecurity training curriculum equips employees with the skills and competencies needed to tackle diverse challenges effectively.
+      - img "Skills and Competencies of course" [ref=e511]
+    - generic [ref=e513]:
+      - heading "Edstellar Approach to Organizational Cybersecurity Training" [level=2] [ref=e515]
+      - generic [ref=e516]:
+        - paragraph [ref=e517]:
+          - text: Edstellar is a leading cybersecurity training company that takes a holistic approach to deliver training solutions to organizations. Starting from expert consultation, training customization, training delivery and post-training support, our clients get ongoing assistance at every stage of their learning journey.
+          - text: ‍
+          - text: Our commitment to client success extends beyond the training sessions. We provide guidance to ensure that your team continues to excel and apply their newly acquired skills effectively in their roles.
+        - paragraph [ref=e518]: The training methods encompass corporate Cybersecurity training workshops, live interactive sessions, and hands-on projects tailored to improve the proficiency and confidence of employees. Edstellar’s Cybersecurity training for teams offer significant flexibility in terms of scheduling and delivery options, catering to the diverse needs of organizations.
+      - generic [ref=e519]:
+        - generic [ref=e520]:
+          - img "Consult" [ref=e521]
+          - generic [ref=e522]:
+            - generic [ref=e523]: 1. Consult
+            - paragraph [ref=e524]: We begin by understanding your challenges, and objectives and take a consultative approach for suggesting training solutions
+        - generic [ref=e525]:
+          - img "Plan" [ref=e526]
+          - generic [ref=e527]:
+            - generic [ref=e528]: 2. Plan
+            - paragraph [ref=e529]: Crafting a comprehensive strategy, we lay down a clear roadmap for the training solution.
+        - generic [ref=e530]:
+          - img "Align" [ref=e531]
+          - generic [ref=e532]:
+            - generic [ref=e533]: 3. Align
+            - paragraph [ref=e534]: We align an expert trainer with your team to ensure the training objectives are in-line with your business goals.
+        - generic [ref=e535]:
+          - img "Customize" [ref=e536]
+          - generic [ref=e537]:
+            - generic [ref=e538]: 4. Customize
+            - paragraph [ref=e539]: We customize the training courses as per the needs of your team.
+        - generic [ref=e540]:
+          - img "Execute" [ref=e541]
+          - generic [ref=e542]:
+            - generic [ref=e543]: 5. Execute
+            - paragraph [ref=e544]: With meticulous planning in place, we roll out the training sessions, ensuring engagement, interactivity, and real-time learning.
+        - generic [ref=e545]:
+          - img "Evaluate" [ref=e546]
+          - generic [ref=e547]:
+            - generic [ref=e548]: 6. Evaluate
+            - paragraph [ref=e549]: After training, we assess the tangible impact of our training interventions based on a combination of feedback, analytics, and business outcomes
+    - generic [ref=e551]:
+      - generic [ref=e552]:
+        - heading "Impactful Training Delivery Methods Tailored to Organizational Skilling Needs" [level=2] [ref=e553]:
+          - text: Impactful Training Delivery Methods
+          - text: Tailored to Organizational Skilling Needs
+        - generic [ref=e554]: Edstellar is one of the few Cybersecurity skills training providers offering versatile training delivery options. The training methods are tailored to meet the diverse needs of modern businesses. With our comprehensive face-to-face onsite / in-house / offsite / virtual corporate Cybersecurity training your team can prepare for the challenges of the future.
+      - generic [ref=e556]:
+        - tablist [ref=e557]:
+          - tab "Training Mode Virtual Instructor-led Training" [selected] [ref=e558] [cursor=pointer]:
+            - generic [ref=e559]:
+              - img "Training Mode"
+              - generic [ref=e560]:
+                - generic [ref=e561]: Virtual
+                - generic [ref=e562]: Instructor-led Training
+          - tab "Training Mode On-site Instructor-led Training" [ref=e563] [cursor=pointer]:
+            - generic [ref=e564]:
+              - img "Training Mode"
+              - generic [ref=e565]:
+                - generic [ref=e566]: On-site
+                - generic [ref=e567]: Instructor-led Training
+          - tab "Training Mode Off-site Instructor-led Training" [ref=e568] [cursor=pointer]:
+            - generic [ref=e569]:
+              - img "Training Mode"
+              - generic [ref=e570]:
+                - generic [ref=e571]: Off-site
+                - generic [ref=e572]: Instructor-led Training
+        - tabpanel "Training Mode Virtual Instructor-led Training" [ref=e574]:
+          - generic [ref=e576]:
+            - img "Virtual Cybersecurity Training" [ref=e579]
+            - generic [ref=e580]:
+              - paragraph [ref=e581]: Our virtual group training sessions bring expert-led, high-quality training to your teams anywhere, ensuring consistency and seamless integration into their schedules.
+              - generic [ref=e582]:
+                - generic [ref=e583]: With global reach, your employees can get trained from various locations
+                - generic [ref=e584]: The consistent training quality ensures uniform learning outcomes
+                - generic [ref=e585]: Participants can attend training in their own space without the need for traveling
+                - generic [ref=e586]: Organizations can scale learning by accommodating large groups of participants
+                - generic [ref=e587]: Interactive tools can be used to enhance learning engagement
+              - generic [ref=e588]:
+                - link "View Pricing Options" [ref=e589] [cursor=pointer]:
+                  - /url: /corporate-training-pricing
+                  - generic [ref=e590]: View Pricing Options
+                  - img [ref=e592]
+                - link "Enquire now" [ref=e594] [cursor=pointer]:
+                  - /url: /enquiry-form
+    - generic [ref=e596]:
+      - heading "Why Choose Edstellar as Your Cybersecurity Training Partner?" [level=2] [ref=e598]
+      - generic [ref=e599]:
+        - generic [ref=e600]:
+          - generic [ref=e601]:
+            - img "Training Expertise"
+            - generic [ref=e602]:
+              - generic [ref=e603]: One Stop Solution for All Instructor-led Training Needs
+              - paragraph [ref=e604]: Edstellar offers 2000+ training courses tailored to the diverse learning needs of the organization. Our instructor-led training is delivered in virtual, onsite and offsite modes to accommodate the diverse learning preferences and logistical needs of participants from various geographic locations.
+          - generic [ref=e605]:
+            - img "Training Expertise"
+            - generic [ref=e606]:
+              - generic [ref=e607]: Training Expertise
+              - paragraph [ref=e608]: Edstellar has a vast network of seasoned trainers with relevant industry experience. Our commitment to excellence, innovative approach to training and drive for continuous improvement ensure that clients receive top quality training experience.
+          - generic [ref=e609]:
+            - img "Global Delivery Capability" [ref=e610]
+            - generic [ref=e611]:
+              - generic [ref=e612]: Global Delivery Capability
+              - paragraph [ref=e613]: With Edstellar, your team has seamless access to quality instructor-led training across the globe. Backed by our network of trainers, rest assured that training can be delivered onsite, offsite or virtually in any language of your choice.
+          - generic [ref=e614]:
+            - img "All-encompassing Training Management Services" [ref=e615]
+            - generic [ref=e616]:
+              - generic [ref=e617]: Comprehensive Training Management Services
+              - paragraph [ref=e618]: Edstellar offers comprehensive training management and administration services which includes but are not limited to training needs analysis, training consultation, and pre and post-training assessment. Edstellar also offers coaching solutions that maximizes the impact of our training programs.
+        - img "Choose Edstellar as Your Training Partner" [ref=e620]
+    - generic [ref=e622]:
+      - generic [ref=e623]:
+        - generic [ref=e624]:
+          - heading "We have Expert Trainers to Meet Your Cybersecurity Training Needs" [level=2] [ref=e625]
+          - paragraph [ref=e626]: We have hand-picked qualified, certified, verified and highly experienced trainers with diverse domain expertise all-set to bridge organizational skilling gaps anywhere, anytime.
+          - generic [ref=e627]:
+            - generic [ref=e628]:
+              - img [ref=e630]
+              - generic [ref=e633]: Our trainers ensure high learner engagement through live and interactive training sessions
+            - generic [ref=e634]:
+              - img [ref=e636]
+              - generic [ref=e639]: Participants gain exposure to industry insights through real-world examples
+            - generic [ref=e640]:
+              - img [ref=e642]
+              - generic [ref=e645]: Our trainers adapt the training methods to match the requirements of teams
+        - img "Soft Skills Training for Brand management Team" [ref=e647]
+      - generic [ref=e648]:
+        - list [ref=e650]:
+          - listitem [ref=e651]:
+            - generic [ref=e652]:
+              - generic [ref=e653]:
+                - img "Oracle BPM Trainer in Pune" [ref=e655]
+                - generic [ref=e656]:
+                  - generic [ref=e657]: Deepak
+                  - generic [ref=e658]: Pune, India
+              - generic [ref=e659]:
+                - generic [ref=e660]: Training Since
+                - generic [ref=e661]: May 1, 2015
+                - generic [ref=e662]: Cybersecurity Training Trainer
+                - link "View Deepak’s Profile" [ref=e664] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/deepak-pune-india
+          - listitem [ref=e665]:
+            - generic [ref=e666]:
+              - generic [ref=e667]:
+                - img ".Net Framework Trainer in Hyderabad" [ref=e669]
+                - generic [ref=e670]:
+                  - generic [ref=e671]: Devi
+                  - generic [ref=e672]: Hyderabad, India
+              - generic [ref=e673]:
+                - generic [ref=e674]: Training Since
+                - generic [ref=e675]: April 1, 2005
+                - generic [ref=e676]: Cybersecurity Training Trainer
+                - link "View Devi’s Profile" [ref=e678] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/devi-hyderabad-india
+          - listitem [ref=e679]:
+            - generic [ref=e680]:
+              - generic [ref=e681]:
+                - img "Python and Data Science Trainer in Bareilly" [ref=e683]
+                - generic [ref=e684]:
+                  - generic [ref=e685]: Afshan
+                  - generic [ref=e686]: Bareilly, India
+              - generic [ref=e687]:
+                - generic [ref=e688]: Training Since
+                - generic [ref=e689]: August 1, 2018
+                - generic [ref=e690]: Cybersecurity Training Trainer
+                - link "View Afshan’s Profile" [ref=e692] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/afshan-bareilly-india
+          - listitem [ref=e693]:
+            - generic [ref=e694]:
+              - generic [ref=e695]:
+                - img "Oracle PL SQL Trainer in Bengaluru" [ref=e697]
+                - generic [ref=e698]:
+                  - generic [ref=e699]: Akash
+                  - generic [ref=e700]: Bengaluru, India
+              - generic [ref=e701]:
+                - generic [ref=e702]: Training Since
+                - generic [ref=e703]: February 1, 2019
+                - generic [ref=e704]: Cybersecurity Training Trainer
+                - link "View Akash’s Profile" [ref=e706] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/akash-bengaluru-india
+          - listitem [ref=e707]:
+            - generic [ref=e708]:
+              - generic [ref=e709]:
+                - img "Python Trainer in Bengaluru" [ref=e711]
+                - generic [ref=e712]:
+                  - generic [ref=e713]: Vijayalakshmi
+                  - generic [ref=e714]: Bengaluru, India
+              - generic [ref=e715]:
+                - generic [ref=e716]: Training Since
+                - generic [ref=e717]: January 1, 2016
+                - generic [ref=e718]: Cybersecurity Training Trainer
+                - link "View Vijayalakshmi’s Profile" [ref=e720] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/vijayalakshmi-bengaluru-india
+          - listitem [ref=e721]:
+            - generic [ref=e722]:
+              - generic [ref=e723]:
+                - img "Java Trainer in Bengaluru" [ref=e725]
+                - generic [ref=e726]:
+                  - generic [ref=e727]: Venkata
+                  - generic [ref=e728]: Bengaluru, India
+              - generic [ref=e729]:
+                - generic [ref=e730]: Training Since
+                - generic [ref=e731]: November 1, 2013
+                - generic [ref=e732]: Cybersecurity Training Trainer
+                - link "View Venkata’s Profile" [ref=e734] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/venkata-bengaluru-india
+          - listitem [ref=e735]:
+            - generic [ref=e736]:
+              - generic [ref=e737]:
+                - img "Java Trainer in Hyderabad" [ref=e739]
+                - generic [ref=e740]:
+                  - generic [ref=e741]: Sudha
+                  - generic [ref=e742]: Hyderabad, India
+              - generic [ref=e743]:
+                - generic [ref=e744]: Training Since
+                - generic [ref=e745]: December 1, 2011
+                - generic [ref=e746]: Cybersecurity Training Trainer
+                - link "View Sudha’s Profile" [ref=e748] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/sudha-hyderabad-india
+          - listitem [ref=e749]:
+            - generic [ref=e750]:
+              - generic [ref=e751]:
+                - img "Power BI Trainer in Chennai" [ref=e753]
+                - generic [ref=e754]:
+                  - generic [ref=e755]: Sharon
+                  - generic [ref=e756]: Chennai, India
+              - generic [ref=e757]:
+                - generic [ref=e758]: Training Since
+                - generic [ref=e759]: June 1, 2011
+                - generic [ref=e760]: Cybersecurity Training Trainer
+                - link "View Sharon’s Profile" [ref=e762] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/sharon-chennai-india
+          - listitem [ref=e763]:
+            - generic [ref=e764]:
+              - generic [ref=e765]:
+                - img "Java Trainer in Nagpur" [ref=e767]
+                - generic [ref=e768]:
+                  - generic [ref=e769]: Satish
+                  - generic [ref=e770]: Nagpur, India
+              - generic [ref=e771]:
+                - generic [ref=e772]: Training Since
+                - generic [ref=e773]: May 1, 2016
+                - generic [ref=e774]: Cybersecurity Training Trainer
+                - link "View Satish’s Profile" [ref=e776] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/satish-nagpur-india
+          - listitem [ref=e777]:
+            - generic [ref=e778]:
+              - generic [ref=e779]:
+                - img "Advanced Java Trainer in Pune" [ref=e781]
+                - generic [ref=e782]:
+                  - generic [ref=e783]: Sangeeta
+                  - generic [ref=e784]: Pune, India
+              - generic [ref=e785]:
+                - generic [ref=e786]: Training Since
+                - generic [ref=e787]: March 1, 2008
+                - generic [ref=e788]: Cybersecurity Training Trainer
+                - link "View Sangeeta’s Profile" [ref=e790] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/sangeeta-pune-india
+        - list [ref=e792]:
+          - listitem [ref=e793]:
+            - generic [ref=e794]:
+              - generic [ref=e795]:
+                - img "Manual Testing and Java Trainer in Bhilai" [ref=e797]
+                - generic [ref=e798]:
+                  - generic [ref=e799]: Manas
+                  - generic [ref=e800]: Bhilai, India
+              - generic [ref=e801]:
+                - generic [ref=e802]: Training Since
+                - generic [ref=e803]: February 1, 2018
+                - generic [ref=e804]: Cybersecurity Training Trainer
+                - link "View Manas’s Profile" [ref=e806] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/manas-bhilai-india
+          - listitem [ref=e807]:
+            - generic [ref=e808]:
+              - generic [ref=e809]:
+                - img "IOT, Machine Learning & Python Trainer in Bhatkal" [ref=e811]
+                - generic [ref=e812]:
+                  - generic [ref=e813]: Liqzan
+                  - generic [ref=e814]: Bhatkal, India
+              - generic [ref=e815]:
+                - generic [ref=e816]: Training Since
+                - generic [ref=e817]: January 1, 2016
+                - generic [ref=e818]: Cybersecurity Training Trainer
+                - link "View Liqzan’s Profile" [ref=e820] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/liqzan-bhatkal-india
+          - listitem [ref=e821]:
+            - generic [ref=e822]:
+              - generic [ref=e823]:
+                - img "Selenium and Manual Testing Trainer in Bengaluru" [ref=e825]
+                - generic [ref=e826]:
+                  - generic [ref=e827]: Lakshmi
+                  - generic [ref=e828]: Bengaluru, India
+              - generic [ref=e829]:
+                - generic [ref=e830]: Training Since
+                - generic [ref=e831]: July 1, 2016
+                - generic [ref=e832]: Cybersecurity Training Trainer
+                - link "View Lakshmi’s Profile" [ref=e834] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/lakshmi-bengaluru-india
+          - listitem [ref=e835]:
+            - generic [ref=e836]:
+              - generic [ref=e837]:
+                - img "ML and Python Trainer in Karnataka" [ref=e839]
+                - generic [ref=e840]:
+                  - generic [ref=e841]: Kumar
+                  - generic [ref=e842]: Belgaum, India
+              - generic [ref=e843]:
+                - generic [ref=e844]: Training Since
+                - generic [ref=e845]: October 1, 2007
+                - generic [ref=e846]: Cybersecurity Training Trainer
+                - link "View Kumar’s Profile" [ref=e848] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/kumar-belgaum-india
+          - listitem [ref=e849]:
+            - generic [ref=e850]:
+              - generic [ref=e851]:
+                - img "Full Stack MERN, MEAN & Java Trainer in Pune" [ref=e853]
+                - generic [ref=e854]:
+                  - generic [ref=e855]: Dilip
+                  - generic [ref=e856]: Pune, India
+              - generic [ref=e857]:
+                - generic [ref=e858]: Training Since
+                - generic [ref=e859]: February 1, 2014
+                - generic [ref=e860]: Cybersecurity Training Trainer
+                - link "View Dilip’s Profile" [ref=e862] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/dilip-pune-india
+          - listitem [ref=e863]:
+            - generic [ref=e864]:
+              - generic [ref=e865]:
+                - img "Blockchain Technology Trainer in Hyderabad" [ref=e867]
+                - generic [ref=e868]:
+                  - generic [ref=e869]: Chandrasekhar
+                  - generic [ref=e870]: Hyderabad, India
+              - generic [ref=e871]:
+                - generic [ref=e872]: Training Since
+                - generic [ref=e873]: January 1, 2019
+                - generic [ref=e874]: Cybersecurity Training Trainer
+                - link "View Chandrasekhar’s Profile" [ref=e876] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/chandrasekhar-hyderabad-india
+          - listitem [ref=e877]:
+            - generic [ref=e878]:
+              - generic [ref=e879]:
+                - img "Java & Python Trainer in Chapra" [ref=e881]
+                - generic [ref=e882]:
+                  - generic [ref=e883]: Ashutosh
+                  - generic [ref=e884]: Chapra, India
+              - generic [ref=e885]:
+                - generic [ref=e886]: Training Since
+                - generic [ref=e887]: January 1, 2015
+                - generic [ref=e888]: Cybersecurity Training Trainer
+                - link "View Ashutosh’s Profile" [ref=e890] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/ashutosh-chapra-india
+          - listitem [ref=e891]:
+            - generic [ref=e892]:
+              - generic [ref=e893]:
+                - img "Machine Learning Trainer in Bengaluru" [ref=e895]
+                - generic [ref=e896]:
+                  - generic [ref=e897]: Akhilesh
+                  - generic [ref=e898]: Bengaluru, India
+              - generic [ref=e899]:
+                - generic [ref=e900]: Training Since
+                - generic [ref=e901]: January 1, 2016
+                - generic [ref=e902]: Cybersecurity Training Trainer
+                - link "View Akhilesh’s Profile" [ref=e904] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/akhilesh-bengaluru-india
+          - listitem [ref=e905]:
+            - generic [ref=e906]:
+              - generic [ref=e907]:
+                - img "Cyber Security Trainer in New Delhi" [ref=e909]
+                - generic [ref=e910]:
+                  - generic [ref=e911]: Aditi
+                  - generic [ref=e912]: New Delhi, India
+              - generic [ref=e913]:
+                - generic [ref=e914]: Training Since
+                - generic [ref=e915]: June 1, 2011
+                - generic [ref=e916]: Cybersecurity Training Trainer
+                - link "View Aditi’s Profile" [ref=e918] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/aditi-new-delhi-india
+          - listitem [ref=e919]:
+            - generic [ref=e920]:
+              - generic [ref=e921]:
+                - img "JUnit Testing Trainer in Chennai" [ref=e923]
+                - generic [ref=e924]:
+                  - generic [ref=e925]: Adalarasu
+                  - generic [ref=e926]: Chennai, India
+              - generic [ref=e927]:
+                - generic [ref=e928]: Training Since
+                - generic [ref=e929]: February 1, 2016
+                - generic [ref=e930]: Cybersecurity Training Trainer
+                - link "View Adalarasu’s Profile" [ref=e932] [cursor=pointer]:
+                  - /url: https://www.edstellar.com/trainer/adalarasu-chennai-india
+    - generic [ref=e935]:
+      - generic [ref=e936]:
+        - heading "Cybersecurity Group Training Packages & Pricing" [level=2] [ref=e937]
+        - paragraph [ref=e938]: Our Cybersecurity group training is tailored to your specific upskilling needs. Explore transparent pricing options that fit your training budget, whether you're training a small group or a large team. Discover more about our Cybersecurity training cost and take the first step toward maximizing your team's potential.
+      - generic [ref=e939]:
+        - tablist [ref=e940]:
+          - tab "Small Group" [ref=e941] [cursor=pointer]:
+            - generic [ref=e942]: Small Group
+          - tab "Large Groups" [selected] [ref=e943] [cursor=pointer]:
+            - generic [ref=e944]: Large Groups
+        - tabpanel "Large Groups" [ref=e946]:
+          - generic [ref=e947]:
+            - paragraph [ref=e949]: Our customized corporate training packages offer various benefits. Maximize your organization's training budget and save big on your Cybersecurity training by choosing one of our training packages. This option is best suited for organizations with multiple training requirements. Our training packages are a cost-effective way to scale up your workforce skill transformation efforts
+            - generic [ref=e950]:
+              - generic [ref=e951]:
+                - generic [ref=e952]: Starter Package
+                - generic [ref=e953]:
+                  - paragraph [ref=e954]: 120 Trainee licenses
+                  - paragraph [ref=e955]: 64 hours of group training (includes VILT and In-person On-site)
+                  - paragraph [ref=e956]: Tailored for SMBs
+              - generic [ref=e957]:
+                - generic [ref=e958]: Most Popular
+                - generic [ref=e960]:
+                  - generic [ref=e961]: Growth Package
+                  - generic [ref=e962]:
+                    - paragraph [ref=e963]: 320 Trainee licenses
+                    - paragraph [ref=e964]: 160 hours of group training (includes VILT and In-person On-site)
+                    - paragraph [ref=e965]: Ideal for growing SMBs
+              - generic [ref=e966]:
+                - generic [ref=e967]: Enterprise Package
+                - generic [ref=e968]:
+                  - paragraph [ref=e969]: 800 Trainee licenses
+                  - paragraph [ref=e970]: 400 hours of group training (includes VILT and In-person On-site)
+                  - paragraph [ref=e971]: Designed for large corporations
+              - generic [ref=e972]:
+                - generic [ref=e973]: Custom Package
+                - generic [ref=e974]:
+                  - paragraph [ref=e975]: Unlimited Trainee licenses
+                  - paragraph [ref=e976]: Unlimited duration
+                  - paragraph [ref=e977]: Designed for large corporations
+            - link "View Corporate Training Packages" [ref=e978] [cursor=pointer]:
+              - /url: https://www.edstellar.com/corporate-training-pricing#table
+              - generic [ref=e979]: View Corporate Training Packages
+              - img [ref=e981]
+    - generic [ref=e985]:
+      - heading "Complement Cybersecurity Training for Long Term Impact" [level=2] [ref=e987]
+      - generic [ref=e988]:
+        - generic [ref=e989]:
+          - img "Coaching Programs for Success" [ref=e990]
+          - generic [ref=e991]:
+            - generic [ref=e992]: Coaching
+            - paragraph [ref=e993]: With Edstellar Coaching Solutions, we offer personalized coaching programs tailored to unlock individual potential, fostering professional growth and empowerment in today's dynamic business landscape.
+            - link "View Coaching Programs" [ref=e994] [cursor=pointer]:
+              - /url: /coaching-solutions
+        - generic [ref=e995]:
+          - img "Build a High-Performing IT Team" [ref=e996]
+          - generic [ref=e997]:
+            - generic [ref=e998]: IT Excellence
+            - paragraph [ref=e999]: Develop cutting-edge technical skills in your team to foster innovation, streamline IT operations, and promote a culture of continuous learning with our IT excellence program.
+            - link "View IT Excellence Programs" [ref=e1001] [cursor=pointer]:
+              - /url: https://www.edstellar.com/it-excellence-program
+    - generic [ref=e1002]:
+      - img "Contact Our Team" [ref=e1003]
+      - generic [ref=e1006]:
+        - heading "Contact Us" [level=2] [ref=e1007]
+        - paragraph [ref=e1008]: Submit your Training Requirements below and We'll get in touch with you shortly.
+        - generic [ref=e1010]:
+          - generic [ref=e1011]:
+            - textbox "Enter Your Full Name*" [ref=e1013]
+            - textbox "Enter Work Email Address*" [ref=e1015]
+          - generic [ref=e1016]:
+            - textbox "Enter Company Name*" [ref=e1018]
+            - textbox "Enter Your Job Title*" [ref=e1020]
+          - generic [ref=e1021]:
+            - combobox "Country" [ref=e1023] [cursor=pointer]:
+              - option "Select Country*" [disabled]
+              - option "United States" [selected]
+              - option "United Kingdom"
+              - option "India (भारत)"
+              - option "Australia"
+              - option "Canada"
+              - option "────────────" [disabled]
+              - option "Afghanistan (‫افغانستان‬‎)"
+              - option "Albania (Shqipëri)"
+              - option "Algeria (‫الجزائر‬‎)"
+              - option "American Samoa"
+              - option "Andorra"
+              - option "Angola"
+              - option "Anguilla"
+              - option "Antigua and Barbuda"
+              - option "Argentina"
+              - option "Armenia (Հայաստան)"
+              - option "Aruba"
+              - option "Ascension Island"
+              - option "Austria (Österreich)"
+              - option "Azerbaijan (Azərbaycan)"
+              - option "Bahamas"
+              - option "Bahrain (‫البحرين‬‎)"
+              - option "Bangladesh (বাংলাদেশ)"
+              - option "Barbados"
+              - option "Belarus (Беларусь)"
+              - option "Belgium (België)"
+              - option "Belize"
+              - option "Benin (Bénin)"
+              - option "Bermuda"
+              - option "Bhutan (འབྲུག)"
+              - option "Bolivia"
+              - option "Bosnia and Herzegovina (Босна и ..."
+              - option "Botswana"
+              - option "Brazil (Brasil)"
+              - option "British Indian Ocean Territory"
+              - option "British Virgin Islands"
+              - option "Brunei"
+              - option "Bulgaria (България)"
+              - option "Burkina Faso"
+              - option "Burundi (Uburundi)"
+              - option "Cambodia (កម្ពុជា)"
+              - option "Cameroon (Cameroun)"
+              - option "Cape Verde (Kabu Verdi)"
+              - option "Caribbean Netherlands"
+              - option "Cayman Islands"
+              - option "Central African Republic (Républ..."
+              - option "Chad (Tchad)"
+              - option "Chile"
+              - option "China (中国)"
+              - option "Christmas Island"
+              - option "Cocos (Keeling) Islands"
+              - option "Colombia"
+              - option "Comoros (‫جزر القمر‬‎)"
+              - option "Congo (DRC) (Jamhuri ya Kidemokr..."
+              - option "Congo (Republic) (Congo-Brazzavi..."
+              - option "Cook Islands"
+              - option "Costa Rica"
+              - option "Côte d’Ivoire"
+              - option "Croatia (Hrvatska)"
+              - option "Cuba"
+              - option "Curaçao"
+              - option "Cyprus (Κύπρος)"
+              - option "Czech Republic (Česká republika)"
+              - option "Denmark (Danmark)"
+              - option "Djibouti"
+              - option "Dominica"
+              - option "Dominican Republic (República Do..."
+              - option "Ecuador"
+              - option "Egypt (‫مصر‬‎)"
+              - option "El Salvador"
+              - option "Equatorial Guinea (Guinea Ecuato..."
+              - option "Eritrea"
+              - option "Estonia (Eesti)"
+              - option "Eswatini"
+              - option "Ethiopia"
+              - option "Falkland Islands (Islas Malvinas..."
+              - option "Faroe Islands (Føroyar)"
+              - option "Fiji"
+              - option "Finland (Suomi)"
+              - option "France"
+              - option "French Guiana (Guyane française)"
+              - option "French Polynesia (Polynésie fran..."
+              - option "Gabon"
+              - option "Gambia"
+              - option "Georgia (საქართველო)"
+              - option "Germany (Deutschland)"
+              - option "Ghana (Gaana)"
+              - option "Gibraltar"
+              - option "Greece (Ελλάδα)"
+              - option "Greenland (Kalaallit Nunaat)"
+              - option "Grenada"
+              - option "Guadeloupe"
+              - option "Guam"
+              - option "Guatemala"
+              - option "Guernsey"
+              - option "Guinea (Guinée)"
+              - option "Guinea-Bissau (Guiné Bissau)"
+              - option "Guyana"
+              - option "Haiti"
+              - option "Honduras"
+              - option "Hong Kong (香港)"
+              - option "Hungary (Magyarország)"
+              - option "Iceland (Ísland)"
+              - option "Indonesia"
+              - option "Iran (‫ایران‬‎)"
+              - option "Iraq (‫العراق‬‎)"
+              - option "Ireland"
+              - option "Isle of Man"
+              - option "Israel (‫ישראל‬‎)"
+              - option "Italy (Italia)"
+              - option "Jamaica"
+              - option "Japan (日本)"
+              - option "Jersey"
+              - option "Jordan (‫الأردن‬‎)"
+              - option "Kazakhstan (Казахстан)"
+              - option "Kenya"
+              - option "Kiribati"
+              - option "Kosovo"
+              - option "Kuwait (‫الكويت‬‎)"
+              - option "Kyrgyzstan (Кыргызстан)"
+              - option "Laos (ລາວ)"
+              - option "Latvia (Latvija)"
+              - option "Lebanon (‫لبنان‬‎)"
+              - option "Lesotho"
+              - option "Liberia"
+              - option "Libya (‫ليبيا‬‎)"
+              - option "Liechtenstein"
+              - option "Lithuania (Lietuva)"
+              - option "Luxembourg"
+              - option "Macau (澳門)"
+              - option "Macedonia (FYROM) (Македонија)"
+              - option "Madagascar (Madagasikara)"
+              - option "Malawi"
+              - option "Malaysia"
+              - option "Maldives"
+              - option "Mali"
+              - option "Malta"
+              - option "Marshall Islands"
+              - option "Martinique"
+              - option "Mauritania (‫موريتانيا‬‎)"
+              - option "Mauritius (Moris)"
+              - option "Mayotte"
+              - option "Mexico (México)"
+              - option "Micronesia"
+              - option "Moldova (Republica Moldova)"
+              - option "Monaco"
+              - option "Mongolia (Монгол)"
+              - option "Montenegro (Crna Gora)"
+              - option "Montserrat"
+              - option "Morocco (‫المغرب‬‎)"
+              - option "Mozambique (Moçambique)"
+              - option "Myanmar (Burma) (မြန်မာ)"
+              - option "Namibia (Namibië)"
+              - option "Nauru"
+              - option "Nepal (नेपाल)"
+              - option "Netherlands (Nederland)"
+              - option "New Caledonia (Nouvelle-Calédoni..."
+              - option "New Zealand"
+              - option "Nicaragua"
+              - option "Niger (Nijar)"
+              - option "Nigeria"
+              - option "Niue"
+              - option "Norfolk Island"
+              - option "North Korea (조선 민주주의 인민 공화국)"
+              - option "Northern Mariana Islands"
+              - option "Norway (Norge)"
+              - option "Oman (‫عُمان‬‎)"
+              - option "Pakistan (‫پاکستان‬‎)"
+              - option "Palau"
+              - option "Palestine (‫فلسطين‬‎)"
+              - option "Panama (Panamá)"
+              - option "Papua New Guinea"
+              - option "Paraguay"
+              - option "Peru (Perú)"
+              - option "Philippines"
+              - option "Poland (Polska)"
+              - option "Portugal"
+              - option "Puerto Rico"
+              - option "Qatar (‫قطر‬‎)"
+              - option "Réunion (La Réunion)"
+              - option "Romania (România)"
+              - option "Russia (Россия)"
+              - option "Rwanda"
+              - option "Saint Barthélemy"
+              - option "Saint Helena"
+              - option "Saint Kitts and Nevis"
+              - option "Saint Lucia"
+              - option "Saint Martin (Saint-Martin (part..."
+              - option "Saint Pierre and Miquelon (Saint..."
+              - option "Saint Vincent and the Grenadines"
+              - option "Samoa"
+              - option "San Marino"
+              - option "São Tomé and Príncipe (São Tomé ..."
+              - option "Saudi Arabia (‫المملكة العربية ا..."
+              - option "Senegal (Sénégal)"
+              - option "Serbia (Србија)"
+              - option "Seychelles"
+              - option "Sierra Leone"
+              - option "Singapore"
+              - option "Sint Maarten"
+              - option "Slovakia (Slovensko)"
+              - option "Slovenia (Slovenija)"
+              - option "Solomon Islands"
+              - option "Somalia (Soomaaliya)"
+              - option "South Africa"
+              - option "South Korea (대한민국)"
+              - option "South Sudan (‫جنوب السودان‬‎)"
+              - option "Spain (España)"
+              - option "Sri Lanka (ශ්‍රී ලංකාව)"
+              - option "Sudan (‫السودان‬‎)"
+              - option "Suriname"
+              - option "Svalbard and Jan Mayen"
+              - option "Sweden (Sverige)"
+              - option "Switzerland (Schweiz)"
+              - option "Syria (‫سوريا‬‎)"
+              - option "Taiwan (台灣)"
+              - option "Tajikistan"
+              - option "Tanzania"
+              - option "Thailand (ไทย)"
+              - option "Timor-Leste"
+              - option "Togo"
+              - option "Tokelau"
+              - option "Tonga"
+              - option "Trinidad and Tobago"
+              - option "Tunisia (‫تونس‬‎)"
+              - option "Turkey (Türkiye)"
+              - option "Turkmenistan"
+              - option "Turks and Caicos Islands"
+              - option "Tuvalu"
+              - option "U.S. Virgin Islands"
+              - option "Uganda"
+              - option "Ukraine (Україна)"
+              - option "United Arab Emirates (‫الإمارات ..."
+              - option "Uruguay"
+              - option "Uzbekistan (Oʻzbekiston)"
+              - option "Vanuatu"
+              - option "Vatican City (Città del Vaticano..."
+              - option "Venezuela"
+              - option "Vietnam (Việt Nam)"
+              - option "Wallis and Futuna (Wallis-et-Fut..."
+              - option "Western Sahara (‫الصحراء الغربية..."
+              - option "Yemen (‫اليمن‬‎)"
+              - option "Zambia"
+              - option "Zimbabwe"
+              - option "Åland Islands"
+            - generic [ref=e1025]:
+              - 'combobox "United States: +1" [ref=e1027]':
+                - generic [ref=e1029]: "+1"
+              - textbox "201-555-0123" [ref=e1031]
+          - textbox "Tell Us About Your Training Requirements" [ref=e1032]
+          - button "Submit" [ref=e1034] [cursor=pointer]
+    - generic [ref=e1036]:
+      - heading "Edstellar Resources" [level=2] [ref=e1037]
+      - paragraph [ref=e1038]: Deep dive into industry trends, expert insights, success stories and innovative training practices
+      - list [ref=e1041]:
+        - listitem [ref=e1042]:
+          - generic [ref=e1043]:
+            - link "10 Must-have Skills for a Frontend Developer in 2026" [ref=e1044] [cursor=pointer]:
+              - /url: /blog/frontend-developer-skills
+              - img "10 Must-have Skills for a Frontend Developer in 2026" [ref=e1045]
+            - generic [ref=e1046]:
+              - generic [ref=e1047]:
+                - generic [ref=e1048]: BLOG
+                - generic [ref=e1049]: In-Demand Skills
+              - link "10 Must-have Skills for a Frontend Developer in 2026" [ref=e1050] [cursor=pointer]:
+                - /url: /blog/frontend-developer-skills
+              - generic [ref=e1051]: January 23, 2026
+        - listitem [ref=e1052]:
+          - generic [ref=e1053]:
+            - link "5 Real‑World Case Studies of Internal Talent Mobility Powered by Skill Mapping" [ref=e1054] [cursor=pointer]:
+              - /url: /blog/internal-talent-mobility-case-studies
+              - img "5 Real‑World Case Studies of Internal Talent Mobility Powered by Skill Mapping" [ref=e1055]
+            - generic [ref=e1056]:
+              - generic [ref=e1057]:
+                - generic [ref=e1058]: BLOG
+                - generic [ref=e1059]: Workforce Optimization
+              - link "5 Real‑World Case Studies of Internal Talent Mobility Powered by Skill Mapping" [ref=e1060] [cursor=pointer]:
+                - /url: /blog/internal-talent-mobility-case-studies
+              - generic [ref=e1061]: January 23, 2026
+        - listitem [ref=e1062]:
+          - generic [ref=e1063]:
+            - link "10 Must-Have Skills for a System Administrator in 2026" [ref=e1064] [cursor=pointer]:
+              - /url: /blog/system-administrator-skills
+              - img "10 Must-Have Skills for a System Administrator in 2026" [ref=e1065]
+            - generic [ref=e1066]:
+              - generic [ref=e1067]:
+                - generic [ref=e1068]: BLOG
+                - generic [ref=e1069]: In-Demand Skills
+              - link "10 Must-Have Skills for a System Administrator in 2026" [ref=e1070] [cursor=pointer]:
+                - /url: /blog/system-administrator-skills
+              - generic [ref=e1071]: January 20, 2026
+    - generic [ref=e1073]:
+      - heading "Explore More Courses" [level=2] [ref=e1074]
+      - list [ref=e1076]:
+        - listitem [ref=e1077]:
+          - 'link "FinOps for Generative AI: LLM, GPU & Cloud Costs Training" [ref=e1079] [cursor=pointer]':
+            - /url: https://www.edstellar.com/course/finops-for-generative-ai-llm-gpu-cloud-costs-training
+        - listitem [ref=e1080]:
+          - link "Cloud FinOps Training" [ref=e1082] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/cloud-finops-training
+        - listitem [ref=e1083]:
+          - link "Blockchain for Business Professionals Training" [ref=e1085] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/blockchain-for-business-professionals-training
+        - listitem [ref=e1086]:
+          - link "NFT Development and Strategy Training" [ref=e1088] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/nft-development-and-strategy-training
+        - listitem [ref=e1089]:
+          - link "DeFi Fundamentals and Protocols Training" [ref=e1091] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/defi-fundamentals-and-protocols-training
+        - listitem [ref=e1092]:
+          - link "Cross-Chain Interoperability Training" [ref=e1094] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/cross-chain-interoperability-training
+        - listitem [ref=e1095]:
+          - link "Personally Identifiable Information (PII) Training" [ref=e1097] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/personally-identifiable-information-pii-training
+        - listitem [ref=e1098]:
+          - link "Ransomware Prevention Training" [ref=e1100] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/ransomware-prevention-training
+        - listitem [ref=e1101]:
+          - link "RFM Analysis Training" [ref=e1103] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/rfm-analysis-training
+        - listitem [ref=e1104]:
+          - link "Advanced Cybersecurity Threat Simulation Training" [ref=e1106] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/advanced-cybersecurity-threat-simulation-training
+        - listitem [ref=e1107]:
+          - link "AI Ethics & Responsible AI Training" [ref=e1109] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/ai-ethics-responsible-ai-training
+        - listitem [ref=e1110]:
+          - link "Retrieval Augmented Generation (RAG) Training" [ref=e1112] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/retrieval-augmented-generation-rag-training
+        - listitem [ref=e1113]:
+          - link "NotebookLM Training" [ref=e1115] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/notebooklm-training
+        - listitem [ref=e1116]:
+          - link "Cloud Business Continuity Planning Training" [ref=e1118] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/cloud-business-continuity-planning-training
+        - listitem [ref=e1119]:
+          - link "AI for Customer Experience (CX) Excellence Training" [ref=e1121] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/ai-for-customer-experience-cx-excellence-training
+        - listitem [ref=e1122]:
+          - link "Salesforce CRM Administrator Training" [ref=e1124] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/salesforce-crm-administrator-training
+        - listitem [ref=e1125]:
+          - link "AI Automation Mastery Training" [ref=e1127] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/ai-automation-mastery-training
+        - listitem [ref=e1128]:
+          - link "AI in Clinical Trials Training" [ref=e1130] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/ai-in-clinical-trials-training
+        - listitem [ref=e1131]:
+          - link "n8n Workflow Automation Training" [ref=e1133] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/n8n-workflow-automation-training
+        - listitem [ref=e1134]:
+          - link "Cloud Vendor and Service Evaluation Training" [ref=e1136] [cursor=pointer]:
+            - /url: https://www.edstellar.com/course/cloud-vendor-and-service-evaluation-training
+  - generic [ref=e1139]:
+    - generic [ref=e1140]:
+      - generic [ref=e1141]:
+        - generic [ref=e1142]: "Reach Us:"
+        - generic [ref=e1143]:
+          - img [ref=e1145]
+          - link "contact@edstellar.com" [ref=e1148] [cursor=pointer]:
+            - /url: mailto:contact@edstellar.com
+      - generic [ref=e1150]:
+        - generic [ref=e1151]:
+          - img "USA" [ref=e1152]
+          - link "+1 682 297 4830" [ref=e1153] [cursor=pointer]:
+            - /url: tel:+16822974830
+        - generic [ref=e1155]:
+          - img "United Kingdom" [ref=e1156]
+          - link "+44 151 453 4009" [ref=e1157] [cursor=pointer]:
+            - /url: tel:+441514534009
+        - generic [ref=e1159]:
+          - img "INDIA" [ref=e1160]
+          - link "+91 636 483 3830" [ref=e1161] [cursor=pointer]:
+            - /url: tel:+916364833830
+    - generic [ref=e1164]:
+      - generic [ref=e1166]:
+        - generic [ref=e1167]:
+          - link "Edstellar" [ref=e1170] [cursor=pointer]:
+            - /url: https://www.edstellar.com/
+            - img "Edstellar" [ref=e1171]
+          - paragraph [ref=e1172]: Edstellar is a one-stop instructor-led corporate training and coaching solution that addresses organizational upskilling and talent transformation needs globally.
+          - generic [ref=e1173]:
+            - generic [ref=e1174]: FOLLOW US
+            - generic [ref=e1175]:
+              - link "LinkedIn" [ref=e1176] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/edstellarofficial/
+                - img "LinkedIn" [ref=e1177]
+              - link "Facebook" [ref=e1178] [cursor=pointer]:
+                - /url: https://www.facebook.com/edstellarofficial/
+                - img "Facebook" [ref=e1179]
+              - link "Click Here to Follow Us On Twitter" [ref=e1180] [cursor=pointer]:
+                - /url: https://x.com/edstellarglobal
+              - link "Click Here to Follow Us On Instagram" [ref=e1181] [cursor=pointer]:
+                - /url: https://www.instagram.com/edstellarofficial/
+              - link "Click Here to Follow Us On Youtube" [ref=e1182] [cursor=pointer]:
+                - /url: https://www.youtube.com/@edstellarofficial
+          - generic [ref=e1184]:
+            - generic [ref=e1185]: Quality and Compliance
+            - generic [ref=e1186]:
+              - img [ref=e1189]
+              - generic "Click Here to Join as a Trainer" [ref=e1192]: ISO 9001:2015 Certified
+            - generic [ref=e1193]:
+              - img [ref=e1196]
+              - generic "Click Here to Become a Guest Author" [ref=e1199]: ISO 27001:2022 Certified
+        - generic [ref=e1201]:
+          - generic [ref=e1202]:
+            - link "Training Programs" [ref=e1203] [cursor=pointer]:
+              - /url: /corporate-training-courses
+            - link "IT & Technical Training" [ref=e1204] [cursor=pointer]:
+              - /url: https://www.edstellar.com/type/it-technical-training
+            - link "Management Training" [ref=e1205] [cursor=pointer]:
+              - /url: https://www.edstellar.com/type/management-skills-training
+            - link "Leadership Training" [ref=e1206] [cursor=pointer]:
+              - /url: https://www.edstellar.com/type/leadership-training
+            - link "Behavioral Training" [ref=e1207] [cursor=pointer]:
+              - /url: https://www.edstellar.com/type/behavioral-training
+            - link "Compliance Training" [ref=e1208] [cursor=pointer]:
+              - /url: https://www.edstellar.com/type/compliance-training
+            - link "Social Impact Training" [ref=e1209] [cursor=pointer]:
+              - /url: https://www.edstellar.com/type/social-impact-training
+            - link "Brows All 2,000+ Courses" [ref=e1210] [cursor=pointer]:
+              - /url: https://www.edstellar.com/type/it-technical-training
+          - generic [ref=e1211]:
+            - link "Excellence" [ref=e1212] [cursor=pointer]:
+              - /url: /excellence-programs
+            - link "Sales Excellence" [ref=e1213] [cursor=pointer]:
+              - /url: /sales-excellence-program
+              - text: Sales Excellence
+            - link "Marketing Excellence" [ref=e1214] [cursor=pointer]:
+              - /url: /marketing-excellence-programs
+              - text: Marketing Excellence
+            - link "Operational Excellence" [ref=e1215] [cursor=pointer]:
+              - /url: /operations-excellence-program
+              - text: Operational Excellence
+            - link "Finance Excellence" [ref=e1216] [cursor=pointer]:
+              - /url: /finance-excellence-programs
+              - text: Finance Excellence
+            - link "HR Excellence" [ref=e1217] [cursor=pointer]:
+              - /url: /hr-excellence-program
+              - text: HR Excellence
+            - link "IT Excellence" [ref=e1218] [cursor=pointer]:
+              - /url: /it-excellence-program
+              - text: IT Excellence
+            - link "Customer Service" [ref=e1219] [cursor=pointer]:
+              - /url: /customer-service-excellence-program
+              - text: Customer Service
+            - link "Leadership Excellence" [ref=e1220] [cursor=pointer]:
+              - /url: /leadership-excellence-programs
+              - text: Leadership Excellence
+            - link "Quality Management" [ref=e1221] [cursor=pointer]:
+              - /url: /quality-management-excellence-programs
+              - text: Quality Management
+          - generic [ref=e1222]:
+            - generic [ref=e1223]: Platform
+            - link "Training Management Software" [ref=e1224] [cursor=pointer]:
+              - /url: /training-management-software
+              - text: Training Management
+              - text: Software
+            - link "How it Works" [ref=e1225] [cursor=pointer]:
+              - /url: /how-it-works
+            - link "FAQ's" [ref=e1226] [cursor=pointer]:
+              - /url: /faqs
+            - link "Corporate Training Catalog" [ref=e1227] [cursor=pointer]:
+              - /url: /corporate-training-catalog
+              - text: Corporate Training
+              - text: Catalog
+            - link "Stellar AI" [ref=e1228] [cursor=pointer]:
+              - /url: /stellar-ai
+              - text: Stellar AI
+            - link "Skill Matrix" [ref=e1229] [cursor=pointer]:
+              - /url: /skill-matrix
+            - link "HRMS Integration" [ref=e1230] [cursor=pointer]:
+              - /url: /hrms-integration
+          - generic [ref=e1231]:
+            - generic [ref=e1232]: Company
+            - link "About us" [ref=e1233] [cursor=pointer]:
+              - /url: /about-us
+              - text: About us
+            - link "Who we Serve" [ref=e1234] [cursor=pointer]:
+              - /url: /who-we-serve
+            - link "CEO Retreats" [ref=e1235] [cursor=pointer]:
+              - /url: /ceo-retreats
+            - link "Pricing" [ref=e1236] [cursor=pointer]:
+              - /url: /corporate-training-pricing
+            - link "Training Delivery" [ref=e1237] [cursor=pointer]:
+              - /url: /training-delivery
+            - link "Partner with Edstellar" [ref=e1238] [cursor=pointer]:
+              - /url: /partner-program
+              - text: Partner with Edstellar
+            - link "Careers" [ref=e1239] [cursor=pointer]:
+              - /url: /careers
+            - link "Contact us" [ref=e1240] [cursor=pointer]:
+              - /url: /contact-us
+          - generic [ref=e1241]:
+            - generic [ref=e1242]:
+              - generic [ref=e1243]: Resources
+              - link "Blog" [ref=e1244] [cursor=pointer]:
+                - /url: /blog
+              - link "L&D Resources" [ref=e1245] [cursor=pointer]:
+                - /url: /learning-development-resources
+                - text: L&D Resources
+              - link "Sitemap" [ref=e1246] [cursor=pointer]:
+                - /url: /sitemap
+            - generic [ref=e1247]:
+              - generic [ref=e1248]: Trainers
+              - link "Trainer" [ref=e1249] [cursor=pointer]:
+                - /url: /trainer-platform
+                - text: Trainer
+              - link "Join as Trainer" [ref=e1250] [cursor=pointer]:
+                - /url: https://login.edstellar.com/register
+                - text: Join as Trainer
+              - link "Write for Us" [ref=e1251] [cursor=pointer]:
+                - /url: /become-a-guest-author
+                - text: Write for Us
+      - generic [ref=e1254]:
+        - generic [ref=e1255]: © 2021-2026 Edstellar. All rights reserved.
+        - generic [ref=e1256]:
+          - link "Modern Slavery" [ref=e1257] [cursor=pointer]:
+            - /url: /modern-slavery-statement
+          - generic [ref=e1258]: "|"
+          - link "Privacy Policy" [ref=e1259] [cursor=pointer]:
+            - /url: /privacy-policy
+          - generic [ref=e1260]: "|"
+          - link "Terms and Conditions" [ref=e1261] [cursor=pointer]:
+            - /url: /terms-conditions

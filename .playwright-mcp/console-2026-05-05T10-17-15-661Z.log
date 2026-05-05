@@ -1,0 +1,28 @@
+[     121ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1196ms] [LOG] [Fast Refresh] done in 1175ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1507ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1604ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1868ms] [WARNING] Image with src "/images/cyber/hero-cyber-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1872ms] [WARNING] Image with src "/images/cyber/hero-industry-bfsi.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1879ms] [WARNING] Image with src "/images/cyber/hero-industry-healthcare.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1882ms] [WARNING] Image with src "/images/cyber/hero-ai-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    2486ms] [WARNING] Image with src "/images/clients/autodesk.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    2489ms] [WARNING] Image with src "/images/clients/taylor-francis.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   24560ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   25210ms] [LOG] [Fast Refresh] done in 754ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   25344ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   25365ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   25546ms] [WARNING] Image with src "/images/cyber/hero-cyber-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   25549ms] [WARNING] Image with src "/images/cyber/hero-industry-bfsi.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   25554ms] [WARNING] Image with src "/images/cyber/hero-industry-healthcare.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   25555ms] [WARNING] Image with src "/images/cyber/hero-ai-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   71066ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   71287ms] [LOG] [Fast Refresh] done in 61ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
