@@ -6,9 +6,9 @@ export type ChallengeIcon =
 
 export type CaseStudy = {
   slug: string;
-  cardTitle: string;          // shown on the home Recent Successes card
-  cardImage: string;          // home card thumbnail
-  cardDescription: string;    // home card body
+  cardTitle: string;
+  cardImage: string;
+  cardDescription: string;
   hero: { title: string; image: string; alt: string };
   intro: { heading: string; body: string };
   challenges: Array<{ icon: ChallengeIcon; title: string; body: string }>;
@@ -27,6 +27,16 @@ export type CaseStudy = {
     image: string;
     imageAlt: string;
   };
+  intervention?: {
+    heading: string;
+    paragraphs: string[];
+    steps: Array<{ number: number; label: string; body: string }>;
+    image: string;
+    imageAlt: string;
+  };
+  programSpecs?: Array<{ label: string; value: string }>;
+  metrics?: Array<{ stat: string; label: string; sublabel: string }>;
+  quote?: { body: string; author: string; title: string; company: string };
 };
 
 export const CASE_STUDIES: CaseStudy[] = [
@@ -69,7 +79,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { label: "Audit Closure:", body: "100% of cloud-related audit findings resolved within 90 days." },
       { label: "Detection Coverage:", body: "65% increase in cloud-native detection coverage across all 14 markets." },
       { label: "Time-to-Triage:", body: "40% faster mean time to respond on cloud incidents." },
-      { label: "Workforce Readiness:", body: "540 SOC and engineering staff certified on cloud-native security." },
+      { label: "Workforce Readiness:", body: "540 SOC and engineering staff completed the cloud-native security program." },
     ],
     meet: {
       heading: "How Does Edstellar's Approach Meet the Requirements?",
@@ -121,7 +131,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     results: [
       { label: "Audit Closure:", body: "Zero HIPAA findings on the next quarterly audit cycle." },
       { label: "Workforce Reach:", body: "8,500 staff completed PHI awareness with a 94% first-attempt pass rate." },
-      { label: "Engineer Certification:", body: "240 IT and clinical-systems engineers certified." },
+      { label: "Engineer Training:", body: "240 IT and clinical-systems engineers completed the technical track." },
       { label: "Incident Response:", body: "50% faster PHI incident triage post-program." },
     ],
     meet: {
@@ -175,7 +185,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { label: "Segmentation Coverage:", body: "Critical assets segmented across 12 plants in 6 months." },
       { label: "Cross-Team Velocity:", body: "35% faster joint IR exercises post-program." },
       { label: "Audit Readiness:", body: "Aligned to IEC 62443 and NIST 800-82 evidence requirements." },
-      { label: "Workforce Lift:", body: "180 plant engineers and 120 SOC analysts certified." },
+      { label: "Workforce Lift:", body: "180 plant engineers and 120 SOC analysts completed the program." },
     ],
     meet: {
       heading: "How Does Edstellar's Approach Meet the Requirements?",
@@ -226,7 +236,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     },
     results: [
       { label: "Recert Outcome:", body: "PCI-DSS recertification achieved on first attempt." },
-      { label: "Coverage:", body: "620 staff certified across store-tech, IT, and developer tracks." },
+      { label: "Coverage:", body: "620 staff trained across store-tech, IT, and developer tracks." },
       { label: "Scope Reduction:", body: "30% reduction in PCI-DSS scope after tokenization push." },
       { label: "Vulnerability Density:", body: "45% reduction in PCI-DSS-relevant code findings." },
     ],
@@ -281,7 +291,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { label: "Vulnerability Density:", body: "55% reduction in critical findings across firmware code." },
       { label: "Supplier Alignment:", body: "18 Tier-1 suppliers attended joint cohorts and harmonized practice." },
       { label: "Time-to-Patch:", body: "30% faster OTA security patch turnaround." },
-      { label: "Workforce Lift:", body: "380 embedded, telematics, and cloud engineers certified." },
+      { label: "Workforce Lift:", body: "380 embedded, telematics, and cloud engineers trained across the three tracks." },
     ],
     meet: {
       heading: "How Does Edstellar's Approach Meet the Requirements?",
@@ -334,7 +344,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { label: "Time-to-Detect:", body: "60% reduction in time to identify novel threats." },
       { label: "Hunt Output:", body: "14 active hunts generating actionable findings within 90 days." },
       { label: "ZTA Phase 1:", body: "First mission-system enclave fully zero-trust within 6 months." },
-      { label: "Workforce:", body: "200+ analysts certified across hunt, forensics, and ZTA tracks." },
+      { label: "Workforce:", body: "200+ analysts trained across hunt, forensics, and ZTA tracks." },
     ],
     meet: {
       heading: "How Does Edstellar's Approach Meet the Requirements?",
@@ -440,7 +450,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { label: "NERC-CIP Findings:", body: "Zero new findings on next audit cycle." },
       { label: "OT Detection:", body: "50% increase in OT-relevant detection coverage." },
       { label: "Joint IR Drills:", body: "Operations and SOC ran 6 joint exercises in 6 months." },
-      { label: "Workforce:", body: "280 operations engineers and 120 SOC analysts certified." },
+      { label: "Workforce:", body: "280 operations engineers and 120 SOC analysts trained across the program." },
     ],
     meet: {
       heading: "How Does Edstellar's Approach Meet the Requirements?",
@@ -493,7 +503,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { label: "Detection Coverage:", body: "70% of 5G-relevant ATT&CK techniques covered post-program." },
       { label: "Playbook Maturity:", body: "24 new SOC playbooks operational, mapped to ATT&CK." },
       { label: "Time-to-Triage:", body: "35% faster mean time to respond on signaling incidents." },
-      { label: "Workforce:", body: "320 engineering and operations staff certified." },
+      { label: "Workforce:", body: "320 engineering and operations staff trained across the four-month curriculum." },
     ],
     meet: {
       heading: "How Does Edstellar's Approach Meet the Requirements?",
@@ -546,7 +556,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { label: "Underwriting Variance:", body: "45% reduction in cyber-risk pricing variance." },
       { label: "Claims Velocity:", body: "30% faster cyber claim closure." },
       { label: "Loss-Ratio Insight:", body: "Quarterly cyber loss-ratio reporting for the first time." },
-      { label: "Workforce:", body: "220 underwriters, claims, and GRC staff certified." },
+      { label: "Workforce:", body: "220 underwriters, claims, and GRC staff trained across the program." },
     ],
     meet: {
       heading: "How Does Edstellar's Approach Meet the Requirements?",
@@ -558,6 +568,131 @@ export const CASE_STUDIES: CaseStudy[] = [
       ],
       image: "/images/cyber/path-grc-mgr.jpg",
       imageAlt: "GRC manager learning path",
+    },
+  },
+  {
+    slug: "fmcg-workforce-cyber-awareness",
+    cardTitle: "Cyber Capability Across 18,000 Employees",
+    cardImage: "/images/cyber/hero-team-training.jpg",
+    cardDescription:
+      "A global consumer goods company built cybersecurity capability across 18,000 employees in 32 countries through four role-specific training programs: security awareness, procurement security, secure development, and Security Champion designation.",
+    hero: {
+      title: "How a Global Consumer Goods Company Built Cybersecurity Capability Across 18,000 Employees in 32 Countries",
+      image: "/images/cyber/hero-team-training.jpg",
+      alt: "Large-scale corporate cybersecurity training program",
+    },
+    intro: {
+      heading: "The Gap Was Never the Tools. It Was the People.",
+      body: "When a spear-phishing campaign targeted procurement teams across three markets, the CISO and Head of Learning and Development ran a rapid diagnosis. The security stack was intact. Incident response was handled by the internal IT team. The gap was the human capability layer. Edstellar was engaged to build cybersecurity capability across the workforce through structured, role-specific training programs.",
+    },
+    challenges: [
+      {
+        icon: "users",
+        title: "No Security Awareness Baseline",
+        body: "18,000 employees across 32 countries had never completed formal security awareness training. Behaviours varied widely by region, role, and tenure.",
+      },
+      {
+        icon: "shield-alert",
+        title: "Procurement Blind Spot",
+        body: "Procurement managers conducting supplier onboarding and due diligence had no training on digital risk, vendor phishing patterns, or supply-chain security obligations.",
+      },
+      {
+        icon: "code",
+        title: "Developer Skill Gap",
+        body: "180 in-house developers relied on ad-hoc practices with no formal secure-development training. No shared language existed around OWASP, secrets hygiene, or threat modeling.",
+      },
+      {
+        icon: "graduation-cap",
+        title: "No Internal Champions",
+        body: "No trained security advocates existed inside business units to sustain learning, reinforce behaviours, or flag risks between formal programs.",
+      },
+    ],
+    solution: {
+      heading: "Edstellar's Training Approach",
+      paragraphs: [
+        "Edstellar designed and delivered four role-specific training programs across a six-month phased rollout, building measurable cybersecurity capability at every level of the organisation.",
+      ],
+      bullets: [
+        { label: "Security Awareness Fundamentals:", body: "90-minute program for all 18,000 employees in 8 languages." },
+        { label: "Procurement Security:", body: "12-hour focused program for 400 procurement managers." },
+        { label: "Secure Development Practices:", body: "24-hour technical track for 180 developers." },
+        { label: "Security Champion Program:", body: "40-hour advanced training program for 45 IT staff designated as in-unit security advocates." },
+      ],
+      image: "/images/cyber/more-virtual-class.jpg",
+      imageAlt: "Virtual instructor-led training cohort",
+    },
+    results: [
+      { label: "Employees Trained:", body: "18,000+ across 32 countries in 6 months." },
+      { label: "Completion Rate:", body: "96% first-attempt completion on the awareness program." },
+      { label: "Phishing Click Rate:", body: "Dropped from 34% to 8% in post-program simulation, a 76% behavioural improvement." },
+      { label: "Security Champions Trained:", body: "45 Security Champions designated and embedded across all business units." },
+    ],
+    meet: {
+      heading: "How Edstellar's Approach Met the Requirements",
+      bullets: [
+        { label: "Role-First Design:", body: "Each program built for a specific role, not adapted from a generic catalog." },
+        { label: "Language-Local Delivery:", body: "Instructors delivered in 8 languages with region-specific scenarios, not translated content." },
+        { label: "Phased at Scale:", body: "Six-month rollout across 32 countries without disrupting operations." },
+        { label: "Skills Delta Reporting:", body: "Post-program board-ready report showing pre/post capability scores by role segment." },
+      ],
+      image: "/images/cyber/hero-team-training.jpg",
+      imageAlt: "Team training session",
+    },
+    intervention: {
+      heading: "How Edstellar Intervened",
+      paragraphs: [
+        "Edstellar's scope was precise: design and deliver training programs that build cybersecurity capability in the workforce.",
+        "We did not audit security systems, deploy tools, or run incident response. Our intervention was entirely focused on the human capability layer: assessing gaps, designing role-specific programs, delivering them at global scale, and measuring the outcome.",
+      ],
+      steps: [
+        {
+          number: 1,
+          label: "Role-Based Capability Assessment",
+          body: "Edstellar ran structured skill assessments across four employee segments: general staff, procurement managers, developers, and IT staff. Each group was assessed against role-specific cybersecurity competency frameworks to establish a clear skills baseline and identify where the critical gaps sat.",
+        },
+        {
+          number: 2,
+          label: "Four-Track Program Architecture",
+          body: "Based on the assessment, Edstellar designed four programs matched to each role. The full-staff awareness module ran 90 minutes in 8 languages. Procurement managers completed a 12-hour supplier risk program. Developers ran a 24-hour secure coding track. IT staff completed a 40-hour Security Champion advanced training program.",
+        },
+        {
+          number: 3,
+          label: "Language-Local Instructor Deployment",
+          body: "Edstellar deployed vetted instructors who delivered each program in the local language, using original content written for that region rather than translated materials. Scenario examples were calibrated to EMEA, APAC, and Americas threat contexts. Procurement managers in Germany received different examples than those in Singapore or Brazil.",
+        },
+        {
+          number: 4,
+          label: "Phased Six-Month Global Rollout",
+          body: "Programs rolled out in three structured waves. Wave 1 delivered the awareness fundamentals to all 18,000 employees across 32 countries over 10 weeks. Wave 2 ran procurement and developer tracks in parallel. Wave 3 completed the Security Champion program, placing a trained advocate in every major business unit.",
+        },
+        {
+          number: 5,
+          label: "Skills Delta and Board-Ready Reporting",
+          body: "At program close, Edstellar delivered a structured skills delta report covering pre- and post-assessment scores by role segment, completion rates, and pass-rate data. Behavioural changes from phishing simulation exercises were included alongside a capability improvement summary formatted for CISO and board-level presentation.",
+        },
+      ],
+      image: "/images/cyber/more-virtual-class.jpg",
+      imageAlt: "Virtual instructor-led cybersecurity training cohort",
+    },
+    programSpecs: [
+      { label: "Employees Trained", value: "18,000+" },
+      { label: "Countries", value: "32" },
+      { label: "Training Tracks", value: "4" },
+      { label: "Languages", value: "8" },
+      { label: "Delivery Mode", value: "Virtual ILT" },
+      { label: "Program Duration", value: "6 months" },
+    ],
+    metrics: [
+      { stat: "18,000+", label: "Employees Trained", sublabel: "Across 32 countries in 6 months" },
+      { stat: "96%", label: "Completion Rate", sublabel: "First-ever global security awareness rollout" },
+      { stat: "−76%", label: "Phishing Click Rate", sublabel: "Simulation dropped from 34% to 8% post-training" },
+      { stat: "45", label: "Security Champions Trained", sublabel: "Designated advocates embedded across all business units" },
+    ],
+    quote: {
+      body: "Edstellar did not come in to fix our security stack. That was never their role. They came in to build the human capability layer that our tools could not address. Six months later, our CISO presented a skills delta to the board that showed exactly where we started and where we landed. That kind of measurement is what makes training a business investment, not a compliance checkbox.",
+      author: "Head of Learning & Development",
+      title: "Head of Learning & Development",
+      company: "Global Consumer Goods Company",
     },
   },
 ];

@@ -27,9 +27,71 @@ These are Edstellar's primary differentiators and must be present, visible, and 
 - **No eyebrow headings.** Do not place a small uppercase label above any section heading. Section headings must stand alone and carry the section identity without an eyebrow. The only exception is the slide category label inside HeroSlider, which is scoped to the hero slide UI and is not a page-section eyebrow.
 - **No em-dashes** anywhere on the page. Use a period, comma, or colon instead.
 - **No "course"** outside of FAQs. Always use "program", "training program", or "training programs".
-- **Edstellar is not an accreditation body.** Never write "certified by Edstellar", "Edstellar-certified", or anything that implies Edstellar grants industry certifications.
+- **No certification or accreditation claims.** See the full rule below — this is a hard boundary. Never write anything that implies Edstellar issues certifications or is a partner to any accredited governing body.
 - **No URL guessing.** CTAs must link to `#contact`, `#catalog`, or a confirmed URL only.
 - **No em-dashes.** Repeated because it keeps happening.
+
+---
+
+## Certification and Accreditation — Hard Boundary
+
+> **This is a non-negotiable content rule. Violation of this rule creates legal and reputational risk. Every writer, AI agent, and contributor must read this section before touching any Edstellar page.**
+
+### What Edstellar Does
+
+Edstellar designs and delivers **instructor-led workforce training programs** that build capability in employees. That is the full scope of what Edstellar does.
+
+Edstellar does not:
+- Issue industry certifications or credentials of any kind
+- Prepare employees to sit external certification exams (CISSP, CEH, CISM, CompTIA Security+, etc.)
+- Act as an authorised training partner, learning partner, or accredited education provider to any governing body
+- Hold any accreditation from ISC2, ISACA, EC-Council, CompTIA, SANS Institute, OffSec, GIAC, CREST, or any other standards or certification body
+
+### Prohibited Language
+
+Never use any of the following words or phrases in any Edstellar page, case study, blog, or marketing material:
+
+| Prohibited | Use instead |
+|---|---|
+| "certified by Edstellar" | "trained by Edstellar" |
+| "Edstellar-certified" | "Edstellar-trained" |
+| "certification program" | "training program" |
+| "certification training" | "capability training" / "skills training" |
+| "get certified" | "build the skill" / "complete the program" |
+| "earn a certification" | "complete the training track" |
+| "certified [role]" (as an outcome of Edstellar training) | "trained [role]" / "program graduate" |
+| "accredited by [body]" | Remove entirely |
+| "authorised training partner to [body]" | Remove entirely |
+| "EC-Council accredited" / "ISC2 approved" / "ISACA partner" | Remove entirely — never claim these |
+| "pass the exam" | "complete the program assessment" |
+| "exam prep" | Remove — Edstellar does not offer exam preparation |
+| "certification readiness" | "skill readiness" |
+| "Security Champion certification" | "Security Champion program" / "Security Champion designation" |
+| "staff certified" (as a training outcome) | "staff trained" / "staff who completed the program" |
+
+### What to Write Instead
+
+When describing the outcome of an Edstellar training program, always frame it as a **capability or skill improvement** — not a credential.
+
+**Wrong:** "180 developers were certified in secure coding."
+**Right:** "180 developers completed the secure coding track and applied OWASP practices across the product squads."
+
+**Wrong:** "Employees earned their HIPAA certification through Edstellar."
+**Right:** "Employees built the skills to handle PHI correctly and operate within HIPAA compliance expectations."
+
+**Wrong:** "Security Champion Certification — 40-hour certification program."
+**Right:** "Security Champion Program — 40-hour advanced training program that designates in-unit security advocates."
+
+### Case Studies — Specific Rules
+
+Case study results sections and metrics must never use "certified" or "certification" to describe what Edstellar delivered. All workforce outcome statements must use:
+
+- "trained" (not "certified")
+- "completed the program" (not "received a certification")
+- "designated" (for internal role designations like Security Champions — these are internal titles, not external credentials)
+- "skills delta" (measurable capability change, not a qualification)
+
+The `metrics` and `results` arrays in `case-studies.ts` must not contain the word "certified" or "certification" in any label or sublabel field.
 
 ---
 
@@ -490,3 +552,4 @@ Before publishing a new category page, verify the copy answers these questions t
 - [ ] Does the page speak to **L&D language** (skilling, upskilling, reskilling, workforce development) — not just "get certified"?
 - [ ] Does the page mention **measurable skill outcomes** (not just "pass the exam")?
 - [ ] Does the page cover both **small group** and **large enterprise** rollouts?
+- [ ] Does the page contain **zero certification claims**? (No "certified by Edstellar", "certification program", "staff certified", "accredited by", or any governing body partnership claim.) See the Certification and Accreditation section above.

@@ -275,3 +275,81 @@
 @media (max-width: 924px) {
   .eds-page-center { max-width: 720px; }
 }
+
+/* ── Print / PDF export ─────────────────────────────────────────────────── */
+@media print {
+  @page {
+    size: A4;
+    margin: 1.8cm 2cm 2cm;
+  }
+
+  /* Hide site chrome and interactive elements */
+  header,
+  footer,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Reveal print-only elements (document header) */
+  .print-only {
+    display: flex !important;
+  }
+
+  /* Reset all backgrounds to white, all text to near-black */
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    background-image: none !important;
+    color: #1B1D52 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Restore accent colors on known brand elements */
+  [data-print-accent="indigo"] { color: #6366F1 !important; }
+  [data-print-accent="lime"]   { background: #C5E826 !important; }
+
+  /* Remove hero min-height so it doesn't force a blank page */
+  section {
+    min-height: unset !important;
+    page-break-inside: avoid;
+  }
+
+  /* Images: keep proportional, no extra gap */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* Intervention numbered step connectors: hide in print */
+  [data-print="connector"] {
+    display: none !important;
+  }
+
+  /* Metric cards: give each a subtle border so they read as distinct */
+  [data-print="metric-card"] {
+    border: 1px solid #E5E7EB !important;
+  }
+
+  /* Program spec grid: preserve grid borders */
+  [data-print="spec-grid"] {
+    gap: 1px !important;
+    background: #E5E7EB !important;
+  }
+
+  /* Quote: restore left border accent */
+  blockquote {
+    border-left: 4px solid #6366F1 !important;
+    padding-left: 20px !important;
+  }
+
+  /* Page break hints */
+  .print-break-before { page-break-before: always; }
+  .print-break-avoid  { page-break-inside: avoid; }
+}
+
+.print-only { display: none; }
