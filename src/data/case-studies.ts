@@ -610,7 +610,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     solution: {
       heading: "Edstellar's Training Approach",
       paragraphs: [
-        "Edstellar designed and delivered four role-specific training programs across a six-month phased rollout, building measurable cybersecurity capability at every level of the organisation.",
+        "Four role-specific training programs were designed and delivered across a six-month phased rollout, building measurable cybersecurity capability at every level of the organisation.",
       ],
       bullets: [
         { label: "Security Awareness Fundamentals:", body: "90-minute program for all 18,000 employees in 8 languages." },
@@ -639,36 +639,36 @@ export const CASE_STUDIES: CaseStudy[] = [
       imageAlt: "Team training session",
     },
     intervention: {
-      heading: "How Edstellar Intervened",
+      heading: "How We Intervened",
       paragraphs: [
-        "Edstellar's scope was precise: design and deliver training programs that build cybersecurity capability in the workforce.",
-        "We did not audit security systems, deploy tools, or run incident response. Our intervention was entirely focused on the human capability layer: assessing gaps, designing role-specific programs, delivering them at global scale, and measuring the outcome.",
+        "Our scope was precise: design and deliver training programs that build cybersecurity capability in the workforce.",
+        "We did not audit security systems, deploy tools, or run incident response. Our engagement was focused entirely on the human capability layer — assessing gaps, designing role-specific programs, delivering them at global scale, and measuring the outcome.",
       ],
       steps: [
         {
           number: 1,
           label: "Role-Based Capability Assessment",
-          body: "Edstellar ran structured skill assessments across four employee segments: general staff, procurement managers, developers, and IT staff. Each group was assessed against role-specific cybersecurity competency frameworks to establish a clear skills baseline and identify where the critical gaps sat.",
+          body: "We ran structured skill assessments across four employee segments: general staff, procurement managers, developers, and IT staff. Each group was assessed against role-specific cybersecurity competency frameworks to establish a clear skills baseline and identify where the critical gaps sat.",
         },
         {
           number: 2,
           label: "Four-Track Program Architecture",
-          body: "Based on the assessment, Edstellar designed four programs matched to each role. The full-staff awareness module ran 90 minutes in 8 languages. Procurement managers completed a 12-hour supplier risk program. Developers ran a 24-hour secure coding track. IT staff completed a 40-hour Security Champion advanced training program.",
+          body: "Based on the assessment findings, we designed four programs, each matched to a specific role. The full-staff awareness module ran 90 minutes in 8 languages. Procurement managers completed a 12-hour supplier risk program. Developers ran a 24-hour secure coding track. IT staff completed a 40-hour Security Champion advanced training program.",
         },
         {
           number: 3,
           label: "Language-Local Instructor Deployment",
-          body: "Edstellar deployed vetted instructors who delivered each program in the local language, using original content written for that region rather than translated materials. Scenario examples were calibrated to EMEA, APAC, and Americas threat contexts. Procurement managers in Germany received different examples than those in Singapore or Brazil.",
+          body: "We deployed vetted instructors who delivered each program in the local language, using original content written for that region — not translated materials. Scenario examples were calibrated to EMEA, APAC, and Americas threat contexts. Procurement managers in Germany received different examples than those in Singapore or Brazil.",
         },
         {
           number: 4,
           label: "Phased Six-Month Global Rollout",
-          body: "Programs rolled out in three structured waves. Wave 1 delivered the awareness fundamentals to all 18,000 employees across 32 countries over 10 weeks. Wave 2 ran procurement and developer tracks in parallel. Wave 3 completed the Security Champion program, placing a trained advocate in every major business unit.",
+          body: "We structured the rollout in three waves. Wave 1 delivered awareness fundamentals to all 18,000 employees across 32 countries over 10 weeks. Wave 2 ran the procurement and developer tracks in parallel. Wave 3 completed the Security Champion program, placing a trained advocate in every major business unit.",
         },
         {
           number: 5,
           label: "Skills Delta and Board-Ready Reporting",
-          body: "At program close, Edstellar delivered a structured skills delta report covering pre- and post-assessment scores by role segment, completion rates, and pass-rate data. Behavioural changes from phishing simulation exercises were included alongside a capability improvement summary formatted for CISO and board-level presentation.",
+          body: "At program close, we delivered a structured skills delta report covering pre- and post-assessment scores by role segment, completion rates, and pass-rate data. Behavioural changes from phishing simulations were included alongside a capability improvement summary formatted for CISO and board-level presentation.",
         },
       ],
       image: "/images/cyber/more-virtual-class.jpg",

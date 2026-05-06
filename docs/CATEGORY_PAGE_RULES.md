@@ -541,6 +541,155 @@ All custom CSS classes use the `eds-` prefix (e.g. `eds-page-center`, `eds-arrow
 
 ---
 
+## Case Study Authoring Rules
+
+> These rules apply to every case study published under any Edstellar category page, including `/case-studies/[slug]` routes and modal previews. Read this before writing or editing any case study content.
+
+---
+
+### The Fundamental Rule
+
+Case studies on Edstellar's own website are **Edstellar telling the story of an engagement** — not a neutral third-party report. That means:
+
+- Edstellar describes the **client's situation** in objective third-person
+- Edstellar describes **its own work** in confident first-person ("we")
+- The **client speaks** only in the quote section, in their own first-person voice
+
+This is not a journalism piece. Edstellar is the author and the actor. Own both roles clearly.
+
+---
+
+### Section-by-Section Voice Rules
+
+| Section | Voice | Who is "speaking" | First-person pronoun |
+|---|---|---|---|
+| **Hero title** | Edstellar narrating the client's outcome | Objective third-person about client | No pronoun |
+| **Intro / Context** | Edstellar setting the scene | Third-person description of client's situation | No pronoun |
+| **Challenges** | Edstellar diagnosing the client's gaps | Third-person observed facts about the client | No pronoun |
+| **How We Intervened** | Edstellar owning their work | **First-person "We"** | "We ran / We designed / We deployed" |
+| **Program at a Glance** | Edstellar presenting engagement scope | Neutral data | No pronoun |
+| **Results / Metrics** | Edstellar presenting outcomes of their work | **First-person "We"** | "We delivered / We reported" |
+| **Results disclaimer** | Edstellar being transparent about scope | **First-person "We"** | "We did not modify..." |
+| **Client Quote** | The client validating Edstellar's work | Client's first-person | "We had / Our CISO / Our board" |
+
+---
+
+### Intro and Challenges — Third-Person Rules
+
+The intro and challenges sections describe the **client's world before Edstellar arrived**. Edstellar is the author but not yet the actor. Write these in objective editorial voice:
+
+**Correct:**
+> "When a spear-phishing campaign targeted procurement teams across three markets, the CISO and Head of Learning and Development ran a rapid diagnosis. The security stack was intact. The gap was the human capability layer."
+
+**Wrong:**
+> "When we were brought in, we found the client's security stack was intact but their people were untrained."
+
+Do not use "we" in the intro or challenges sections — Edstellar has not yet entered the story.
+
+---
+
+### Intervention / How We Intervened — First-Person Rules
+
+The intervention section is where Edstellar enters the story. Use "we" throughout — not passive voice, not "Edstellar" as a third party.
+
+**Correct:**
+> "We ran structured skill assessments across four employee segments."
+> "We designed four programs, each matched to a specific role."
+> "We deployed vetted instructors who delivered each program in the local language."
+
+**Wrong (passive — evasive, sounds like Edstellar is hiding behind their own work):**
+> "Structured skill assessments were conducted across four segments."
+> "Four programs were designed, each matched to a specific role."
+
+**Wrong (third-person — sounds like a vendor brochure or someone else describing Edstellar):**
+> "Edstellar ran structured skill assessments."
+> "Edstellar designed four programs."
+
+> **Rule:** Once the intervention section begins, never use "Edstellar" as the subject of a sentence in the body copy. The company is the author — it does not need to name itself in the narrative. Use "we" or restructure the sentence so no subject pronoun is needed.
+
+---
+
+### The "Edstellar" Name in Body Copy — Frequency Rule
+
+Across the entire case study, the word "Edstellar" should appear:
+
+| Location | Allowed | Reason |
+|---|---|---|
+| Hero title | 0 times | Title is about the client's outcome, not Edstellar |
+| Intro body | 1 time maximum | To introduce Edstellar into the story at the moment of engagement |
+| Challenges | 0 times | This section is about the client's gaps, not Edstellar |
+| Intervention heading | 1 time maximum | "How We Intervened" is preferred; avoid "How Edstellar Intervened" |
+| Intervention paragraphs | 0 times | Use "we" — Edstellar is the author, not the subject |
+| Intervention steps | 0 times | Use "we" throughout |
+| Results | 0 times | Use "we delivered" |
+| Quote | As the client uses it | Client may say "Edstellar helped us..." — this is correct |
+
+If "Edstellar" appears more than twice in body copy (outside of the quote), the copy is too self-referential and needs editing.
+
+---
+
+### Results Disclaimer — Confident Transparency, Not Defensive
+
+The results disclaimer clarifies what Edstellar's training covered versus what remained the client's responsibility. On Edstellar's own website, this is a **trust signal** — it shows honesty and a clear scope of work. Write it confidently, not defensively.
+
+**Correct (confident first-person):**
+> "All outcomes reported here reflect changes in workforce capability and training behaviour. We did not modify security infrastructure or tooling — those systems remained under the client's internal IT and security teams throughout."
+
+**Wrong (defensive, sounds like a legal disclaimer):**
+> "All outcomes measure changes in workforce capability and training behaviour only. Edstellar was not responsible for security infrastructure, tooling, or incident response, which remained the sole responsibility of the client."
+
+---
+
+### Client Quote — Rules
+
+The client quote is the only section where the client speaks in first-person. It must:
+
+- Sound like a real person from the client organisation speaking about their experience
+- Reference Edstellar's work from the client's perspective ("Edstellar helped us...", "The training partner...")
+- Include a measurable or observable outcome the client witnessed
+- Be attributed to a named role (Head of L&D, CISO, VP Engineering) and the company type — never a name, always a role
+
+**Correct attribution:**
+> Head of Learning & Development — Global Consumer Goods Company
+
+**Wrong attribution:**
+> John Smith, CISO ← never use a real or fictional person's name
+
+The quote must not contradict anything in the narrative body. If the narrative says training ran for 6 months, the quote must not say "a year-long program."
+
+---
+
+### Case Study Scope — Hard Boundary
+
+Every case study published on any Edstellar page must make clear that Edstellar's role was **training delivery only**. Edstellar did not:
+
+- Fix, audit, or assess the client's security systems or infrastructure
+- Deploy, configure, or recommend security tools or software
+- Run incident response, threat hunting, or penetration testing
+- Issue industry certifications or credentials of any kind
+- Act as a managed security service provider (MSSP)
+
+If a case study outcome implies any of the above, rewrite it. The outcome must be traceable exclusively to a change in **human capability** — employee knowledge, behaviour, skill assessment scores, or training completion rates.
+
+---
+
+### Case Study Pre-Publish Checklist
+
+Before publishing any new case study, verify:
+
+- [ ] Hero title describes the client's outcome, not Edstellar's service
+- [ ] Intro uses third-person to describe the client's situation
+- [ ] "Edstellar" appears no more than twice in the body copy outside the client quote
+- [ ] Challenges section contains zero first-person pronouns
+- [ ] Intervention steps all use "We" — no passive voice, no "Edstellar" as subject
+- [ ] Results disclaimer is written in confident first-person, not defensive legal tone
+- [ ] Client quote is attributed to a role, not a name
+- [ ] No certification or accreditation language anywhere (see Certification section above)
+- [ ] All outcomes trace to workforce capability change, not infrastructure or tooling change
+- [ ] The quote does not contradict any fact stated in the narrative body
+
+---
+
 ## Competitor Differentiation Checklist
 
 Before publishing a new category page, verify the copy answers these questions that SANS, OffSec, EC-Council, Cybrary, and Infosec Institute do NOT answer clearly:
