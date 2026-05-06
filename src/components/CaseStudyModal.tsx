@@ -181,7 +181,7 @@ export function CaseStudyModal({ slug, onClose }: { slug: string | null; onClose
                 </p>
                 <p style={{ fontFamily: FONT_MEDIUM, fontSize: 11, color: ACCENT, margin: 0 }}>
                   {data.quote.author}
-                  <span style={{ fontFamily: FONT_REGULAR, color: "#9CA3AF" }}>{" — "}{data.quote.company}</span>
+                  <span style={{ fontFamily: FONT_REGULAR, color: "#9CA3AF" }}>{", "}{data.quote.company}</span>
                 </p>
               </div>
             )}

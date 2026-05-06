@@ -642,7 +642,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       heading: "How We Intervened",
       paragraphs: [
         "Our scope was precise: design and deliver training programs that build cybersecurity capability in the workforce.",
-        "We did not audit security systems, deploy tools, or run incident response. Our engagement was focused entirely on the human capability layer — assessing gaps, designing role-specific programs, delivering them at global scale, and measuring the outcome.",
+        "We did not audit security systems, deploy tools, or run incident response. Our engagement was focused entirely on the human capability layer: assessing gaps, designing role-specific programs, delivering them at global scale, and measuring the outcome.",
       ],
       steps: [
         {
@@ -658,7 +658,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         {
           number: 3,
           label: "Language-Local Instructor Deployment",
-          body: "We deployed vetted instructors who delivered each program in the local language, using original content written for that region — not translated materials. Scenario examples were calibrated to EMEA, APAC, and Americas threat contexts. Procurement managers in Germany received different examples than those in Singapore or Brazil.",
+          body: "We deployed vetted instructors who delivered each program in the local language, using original content written for that region, not translated materials. Scenario examples were calibrated to EMEA, APAC, and Americas threat contexts. Procurement managers in Germany received different examples than those in Singapore or Brazil.",
         },
         {
           number: 4,

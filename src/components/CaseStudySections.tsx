@@ -172,7 +172,7 @@ export function MetricsSection({ items }: { items: Array<{ stat: string; label: 
           Results
         </h2>
         <p className="mb-14 text-[17px] leading-[1.75]" style={{ fontFamily: FONT_LIGHT, color: "rgba(255,255,255,0.7)", maxWidth: 640 }}>
-          All outcomes reported here reflect changes in workforce capability and training behaviour. We did not modify security infrastructure or tooling — those systems remained under the client&apos;s internal IT and security teams throughout.
+          All outcomes reported here reflect changes in workforce capability and training behaviour. We did not modify security infrastructure or tooling. Those systems remained under the client&apos;s internal IT and security teams throughout.
         </p>
         <div className="grid grid-cols-1 gap-px sm:grid-cols-2 lg:grid-cols-4" style={{ backgroundColor: "rgba(255,255,255,0.08)" }}>
           {items.map((m) => (
