@@ -251,7 +251,7 @@ export function WelcomeStrip() {
               security goals.
             </CheckBullet>
             <CheckBullet>
-              <strong style={{ color: "#1B1D52" }}>Instructor-led delivery.</strong>{" "}
+              <strong style={{ color: "#1B1D52" }}>Global instructor-led delivery.</strong>{" "}
               Every program is delivered live by a certified trainer. On-site,
               off-site or virtual{" "}
               <strong style={{ color: "#1B1D52" }}>(ILT / VILT)</strong>, in{" "}
