@@ -334,7 +334,7 @@ export default function IndustryAutomotivePage() {
       <main className="flex-1">
         {/* Section 1 â€” Hero */}
         <section className="bg-white pt-12 pb-16 md:pt-16 md:pb-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <nav
               aria-label="Breadcrumb"
               className="mb-6 text-[12px] uppercase tracking-[0.14em] sm:text-[13px]"
@@ -497,7 +497,7 @@ export default function IndustryAutomotivePage() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="max-w-3xl">
               <h2
                 className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
@@ -589,7 +589,7 @@ export default function IndustryAutomotivePage() {
 
         {/* Section 3 â€” Our expertise */}
         <section className="bg-white py-16 md:py-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             {/* Block 3A */}
             <div className="grid items-start gap-10 lg:grid-cols-12 lg:gap-14">
               <div className="lg:col-span-7">
@@ -753,7 +753,7 @@ export default function IndustryAutomotivePage() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="max-w-3xl">
               <h2
                 className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
@@ -875,7 +875,7 @@ export default function IndustryAutomotivePage() {
 
         {/* Section 6 â€” Trust strip */}
         <section className="bg-white pt-12 pb-12 md:pt-16 md:pb-16">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <ClientLogosStrip />
           </div>
         </section>
@@ -885,7 +885,7 @@ export default function IndustryAutomotivePage() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
               <div className="lg:col-span-7">
                 <h2
@@ -1019,7 +1019,7 @@ export default function IndustryAutomotivePage() {
 
         {/* Section 8 â€” Resources */}
         <section className="bg-white py-16 md:py-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="max-w-3xl">
               <h2
                 className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
@@ -1131,7 +1131,7 @@ export default function IndustryAutomotivePage() {
           className="relative overflow-hidden py-16 md:py-20"
           style={{ backgroundColor: NAVY }}
         >
-          <div className="mtk-page-center text-center">
+          <div className="eds-page-center text-center">
             <h2
               className="text-[28px] leading-[1.1] text-white sm:text-[36px] lg:text-[44px]"
               style={{
@@ -1181,7 +1181,7 @@ export default function IndustryAutomotivePage() {
 
         {/* Section 11 â€” Related industries */}
         <section className="bg-white py-16 md:py-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div className="max-w-3xl">
                 <h2

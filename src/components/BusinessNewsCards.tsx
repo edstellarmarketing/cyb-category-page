@@ -43,7 +43,7 @@ const BLOGS: NewsCardType[] = [
 export function BusinessNewsCards() {
   return (
     <section className="relative bg-white py-16 md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <h2
           className="max-w-3xl text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}

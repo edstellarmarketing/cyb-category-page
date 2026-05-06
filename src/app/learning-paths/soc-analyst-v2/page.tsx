@@ -417,7 +417,7 @@ export default function SocAnalystLearningPathV2Page() {
       <Header />
       <main className="flex-1">
         <section className="bg-white pt-12 pb-16 md:pt-16 md:pb-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <nav
               aria-label="Breadcrumb"
               className="mb-6 text-[12px] uppercase tracking-[0.14em] sm:text-[13px]"
@@ -756,7 +756,7 @@ export default function SocAnalystLearningPathV2Page() {
           className="border-y py-8"
           style={{ borderColor: BORDER, backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
               <p
                 className="text-[12px] uppercase tracking-[0.18em]"
@@ -789,7 +789,7 @@ export default function SocAnalystLearningPathV2Page() {
         <EdstellarTwoPathsV2 />
 
         <section className="bg-white py-16 md:py-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="max-w-3xl">
               <h2
                 className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
@@ -990,7 +990,7 @@ export default function SocAnalystLearningPathV2Page() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="max-w-3xl">
               <h2
                 className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
@@ -1070,7 +1070,7 @@ export default function SocAnalystLearningPathV2Page() {
         </section>
 
         <section className="bg-white py-16 md:py-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
               <div className="max-w-3xl">
                 <h2
@@ -1217,7 +1217,7 @@ export default function SocAnalystLearningPathV2Page() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
               <div className="lg:col-span-7">
                 <h2
@@ -1316,7 +1316,7 @@ export default function SocAnalystLearningPathV2Page() {
           className="py-16 md:py-20"
           style={{ backgroundColor: NAVY }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
               <div className="lg:col-span-7">
                 <h2
@@ -1407,7 +1407,7 @@ export default function SocAnalystLearningPathV2Page() {
         </section>
 
         <section className="bg-white py-16 md:py-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="max-w-3xl">
               <h2
                 className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
@@ -1479,7 +1479,7 @@ export default function SocAnalystLearningPathV2Page() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div
               className="mx-auto max-w-4xl rounded-2xl border bg-white p-8 shadow-sm sm:p-10"
               style={{ borderColor: BORDER }}
@@ -1557,7 +1557,7 @@ export default function SocAnalystLearningPathV2Page() {
         </section>
 
         <section className="relative overflow-hidden py-16 md:py-20" style={{ backgroundColor: NAVY }}>
-          <div className="mtk-page-center text-center">
+          <div className="eds-page-center text-center">
             <h2
               className="text-[28px] leading-[1.1] text-white sm:text-[36px] lg:text-[44px]"
               style={{
@@ -1607,7 +1607,7 @@ export default function SocAnalystLearningPathV2Page() {
         </section>
 
         <section className="bg-white py-16 md:py-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div className="max-w-3xl">
                 <h2

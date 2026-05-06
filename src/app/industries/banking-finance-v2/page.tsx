@@ -474,7 +474,7 @@ export default function IndustryBankingFinanceV2Page() {
           />
 
           <div className="relative z-10">
-            <div className="mtk-page-center pt-8 pb-10 md:pt-10 md:pb-12">
+            <div className="eds-page-center pt-8 pb-10 md:pt-10 md:pb-12">
               <nav
                 aria-label="Breadcrumb"
                 className="mb-6 text-[12px] uppercase tracking-[0.14em] text-white/60 sm:text-[13px]"
@@ -751,7 +751,7 @@ export default function IndustryBankingFinanceV2Page() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
               <div className="lg:col-span-6">
                 <h2
@@ -888,7 +888,7 @@ export default function IndustryBankingFinanceV2Page() {
 
         {/* Section 3 â€” What institutions are up against */}
         <section className="bg-white py-16 md:py-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-14">
               <div className="lg:col-span-5">
                 <div
@@ -1013,7 +1013,7 @@ export default function IndustryBankingFinanceV2Page() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="mx-auto max-w-3xl text-center">
               <h2
                 className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
@@ -1173,7 +1173,7 @@ export default function IndustryBankingFinanceV2Page() {
 
         {/* Section 5 â€” Role-Based Learning Journeys */}
         <section className="bg-white py-16 md:py-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between md:gap-8">
               <div className="max-w-3xl">
                 <h2
@@ -1360,7 +1360,7 @@ export default function IndustryBankingFinanceV2Page() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="max-w-3xl">
               <h2
                 className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
@@ -1449,7 +1449,7 @@ export default function IndustryBankingFinanceV2Page() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <h2
               className="max-w-3xl text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
               style={{
@@ -1634,7 +1634,7 @@ export default function IndustryBankingFinanceV2Page() {
 
         {/* Section 9 â€” Business Outcomes */}
         <section className="bg-white py-16 md:py-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="max-w-3xl">
               <h2
                 className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
@@ -1721,7 +1721,7 @@ export default function IndustryBankingFinanceV2Page() {
           className="relative overflow-hidden py-16 md:py-20"
           style={{ backgroundColor: NAVY }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
               <div className="lg:col-span-5">
                 <p

@@ -42,7 +42,7 @@ const STEPS: Step[] = [
 export function OurApproach() {
   return (
     <section className="bg-white py-16 md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-3xl">
             <h2
@@ -78,14 +78,14 @@ export function OurApproach() {
           {/* Connecting line behind the step circles (desktop only) */}
           <div
             aria-hidden="true"
-            className="absolute left-0 right-0 top-[27px] hidden h-px bg-gradient-to-r from-transparent via-mtk-gray-300 to-transparent lg:block"
+            className="absolute left-0 right-0 top-[27px] hidden h-px bg-gradient-to-r from-transparent via-eds-gray-300 to-transparent lg:block"
           />
 
           <ol className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6">
             {STEPS.map((s) => (
               <li
                 key={s.num}
-                className="relative flex flex-col rounded-xl border border-mtk-gray-200 bg-white p-6 transition-all hover:-translate-y-0.5 hover:border-[#6366F1]/40 hover:shadow-md"
+                className="relative flex flex-col rounded-xl border border-eds-gray-200 bg-white p-6 transition-all hover:-translate-y-0.5 hover:border-[#6366F1]/40 hover:shadow-md"
               >
                 <span
                   className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#F5F3FF] text-[18px] text-[#6366F1] ring-4 ring-white"
@@ -103,7 +103,7 @@ export function OurApproach() {
                   {s.title}
                 </h3>
                 <p
-                  className="mt-3 text-[14px] leading-[1.5] text-mtk-gray-500"
+                  className="mt-3 text-[14px] leading-[1.5] text-eds-gray-500"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
                   {s.description}

@@ -4,7 +4,7 @@ import { ArrowRightIcon } from "@/components/icons";
 export function CyberCoE() {
   return (
     <section className="bg-white py-16 md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-7">
             <h2

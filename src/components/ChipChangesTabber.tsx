@@ -356,7 +356,7 @@ export function ChipChangesTabber() {
 
   return (
     <section id="catalog" className="bg-[#0c0c0c] text-white py-16 md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <h2
           className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
@@ -407,7 +407,7 @@ export function ChipChangesTabber() {
                   Trainers to meet your cybersecurity needs
                 </h3>
                 <p
-                  className="text-[15px] leading-[1.5] text-mtk-gray-500 md:text-[17px]"
+                  className="text-[15px] leading-[1.5] text-eds-gray-500 md:text-[17px]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
                   A global bench of hand-picked cybersecurity practitioners,
@@ -431,7 +431,7 @@ export function ChipChangesTabber() {
               </a>
             </div>
 
-            <div className="mt-8 grid grid-cols-2 gap-3 rounded-xl border border-mtk-gray-200 bg-[#F5F3FF] p-4 lg:grid-cols-4 lg:p-6">
+            <div className="mt-8 grid grid-cols-2 gap-3 rounded-xl border border-eds-gray-200 bg-[#F5F3FF] p-4 lg:grid-cols-4 lg:p-6">
               {TRAINER_STATS.map((s) => (
                 <div key={s.label}>
                   <p
@@ -441,7 +441,7 @@ export function ChipChangesTabber() {
                     {s.stat}
                   </p>
                   <p
-                    className="mt-2 text-[11px] uppercase tracking-[0.14em] text-mtk-gray-500 sm:text-[12px]"
+                    className="mt-2 text-[11px] uppercase tracking-[0.14em] text-eds-gray-500 sm:text-[12px]"
                     style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
                   >
                     {s.label}
@@ -454,7 +454,7 @@ export function ChipChangesTabber() {
               {TRAINERS.map((t) => (
                 <div
                   key={t.name}
-                  className="flex flex-col rounded-xl border border-mtk-gray-200 bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-[#6366F1]/40 hover:shadow-md"
+                  className="flex flex-col rounded-xl border border-eds-gray-200 bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-[#6366F1]/40 hover:shadow-md"
                 >
                   <div className="flex items-center gap-3">
                     <div className="relative h-14 w-14 shrink-0">
@@ -482,7 +482,7 @@ export function ChipChangesTabber() {
                         {t.name}
                       </h4>
                       <p
-                        className="text-[12px] text-mtk-gray-500"
+                        className="text-[12px] text-eds-gray-500"
                         style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                       >
                         {t.role}
@@ -491,15 +491,15 @@ export function ChipChangesTabber() {
                   </div>
 
                   <p
-                    className="mt-4 text-[12px] text-mtk-gray-500"
+                    className="mt-4 text-[12px] text-eds-gray-500"
                     style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                   >
                     {t.location} Â·{" "}
                     <span style={{ color: "#F59E0B" }}>â˜…</span> {t.rating}{" "}
-                    <span className="text-mtk-gray-400">({t.reviews})</span>
+                    <span className="text-eds-gray-400">({t.reviews})</span>
                   </p>
                   <p
-                    className="mt-1 text-[12px] text-mtk-gray-400"
+                    className="mt-1 text-[12px] text-eds-gray-400"
                     style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                   >
                     Training since {t.trainingSince} Â· {t.experience} yrs in industry
@@ -516,7 +516,7 @@ export function ChipChangesTabber() {
                     {t.certs.map((cert) => (
                       <span
                         key={cert}
-                        className="rounded-full border border-mtk-gray-300 px-2.5 py-1 text-[10px] uppercase tracking-[0.1em] text-mtk-gray-500"
+                        className="rounded-full border border-eds-gray-300 px-2.5 py-1 text-[10px] uppercase tracking-[0.1em] text-eds-gray-500"
                         style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
                       >
                         {cert}
@@ -556,7 +556,7 @@ export function ChipChangesTabber() {
                   96 Enterprise-grade cybersecurity programs, ready to deploy
                 </h3>
                 <p
-                  className="text-[15px] leading-[1.5] text-mtk-gray-500 md:text-[17px]"
+                  className="text-[15px] leading-[1.5] text-eds-gray-500 md:text-[17px]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
                   A live catalog of {TOTAL_TRAININGS}+ cybersecurity programs across {DOMAINS.length}{" "}domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes.
@@ -585,7 +585,7 @@ export function ChipChangesTabber() {
                   href={p.href}
                   target="_blank"
                   rel="noopener"
-                  className="mtk-arrow-link group flex h-full flex-col overflow-hidden rounded-xl border border-mtk-gray-200 bg-white transition-all hover:-translate-y-0.5 hover:border-[#6366F1]/40 hover:shadow-md"
+                  className="eds-arrow-link group flex h-full flex-col overflow-hidden rounded-xl border border-eds-gray-200 bg-white transition-all hover:-translate-y-0.5 hover:border-[#6366F1]/40 hover:shadow-md"
                 >
                   <div className="relative aspect-[3/2] overflow-hidden bg-[#0c0c0c]">
                     <Image
@@ -611,7 +611,7 @@ export function ChipChangesTabber() {
                       {p.title}
                     </h4>
                     <div
-                      className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] text-mtk-gray-500"
+                      className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] text-eds-gray-500"
                       style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                     >
                       <span className="inline-flex items-center gap-1">
@@ -622,7 +622,7 @@ export function ChipChangesTabber() {
                       </span>
                     </div>
                     <p
-                      className="text-[13px] leading-[1.45] text-mtk-gray-500"
+                      className="text-[13px] leading-[1.45] text-eds-gray-500"
                       style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                     >
                       {p.description}
@@ -632,7 +632,7 @@ export function ChipChangesTabber() {
                       style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
                     >
                       View program
-                      <ArrowRightIcon className="mtk-arrow" width={14} height={14} />
+                      <ArrowRightIcon className="eds-arrow" width={14} height={14} />
                     </span>
                   </div>
                 </a>
@@ -640,10 +640,10 @@ export function ChipChangesTabber() {
             </div>
 
             <div
-              className="mt-8 flex flex-col items-center justify-between gap-4 rounded-xl border border-mtk-gray-200 bg-[#F5F3FF] px-5 py-4 text-center md:flex-row md:text-left"
+              className="mt-8 flex flex-col items-center justify-between gap-4 rounded-xl border border-eds-gray-200 bg-[#F5F3FF] px-5 py-4 text-center md:flex-row md:text-left"
             >
               <p
-                className="text-[14px] text-mtk-gray-500 md:text-[15px]"
+                className="text-[14px] text-eds-gray-500 md:text-[15px]"
                 style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
               >
                 Looking for a specific training program, vendor track, or
@@ -670,7 +670,7 @@ export function ChipChangesTabber() {
                 Onsite, off-site, virtual.
               </h3>
               <p
-                className="mb-8 max-w-md text-[16px] leading-[1.5] text-mtk-gray-500 md:text-[18px]"
+                className="mb-8 max-w-md text-[16px] leading-[1.5] text-eds-gray-500 md:text-[18px]"
                 style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
               >
                 Global delivery in any language, on any schedule, with the
@@ -678,13 +678,13 @@ export function ChipChangesTabber() {
                 co-located, hybrid or fully remote.
               </p>
               <div
-                className="flex flex-wrap gap-2 text-[11px] uppercase tracking-[0.14em] text-mtk-gray-500"
+                className="flex flex-wrap gap-2 text-[11px] uppercase tracking-[0.14em] text-eds-gray-500"
                 style={{ fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif", fontWeight: 600 }}
               >
                 {DELIVERY_MODES.map((mode) => (
                   <span
                     key={mode}
-                    className="rounded-full border border-mtk-gray-300 px-3 py-1 transition-colors hover:border-[#6366F1] hover:text-[#6366F1]"
+                    className="rounded-full border border-eds-gray-300 px-3 py-1 transition-colors hover:border-[#6366F1] hover:text-[#6366F1]"
                   >
                     {mode}
                   </span>

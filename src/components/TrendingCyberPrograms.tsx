@@ -152,7 +152,7 @@ export function TrendingCyberPrograms() {
 
   return (
     <section className="bg-white py-16 md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
 
         {/* Header row */}
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">

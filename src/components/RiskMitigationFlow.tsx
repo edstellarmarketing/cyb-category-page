@@ -47,7 +47,7 @@ export function RiskMitigationFlow() {
     >
       <style dangerouslySetInnerHTML={{ __html: FLOW_CSS }} />
 
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <div className="max-w-3xl">
           <h2
             className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"

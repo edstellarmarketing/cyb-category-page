@@ -62,7 +62,7 @@ function FloatingInput({
         type={type}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-md border border-mtk-gray-300 bg-white px-4 pt-4 pb-3 text-[16px] text-black outline-none transition-colors focus:border-[#6366F1]"
+        className="w-full rounded-md border border-eds-gray-300 bg-white px-4 pt-4 pb-3 text-[16px] text-black outline-none transition-colors focus:border-[#6366F1]"
         style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
       />
     </div>
@@ -76,8 +76,8 @@ export function Footer() {
 
   return (
     <footer className="relative bg-white pt-16 pb-10">
-      <div className="mtk-page-center">
-        <hr className="border-mtk-gray-200" />
+      <div className="eds-page-center">
+        <hr className="border-eds-gray-200" />
         <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {[
             { heading: "Categories", links: CATEGORIES },
@@ -135,7 +135,7 @@ export function Footer() {
             </h3>
             <form
               onSubmit={(e) => e.preventDefault()}
-              className="flex flex-col gap-5 rounded-xl border border-mtk-gray-200 bg-white p-6"
+              className="flex flex-col gap-5 rounded-xl border border-eds-gray-200 bg-white p-6"
             >
               <FloatingInput
                 id="newsletter-name"
@@ -172,7 +172,7 @@ export function Footer() {
           </div>
         </div>
 
-        <hr className="mt-14 border-mtk-gray-200" />
+        <hr className="mt-14 border-eds-gray-200" />
 
         <div className="mt-6 flex flex-col items-center justify-between gap-6 sm:flex-row">
           <span
@@ -194,7 +194,7 @@ export function Footer() {
             <li>
               <a href="#" className="hover:text-[#6366F1]">Privacy Policy</a>
             </li>
-            <li className="text-mtk-gray-500">
+            <li className="text-eds-gray-500">
               Copyright © 2026 Edstellar. All rights reserved
             </li>
           </ul>

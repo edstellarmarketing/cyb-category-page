@@ -39,7 +39,7 @@ const CARDS: MoreCard[] = [
 export function MoreResources() {
   return (
     <section className="bg-[#0c0c0c] py-16 text-white md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <h2
           className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}

@@ -189,7 +189,7 @@ export default function IndustryBankingFinancePage() {
       <main className="flex-1">
         {/* Section 1 — Hero */}
         <section className="bg-white pt-12 pb-16 md:pt-16 md:pb-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <nav
               aria-label="Breadcrumb"
               className="mb-6 text-[12px] uppercase tracking-[0.14em] sm:text-[13px]"
@@ -487,7 +487,7 @@ export default function IndustryBankingFinancePage() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
               <div className="lg:col-span-6">
                 <h2
@@ -566,7 +566,7 @@ export default function IndustryBankingFinancePage() {
 
         {/* Section 3 — What institutions are up against */}
         <section className="bg-white py-16 md:py-20">
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-14">
               <div className="lg:col-span-5">
                 <div
@@ -673,7 +673,7 @@ export default function IndustryBankingFinancePage() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="mx-auto max-w-3xl text-center">
               <h2
                 className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
@@ -782,7 +782,7 @@ export default function IndustryBankingFinancePage() {
           className="py-16 md:py-20"
           style={{ backgroundColor: NAVY }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="mx-auto max-w-3xl text-center">
               <h2
                 className="text-[32px] leading-[1.08] text-white sm:text-[40px] lg:text-[46px]"
@@ -867,7 +867,7 @@ export default function IndustryBankingFinancePage() {
           className="py-16 md:py-20"
           style={{ backgroundColor: "#F7F8FC" }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <h2
               className="max-w-3xl text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
               style={{
@@ -1017,7 +1017,7 @@ export default function IndustryBankingFinancePage() {
           className="relative overflow-hidden py-16 md:py-20"
           style={{ backgroundColor: NAVY }}
         >
-          <div className="mtk-page-center">
+          <div className="eds-page-center">
             <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
               <div className="lg:col-span-5">
                 <p

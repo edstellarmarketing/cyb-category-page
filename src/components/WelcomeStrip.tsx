@@ -152,7 +152,7 @@ export function WelcomeStrip() {
           borderColor: "rgba(27, 29, 82, 0.08)",
         }}
       >
-        <nav aria-label="Breadcrumb" className="mtk-page-center py-3">
+        <nav aria-label="Breadcrumb" className="eds-page-center py-3">
           <ol
             className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] sm:text-[13px]"
             style={{
@@ -206,7 +206,7 @@ export function WelcomeStrip() {
         </nav>
       </div>
 
-      <div className="mtk-page-center pt-10 pb-20 sm:pt-12 sm:pb-24">
+      <div className="eds-page-center pt-10 pb-20 sm:pt-12 sm:pb-24">
       <div className="text-left">
         <h1
           className="max-w-2xl text-[34px] leading-[1.05] sm:text-[42px] lg:text-[47px]"

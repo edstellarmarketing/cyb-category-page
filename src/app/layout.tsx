@@ -25,7 +25,7 @@ export default function RootLayout({
         {children}
         <div
           aria-hidden="true"
-          className="pointer-events-none fixed inset-0 z-50 mtk-page-glow"
+          className="pointer-events-none fixed inset-0 z-50 eds-page-glow"
         />
       </body>
     </html>

@@ -83,7 +83,7 @@ export function CorporateNewsSlider() {
 
   return (
     <section className="relative bg-[#F5F3FF] py-16 md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <p
           className="mb-3 text-[12px] uppercase tracking-wider text-black sm:text-[13px]"
           style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}

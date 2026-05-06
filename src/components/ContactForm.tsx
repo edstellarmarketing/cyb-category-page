@@ -35,7 +35,7 @@ export function ContactForm() {
 
   return (
     <section id="contact" className="bg-white py-16 md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
           {/* Left column â€” heading + supporting contact info */}
           <div className="lg:col-span-5">
@@ -56,7 +56,7 @@ export function ContactForm() {
             <div className="mt-10 space-y-6">
               <div>
                 <p
-                  className="text-[12px] uppercase tracking-[0.18em] text-mtk-gray-500"
+                  className="text-[12px] uppercase tracking-[0.18em] text-eds-gray-500"
                   style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
                 >
                   Email
@@ -72,7 +72,7 @@ export function ContactForm() {
 
               <div>
                 <p
-                  className="text-[12px] uppercase tracking-[0.18em] text-mtk-gray-500"
+                  className="text-[12px] uppercase tracking-[0.18em] text-eds-gray-500"
                   style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
                 >
                   Talk to a learning advisor
@@ -81,7 +81,7 @@ export function ContactForm() {
                   {PHONE_NUMBERS.map((p) => (
                     <li key={p.country} className="flex items-baseline gap-3">
                       <span
-                        className="w-32 text-[14px] text-mtk-gray-500"
+                        className="w-32 text-[14px] text-eds-gray-500"
                         style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                       >
                         {p.country}
@@ -98,7 +98,7 @@ export function ContactForm() {
                 </ul>
               </div>
 
-              <div className="rounded-xl border border-mtk-gray-200 bg-[#F5F3FF] p-5">
+              <div className="rounded-xl border border-eds-gray-200 bg-[#F5F3FF] p-5">
                 <p
                   className="text-[12px] uppercase tracking-[0.18em] text-[#6366F1]"
                   style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
@@ -140,7 +140,7 @@ export function ContactForm() {
           <div className="lg:col-span-7">
             <form
               onSubmit={(e) => e.preventDefault()}
-              className="rounded-2xl border border-mtk-gray-200 bg-white p-6 shadow-sm sm:p-8 md:p-10"
+              className="rounded-2xl border border-eds-gray-200 bg-white p-6 shadow-sm sm:p-8 md:p-10"
               style={{ boxShadow: "0 10px 40px -20px rgba(99, 102, 241, 0.18)" }}
             >
               <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -188,7 +188,7 @@ export function ContactForm() {
                     id="cf-country"
                     value={country}
                     onChange={(e) => setCountry(e.target.value)}
-                    className="w-full appearance-none rounded-md border border-mtk-gray-300 bg-white px-4 pt-4 pb-3 text-[16px] text-black outline-none transition-colors focus:border-[#6366F1]"
+                    className="w-full appearance-none rounded-md border border-eds-gray-300 bg-white px-4 pt-4 pb-3 text-[16px] text-black outline-none transition-colors focus:border-[#6366F1]"
                     style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                   >
                     <option value="">Select country</option>
@@ -198,7 +198,7 @@ export function ContactForm() {
                   </select>
                   <svg
                     aria-hidden="true"
-                    className="pointer-events-none absolute right-4 top-1/2 h-3 w-3 -translate-y-1/2 text-mtk-gray-500"
+                    className="pointer-events-none absolute right-4 top-1/2 h-3 w-3 -translate-y-1/2 text-eds-gray-500"
                     viewBox="0 0 10 6"
                     fill="none"
                     stroke="currentColor"
@@ -233,13 +233,13 @@ export function ContactForm() {
                   value={requirements}
                   onChange={(e) => setRequirements(e.target.value)}
                   placeholder="Team size, target roles, skill development goals, preferred delivery (virtual / on-site), timeline..."
-                  className="w-full rounded-md border border-mtk-gray-300 bg-white px-4 pt-4 pb-3 text-[16px] text-black outline-none transition-colors focus:border-[#6366F1]"
+                  className="w-full rounded-md border border-eds-gray-300 bg-white px-4 pt-4 pb-3 text-[16px] text-black outline-none transition-colors focus:border-[#6366F1]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 />
               </div>
 
               <p
-                className="mt-4 text-[13px] leading-[1.5] text-mtk-gray-500"
+                className="mt-4 text-[13px] leading-[1.5] text-eds-gray-500"
                 style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
               >
                 By submitting this form, you agree to receive communications from
@@ -297,7 +297,7 @@ function Field({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="w-full rounded-md border border-mtk-gray-300 bg-white px-4 pt-4 pb-3 text-[16px] text-black outline-none transition-colors focus:border-[#6366F1]"
+        className="w-full rounded-md border border-eds-gray-300 bg-white px-4 pt-4 pb-3 text-[16px] text-black outline-none transition-colors focus:border-[#6366F1]"
         style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
       />
     </div>

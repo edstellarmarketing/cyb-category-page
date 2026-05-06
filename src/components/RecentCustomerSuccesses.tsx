@@ -158,7 +158,7 @@ export function RecentCustomerSuccesses() {
               type="button"
               aria-label="Previous slide"
               onClick={prev}
-              className="mtk-rcs-arrow absolute z-10 hidden lg:flex items-center justify-center cursor-pointer transition-colors duration-150 ease-linear"
+              className="eds-rcs-arrow absolute z-10 hidden lg:flex items-center justify-center cursor-pointer transition-colors duration-150 ease-linear"
               style={{
                 top: "50%",
                 left: "-60px",
@@ -278,7 +278,7 @@ export function RecentCustomerSuccesses() {
               type="button"
               aria-label="Next slide"
               onClick={next}
-              className="mtk-rcs-arrow absolute z-10 hidden lg:flex items-center justify-center cursor-pointer transition-colors duration-150 ease-linear"
+              className="eds-rcs-arrow absolute z-10 hidden lg:flex items-center justify-center cursor-pointer transition-colors duration-150 ease-linear"
               style={{
                 top: "50%",
                 right: "-60px",

@@ -65,7 +65,7 @@ function CourseCard({ course }: { course: Course }) {
       href={course.href}
       target="_blank"
       rel="noopener"
-      className="mtk-arrow-link group flex h-full flex-col overflow-hidden rounded-xl border border-mtk-gray-200 bg-white transition-all hover:-translate-y-0.5 hover:border-[#6366F1]/40 hover:shadow-lg"
+      className="eds-arrow-link group flex h-full flex-col overflow-hidden rounded-xl border border-eds-gray-200 bg-white transition-all hover:-translate-y-0.5 hover:border-[#6366F1]/40 hover:shadow-lg"
     >
       <div className="relative aspect-[3/2] overflow-hidden bg-[#0c0c0c]">
         <Image
@@ -91,7 +91,7 @@ function CourseCard({ course }: { course: Course }) {
           {course.title}
         </h3>
         <div
-          className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[13px] text-mtk-gray-500"
+          className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[13px] text-eds-gray-500"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
           <span className="inline-flex items-center gap-1.5">
@@ -112,7 +112,7 @@ function CourseCard({ course }: { course: Course }) {
           style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
         >
           View program
-          <ArrowRightIcon className="mtk-arrow" width={16} height={16} />
+          <ArrowRightIcon className="eds-arrow" width={16} height={16} />
         </span>
       </div>
     </a>
@@ -122,7 +122,7 @@ function CourseCard({ course }: { course: Course }) {
 export function ProductNewsCards() {
   return (
     <section className="relative bg-white py-16 md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <h2
           className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
@@ -142,7 +142,7 @@ export function ProductNewsCards() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-5 rounded-2xl border border-mtk-gray-200 bg-[#F5F3FF] px-8 py-6 sm:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-5 rounded-2xl border border-eds-gray-200 bg-[#F5F3FF] px-8 py-6 sm:flex-row">
           <div>
             <h3
               className="text-[20px] text-black sm:text-[22px]"
@@ -151,7 +151,7 @@ export function ProductNewsCards() {
               Explore the Complete Edstellar Cybersecurity Training Catalog
             </h3>
             <p
-              className="mt-1 text-[15px] text-mtk-gray-500"
+              className="mt-1 text-[15px] text-eds-gray-500"
               style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
             >
               Browse 200+ cybersecurity training programs or request the latest catalog delivered to your inbox.

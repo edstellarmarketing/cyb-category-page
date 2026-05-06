@@ -28,7 +28,7 @@ const GAP_STATS: GapStat[] = [
 export function AiEraImperative() {
   return (
     <section className="bg-white py-16 md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <div className="grid items-start gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-6">
             <h2

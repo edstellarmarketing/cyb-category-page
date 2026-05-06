@@ -101,7 +101,7 @@ export function CyberFAQ() {
   return (
     <section className="bg-[#F5F3FF] py-16 md:py-20">
       <style dangerouslySetInnerHTML={{ __html: FAQ_CSS }} />
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
 
         {/* Heading */}
         <h2

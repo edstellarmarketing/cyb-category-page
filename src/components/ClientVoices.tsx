@@ -63,7 +63,7 @@ function QuoteIcon({ className = "" }: { className?: string }) {
 export function ClientVoices() {
   return (
     <section className="bg-[#F5F3FF] py-16 md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-3xl">
             <h2
@@ -88,7 +88,7 @@ export function ClientVoices() {
               >
                 &ldquo;{v.quote}&rdquo;
               </blockquote>
-              <figcaption className="mt-7 flex items-center gap-3 border-t border-mtk-gray-200 pt-5">
+              <figcaption className="mt-7 flex items-center gap-3 border-t border-eds-gray-200 pt-5">
                 <span
                   className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-[18px] text-white"
                   style={{
@@ -108,7 +108,7 @@ export function ClientVoices() {
                     {v.name}
                   </p>
                   <p
-                    className="text-[13px] text-mtk-gray-500"
+                    className="text-[13px] text-eds-gray-500"
                     style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                   >
                     {v.role} · {v.company}
@@ -119,7 +119,7 @@ export function ClientVoices() {
           ))}
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 rounded-2xl border border-mtk-gray-200 bg-white px-6 py-6 sm:grid-cols-3 lg:px-8">
+        <div className="mt-10 grid grid-cols-1 gap-4 rounded-2xl border border-eds-gray-200 bg-white px-6 py-6 sm:grid-cols-3 lg:px-8">
           {STATS.map((s) => (
             <div key={s.label} className="text-center sm:text-left">
               <p
@@ -129,7 +129,7 @@ export function ClientVoices() {
                 {s.stat}
               </p>
               <p
-                className="mt-2 text-[12px] uppercase tracking-[0.14em] text-mtk-gray-500 sm:text-[13px]"
+                className="mt-2 text-[12px] uppercase tracking-[0.14em] text-eds-gray-500 sm:text-[13px]"
                 style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
               >
                 {s.label}

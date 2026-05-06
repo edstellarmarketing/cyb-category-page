@@ -99,7 +99,7 @@ function PriceCard({ pkg }: { pkg: Package }) {
   return (
     <div
       className={`relative flex h-full flex-col rounded-2xl border p-7 transition-all hover:-translate-y-0.5 hover:shadow-lg ${
-        featured ? "border-[#6366F1] bg-white shadow-md" : "border-mtk-gray-200 bg-white"
+        featured ? "border-[#6366F1] bg-white shadow-md" : "border-eds-gray-200 bg-white"
       }`}
     >
       {featured && (
@@ -118,7 +118,7 @@ function PriceCard({ pkg }: { pkg: Package }) {
         {pkg.name}
       </h3>
       <p
-        className="mt-1 text-[14px] text-mtk-gray-500"
+        className="mt-1 text-[14px] text-eds-gray-500"
         style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
       >
         {pkg.tagline}
@@ -133,7 +133,7 @@ function PriceCard({ pkg }: { pkg: Package }) {
         </span>
         {pkg.licenses !== "Unlimited" && (
           <span
-            className="text-[14px] text-mtk-gray-500"
+            className="text-[14px] text-eds-gray-500"
             style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
           >
             trainee licenses
@@ -174,7 +174,7 @@ function PriceCard({ pkg }: { pkg: Package }) {
 export function CorporatePricing() {
   return (
     <section className="bg-[#F5F3FF] py-16 md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <h2
           className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
@@ -210,7 +210,7 @@ export function CorporatePricing() {
           {DELIVERY_OPTIONS.map((opt) => (
             <div
               key={opt.label}
-              className="rounded-2xl border border-mtk-gray-200 bg-white p-8"
+              className="rounded-2xl border border-eds-gray-200 bg-white p-8"
             >
               <p
                 className="text-[11px] uppercase tracking-[0.18em] text-[#6366F1]"
@@ -253,7 +253,7 @@ export function CorporatePricing() {
         </div>
 
         {/* Shared benefits */}
-        <div className="mt-10 rounded-2xl border border-mtk-gray-200 bg-white p-8 sm:p-10">
+        <div className="mt-10 rounded-2xl border border-eds-gray-200 bg-white p-8 sm:p-10">
           <h3
             className="text-[20px] text-black sm:text-[22px]"
             style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
@@ -261,7 +261,7 @@ export function CorporatePricing() {
             Every cybersecurity package includes
           </h3>
           <p
-            className="mt-2 text-[14px] text-mtk-gray-500"
+            className="mt-2 text-[14px] text-eds-gray-500"
             style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
           >
             No hidden fees. These benefits are included with every Starter, Growth, Enterprise and Custom package.
@@ -282,7 +282,7 @@ export function CorporatePricing() {
                     {b.label}
                   </p>
                   <p
-                    className="mt-0.5 text-[13px] leading-[1.4] text-mtk-gray-500 sm:text-[14px]"
+                    className="mt-0.5 text-[13px] leading-[1.4] text-eds-gray-500 sm:text-[14px]"
                     style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                   >
                     {b.description}

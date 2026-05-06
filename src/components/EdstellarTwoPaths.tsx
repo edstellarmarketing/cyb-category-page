@@ -460,7 +460,7 @@ function PathRow({
 export function EdstellarTwoPaths() {
   return (
     <section className="bg-white py-16 md:py-20">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
         <div className="mx-auto max-w-3xl text-center">
           <h2
             className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"

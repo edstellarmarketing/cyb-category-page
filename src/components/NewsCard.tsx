@@ -6,7 +6,7 @@ export function NewsCard({ card }: { card: NewsCardType }) {
   return (
     <a
       href={card.href}
-      className="mtk-arrow-link group flex h-full flex-col overflow-hidden rounded-xl bg-white transition-shadow hover:shadow-lg"
+      className="eds-arrow-link group flex h-full flex-col overflow-hidden rounded-xl bg-white transition-shadow hover:shadow-lg"
     >
       <div className="relative aspect-[3/2] overflow-hidden bg-[#0c0c0c]">
         <Image
@@ -35,7 +35,7 @@ export function NewsCard({ card }: { card: NewsCardType }) {
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
           {card.description}
-          <ArrowRightIcon className="ml-1 inline-block align-middle text-[#6366F1] mtk-arrow" width={20} height={20} />
+          <ArrowRightIcon className="ml-1 inline-block align-middle text-[#6366F1] eds-arrow" width={20} height={20} />
         </p>
       </div>
     </a>

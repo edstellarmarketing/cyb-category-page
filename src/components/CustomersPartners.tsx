@@ -59,7 +59,7 @@ const PILLARS = [
 export function CustomersPartners() {
   return (
     <section className="bg-[#EEF2FF] py-16 md:py-24">
-      <div className="mtk-page-center">
+      <div className="eds-page-center">
 
         {/* Top 2-col: heading + description */}
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-20">

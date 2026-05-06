@@ -22,7 +22,7 @@ export function TrainingProgramTabs() {
         className="border-b"
         style={{ backgroundColor: "#FFFFFF", borderColor: "#E3E6F0" }}
       >
-        <div className="mtk-page-center">
+        <div className="eds-page-center">
           <div
             role="tablist"
             aria-label="Corporate cybersecurity training program views"
