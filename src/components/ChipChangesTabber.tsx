@@ -705,7 +705,7 @@ export function ChipChangesTabber() {
                   className="mt-1 text-[14px] text-white/55"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
-                  Across {DOMAINS.length} domains within Edstellar&apos;s broader IT &amp;
+                  Across {DOMAINS.length}{" "}domains within Edstellar&apos;s broader IT &amp;{" "}
                   Technical catalog of 2,000+ programs.
                 </p>
               </div>

@@ -667,8 +667,141 @@ const SECTIONS: PageSection[] = [
     ],
   },
   {
-    id: "pricing",
+    id: "successes",
     num: "07",
+    name: "RecentCustomerSuccesses + Case Study Pages",
+    component:
+      "RecentCustomerSuccesses.tsx (carousel on category page) + src/app/case-studies/[slug]/page.tsx (dynamic page) + src/data/case-studies.ts (single source of truth feeding both)",
+    goal:
+      "Turn abstract claims of enterprise delivery into concrete, scannable proof. The carousel sits between EnterpriseProofStrip and CorporatePricing and showcases 8–12 industry-anonymized engagements. Each card lets a buyer self-select into their own vertical; each click opens a dedicated /case-studies/[slug] page that demonstrates Edstellar's methodology and outcomes WITHOUT exposing client names. This section answers the post-proof-strip question 'Who like me has Edstellar actually delivered for?' while keeping confidentiality intact.",
+    audience:
+      "CISOs and Security Leaders looking for vertical-specific proof, L&D Directors evaluating relevance, procurement validating references",
+    fields: [
+      {
+        element: "Section heading",
+        charLimit: "LOCKED",
+        keywords: ["Recent", "Customer", "Successes"],
+        notes:
+          "LOCKED text: 'Recent Customer Successes'. 44px Riona Sans Regular on desktop. No eyebrow above it. Section background must be visually distinct from the EnterpriseProofStrip above (black) and the CorporatePricing below (light lavender). Recommended: warm off-white #F8F4E9 or similar neutral that breaks the dark→light cadence.",
+        example: "Recent Customer Successes",
+      },
+      {
+        element: "Card title (carousel + case study hero)",
+        charLimit: "20–60",
+        keywords: ["outcome", "capability"],
+        notes:
+          "OUTCOME-focused, never a company name. Patterns that work: 'Cloud SOC at Global Scale', 'Closing HIPAA Audit Gaps', 'AppSec for Connected Vehicles', 'Zero-Trust for Mission-Critical Ops'. The title is the capability or outcome delivered — the industry is implied in the description below. NEVER use real client names anywhere on the carousel or the case study page.",
+        example: "Cloud SOC at Global Scale",
+      },
+      {
+        element: "Card description",
+        charLimit: "180–280",
+        keywords: [
+          "A leading [industry]",
+          "A multinational [industry]",
+          "A Fortune 500",
+          "A federal",
+          "A national",
+          "A high-growth",
+        ],
+        notes:
+          "MUST open with an industry-anonymized phrase: 'A leading global bank…', 'A multinational pharma company…', 'A Fortune 500 manufacturer…', 'A global retail chain…', 'A top automotive OEM…', 'A federal government agency…', 'A high-growth SaaS company…', 'A national energy operator…', 'A global telecom carrier…', 'A leading insurance group…'. Never a real company name. Three sentences max — challenge → engagement → outcome.",
+        example:
+          "A leading global bank, navigating cloud-migration risk across 14 markets, unified its SOC analysts and cloud engineers on a single role-based upskilling program and closed audit-flagged gaps in 90 days.",
+      },
+      {
+        element: "Card thumbnail",
+        charLimit: "Image",
+        keywords: ["public/images/cyber/"],
+        notes:
+          "Use industry-relevant images already in /public/images/cyber/ (hero-industry-bfsi.jpg, hero-industry-healthcare.jpg, hero-industry-manufacturing.jpg, hero-industry-retail.jpg, hero-industry-automotive.jpg, industry-government.jpg, industry-saas.jpg, hero-bigdata-it.jpg for energy, hero-cyber-ops.jpg for telecom, course-grc.jpg for insurance). Aspect ratio 448:244 (matches the card image well). Card image and case study hero image SHOULD be the same.",
+        example: "/images/cyber/hero-industry-bfsi.jpg",
+      },
+      {
+        element: "Carousel behavior",
+        charLimit: "LOCKED",
+        keywords: [],
+        notes:
+          "Autoplay 2000ms with pause-on-hover; click-driven prev/next arrows in indigo (#6366F1) circles with white chevrons, hover #4F46E5; infinite loop using clone-prepend trick + non-transition snap-back; transition 500ms ease. Responsive: ≥1024px shows 3 cards with arrows and no dots; 768–1023 shows 2 cards with dots and no arrows; <768 shows 1 card centered with dots. Active dot uses indigo #6366F1, inactive uses #D9D9D9.",
+        example:
+          "autoplay: 2000ms; transition: 500ms ease; arrows: #6366F1 circles; dots only ≤1023px",
+      },
+      {
+        element: "Case Study Page — Hero",
+        charLimit: "Section",
+        keywords: ["Case Study", "Download Case Study"],
+        notes:
+          "Industry hero image as full-bleed background (object-cover) with a left-to-right dark gradient overlay (rgba 0,0,0 from .75 → .35) for text legibility. Above-fold content in a 1280px page-center: small 'Case Study' label in indigo Riona Sans Regular (35px), title in white Riona Sans Light (40px desktop, 760px max-width), and a 'Download Case Study' pill button in indigo (#6366F1, padding 8px 24px, border-radius 30px). Title pattern: 'How a [industry-anonymized subject] [verb] [outcome]'.",
+        example:
+          "How a Leading Global Bank Modernized Cloud SOC Operations Across 14 Markets",
+      },
+      {
+        element: "Case Study Page — Intro",
+        charLimit: "Section",
+        keywords: ["Edstellar Helps a"],
+        notes:
+          "Brand indigo gradient background: linear-gradient(135deg, #1B1D52 0%, #312E81 55%, #4338CA 100%), with a soft indigo radial glow at 80% 20% for depth and a faint dot-grid texture at 24px. White H2 (Riona Sans Light, 44px desktop) opens with 'Edstellar Helps a [industry] Leader Build [capability]'. Body paragraph (16px Riona Sans Light, 23.2px line-height) restates the engagement context, anonymized.",
+        example:
+          "Edstellar Helps a Global Bank Build Cloud-Native Security Operations",
+      },
+      {
+        element: "Case Study Page — Challenges",
+        charLimit: "Section",
+        keywords: [],
+        notes:
+          "White background, 90px vertical padding. H2 'Challenges' (44px Riona Sans Regular). Grid of EXACTLY 4 cards, responsive (1/2/4 cols). Each card: lucide-react icon at 64px stroke-width 1.5 in indigo (#6366F1), then h3 (24px Riona Sans Regular), then 1–2 sentence body (16px Riona Sans Light). Icons must be industry-relevant and visually distinct — pull from lucide: Cloud, Layers, GraduationCap, FileCheck, Heart, ShieldAlert, Globe, Users, Factory, Cpu, AlertTriangle, ShoppingCart, CreditCard, Code, Car, Siren, Shield, ScanEye, FileText, Rocket, Key, Activity, Power, Landmark, Radio, Wifi, Network. Pick 4 that tell the customer's specific story.",
+        example:
+          "Cloud Migration Risk · Fragmented Tooling · Skills Gap · Audit Pressure",
+      },
+      {
+        element: "Case Study Page — Edstellar Solution",
+        charLimit: "Section",
+        keywords: ["Edstellar Solution", "Edstellar delivered"],
+        notes:
+          "Gray background #F1F2F2, two-column on desktop: text LEFT, image RIGHT (image col 560px wide, aspect 560:331). H3 'Edstellar Solution' (30px Riona Sans Regular). One paragraph describing the engagement, then optional lead-in line, then bulleted list of EXACTLY 3 program elements (label in Riona Sans Medium, body in Riona Sans Light). Image should be a different angle from the hero — use course-* or path-* assets from /public/images/cyber/.",
+        example:
+          "Role-Based Tracks · Hands-On Labs · Audit-Aligned Curriculum",
+      },
+      {
+        element: "Case Study Page — Results",
+        charLimit: "Section",
+        keywords: ["Results"],
+        notes:
+          "Dark band: solid #0c0c0c base + indigo radial glow at 10% 100% (rgba 99,102,241,0.28) + faint diagonal indigo grid at 32px + 3px lime (#C5E826, 0.6 opacity) accent strip on left edge (matches EnterpriseProofStrip lime cue). White H2 'Results' (Riona Sans Light, 44px). Bulleted list of EXACTLY 4 measurable outcomes — label (Riona Sans Medium) + value (Riona Sans Light). Outcomes must be quantitative: '40% faster…', '65% increase…', '100% audit closure…', '540 staff certified…'. NEVER vague qualitative claims.",
+        example:
+          "Audit Closure: 100% of cloud-related audit findings resolved within 90 days.",
+      },
+      {
+        element: "Case Study Page — Requirements (How Edstellar's Approach Meets the Requirements)",
+        charLimit: "Section",
+        keywords: ["How Does Edstellar's Approach Meet the Requirements"],
+        notes:
+          "White background, two-column: image LEFT, text RIGHT (mirror of Solution section). H3 'How Does Edstellar's Approach Meet the Requirements?' (30px Riona Sans Regular). Bulleted list of EXACTLY 4 capability statements that explain WHY this engagement model worked — one bullet per Challenge above (in same order). Image again uses course-* or path-* asset (different from Solution image).",
+        example:
+          "Parallel Cohort Scale: 14 markets trained the same week, ensuring uniform outcomes.",
+      },
+    ],
+    rules: [
+      "Card titles must NEVER reference real client names; use outcome- or capability-focused descriptions ('Cloud SOC at Global Scale', not 'Acme Bank').",
+      "Card descriptions MUST start with an industry-anonymized phrase ('A leading global bank…', 'A multinational pharma company…', 'A Fortune 500 manufacturer…').",
+      "Each card MUST link to a /case-studies/[slug] page that follows the 6-section template: Hero → Intro → Challenges (4 cards) → Edstellar Solution → Results → Requirements.",
+      "Single source of truth: src/data/case-studies.ts. NEVER duplicate the card list in the component — both the carousel and the dynamic route consume the same array via getCaseStudy(slug) and CASE_STUDIES.map().",
+      "Background visual rhythm on every case study page must read: industry hero image (with dark gradient) → bright indigo gradient intro → white challenges → gray solution → black results → white requirements. NEVER two same-color backgrounds adjacent.",
+      "Section background of the carousel itself must NOT match the section above (typically black EnterpriseProofStrip) or below (typically light lavender CorporatePricing). Use a warm off-white like #F8F4E9 to break the cadence.",
+      "Carousel arrow buttons and active dot use the page theme color (#6366F1 indigo with #4F46E5 hover), NOT MediaTek orange or any other vendor color.",
+      "Challenge icons MUST be from lucide-react, sized 64px, strokeWidth 1.5, colored #6366F1. Use industry-relevant icons (Cloud/Layers for banking, Heart/ShieldAlert for pharma, Factory/Cpu for manufacturing, Car/Code for automotive, etc.).",
+      "Results section must contain EXACTLY 4 quantitative outcomes with measurable percentages or counts. NEVER vague qualitative claims like 'improved security' or 'better outcomes'.",
+      "Solution and Requirements sections each render EXACTLY 3–4 bullets, with labels in Riona Sans Medium and body text in Riona Sans Light.",
+      "Case study page font convention: NEVER set fontWeight inline alongside a Riona Sans family name. Each Riona Sans variant (Light, Regular, Medium, Bold) maps to a specific weight via @font-face — setting fontWeight on top causes synthetic weight rendering. Use family-name only.",
+      "All copy on the carousel and case study pages must AVOID em-dashes. Use commas, colons, or restructure the sentence.",
+      "All cards must be reachable via keyboard navigation. The Link wrapper covers the entire card (image + content), with a hover translate-x animation on the trailing chevron.",
+      "Hero CTA button text on every case study page is LOCKED: 'Download Case Study'. Even if the PDF doesn't exist yet, render the button (link can be '#' until the PDF is published).",
+      "When adding a new industry case study: append a new object to CASE_STUDIES in src/data/case-studies.ts with a unique slug, then both the carousel and /case-studies/[slug] route pick it up automatically — no other files need editing.",
+    ],
+  },
+  {
+    id: "pricing",
+    num: "08",
     name: "CorporatePricing",
     component: "CorporatePricing.tsx",
     goal:
@@ -836,7 +969,7 @@ const SECTIONS: PageSection[] = [
   },
   {
     id: "approach",
-    num: "08",
+    num: "09",
     name: "OurApproach",
     component: "OurApproach.tsx",
     goal:
@@ -967,7 +1100,7 @@ const SECTIONS: PageSection[] = [
   },
   {
     id: "voices",
-    num: "09",
+    num: "10",
     name: "ClientVoices",
     component: "ClientVoices.tsx",
     goal:
@@ -1024,7 +1157,7 @@ const SECTIONS: PageSection[] = [
   },
   {
     id: "blog",
-    num: "10",
+    num: "11",
     name: "BusinessNewsCards",
     component: "BusinessNewsCards.tsx",
     goal:
@@ -1175,7 +1308,7 @@ const SECTIONS: PageSection[] = [
   },
   {
     id: "faq",
-    num: "11",
+    num: "12",
     name: "FAQs",
     component: "FAQ accordion component",
     goal:
@@ -1431,7 +1564,7 @@ const SECTIONS: PageSection[] = [
   },
   {
     id: "contact",
-    num: "12",
+    num: "13",
     name: "ContactForm",
     component: "ContactForm.tsx",
     goal:
