@@ -90,7 +90,7 @@ export function CustomersPartners() {
         </div>
 
         {/* 3 pillar cards — image thumbnail + left border accent */}
-        <div className="mt-14 grid grid-cols-1 gap-6 border-t border-[#6366F1]/20 pt-14 sm:grid-cols-3">
+        <div className="mb-14 mt-14 grid grid-cols-1 gap-6 border-t border-[#6366F1]/20 pt-14 sm:grid-cols-3 md:mb-20">
           {PILLARS.map((pillar) => (
             <div
               key={pillar.stat}
@@ -165,7 +165,7 @@ export function CustomersPartners() {
                   {pillar.sublabel}
                 </p>
                 <p
-                  className="mt-4 text-[15px] leading-[1.7] text-[#4B5563]"
+                  className="mt-4 text-[14px] leading-[1.6] text-[#4B5563]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
                   {pillar.copy}
@@ -184,8 +184,8 @@ export function CustomersPartners() {
         {/* Global reach map */}
         <div className="mt-16 md:mt-20">
           <p
-            className="text-center text-[17px] uppercase tracking-[0.18em] text-[#1B1D52]"
-            style={{ fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif" }}
+            className="text-center text-[11px] uppercase tracking-[0.18em] text-[#6366F1]/60"
+            style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
           >
             Delivering in-region, in-language, across six continents
           </p>
