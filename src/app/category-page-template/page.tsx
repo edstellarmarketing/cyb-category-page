@@ -341,7 +341,7 @@ const SECTIONS: PageSection[] = [
     audience: "L&D Managers, Security Team Leads, Procurement",
     fields: [
       {
-        element: "Section intro description",
+        element: "Section intro description (Programs tab paragraph)",
         charLimit: "140–180",
         keywords: [
           "instructor-led",
@@ -349,15 +349,11 @@ const SECTIONS: PageSection[] = [
           "programs",
           "certified",
           "measurable skill outcomes",
-          "continuously updates courseware",
-          "new versions",
-          "tools",
-          "threat techniques",
         ],
         notes:
-          "Appears above the chip tabs. Mentions total program count, delivery format, and courseware freshness. Must include 'instructor-led' and 'certified', plus a sentence asserting that Edstellar continuously updates the courseware as new versions, tools, and threat techniques emerge in the [category] space. The freshness claim is what separates Edstellar's catalog from a static training menu — it must always be present.",
+          "Single sentence below the Programs tab heading. States program count, domain count, delivery format, and trainer credibility. Must include 'instructor-led' (or 'live, on-site or virtual'), 'certified', and 'measurable skill outcomes'. Do NOT put the courseware-freshness message here — that has its own dedicated banner above (see 'Programs tab — Live Curriculum banner').",
         example:
-          "A live catalog of 80+ cybersecurity programs across 10 domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes. Edstellar continuously updates courseware as new versions, tools, and threat techniques emerge in the cybersecurity space, so every cohort trains on what attackers and auditors are looking at right now.",
+          "A live catalog of 80+ cybersecurity programs across 10 domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes.",
       },
       {
         element: "Domain chip label",
@@ -400,11 +396,27 @@ const SECTIONS: PageSection[] = [
           "Master Privileged Access Management with CyberArk, vault administration, PSM, CPM and policy-driven credential rotation.",
       },
       {
+        element: "Programs tab — Live Curriculum banner",
+        charLimit: "180–260",
+        keywords: [
+          "continuously updates courseware",
+          "new versions",
+          "tools",
+          "threat techniques",
+          "every cohort",
+          "right now",
+        ],
+        notes:
+          "FIRST element inside the Programs tab panel, above the heading and program cards. Visually distinct callout that asserts the catalog is alive, not static. Locked design system: indigo gradient background (linear-gradient(to right, #1B1D52 → #312E81 → #4338CA)), 4px lime (#C5E826) accent strip on the left edge (matches EnterpriseProofStrip's brand cue), a 12px lime pulse dot with animate-ping ripple at the start of the body (signals 'live'), white Riona Sans Regular body text at 15–17px. NO eyebrow label above the body — the visual treatment carries the meaning. Body must contain Edstellar as the subject and frame courseware refresh as a continuous activity tied to [category]-specific signals (new versions, tools, threat techniques). End with a 'right now' urgency clause that ties refresh to the cohorts being delivered today.",
+        example:
+          "Edstellar continuously updates courseware as new versions, tools, and threat techniques emerge in the cybersecurity space, so every cohort trains on what attackers and auditors are looking at right now.",
+      },
+      {
         element: "Programs tab — heading",
         charLimit: "55–75",
         keywords: ["Enterprise-grade", "[category]", "ready to deploy"],
         notes:
-          "Heading inside the Programs tab panel. Sentence-case with a capital E on 'Enterprise-grade' (it is a quality marker, not a generic adjective in this context). Pattern: '[N] Enterprise-grade [category] programs, ready to deploy'. The 'ready to deploy' suffix signals procurement-ready, not a marketing aspiration.",
+          "Heading inside the Programs tab panel, BELOW the Live Curriculum banner. Sentence-case with a capital E on 'Enterprise-grade' (it is a quality marker, not a generic adjective in this context). Pattern: '[N] Enterprise-grade [category] programs, ready to deploy'. The 'ready to deploy' suffix signals procurement-ready, not a marketing aspiration.",
         example: "96 Enterprise-grade cybersecurity programs, ready to deploy",
       },
       {
@@ -439,7 +451,7 @@ const SECTIONS: PageSection[] = [
       "Domain chips must use recognized industry names, not invented categories.",
       "Minimum 4 programs per domain chip tab.",
       "All hrefs must link to confirmed edstellar.com program URLs — never guessed or invented URLs.",
-      "The catalog blurb above the chip tabs MUST include a courseware-freshness sentence: 'Edstellar continuously updates courseware as new versions, tools, and threat techniques emerge in the [category] space…'. This separates a curated, living catalog from a static training menu and signals that programs track the current versions, tools, and adversary techniques active in the [category] space. Never omit it.",
+      "The Programs tab MUST render a 'Live Curriculum' freshness banner as the FIRST element, above the heading. Locked design: indigo gradient background, 4px lime (#C5E826) left-edge stripe, 12px lime pulse dot with animate-ping ripple, white body text. Pattern: 'Edstellar continuously updates courseware as new versions, tools, and threat techniques emerge in the [category] space, so every cohort trains on what attackers and auditors are looking at right now.' This banner is what separates Edstellar from static catalog vendors and must NEVER be inlined into the paragraph below the heading or omitted.",
       "Programs tab heading capitalizes 'Enterprise-grade' (capital E). Pattern: '[N] Enterprise-grade [category] programs, ready to deploy'.",
       "Programs tab call-out copy MUST offer both paths — match-from-catalog AND build-custom — explicitly mentioning 'stack, roles, and threat model'. Edstellar is a program builder, not a catalog reseller, and this card is where the message lands.",
       "Programs tab CTA button is LOCKED to 'Enquire Now' linking to '#contact'. Never link this button to the public edstellar.com catalog or to an external URL — the entire point of the call-out is to convert the visitor into the on-page form.",

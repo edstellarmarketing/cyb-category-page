@@ -529,6 +529,24 @@ export function ChipChangesTabber() {
           </div>
         ) : activeTab === "programs" ? (
           <div className="mt-2 rounded-2xl bg-white p-6 text-black sm:p-8 md:p-10">
+            {/* Live Curriculum banner — prominent freshness signal */}
+            <div
+              className="mb-8 flex items-start gap-4 overflow-hidden rounded-xl border-l-[4px] border-[#C5E826] bg-gradient-to-r from-[#1B1D52] via-[#312E81] to-[#4338CA] px-5 py-4 sm:px-6 sm:py-5"
+            >
+              <div className="relative mt-[6px] flex h-3 w-3 shrink-0">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#C5E826] opacity-75" />
+                <span className="relative inline-flex h-3 w-3 rounded-full bg-[#C5E826]" />
+              </div>
+              <div className="flex-1">
+                <p
+                  className="text-[15px] leading-[1.55] text-white sm:text-[16px] md:text-[17px]"
+                  style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
+                >
+                  Edstellar continuously updates courseware as new versions, tools, and threat techniques emerge in the cybersecurity space, so every cohort trains on what attackers and auditors are looking at right now.
+                </p>
+              </div>
+            </div>
+
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
               <div className="max-w-3xl">
                 <h3
@@ -541,7 +559,7 @@ export function ChipChangesTabber() {
                   className="text-[15px] leading-[1.5] text-mtk-gray-500 md:text-[17px]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
-                  A live catalog of {TOTAL_TRAININGS}+ cybersecurity programs across {DOMAINS.length}{" "}domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes. Edstellar continuously updates courseware as new versions, tools, and threat techniques emerge in the cybersecurity space, so every cohort trains on what attackers and auditors are looking at right now.
+                  A live catalog of {TOTAL_TRAININGS}+ cybersecurity programs across {DOMAINS.length}{" "}domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes.
                 </p>
               </div>
               <a
