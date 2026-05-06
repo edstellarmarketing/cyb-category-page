@@ -243,6 +243,11 @@
   animation: mtk-arrow-fixed-anim 2.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
 
+/* Recent Customer Successes carousel arrow hover */
+.mtk-rcs-arrow:hover {
+  background-color: #4F46E5 !important;
+}
+
 /* Page container — responsive max-widths */
 .mtk-page-center {
   width: 100%;

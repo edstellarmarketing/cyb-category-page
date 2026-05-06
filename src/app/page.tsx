@@ -5,6 +5,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { CorporatePricing } from "@/components/CorporatePricing";
 import { CustomersPartners } from "@/components/CustomersPartners";
 import { EnterpriseProofStrip } from "@/components/EnterpriseProofStrip";
+import { RecentCustomerSuccesses } from "@/components/RecentCustomerSuccesses";
 import { CyberFAQ } from "@/components/CyberFAQ";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -27,6 +28,7 @@ export default function Home() {
         <TrendingCyberPrograms />
         <CustomersPartners />
         <EnterpriseProofStrip />
+        <RecentCustomerSuccesses />
         <CorporatePricing />
         <OurApproach />
         <ClientVoices />
