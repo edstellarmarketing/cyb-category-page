@@ -25,7 +25,7 @@ export function CaseStudyModal({ slug, onClose }: { slug: string | null; onClose
   if (!data) return null;
 
   const isNewLayout = !!data.intervention;
-  const topMetrics = isNewLayout && data.metrics ? data.metrics.slice(0, 2) : [];
+  const topMetrics = isNewLayout && data.metrics ? data.metrics.slice(1, 3) : [];
 
   return (
     <div
