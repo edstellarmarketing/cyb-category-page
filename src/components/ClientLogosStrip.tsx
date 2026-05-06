@@ -56,7 +56,7 @@ export function ClientLogosStrip() {
       <style dangerouslySetInnerHTML={{ __html: MARQUEE_CSS }} />
 
       <p
-        className="mx-auto max-w-3xl text-center text-[12px] uppercase tracking-[0.16em]"
+        className="mx-auto max-w-3xl text-center text-[14px] uppercase tracking-[0.16em]"
         style={{
           color: "#6B7280",
           fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif",

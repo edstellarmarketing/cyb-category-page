@@ -1,17 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { CASE_STUDIES } from "@/data/case-studies";
+import { CaseStudyModal } from "@/components/CaseStudyModal";
 
 type CaseStudy = {
   title: string;
   description: string;
   image: string;
   alt: string;
-  href: string;
+  modalSlug: string;
 };
 
 const CASES: CaseStudy[] = CASE_STUDIES.map((c) => ({
@@ -19,7 +19,7 @@ const CASES: CaseStudy[] = CASE_STUDIES.map((c) => ({
   description: c.cardDescription,
   image: c.cardImage,
   alt: c.hero.alt,
-  href: `/case-studies/${c.slug}`,
+  modalSlug: "fmcg-workforce-cyber-awareness",
 }));
 
 // Page theme accents (match the site's indigo palette)
@@ -45,6 +45,7 @@ function useSlidesPerView() {
 }
 
 export function RecentCustomerSuccesses() {
+  const [activeSlug, setActiveSlug] = useState<string | null>(null);
   const slidesPerView = useSlidesPerView();
   const showArrows = slidesPerView === 3;
   const showDots = slidesPerView !== 3;
@@ -189,16 +190,17 @@ export function RecentCustomerSuccesses() {
             >
               {rendered.map((c, i) => (
                 <div
-                  key={`${c.href}-${i}`}
+                  key={`${c.modalSlug}-${c.title}-${i}`}
                   className="shrink-0"
                   style={{
                     width: `${100 / rendered.length}%`,
                     padding: "0 15px",
                   }}
                 >
-                  <Link
-                    href={c.href}
-                    className="group flex flex-col h-full no-underline"
+                  <a
+                    href={`/case-studies/${c.modalSlug}`}
+                    onClick={(e) => { e.preventDefault(); setActiveSlug(c.modalSlug); }}
+                    className="group flex w-full flex-col h-full cursor-pointer text-left no-underline"
                     style={{ color: ACCENT }}
                   >
                     {/* Image */}
@@ -208,7 +210,7 @@ export function RecentCustomerSuccesses() {
                         alt={c.alt}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        className="object-cover"
+                        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                         style={{
                           borderTopLeftRadius: 25,
                           borderTopRightRadius: 25,
@@ -253,10 +255,7 @@ export function RecentCustomerSuccesses() {
                         }}
                       >
                         {c.description}{" "}
-                        <span
-                          className="inline-block"
-                          style={{ color: ACCENT }}
-                        >
+                        <span className="inline-block" style={{ color: ACCENT }}>
                           <ChevronRight
                             size={12}
                             strokeWidth={3}
@@ -266,7 +265,7 @@ export function RecentCustomerSuccesses() {
                         </span>
                       </p>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               ))}
             </div>
@@ -325,6 +324,8 @@ export function RecentCustomerSuccesses() {
           )}
         </div>
       </div>
+
+      <CaseStudyModal slug={activeSlug} onClose={() => setActiveSlug(null)} />
     </section>
   );
 }

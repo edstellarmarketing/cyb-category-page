@@ -689,7 +689,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { stat: "45", label: "Security Champions Trained", sublabel: "Designated advocates embedded across all business units" },
     ],
     quote: {
-      body: "Edstellar did not come in to fix our security stack. That was never their role. They came in to build the human capability layer that our tools could not address. Six months later, our CISO presented a skills delta to the board that showed exactly where we started and where we landed. That kind of measurement is what makes training a business investment, not a compliance checkbox.",
+      body: "We had the stack. We had the policies. What we lacked was a workforce capable of operationalising them under real-world conditions. Edstellar helped bridge that gap with training that was structured, measurable, and tightly aligned to the human side of cybersecurity. The skills gap report that followed was the first time our security training translated into metrics our board could clearly understand and act on.",
       author: "Head of Learning & Development",
       title: "Head of Learning & Development",
       company: "Global Consumer Goods Company",

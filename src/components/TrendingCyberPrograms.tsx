@@ -240,13 +240,13 @@ export function TrendingCyberPrograms() {
                 {/* Specs */}
                 <div className="mt-3 border-t border-[#E3E6F0] pt-3">
                   <p
-                    className="text-[12px] text-[#6B7280]"
+                    className="text-[14px] text-[#6B7280]"
                     style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                   >
                     {p.duration}
                   </p>
                   <p
-                    className="mt-0.5 text-[12px] text-[#6B7280]"
+                    className="mt-0.5 text-[14px] text-[#6B7280]"
                     style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                   >
                     Instructor-led (On-site/Virtual)
@@ -255,7 +255,7 @@ export function TrendingCyberPrograms() {
 
                 {/* Description */}
                 <p
-                  className="mt-3 flex-1 text-[14px] leading-[1.6] text-[#6B7280]"
+                  className="mt-3 flex-1 text-[15px] leading-[1.65] text-[#6B7280]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
                   {p.desc}
