@@ -176,13 +176,13 @@ export function CorporatePricing() {
     <section className="bg-[#F5F3FF] py-16 md:py-20">
       <div className="eds-page-center">
         <h2
-          className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
+          className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[48px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
           Cybersecurity Group Training Packages &amp; Pricing
         </h2>
         <p
-          className="mt-4 max-w-3xl text-[17px] leading-[1.35] sm:text-[19px]"
+          className="mt-4 max-w-3xl text-[17px] leading-[1.35] sm:text-[18px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
           Our Cybersecurity group training is tailored to your specific upskilling needs. Explore transparent pricing options that fit your training budget, whether you&apos;re training a small group or a large team.

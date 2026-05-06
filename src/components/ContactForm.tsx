@@ -40,13 +40,13 @@ export function ContactForm() {
           {/* Left column â€” heading + supporting contact info */}
           <div className="lg:col-span-5">
             <h2
-              className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
+              className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[48px]"
               style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
             >
               Contact Us
             </h2>
             <p
-              className="mt-4 max-w-md text-[17px] leading-[1.4] sm:text-[19px]"
+              className="mt-4 max-w-md text-[17px] leading-[1.4] sm:text-[18px]"
               style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
             >
               Submit your Training Requirements below and we&apos;ll get in

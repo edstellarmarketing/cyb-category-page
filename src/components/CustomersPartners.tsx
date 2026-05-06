@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ClientLogosStrip } from "@/components/ClientLogosStrip";
+import { EnterpriseProofStrip } from "@/components/EnterpriseProofStrip";
 import { ArrowRightIcon } from "@/components/icons";
 
 type TrainingLocation = { label: string; x: number; y: number };
@@ -65,7 +66,7 @@ export function CustomersPartners() {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-20">
           <div>
             <h2
-              className="text-[36px] leading-[1.08] text-[#1B1D52] sm:text-[44px] lg:text-[52px]"
+              className="text-[36px] leading-[1.08] text-[#1B1D52] sm:text-[42px] lg:text-[48px]"
               style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
             >
               Why Edstellar is Trusted by Enterprises to Build Cybersecurity Capability
@@ -140,8 +141,11 @@ export function CustomersPartners() {
                 </div>
               )}
 
+              {/* Lime accent line between image and content */}
+              <div className="h-[3px] w-full shrink-0 bg-[#C5E826]" />
+
               {/* Content */}
-              <div className="flex flex-1 flex-col border-l-[3px] border-[#6366F1] px-6 pb-7 pt-6">
+              <div className="flex flex-1 flex-col px-6 pb-7 pt-6">
                 <p
                   className="text-[52px] leading-none text-[#6366F1]"
                   style={{ fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif" }}
@@ -171,6 +175,12 @@ export function CustomersPartners() {
           ))}
         </div>
 
+      </div>
+
+      {/* Enterprise proof strip — full width, black background */}
+      <EnterpriseProofStrip />
+
+      <div className="eds-page-center">
         {/* Global reach map */}
         <div className="mt-16 md:mt-20">
           <p

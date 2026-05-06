@@ -210,7 +210,7 @@ export function GlobalCyberTrends() {
       <div className="eds-page-center">
         <div className="max-w-3xl">
           <h2
-            className="text-[32px] leading-[1.08] sm:text-[40px] lg:text-[46px]"
+            className="text-[36px] leading-[1.08] sm:text-[42px] lg:text-[48px]"
             style={{
               color: "#1B1D52",
               fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif",

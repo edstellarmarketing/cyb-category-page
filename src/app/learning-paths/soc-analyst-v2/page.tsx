@@ -1202,7 +1202,7 @@ export default function SocAnalystLearningPathV2Page() {
                       style={{ borderColor: BORDER, color: MUTED }}
                     >
                       <span>
-                        â˜… {t.rating} <span>({t.reviews})</span>
+                        ★ {t.rating} <span>({t.reviews})</span>
                       </span>
                       <span style={{ fontWeight: 600 }}>{t.experience}</span>
                     </div>

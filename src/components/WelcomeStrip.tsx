@@ -209,7 +209,7 @@ export function WelcomeStrip() {
       <div className="eds-page-center pt-10 pb-20 sm:pt-12 sm:pb-24">
       <div className="text-left">
         <h1
-          className="max-w-2xl text-[34px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
+          className="max-w-2xl text-[36px] leading-[1.05] sm:text-[44px] lg:text-[52px]"
           style={{ color: "#1B1D52", fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
           Customized Cybersecurity Training Programs for Enterprise teams
@@ -407,7 +407,7 @@ export function WelcomeStrip() {
             aria-hidden="true"
           />
           <h3
-            className="max-w-3xl text-[24px] leading-[1.2] sm:text-[28px] lg:text-[32px]"
+            className="max-w-3xl text-[24px] leading-[1.2] sm:text-[30px] lg:text-[36px]"
             style={{ color: "#1B1D52", fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
           >
             Cybersecurity training that compounds business value.

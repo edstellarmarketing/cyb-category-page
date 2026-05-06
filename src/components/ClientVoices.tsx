@@ -67,7 +67,7 @@ export function ClientVoices() {
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-3xl">
             <h2
-              className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
+              className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[48px]"
               style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
             >
               Voice of Security Leaders Across Enterprises

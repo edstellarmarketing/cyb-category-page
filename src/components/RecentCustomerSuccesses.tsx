@@ -134,7 +134,7 @@ export function RecentCustomerSuccesses() {
         {/* Title */}
         <div style={{ padding: "0 15px 44px" }}>
           <h2
-            className="text-[32px] leading-[36px] md:text-[40px] md:leading-[44px] lg:text-[44px] lg:leading-[49.28px]"
+            className="text-[36px] leading-[1.05] md:text-[42px] lg:text-[48px]"
             style={{
               fontFamily: '"Riona Sans Regular", Helvetica, Arial, sans-serif',
               fontWeight: 500,

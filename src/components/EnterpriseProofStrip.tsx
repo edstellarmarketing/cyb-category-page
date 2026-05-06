@@ -44,7 +44,7 @@ export function EnterpriseProofStrip() {
                 {item.label}
               </p>
               <p
-                className="mt-2 text-[13px] leading-[1.65] text-white/55"
+                className="mt-2 text-[14px] leading-[1.65] text-white/55"
                 style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
               >
                 {item.desc}

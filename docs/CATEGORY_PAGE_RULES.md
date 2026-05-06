@@ -82,10 +82,11 @@ The word **Customized** must open the H1. This establishes customized instructor
 - `employee training` — "turns employee training into measurable outcomes"
 - `on-site` and `virtual` delivery options
 
-**Bullet points (three required bullets):**
+**Bullet points (four required bullets, in this order):**
 1. Strategy-led design — capability roadmap, security/domain goals
-2. Hands-on by default — labs, real-world practice environment
-3. Measurable ROI — pre/post assessments, KPIs, skill improvement rates
+2. Global instructor-led delivery — on-site, off-site or virtual (ILT / VILT), in 10 languages, matched to your team's location and schedule
+3. Hands-on by default — labs, real-world practice environment
+4. Measurable ROI — pre/post assessments, KPIs, skill improvement rates
 
 **Prohibited:**
 - Do not use generic phrases like "learn from experts" — too weak. Use "matched to vetted, vendor-certified trainers"
@@ -166,36 +167,72 @@ Why Edstellar is Trusted by Enterprises to Build [Category] Capability
 
 **Blockquote (positioning line):**
 ```
-Most providers sell you a seat in a course. Edstellar builds the program, qualifies the trainer, and tracks the skill change your [teams] need.
+Most providers sell you a seat in a course. Edstellar builds the program, qualifies the trainer, and delivers a post-program report your CISO can take to the board: skills delta, MTTD improvement, and vulnerability remediation rates.
 ```
-This line is locked. Do not modify it except to update the bracket term for the category.
+This line is locked. It must speak the language of a CISO presenting to a board. Do not replace board-level KPIs (skills delta, MTTD, vulnerability remediation rates) with vague L&D language like "tracks the skill change".
 
-**Three proof pillars:**
+**Three proof pillars (locked structure — stat, label, sublabel, and description are all locked per pillar):**
 
-| Stat | Label | Sublabel |
-|---|---|---|
-| 200+ | [Category] Training Programs | Program design, not catalog selection |
-| 100+ | Countries | On-site or virtual, wherever you operate |
-| 1,500+ | Vetted [Category] Trainers | Caliber you can trust |
+**Pillar 1 — Programs**
+| Field | Locked value |
+|---|---|
+| Stat | `200+` |
+| Label | `[Category] Training Programs` |
+| Sublabel | `Program design, not catalog selection` |
+| Description | We design customized [category] group training around your threat model, your stack, and your roles. Not selected from a generic catalog. Every employee training program is a design decision, not a menu pick. |
+| Image | Cybersecurity group training session in progress |
 
-**Pillar 1 copy — required keywords:**
-- `customized` — "customized [category] group training"
-- `group training` — "every group training program"
-- `employee training` — "every employee training program is a design decision"
+Required keywords in description: `customized`, `group training`, `threat model`, `employee training program`, `design decision`
 
-**Pillar 2 copy — required keywords:**
-- `on-site` and `virtual` — delivery format
-- `in-region`, `in-language` — global reach differentiators
-- `local compliance framework` — regulatory context
+**Pillar 2 — Countries**
+| Field | Locked value |
+|---|---|
+| Stat | `100+` |
+| Label | `Countries` |
+| Sublabel | `On-site or virtual, wherever you operate` |
+| Description | A vetted instructor in your office, in your language, aligned to your local compliance framework. Wherever your teams operate, Edstellar delivers in-region. |
+| Image | Virtual instructor-led training cohort |
 
-**Pillar 3 copy — required keywords:**
-- `vetted` — multi-stage vetting
-- `instructor` or `trainer` caliber language
-- `hands-on enterprise practice`
+Required keywords in description: `vetted instructor`, `in your language`, `local compliance framework`, `in-region`
+
+**Pillar 3 — Trainers**
+| Field | Locked value |
+|---|---|
+| Stat | `1,500+` |
+| Label | `Vetted [Category] Trainers` |
+| Sublabel | `Caliber you can trust` |
+| Description | Every trainer passes a rigorous multi-stage vetting: technical assessment, live delivery evaluation, and ongoing client feedback. Before committing your cohort, you can interview and run a trial session with your shortlisted trainer. |
+| Image | Trainer avatar group (show 4 named trainers + "+1.5k" badge) |
+
+Required keywords in description: `multi-stage vetting`, `technical assessment`, `live delivery evaluation`, `client feedback`, `interview`, `trial session`
 
 ---
 
-### 7. CorporatePricing (Packages and Pricing)
+### 7. EnterpriseProofStrip (Full-Width Black Strip)
+
+**Purpose:** Social proof at scale. Appears immediately after the CustomersPartners section. Reinforces enterprise delivery capability before the pricing section.
+
+**Design:** Full-width black background (`#0c0c0c`), four equal columns, lime-green left border accent on each column.
+
+**Four items — all locked, do not modify:**
+
+| Stat | Sub-label | Description |
+|---|---|---|
+| `800+` | Employees in a single rollout | We scale from 5-person specialist cohorts to enterprise-wide deployments without quality loss. |
+| `Multi-site` | Parallel cohorts, same week | The same program runs simultaneously across your global offices: same curriculum, same outcomes. |
+| `Dedicated` | Learning Services Manager | One named person owns your engagement from kickoff through to post-program delivery report. |
+| `Post-program` | Delivery report for every cohort | Every engagement closes with a skills delta report your CISO and L&D Director can present upward, not just an attendance log. |
+
+**Rules:**
+- All four items are mandatory. Do not remove or reorder any item.
+- The "Post-program" item must always close with "not just an attendance log" — this is the key differentiator phrase.
+- The "Dedicated" item must always name the role as "Learning Services Manager" — not "account manager" or "project manager".
+- Stat labels (`800+`, `Multi-site`, `Dedicated`, `Post-program`) are not numbers only — three of the four are words, not digits. Do not force all four to be numbers.
+- Typography: stat label at `text-[28px] sm:text-[32px]` (Bold), sub-label at `text-[14px]` (Regular), description at `text-[14px]` (Light).
+
+---
+
+### 8. CorporatePricing (Packages and Pricing)
 
 **Purpose:** Converts group training enquiries. L&D and procurement audience.
 
@@ -230,7 +267,7 @@ Both card labels are required to use the word "Instructor-led". This reinforces 
 
 ---
 
-### 8. OurApproach
+### 9. OurApproach
 
 **Purpose:** Explains Edstellar's methodology. Builds process confidence for L&D buyers.
 
@@ -248,7 +285,7 @@ Edstellar Approach to Organizational [Category] Training
 
 ---
 
-### 9. ClientVoices (Testimonials)
+### 10. ClientVoices (Testimonials)
 
 **Purpose:** Social proof from security leaders, CISOs, L&D heads.
 
@@ -266,7 +303,7 @@ Edstellar Approach to Organizational [Category] Training
 
 ---
 
-### 10. BusinessNewsCards (Blog / Insights)
+### 11. BusinessNewsCards (Blog / Insights)
 
 **Purpose:** Thought leadership. SEO content depth. L&D and security leader audience.
 
@@ -285,7 +322,7 @@ Card 3 title pattern: "The [Year] Enterprise [Category] Skills Gap Report" — a
 
 ---
 
-### 11. ContactForm
+### 12. ContactForm
 
 **Purpose:** Conversion. The enquiry form for group training quotes.
 
@@ -334,6 +371,111 @@ Implementation in JSX:
 ```
 
 This same treatment should be considered for the HeroSlider description when the layout allows it.
+
+---
+
+## Typography System
+
+All category pages must follow this type scale exactly. Do not introduce any font size outside this system — not even one pixel different.
+
+### Type Scale Reference
+
+| Level | Element | Size (base / sm / lg) | Font family |
+|---|---|---|---|
+| **H1** | Page title — WelcomeStrip only | `36px / 44px / 52px` | Riona Sans Light |
+| **H2** | Every section heading | `36px / 42px / 48px` | Riona Sans Light |
+| **H3** | Sub-section headings, tab sub-headings | `24px / 30px / 36px` | Riona Sans Light |
+| **H4** | Card titles, component-level headings | `16px / 18px` | Riona Sans Regular |
+| **Stat / highlight numbers** | Large callout figures (800+, 27%, $10.5T) | `44px / 52px` | Riona Sans Bold |
+| **Primary description** | First paragraph directly under an H2 or H3 | `17px / 18px` | Riona Sans Light |
+| **Secondary description** | Card body copy, step descriptions, supporting text | `14px` flat | Riona Sans Light |
+| **Bullet point text** | List item text inside any checklist | `14px` flat | inherited |
+| **Labels / tags / badges** | Uppercase small labels, domain chips, cert badges | `11px` flat | Riona Sans Medium |
+| **Micro / tooltip** | Tooltips, breadcrumbs, footnotes | `10px` minimum | Riona Sans Light |
+
+---
+
+### Per-Section Typography Rules
+
+**WelcomeStrip**
+- H1: `text-[36px] sm:text-[44px] lg:text-[52px]` — only one H1 per page, always in WelcomeStrip
+- Sub-heading ("Cybersecurity training that compounds..."): H3 — `text-[24px] sm:text-[30px] lg:text-[36px]`
+- Intro paragraphs: primary description — `text-[17px] sm:text-[18px]`
+- Bullet list items (CheckBullet component): `text-[14px]`
+- Stat callout numbers (27%, $10.5T, 74%): `text-[44px] sm:text-[52px] lg:text-[60px]`
+
+**HeroSlider**
+- Hero title: display size — `text-[34px] sm:text-[44px] lg:text-[56px]` (intentionally larger than H2, it is a hero display element, not a section heading)
+- Eyebrow label above hero title: `text-[11px] uppercase tracking-[0.18em]`
+- Hero description: primary description — `text-[16px] sm:text-[18px]`
+
+**All other section headings (ChipChangesTabber, TrendingCyberPrograms, CustomersPartners, OurApproach, ClientVoices, CyberFAQ, CorporatePricing, ContactForm, GlobalCyberTrends, RecentCustomerSuccesses, EnterpriseProofStrip)**
+- Section H2: `text-[36px] sm:text-[42px] lg:text-[48px]`
+- Section primary description (directly under H2): `text-[17px] sm:text-[18px]`
+
+**ChipChangesTabber — tab sub-headings (H3)**
+- Programs H3, Trainers H3, Delivery H3: `text-[24px] sm:text-[30px] lg:text-[36px]`
+- Tab sub-heading primary description: `text-[16px] sm:text-[17px]`
+
+**Course cards (TrendingCyberPrograms, ChipChangesTabber catalog)**
+- Card title: `text-[15px] sm:text-[16px]` — this is not an H4, it is a card label
+- Card description: `text-[14px]` — secondary description, flat
+- Domain tag / category chip: `text-[11px] uppercase`
+- Meta info (duration, delivery format): `text-[12px]` — below secondary, acceptable for metadata only
+
+**Trainer cards (ChipChangesTabber)**
+- Trainer name (H4): `text-[16px]`
+- Trainer role / specialization: `text-[14px]`
+- Trainer meta (location, rating, experience): `text-[13px]`
+- Trainer bio: `text-[14px]`
+- Certification badges: `text-[11px] uppercase`
+
+**EnterpriseProofStrip (black strip)**
+- Stat label (800+, Multi-site, Dedicated, Post-program): `text-[28px] sm:text-[32px]` — not a heading, a stat
+- Sub-label: `text-[14px]`
+- Description: `text-[14px]` — secondary description, flat
+
+**CustomersPartners (Why Edstellar section)**
+- H2: `text-[36px] sm:text-[42px] lg:text-[48px]`
+- Blockquote: `text-[17px] sm:text-[18px]`
+- Pillar stat numbers (200+, 100+, 1,500+): `text-[52px]`
+- Pillar label: `text-[17px]`
+- Pillar sublabel (uppercase): `text-[11px] uppercase tracking-[0.14em]`
+- Pillar description: `text-[14px]`
+
+---
+
+### Hard Rules — Enforce These on Every New Page
+
+- **Never go below `10px`** for any visible text element.
+- **Never use `19px` or higher for body copy** — that size is reserved for H3 and above.
+- **Never set card description text below `14px`** — readability minimum.
+- **Always use all three breakpoints for headings**: `text-[Xpx] sm:text-[Ypx] lg:text-[Zpx]`.
+- **Secondary descriptions are always `14px` flat** — no responsive scaling needed.
+- **Labels/tags/badges are always `11px` flat** — uppercase and letter-spacing compensate for the small size. Never go to `10px` for a badge.
+- **Do not invent intermediate sizes** like `15px`, `13.5px`, or `19px` for new sections. Pick the nearest defined level.
+- **Stat numbers are exempt** from the scale — they are intentional display anchors and their size is set by the component design, not the scale.
+
+### Typography Pre-Publish Checklist
+
+Before creating or publishing a new category page, verify:
+
+- [ ] H1 is `36/44/52px`, appears only once, in WelcomeStrip
+- [ ] All section H2s are `36/42/48px`
+- [ ] All H3s (sub-section headings) are `24/30/36px`
+- [ ] All card/component H4s are `16px` or `18px`
+- [ ] Primary descriptions under headings are `17px / 18px`
+- [ ] All card descriptions are `14px` flat
+- [ ] All bullet point text is `14px`
+- [ ] All labels, tags, and badges are `11px` uppercase
+- [ ] No text is below `10px`
+- [ ] No body copy is at `19px` or above
+
+---
+
+## CSS Class Naming
+
+All custom CSS classes use the `eds-` prefix (e.g. `eds-page-center`, `eds-arrow-link`). Do not use `mtk-`, `mediatek-`, or any third-party brand prefix. If you see a class with any other vendor prefix, rename it to `eds-` immediately.
 
 ---
 

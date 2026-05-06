@@ -4,7 +4,6 @@ import { ClientVoices } from "@/components/ClientVoices";
 import { ContactForm } from "@/components/ContactForm";
 import { CorporatePricing } from "@/components/CorporatePricing";
 import { CustomersPartners } from "@/components/CustomersPartners";
-import { EnterpriseProofStrip } from "@/components/EnterpriseProofStrip";
 import { RecentCustomerSuccesses } from "@/components/RecentCustomerSuccesses";
 import { CyberFAQ } from "@/components/CyberFAQ";
 import { Footer } from "@/components/Footer";
@@ -27,7 +26,6 @@ export default function Home() {
         <ChipChangesTabber />
         <TrendingCyberPrograms />
         <CustomersPartners />
-        <EnterpriseProofStrip />
         <RecentCustomerSuccesses />
         <CorporatePricing />
         <OurApproach />

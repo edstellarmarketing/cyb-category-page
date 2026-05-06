@@ -156,7 +156,7 @@ export function HeroSlider() {
         <div className="relative z-10 flex h-full items-center">
           <div className="max-w-4xl px-6 md:px-24">
             <span
-              className="mb-6 block text-[10px] uppercase tracking-[0.18em] text-[#6366F1]"
+              className="mb-6 block text-[11px] uppercase tracking-[0.18em] text-[#6366F1]"
               style={{ fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif", fontWeight: 700 }}
             >
               {slide.eyebrow}

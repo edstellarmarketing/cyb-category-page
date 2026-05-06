@@ -105,7 +105,7 @@ export function CyberFAQ() {
 
         {/* Heading */}
         <h2
-          className="text-[36px] leading-[1.05] text-[#1B1D52] sm:text-[42px] lg:text-[47px]"
+          className="text-[36px] leading-[1.05] text-[#1B1D52] sm:text-[42px] lg:text-[48px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
           Frequently Asked Questions

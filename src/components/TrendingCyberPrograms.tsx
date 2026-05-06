@@ -158,7 +158,7 @@ export function TrendingCyberPrograms() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
             <h2
-              className="text-[36px] leading-[1.05] text-[#1B1D52] sm:text-[42px] lg:text-[47px]"
+              className="text-[36px] leading-[1.05] text-[#1B1D52] sm:text-[42px] lg:text-[48px]"
               style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
             >
               Trending cybersecurity training programs companies are actively enrolling in
@@ -219,7 +219,7 @@ export function TrendingCyberPrograms() {
               <div className="flex flex-1 flex-col p-5">
                 {/* Domain tag */}
                 <span
-                  className="inline-flex w-fit items-center rounded-full px-2.5 py-0.5 text-[10px] uppercase tracking-[0.1em]"
+                  className="inline-flex w-fit items-center rounded-full px-2.5 py-0.5 text-[11px] uppercase tracking-[0.1em]"
                   style={{
                     backgroundColor: p.tagBg,
                     color: p.tagColor,
@@ -255,7 +255,7 @@ export function TrendingCyberPrograms() {
 
                 {/* Description */}
                 <p
-                  className="mt-3 flex-1 text-[13px] leading-[1.6] text-[#6B7280]"
+                  className="mt-3 flex-1 text-[14px] leading-[1.6] text-[#6B7280]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
                   {p.desc}

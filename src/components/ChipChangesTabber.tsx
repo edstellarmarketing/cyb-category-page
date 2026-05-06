@@ -242,7 +242,7 @@ const TRAINER_STATS = [
   { stat: "1,500+", label: "Verified cybersecurity trainers" },
   { stat: "12+ yrs", label: "Average industry experience" },
   { stat: "40+", label: "Cybersecurity frameworks covered" },
-  { stat: "4.8 â˜…", label: "Average learner rating" },
+  { stat: "4.8 ★", label: "Average learner rating" },
 ];
 
 type Program = {
@@ -358,13 +358,13 @@ export function ChipChangesTabber() {
     <section id="catalog" className="bg-[#0c0c0c] text-white py-16 md:py-20">
       <div className="eds-page-center">
         <h2
-          className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[47px]"
+          className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[48px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
           Every cybersecurity discipline your enterprise needs, in one trusted catalog.
         </h2>
         <p
-          className="mt-3 text-[18px] sm:text-[21px] text-white"
+          className="mt-3 text-[17px] sm:text-[18px] text-white"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
           Edstellar partners with enterprise security leaders to deliver
@@ -401,7 +401,7 @@ export function ChipChangesTabber() {
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
               <div className="max-w-3xl">
                 <h3
-                  className="mb-4 text-[26px] leading-[1.1] sm:text-[30px] lg:text-[34px]"
+                  className="mb-4 text-[24px] leading-[1.1] sm:text-[30px] lg:text-[36px]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
                   Trainers to meet your cybersecurity needs
@@ -482,7 +482,7 @@ export function ChipChangesTabber() {
                         {t.name}
                       </h4>
                       <p
-                        className="text-[12px] text-eds-gray-500"
+                        className="text-[14px] text-eds-gray-500"
                         style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                       >
                         {t.role}
@@ -491,22 +491,22 @@ export function ChipChangesTabber() {
                   </div>
 
                   <p
-                    className="mt-4 text-[12px] text-eds-gray-500"
+                    className="mt-4 text-[13px] text-eds-gray-500"
                     style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                   >
                     {t.location} Â·{" "}
-                    <span style={{ color: "#F59E0B" }}>â˜…</span> {t.rating}{" "}
+                    <span style={{ color: "#F59E0B" }}>★</span> {t.rating}{" "}
                     <span className="text-eds-gray-400">({t.reviews})</span>
                   </p>
                   <p
-                    className="mt-1 text-[12px] text-eds-gray-400"
+                    className="mt-1 text-[13px] text-eds-gray-400"
                     style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                   >
                     Training since {t.trainingSince} Â· {t.experience} yrs in industry
                   </p>
 
                   <p
-                    className="mt-4 text-[13px] leading-[1.5] text-black"
+                    className="mt-4 text-[14px] leading-[1.5] text-black"
                     style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                   >
                     {t.bio}
@@ -516,7 +516,7 @@ export function ChipChangesTabber() {
                     {t.certs.map((cert) => (
                       <span
                         key={cert}
-                        className="rounded-full border border-eds-gray-300 px-2.5 py-1 text-[10px] uppercase tracking-[0.1em] text-eds-gray-500"
+                        className="rounded-full border border-eds-gray-300 px-2.5 py-1 text-[11px] uppercase tracking-[0.1em] text-eds-gray-500"
                         style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
                       >
                         {cert}
@@ -550,7 +550,7 @@ export function ChipChangesTabber() {
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
               <div className="max-w-3xl">
                 <h3
-                  className="mb-4 text-[26px] leading-[1.1] sm:text-[30px] lg:text-[34px]"
+                  className="mb-4 text-[24px] leading-[1.1] sm:text-[30px] lg:text-[36px]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
                   96 Enterprise-grade cybersecurity programs, ready to deploy
@@ -664,7 +664,7 @@ export function ChipChangesTabber() {
           <div className="mt-2 grid min-h-[420px] overflow-hidden rounded-2xl bg-white text-black md:grid-cols-2">
             <div className="flex flex-col justify-center px-8 py-12 sm:px-12 md:p-16">
               <h3
-                className="mb-6 text-[28px] leading-[1.1] tracking-tight sm:text-[34px] md:text-[36px]"
+                className="mb-6 text-[24px] leading-[1.1] tracking-tight sm:text-[30px] lg:text-[36px]"
                 style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
               >
                 Onsite, off-site, virtual.
@@ -788,7 +788,7 @@ export function ChipChangesTabber() {
               <div className="flex items-center px-8 py-12 sm:px-12 lg:px-16">
                 <div className="border-l-[3px] border-[#6366F1] pl-6">
                   <h3
-                    className="text-[28px] leading-[1.1] sm:text-[34px]"
+                    className="text-[24px] leading-[1.1] sm:text-[30px]"
                     style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
                   >
                     {path.cardTitle}
