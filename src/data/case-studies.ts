@@ -624,7 +624,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     results: [
       { label: "Employees Trained:", body: "18,000+ across 32 countries in 6 months." },
       { label: "Completion Rate:", body: "96% first-attempt completion on the awareness program." },
-      { label: "Phishing Click Rate:", body: "Dropped from 34% to 8% in post-program simulation, a 76% behavioural improvement." },
+      { label: "Phishing Click Rate:", body: "Fell from 34% to 8% in post-program simulation, a 76% drop in click-through behaviour." },
       { label: "Security Champions Trained:", body: "45 Security Champions designated and embedded across all business units." },
     ],
     meet: {
@@ -685,7 +685,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     metrics: [
       { stat: "18,000+", label: "Employees Trained", sublabel: "Across 32 countries in 6 months" },
       { stat: "96%", label: "Completion Rate", sublabel: "First-ever global security awareness rollout" },
-      { stat: "−76%", label: "Phishing Click Rate", sublabel: "Simulation dropped from 34% to 8% post-training" },
+      { stat: "76%", label: "Drop in Phishing Click Rate", sublabel: "From 34% to 8% after training" },
       { stat: "45", label: "Security Champions Trained", sublabel: "Designated advocates embedded across all business units" },
     ],
     quote: {
