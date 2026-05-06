@@ -349,11 +349,15 @@ const SECTIONS: PageSection[] = [
           "programs",
           "certified",
           "measurable skill outcomes",
+          "continuously updates courseware",
+          "new versions",
+          "tools",
+          "threat techniques",
         ],
         notes:
-          "Appears above the chip tabs. Mentions total program count and delivery format. Must include 'instructor-led' and 'certified'.",
+          "Appears above the chip tabs. Mentions total program count, delivery format, and courseware freshness. Must include 'instructor-led' and 'certified', plus a sentence asserting that Edstellar continuously updates the courseware as new versions, tools, and threat techniques emerge in the [category] space. The freshness claim is what separates Edstellar's catalog from a static training menu — it must always be present.",
         example:
-          "A live catalog of 80+ cybersecurity programs across 10 domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes.",
+          "A live catalog of 80+ cybersecurity programs across 10 domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes. Edstellar continuously updates courseware as new versions, tools, and threat techniques emerge in the cybersecurity space, so every cohort trains on what attackers and auditors are looking at right now.",
       },
       {
         element: "Domain chip label",
@@ -395,6 +399,39 @@ const SECTIONS: PageSection[] = [
         example:
           "Master Privileged Access Management with CyberArk, vault administration, PSM, CPM and policy-driven credential rotation.",
       },
+      {
+        element: "Programs tab — heading",
+        charLimit: "55–75",
+        keywords: ["Enterprise-grade", "[category]", "ready to deploy"],
+        notes:
+          "Heading inside the Programs tab panel. Sentence-case with a capital E on 'Enterprise-grade' (it is a quality marker, not a generic adjective in this context). Pattern: '[N] Enterprise-grade [category] programs, ready to deploy'. The 'ready to deploy' suffix signals procurement-ready, not a marketing aspiration.",
+        example: "96 Enterprise-grade cybersecurity programs, ready to deploy",
+      },
+      {
+        element: "Programs tab — callout copy (lavender card)",
+        charLimit: "180–260",
+        keywords: [
+          "vendor track",
+          "role-based",
+          "match",
+          "custom program",
+          "stack",
+          "roles",
+          "threat model",
+        ],
+        notes:
+          "The lavender (#F5F3FF) call-out card sits below the program cards inside the Programs tab. The copy MUST present BOTH paths: (a) match to an existing program in the live catalog, and (b) build a custom program around the buyer's exact stack, roles, and threat model. This pairs with the courseware-freshness sentence in the section intro to position Edstellar as a builder, not a catalog vendor. Use the Oxford comma after 'vendor track'.",
+        example:
+          "Looking for a specific training program, vendor track, or role-based solution? Our team can match you to any of the 96+ programs in the live catalog, or build a custom program around your exact stack, roles, and threat model.",
+      },
+      {
+        element: "Programs tab — CTA button",
+        charLimit: "10–14",
+        keywords: ["Enquire", "Now"],
+        notes:
+          "LOCKED text: 'Enquire Now'. LOCKED href: '#contact' (intra-page anchor to the ContactForm section, NOT an external Edstellar URL). Indigo outline button (border-2 #6366F1, hover fills with white text). Sits inside the same lavender call-out card as the copy above. Do NOT use 'View all programs', 'Browse catalog', or any link to the public Edstellar catalog — every catalog CTA on a category page must convert into the on-page form.",
+        example: "Enquire Now → #contact",
+      },
     ],
     rules: [
       "Delivery field on every program card is LOCKED to 'Instructor-led (On-site/Virtual)'.",
@@ -402,6 +439,10 @@ const SECTIONS: PageSection[] = [
       "Domain chips must use recognized industry names, not invented categories.",
       "Minimum 4 programs per domain chip tab.",
       "All hrefs must link to confirmed edstellar.com program URLs — never guessed or invented URLs.",
+      "The catalog blurb above the chip tabs MUST include a courseware-freshness sentence: 'Edstellar continuously updates courseware as new versions, tools, and threat techniques emerge in the [category] space…'. This separates a curated, living catalog from a static training menu and signals that programs track the current versions, tools, and adversary techniques active in the [category] space. Never omit it.",
+      "Programs tab heading capitalizes 'Enterprise-grade' (capital E). Pattern: '[N] Enterprise-grade [category] programs, ready to deploy'.",
+      "Programs tab call-out copy MUST offer both paths — match-from-catalog AND build-custom — explicitly mentioning 'stack, roles, and threat model'. Edstellar is a program builder, not a catalog reseller, and this card is where the message lands.",
+      "Programs tab CTA button is LOCKED to 'Enquire Now' linking to '#contact'. Never link this button to the public edstellar.com catalog or to an external URL — the entire point of the call-out is to convert the visitor into the on-page form.",
     ],
   },
   {

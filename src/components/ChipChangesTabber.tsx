@@ -535,13 +535,13 @@ export function ChipChangesTabber() {
                   className="mb-4 text-[26px] leading-[1.1] sm:text-[30px] lg:text-[34px]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
-                  96 enterprise-grade cybersecurity programs, ready to deploy
+                  96 Enterprise-grade cybersecurity programs, ready to deploy
                 </h3>
                 <p
                   className="text-[15px] leading-[1.5] text-mtk-gray-500 md:text-[17px]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
-                  A live catalog of {TOTAL_TRAININGS}+ cybersecurity programs across {DOMAINS.length} domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes.
+                  A live catalog of {TOTAL_TRAININGS}+ cybersecurity programs across {DOMAINS.length}{" "}domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes. Edstellar continuously updates courseware as new versions, tools, and threat techniques emerge in the cybersecurity space, so every cohort trains on what attackers and auditors are looking at right now.
                 </p>
               </div>
               <a
@@ -628,18 +628,16 @@ export function ChipChangesTabber() {
                 className="text-[14px] text-mtk-gray-500 md:text-[15px]"
                 style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
               >
-                Looking for a specific training program, vendor track or
+                Looking for a specific training program, vendor track, or
                 role-based solution? Our team can match you to any of the
-                {" "}{TOTAL_TRAININGS}+ live cybersecurity programs in the catalog.
+                {" "}{TOTAL_TRAININGS}+{" "}programs in the live catalog, or build a custom program around your exact stack, roles, and threat model.
               </p>
               <a
-                href="https://www.edstellar.com/category/cybersecurity-training"
-                target="_blank"
-                rel="noopener"
+                href="#contact"
                 className="inline-flex shrink-0 items-center gap-2 rounded-full border-2 border-[#6366F1] px-5 py-2 text-[12px] uppercase tracking-[0.12em] text-[#6366F1] transition-colors hover:bg-[#6366F1] hover:text-white"
                 style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
               >
-                View all programs
+                Enquire Now
                 <ArrowRightIcon width={14} height={14} />
               </a>
             </div>
