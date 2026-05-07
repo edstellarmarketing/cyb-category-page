@@ -3,18 +3,20 @@
 import { useState, type ReactNode } from "react";
 import { GoogleChecklistTab } from "./GoogleChecklistTab";
 import { KeywordsTab } from "./KeywordsTab";
+import { LaunchReadyTab } from "./LaunchReadyTab";
 
 const NAVY = "#1B1D52";
 const INDIGO = "#6366F1";
 const BORDER = "#E3E6F0";
 const GRAY = "#6B7280";
 
-type Tab = "checklist" | "keywords" | "rules";
+type Tab = "checklist" | "keywords" | "rules" | "launch";
 
 const TAB_LABELS: Record<Tab, string> = {
   checklist: "Google Helpful Content Checklist",
   keywords: "Keywords to Target",
   rules: "Section Rules",
+  launch: "Launch Ready Checklist",
 };
 
 export function CategoryPageTabs({ rulesContent }: { rulesContent: ReactNode }) {
@@ -29,7 +31,7 @@ export function CategoryPageTabs({ rulesContent }: { rulesContent: ReactNode }) 
       >
         <div className="mx-auto max-w-6xl px-6">
           <div className="flex gap-0">
-            {(["checklist", "keywords", "rules"] as Tab[]).map((tab) => {
+            {(["checklist", "keywords", "rules", "launch"] as Tab[]).map((tab) => {
               const isActive = activeTab === tab;
               return (
                 <button
@@ -60,6 +62,8 @@ export function CategoryPageTabs({ rulesContent }: { rulesContent: ReactNode }) 
         <GoogleChecklistTab />
       ) : activeTab === "keywords" ? (
         <KeywordsTab />
+      ) : activeTab === "launch" ? (
+        <LaunchReadyTab />
       ) : (
         rulesContent
       )}
