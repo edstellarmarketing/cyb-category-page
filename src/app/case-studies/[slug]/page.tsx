@@ -4,7 +4,7 @@ import { CASE_STUDIES, getCaseStudy } from "@/data/case-studies";
 import { CaseStudyDownloadButton, CaseStudyCopyLink } from "@/components/CaseStudyCTA";
 import {
   FONT_LIGHT, FONT_MEDIUM, FONT_BOLD,
-  IntroSection, ChallengesSection, InterventionSection,
+  IntroSection, CompanyProfileSection, ChallengesSection, InterventionSection,
   MetricsSection, QuoteSection,
   SolutionSection, LegacyResultsSection, MeetSection,
 } from "@/components/CaseStudySections";
@@ -23,6 +23,9 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
   return (
     <main>
       <Hero data={data.hero} />
+      {data.companyBackground && (
+        <CompanyProfileSection description={data.companyBackground} facts={data.companyFacts} />
+      )}
       <IntroSection data={data.intro} />
       <ChallengesSection items={data.challenges} />
       {isNewLayout ? (

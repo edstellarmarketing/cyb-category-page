@@ -11,6 +11,8 @@ export type CaseStudy = {
   cardDescription: string;
   hero: { title: string; image: string; alt: string };
   intro: { heading: string; body: string };
+  companyBackground?: string;
+  companyFacts?: Array<{ label: string; value: string }>;
   challenges: Array<{ icon: ChallengeIcon; title: string; body: string }>;
   solution: {
     heading: string;
@@ -585,6 +587,14 @@ export const CASE_STUDIES: CaseStudy[] = [
       heading: "The Gap Was Never the Tools. It Was the People.",
       body: "When a spear-phishing campaign targeted procurement teams across three markets, the CISO and Head of Learning and Development ran a rapid diagnosis. The security stack was intact. Incident response was handled by the internal IT team. The gap was the human capability layer. Edstellar was engaged to build cybersecurity capability across the workforce through structured, role-specific training programs.",
     },
+    companyBackground:
+      "A global consumer goods company with 18,000 employees across 32 countries and 8 operating languages. Its workforce spans procurement, in-house development, IT, and operating teams across EMEA, APAC, and the Americas, including 400 procurement managers running supplier onboarding and due diligence and 180 in-house developers building internal applications.",
+    companyFacts: [
+      { label: "Employees", value: "18,000" },
+      { label: "Countries", value: "32" },
+      { label: "Languages", value: "8" },
+      { label: "Regions", value: "3" },
+    ],
     challenges: [
       {
         icon: "users",

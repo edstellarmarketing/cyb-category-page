@@ -44,6 +44,45 @@ export function IntroSection({ data }: { data: { heading: string; body: string }
   );
 }
 
+export function CompanyProfileSection({
+  description,
+  facts,
+}: {
+  description: string;
+  facts?: Array<{ label: string; value: string }>;
+}) {
+  return (
+    <section className="bg-white" style={{ paddingTop: 80, paddingBottom: 80 }}>
+      <div className="mx-auto w-full max-w-[1280px] px-6 md:px-10 lg:px-20">
+        <div className={`grid gap-10 ${facts && facts.length > 0 ? "lg:grid-cols-[1.4fr_1fr] lg:gap-16" : ""}`}>
+          <div>
+            <h2 className="text-[32px] leading-[36px] md:text-[40px] md:leading-[44px] lg:text-[44px] lg:leading-[49.28px]" style={{ fontFamily: FONT_REGULAR, color: "#000", margin: "0 0 24px" }}>
+              About the Company
+            </h2>
+            <p style={{ fontFamily: FONT_LIGHT, fontSize: 18, lineHeight: "1.75", color: "#1F2937", margin: 0, maxWidth: 720 }}>
+              {description}
+            </p>
+          </div>
+          {facts && facts.length > 0 && (
+            <div className="grid grid-cols-2 self-start" style={{ borderTop: "1px solid #E5E7EB", borderLeft: "1px solid #E5E7EB" }}>
+              {facts.map((f) => (
+                <div key={f.label} className="flex flex-col px-6 py-7" style={{ borderRight: "1px solid #E5E7EB", borderBottom: "1px solid #E5E7EB" }}>
+                  <p className="leading-none" style={{ fontFamily: FONT_BOLD, fontSize: 36, color: "#1B1D52", margin: "0 0 12px" }}>
+                    {f.value}
+                  </p>
+                  <p style={{ fontFamily: FONT_MEDIUM, fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase", color: "#6B7280", margin: 0 }}>
+                    {f.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function ChallengesSection({ items }: { items: Array<{ icon: ChallengeIcon; title: string; body: string }> }) {
   return (
     <section className="bg-white" style={{ paddingTop: 90, paddingBottom: 90 }}>
