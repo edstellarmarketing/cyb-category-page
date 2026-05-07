@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<title>Corporate IT & Technical Training Courses | Edstellar</title>
+<meta name="description" content="Build your team's technical proficiency with advanced instructor-led IT training across AI, Cloud, Cybersecurity, DevOps, Data Science and more — delivered virtually, on-site, or off-site by Edstellar." />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          edsOrange: '#C5E826',
+          edsOrangeDark: '#D4F23A',
+          edsDark: '#1B1D52',
+          edsGray: '#2D2F6B',
+          edsLightGray: '#EEF0F8',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      },
+    },
+  };
+</script>
+<style data-purpose="typography">
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+  .hero-heading { font-size: 3.5rem; line-height: 1.1; font-weight: 300; }
+  @media (max-width: 768px) { .hero-heading { font-size: 2.25rem; } }
+</style>
+<style data-purpose="custom-layout">
+  .gradient-welcome { background: linear-gradient(90deg, #C5E826 0%, #D4F23A 100%); }
+  .custom-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+  .news-card-hover { transition: transform .3s ease; }
+  .news-card-hover:hover { transform: translateY(-5px); }
+  .scroll-x { scrollbar-width: thin; scrollbar-color: #444 transparent; }
+  .scroll-x::-webkit-scrollbar { height: 4px; }
+  .scroll-x::-webkit-scrollbar-thumb { background: #444; border-radius: 2px; }
+
+  /* Accent legibility:
+     #C5E826 lime is unreadable on white/light backgrounds.
+     On any light surface, swap text-edsOrange and border-edsOrange to a darker olive (#4D6B0F).
+     Dark cards/sections nested inside light surfaces restore the bright lime via the rules below. */
+  body .bg-white .text-edsOrange,
+  body .bg-white.text-edsOrange,
+  body [class*="bg-edsLightGray"] .text-edsOrange,
+  body .bg-\[\#F7F8FC\] .text-edsOrange,
+  body header .text-edsOrange,
+  body footer .text-edsOrange,
+  body .bg-white .hover\:text-edsOrange:hover,
+  body header .hover\:text-edsOrange:hover,
+  body footer .hover\:text-edsOrange:hover,
+  body [class*="bg-edsLightGray"] .hover\:text-edsOrange:hover { color: #4D6B0F; }
+
+  body .bg-white .border-edsOrange,
+  body [class*="bg-edsLightGray"] .border-edsOrange,
+  body header .border-edsOrange,
+  body footer .border-edsOrange { border-color: #4D6B0F; }
+
+  /* Restore bright lime when the accent sits on a dark surface
+     (these rules come last so they beat the light-surface rules in the cascade). */
+  body .bg-edsDark .text-edsOrange,
+  body .bg-edsGray .text-edsOrange,
+  body .bg-black .text-edsOrange,
+  body [class*="bg-black\\/"] .text-edsOrange { color: #C5E826; }
+
+  body .bg-edsDark .border-edsOrange,
+  body .bg-edsGray .border-edsOrange,
+  body .bg-black .border-edsOrange { border-color: #C5E826; }
+
+  /* Framework hub & card hover animations.
+     Lines and arrowheads use SVG currentColor so we only need to switch the
+     `color` property on the line element to drive both stroke and arrow fill. */
+  .framework-hub-circle {
+    transition: border-color .35s ease, box-shadow .35s ease;
+    cursor: default;
+  }
+  .fw-line {
+    color: #C5C9D8;
+    transition: color .35s ease;
+  }
+  .fw-card {
+    transition: border-color .35s ease, box-shadow .35s ease, transform .25s ease;
+  }
+  @keyframes fw-travel-dots {
+    from { stroke-dashoffset: 0; }
+    to   { stroke-dashoffset: -120; }
+  }
+
+  /* HUB HOVER — all 4 lines + ring light up at once */
+  #framework:has(.framework-hub-circle:hover) .framework-hub-circle,
+  #framework:has(.framework-hub-circle:focus-visible) .framework-hub-circle {
+    border-color: #C5E826;
+    box-shadow:
+      0 0 0 4px rgba(197, 232, 38, 0.18),
+      0 25px 50px -12px rgba(197, 232, 38, 0.30);
+  }
+  #framework:has(.framework-hub-circle:hover) .fw-line,
+  #framework:has(.framework-hub-circle:focus-visible) .fw-line {
+    color: #C5E826;
+    animation: fw-travel-dots 1.4s linear forwards;
+  }
+
+  /* CARD HOVER — only that card's specific line + that card's border light up */
+  #framework:has(.fw-quad-1:hover) .fw-line-1,
+  #framework:has(.fw-quad-1:focus-within) .fw-line-1,
+  #framework:has(.fw-quad-2:hover) .fw-line-2,
+  #framework:has(.fw-quad-2:focus-within) .fw-line-2,
+  #framework:has(.fw-quad-3:hover) .fw-line-3,
+  #framework:has(.fw-quad-3:focus-within) .fw-line-3,
+  #framework:has(.fw-quad-4:hover) .fw-line-4,
+  #framework:has(.fw-quad-4:focus-within) .fw-line-4 {
+    color: #C5E826;
+    animation: fw-travel-dots 1.4s linear forwards;
+  }
+  #framework:has(.fw-quad-1:hover) .fw-quad-1 .fw-card,
+  #framework:has(.fw-quad-1:focus-within) .fw-quad-1 .fw-card,
+  #framework:has(.fw-quad-2:hover) .fw-quad-2 .fw-card,
+  #framework:has(.fw-quad-2:focus-within) .fw-quad-2 .fw-card,
+  #framework:has(.fw-quad-3:hover) .fw-quad-3 .fw-card,
+  #framework:has(.fw-quad-3:focus-within) .fw-quad-3 .fw-card,
+  #framework:has(.fw-quad-4:hover) .fw-quad-4 .fw-card,
+  #framework:has(.fw-quad-4:focus-within) .fw-quad-4 .fw-card {
+    border-color: #C5E826 !important;
+    box-shadow:
+      0 0 0 4px rgba(197, 232, 38, 0.16),
+      0 20px 35px -12px rgba(197, 232, 38, 0.25) !important;
+  }
+</style>
+</head>
+<body class="bg-white text-edsDark">
+
+<!-- BEGIN: Global Header -->
+<header class="sticky top-0 z-50 bg-white border-b border-gray-100 h-16 flex items-center px-6 md:px-8" data-purpose="main-navigation">
+  <div class="flex items-center justify-between w-full max-w-[1440px] mx-auto">
+    <div class="flex items-center space-x-12">
+      <a href="https://www.edstellar.com" class="flex items-center">
+        <span class="text-xl font-bold tracking-tight">edstellar<span class="text-edsOrange">.</span></span>
+      </a>
+      <nav class="hidden lg:flex space-x-6 text-sm font-medium text-gray-600">
+        <a class="hover:text-edsOrange" href="#">Training Programs</a>
+        <a class="hover:text-edsOrange" href="#">Consulting</a>
+        <a class="hover:text-edsOrange" href="#">Managed Training</a>
+        <a class="hover:text-edsOrange" href="#">Platform</a>
+        <a class="hover:text-edsOrange" href="#">Company</a>
+        <a class="hover:text-edsOrange" href="#">Resources</a>
+      </nav>
+    </div>
+    <div class="hidden md:flex items-center space-x-3">
+      <a href="#pricing" class="text-sm font-medium text-edsDark hover:text-edsOrange">View Pricing</a>
+      <a href="#contact" class="bg-edsOrange text-edsDark text-sm font-semibold py-2 px-5 rounded-full hover:bg-edsOrangeDark transition-colors">Contact Us</a>
+    </div>
+    <button class="lg:hidden text-gray-600">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+    </button>
+  </div>
+</header>
+<!-- END: Global Header -->
+
+<!-- BEGIN: Breadcrumb (subtle, between header and hero) -->
+<div class="bg-white border-b border-gray-100">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8 py-3 text-[11px] text-gray-500 tracking-wide">
+    <a href="#" class="hover:text-edsOrange">Home</a>
+    <span class="mx-2">›</span>
+    <a href="#" class="hover:text-edsOrange">All Courses</a>
+    <span class="mx-2">›</span>
+    <span class="text-edsDark">Corporate IT &amp; Technical Training Courses</span>
+  </div>
+</div>
+<!-- END: Breadcrumb -->
+
+<!-- BEGIN: Hero Slider Section (fills the remaining viewport below sticky header + breadcrumb) -->
+<section class="relative bg-black text-white overflow-hidden flex flex-col md:h-[calc(100vh-7rem)] md:min-h-[560px]" data-purpose="hero-slider">
+  <!-- Slides -->
+  <div class="hero-slides relative flex-1 min-h-[420px]">
+
+    <!-- Slide: Featured / All -->
+    <div class="hero-slide absolute inset-0 flex items-center transition-opacity duration-500 opacity-100 z-10" data-slide="featured">
+      <img alt="IT and technical training" class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=80" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+      <div class="relative z-10 px-6 md:px-24 max-w-4xl">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-6 block uppercase">IT &amp; Technical Training</span>
+        <h1 class="hero-heading mb-6">Powering technology teams<br/>across every industry.</h1>
+        <p class="text-lg mb-8 font-light max-w-xl">Industries are racing to hire, upskill and retain technical talent at unprecedented scale. Edstellar delivers instructor-led training that turns your engineering, data and security teams into a business advantage.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#courses" class="bg-edsOrange text-edsDark font-semibold py-2.5 px-6 rounded-full hover:bg-edsOrangeDark transition-colors">Browse Courses</a>
+          <a href="#contact" class="border border-white/40 text-white font-semibold py-2.5 px-6 rounded-full hover:bg-white hover:text-black transition-colors">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide: AI -->
+    <div class="hero-slide absolute inset-0 flex items-center transition-opacity duration-500 opacity-0 pointer-events-none z-0" data-slide="ai">
+      <img alt="Artificial Intelligence" class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=2400&q=80" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+      <div class="relative z-10 px-6 md:px-24 max-w-4xl">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-6 block uppercase">Artificial Intelligence</span>
+        <h1 class="hero-heading mb-6">Industries demand<br/>AI-ready engineering teams.</h1>
+        <p class="text-lg mb-8 font-light max-w-xl">From healthcare and finance to retail and manufacturing, companies are racing to ship Generative AI, RAG and ML systems into production. Edstellar trains your engineers on LLMOps, responsible AI and applied ML — wired to your tools and workflows.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#courses" class="bg-edsOrange text-edsDark font-semibold py-2.5 px-6 rounded-full hover:bg-edsOrangeDark transition-colors">Explore AI Courses</a>
+          <a href="#contact" class="border border-white/40 text-white font-semibold py-2.5 px-6 rounded-full hover:bg-white hover:text-black transition-colors">Talk to an Expert</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide: Cloud -->
+    <div class="hero-slide absolute inset-0 flex items-center transition-opacity duration-500 opacity-0 pointer-events-none z-0" data-slide="cloud">
+      <img alt="Cloud Computing" class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2400&q=80" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+      <div class="relative z-10 px-6 md:px-24 max-w-4xl">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-6 block uppercase">Cloud Computing</span>
+        <h1 class="hero-heading mb-6">The cloud talent gap<br/>costs industries billions.</h1>
+        <p class="text-lg mb-8 font-light max-w-xl">Banks, telecoms, retailers and SaaS leaders are migrating workloads faster than they can hire. Edstellar upskills your engineers on AWS, Azure, GCP and FinOps — closing the cloud talent gap with hands-on labs and certification pathways.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#courses" class="bg-edsOrange text-edsDark font-semibold py-2.5 px-6 rounded-full hover:bg-edsOrangeDark transition-colors">Explore Cloud Courses</a>
+          <a href="#contact" class="border border-white/40 text-white font-semibold py-2.5 px-6 rounded-full hover:bg-white hover:text-black transition-colors">Talk to an Expert</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide: Cybersecurity -->
+    <div class="hero-slide absolute inset-0 flex items-center transition-opacity duration-500 opacity-0 pointer-events-none z-0" data-slide="cybersecurity">
+      <img alt="Cybersecurity" class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2400&q=80" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+      <div class="relative z-10 px-6 md:px-24 max-w-4xl">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-6 block uppercase">Cybersecurity</span>
+        <h1 class="hero-heading mb-6">Security threats outpace<br/>every industry's defenses.</h1>
+        <p class="text-lg mb-8 font-light max-w-xl">Healthcare, banking, energy and government face escalating ransomware, identity and supply-chain risks. Edstellar trains your security, IT and engineering teams on penetration testing, IAM, SOC operations and red-team simulation aligned to MITRE ATT&amp;CK.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#courses" class="bg-edsOrange text-edsDark font-semibold py-2.5 px-6 rounded-full hover:bg-edsOrangeDark transition-colors">Explore Security Courses</a>
+          <a href="#contact" class="border border-white/40 text-white font-semibold py-2.5 px-6 rounded-full hover:bg-white hover:text-black transition-colors">Talk to an Expert</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide: DevOps -->
+    <div class="hero-slide absolute inset-0 flex items-center transition-opacity duration-500 opacity-0 pointer-events-none z-0" data-slide="devops">
+      <img alt="DevOps" class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=2400&q=80" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+      <div class="relative z-10 px-6 md:px-24 max-w-4xl">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-6 block uppercase">DevOps</span>
+        <h1 class="hero-heading mb-6">Industries compete on<br/>speed and reliability.</h1>
+        <p class="text-lg mb-8 font-light max-w-xl">Software, fintech, e-commerce and telecom leaders measure their advantage in deployment lead time and MTTR. Edstellar's DevOps and SRE training equips your engineers to ship faster — with CI/CD, Kubernetes, IaC and observability practices that scale.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#courses" class="bg-edsOrange text-edsDark font-semibold py-2.5 px-6 rounded-full hover:bg-edsOrangeDark transition-colors">Explore DevOps Courses</a>
+          <a href="#contact" class="border border-white/40 text-white font-semibold py-2.5 px-6 rounded-full hover:bg-white hover:text-black transition-colors">Talk to an Expert</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide: Data Science -->
+    <div class="hero-slide absolute inset-0 flex items-center transition-opacity duration-500 opacity-0 pointer-events-none z-0" data-slide="data-science">
+      <img alt="Data Science" class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2400&q=80" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+      <div class="relative z-10 px-6 md:px-24 max-w-4xl">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-6 block uppercase">Data Science</span>
+        <h1 class="hero-heading mb-6">Every industry is becoming<br/>a data company.</h1>
+        <p class="text-lg mb-8 font-light max-w-xl">From pharma to logistics to insurance, organizations are turning raw data into decisions. Edstellar trains your analytics, ML and product teams on statistics, deep learning, NLP and MLOps — so your data investments translate into measurable business outcomes.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#courses" class="bg-edsOrange text-edsDark font-semibold py-2.5 px-6 rounded-full hover:bg-edsOrangeDark transition-colors">Explore Data Science Courses</a>
+          <a href="#contact" class="border border-white/40 text-white font-semibold py-2.5 px-6 rounded-full hover:bg-white hover:text-black transition-colors">Talk to an Expert</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide: Big Data -->
+    <div class="hero-slide absolute inset-0 flex items-center transition-opacity duration-500 opacity-0 pointer-events-none z-0" data-slide="big-data">
+      <img alt="Big Data" class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=2400&q=80" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+      <div class="relative z-10 px-6 md:px-24 max-w-4xl">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-6 block uppercase">Big Data</span>
+        <h1 class="hero-heading mb-6">Industries drown in data,<br/>starve for engineers.</h1>
+        <p class="text-lg mb-8 font-light max-w-xl">Telecom, finance, healthcare and retail generate petabytes daily — but lack engineers to harness it. Edstellar trains your platform and data teams on Hadoop, Spark, ETL/ELT and modern lakehouse architectures to power analytics and AI at scale.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#courses" class="bg-edsOrange text-edsDark font-semibold py-2.5 px-6 rounded-full hover:bg-edsOrangeDark transition-colors">Explore Big Data Courses</a>
+          <a href="#contact" class="border border-white/40 text-white font-semibold py-2.5 px-6 rounded-full hover:bg-white hover:text-black transition-colors">Talk to an Expert</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide: Blockchain -->
+    <div class="hero-slide absolute inset-0 flex items-center transition-opacity duration-500 opacity-0 pointer-events-none z-0" data-slide="blockchain">
+      <img alt="Blockchain" class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=2400&q=80" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+      <div class="relative z-10 px-6 md:px-24 max-w-4xl">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-6 block uppercase">Blockchain</span>
+        <h1 class="hero-heading mb-6">Web3 and supply-chain<br/>industries need on-chain talent.</h1>
+        <p class="text-lg mb-8 font-light max-w-xl">Banks, exchanges, fintechs and supply-chain operators are embedding blockchain into core operations. Edstellar trains your engineers and business teams on smart contracts, DeFi, NFTs, cross-chain interop and tokenization — for production-grade Web3 systems.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#courses" class="bg-edsOrange text-edsDark font-semibold py-2.5 px-6 rounded-full hover:bg-edsOrangeDark transition-colors">Explore Blockchain Courses</a>
+          <a href="#contact" class="border border-white/40 text-white font-semibold py-2.5 px-6 rounded-full hover:bg-white hover:text-black transition-colors">Talk to an Expert</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide: Software Development -->
+    <div class="hero-slide absolute inset-0 flex items-center transition-opacity duration-500 opacity-0 pointer-events-none z-0" data-slide="software">
+      <img alt="Software Development" class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=2400&q=80" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+      <div class="relative z-10 px-6 md:px-24 max-w-4xl">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-6 block uppercase">Software Development</span>
+        <h1 class="hero-heading mb-6">Every industry now ships<br/>software as a product.</h1>
+        <p class="text-lg mb-8 font-light max-w-xl">Healthcare, manufacturing, retail and finance compete on the quality of the digital products they build. Edstellar trains your full-stack, mobile and platform engineers on modern frameworks, API design, testing and architecture — so your teams ship production-grade systems.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#courses" class="bg-edsOrange text-edsDark font-semibold py-2.5 px-6 rounded-full hover:bg-edsOrangeDark transition-colors">Explore Software Courses</a>
+          <a href="#contact" class="border border-white/40 text-white font-semibold py-2.5 px-6 rounded-full hover:bg-white hover:text-black transition-colors">Talk to an Expert</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Slide arrows -->
+  <button type="button" class="hero-prev hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-black/40 hover:bg-edsOrange hover:text-black border border-white/30 items-center justify-center" aria-label="Previous slide">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+  </button>
+  <button type="button" class="hero-next hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-black/40 hover:bg-edsOrange hover:text-black border border-white/30 items-center justify-center" aria-label="Next slide">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+  </button>
+
+  <!-- Category Navigation tabs (rendered inside hero so the whole hero+tabs unit fills the viewport).
+       Inner container uses px-6 md:px-24 to match the hero slide's left padding,
+       so the first tab (FEATURED) aligns with the H1 left edge. -->
+  <nav class="bg-edsDark text-white py-3 overflow-x-auto whitespace-nowrap scroll-x shrink-0 border-t border-white/10" data-purpose="category-nav">
+    <div class="flex gap-8 px-6 md:px-24 tracking-widest uppercase font-semibold">
+      <button type="button" class="hero-tab text-left flex flex-col pt-2 w-48 shrink-0 border-t-2 border-edsOrange" data-target="featured">
+        <span class="text-sm font-bold leading-tight">FEATURED</span>
+        <span class="text-[11px] text-gray-400 font-normal normal-case tracking-normal leading-tight mt-0.5">All IT &amp; Technical Courses</span>
+      </button>
+      <button type="button" class="hero-tab text-left flex flex-col pt-2 w-48 shrink-0 border-t-2 border-transparent hover:border-gray-600" data-target="ai">
+        <span class="text-sm font-bold leading-tight">AI</span>
+        <span class="text-[11px] text-gray-400 font-normal normal-case tracking-normal leading-tight mt-0.5">Artificial Intelligence</span>
+      </button>
+      <button type="button" class="hero-tab text-left flex flex-col pt-2 w-48 shrink-0 border-t-2 border-transparent hover:border-gray-600" data-target="cloud">
+        <span class="text-sm font-bold leading-tight">CLOUD</span>
+        <span class="text-[11px] text-gray-400 font-normal normal-case tracking-normal leading-tight mt-0.5">AWS, Azure, GCP</span>
+      </button>
+      <button type="button" class="hero-tab text-left flex flex-col pt-2 w-48 shrink-0 border-t-2 border-transparent hover:border-gray-600" data-target="cybersecurity">
+        <span class="text-sm font-bold leading-tight">CYBERSECURITY</span>
+        <span class="text-[11px] text-gray-400 font-normal normal-case tracking-normal leading-tight mt-0.5">Pen-Test, IAM, Network</span>
+      </button>
+      <button type="button" class="hero-tab text-left flex flex-col pt-2 w-48 shrink-0 border-t-2 border-transparent hover:border-gray-600" data-target="devops">
+        <span class="text-sm font-bold leading-tight">DEVOPS</span>
+        <span class="text-[11px] text-gray-400 font-normal normal-case tracking-normal leading-tight mt-0.5">Pipelines &amp; Automation</span>
+      </button>
+      <button type="button" class="hero-tab text-left flex flex-col pt-2 w-48 shrink-0 border-t-2 border-transparent hover:border-gray-600" data-target="data-science">
+        <span class="text-sm font-bold leading-tight">DATA SCIENCE</span>
+        <span class="text-[11px] text-gray-400 font-normal normal-case tracking-normal leading-tight mt-0.5">ML, Deep Learning, NLP</span>
+      </button>
+      <button type="button" class="hero-tab text-left flex flex-col pt-2 w-48 shrink-0 border-t-2 border-transparent hover:border-gray-600" data-target="big-data">
+        <span class="text-sm font-bold leading-tight">BIG DATA</span>
+        <span class="text-[11px] text-gray-400 font-normal normal-case tracking-normal leading-tight mt-0.5">Hadoop, Spark, ETL</span>
+      </button>
+      <button type="button" class="hero-tab text-left flex flex-col pt-2 w-48 shrink-0 border-t-2 border-transparent hover:border-gray-600" data-target="blockchain">
+        <span class="text-sm font-bold leading-tight">BLOCKCHAIN</span>
+        <span class="text-[11px] text-gray-400 font-normal normal-case tracking-normal leading-tight mt-0.5">DeFi, NFTs, Crypto</span>
+      </button>
+      <button type="button" class="hero-tab text-left flex flex-col pt-2 w-48 shrink-0 border-t-2 border-transparent hover:border-gray-600" data-target="software">
+        <span class="text-sm font-bold leading-tight">SOFTWARE</span>
+        <span class="text-[11px] text-gray-400 font-normal normal-case tracking-normal leading-tight mt-0.5">Full-stack &amp; Mobile</span>
+      </button>
+    </div>
+  </nav>
+</section>
+<!-- END: Hero Slider Section -->
+
+<script>
+  (function () {
+    const slides = document.querySelectorAll('.hero-slide');
+    const tabs = document.querySelectorAll('.hero-tab');
+    const order = Array.from(tabs).map(t => t.getAttribute('data-target'));
+    let current = 'featured';
+
+    function show(target) {
+      slides.forEach(s => {
+        const match = s.getAttribute('data-slide') === target;
+        s.classList.toggle('opacity-100', match);
+        s.classList.toggle('z-10', match);
+        s.classList.toggle('opacity-0', !match);
+        s.classList.toggle('pointer-events-none', !match);
+        s.classList.toggle('z-0', !match);
+      });
+      tabs.forEach(t => {
+        const match = t.getAttribute('data-target') === target;
+        t.classList.toggle('border-edsOrange', match);
+        t.classList.toggle('border-transparent', !match);
+      });
+      current = target;
+    }
+
+    tabs.forEach(t => t.addEventListener('click', () => show(t.getAttribute('data-target'))));
+
+    const prev = document.querySelector('.hero-prev');
+    const next = document.querySelector('.hero-next');
+    if (prev) prev.addEventListener('click', () => {
+      const i = order.indexOf(current);
+      show(order[(i - 1 + order.length) % order.length]);
+    });
+    if (next) next.addEventListener('click', () => {
+      const i = order.indexOf(current);
+      show(order[(i + 1) % order.length]);
+    });
+  })();
+</script>
+
+<!-- BEGIN: Welcome Banner + Training Framework (heading + 2-col layout) -->
+<section class="bg-[#F7F8FC] pt-20 pb-24 px-4 text-edsDark border-y border-[#E3E6F0]" data-purpose="welcome-banner">
+  <!-- Single heading at the top -->
+  <div class="max-w-5xl mx-auto text-center mb-14">
+    <h2 class="text-4xl font-light text-edsDark">Welcome to Edstellar IT &amp; Technical Training.</h2>
+  </div>
+
+  <!-- 2-column layout: paragraph (left) + framework animation (right) on desktop -->
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+    <!-- Left column: paragraph + supporting points -->
+    <div class="lg:col-span-5 text-left">
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Edstellar partners with enterprises to build deep technical capability across Microsoft, AWS, Azure, Cybersecurity, CompTIA, Cisco and emerging technologies. Every program is delivered onsite, off-site or virtually, in any language, and runs on our five-part transformation framework that turns learning into measurable engineering outcomes.</p>
+      <ul class="space-y-3 text-sm text-gray-700">
+        <li class="flex items-start gap-3">
+          <span class="w-5 h-5 mt-0.5 shrink-0 rounded-full bg-[#C5E826] flex items-center justify-center">
+            <svg class="w-3 h-3" fill="none" stroke="#1B1D52" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <span><strong class="text-edsDark">Strategy-led design.</strong> Every engagement starts with a capability roadmap aligned to your tech goals.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="w-5 h-5 mt-0.5 shrink-0 rounded-full bg-[#C5E826] flex items-center justify-center">
+            <svg class="w-3 h-3" fill="none" stroke="#1B1D52" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <span><strong class="text-edsDark">Hands-on by default.</strong> Cloud sandboxes, MITRE ATT&amp;CK and CTF labs power real-world practice.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="w-5 h-5 mt-0.5 shrink-0 rounded-full bg-[#C5E826] flex items-center justify-center">
+            <svg class="w-3 h-3" fill="none" stroke="#1B1D52" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <span><strong class="text-edsDark">Measurable ROI.</strong> Pre/post skill assessments, certification pass-rates and engineering KPIs.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right column: hub-and-spoke framework (compact desktop) -->
+    <div class="lg:col-span-7">
+      <div id="framework" class="relative w-full max-w-[640px] mx-auto h-[540px] hidden lg:flex items-center justify-center scroll-mt-32" aria-hidden="false">
+
+        <!-- Connection lines (currentColor drives both stroke + arrowhead) -->
+        <svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 1000 800" preserveAspectRatio="none">
+          <defs>
+            <marker id="fwArrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
+            </marker>
+          </defs>
+          <line class="fw-line fw-line-1" x1="400" y1="300" x2="240" y2="150" stroke="currentColor" stroke-dasharray="8 4" stroke-width="2" marker-end="url(#fwArrow)" />
+          <line class="fw-line fw-line-2" x1="600" y1="300" x2="760" y2="150" stroke="currentColor" stroke-dasharray="8 4" stroke-width="2" marker-end="url(#fwArrow)" />
+          <line class="fw-line fw-line-3" x1="600" y1="500" x2="760" y2="650" stroke="currentColor" stroke-dasharray="8 4" stroke-width="2" marker-end="url(#fwArrow)" />
+          <line class="fw-line fw-line-4" x1="400" y1="500" x2="240" y2="650" stroke="currentColor" stroke-dasharray="8 4" stroke-width="2" marker-end="url(#fwArrow)" />
+        </svg>
+
+        <!-- Central hub (compact) -->
+        <div tabindex="0" class="framework-hub-circle relative z-20 w-44 h-44 rounded-full border-[8px] border-edsDark bg-white shadow-2xl flex flex-col items-center justify-center p-3 text-center">
+          <h4 class="text-[13px] font-semibold text-edsDark leading-tight mb-1">1. Strategy &amp; Vision</h4>
+          <span class="text-[8px] font-bold tracking-[0.14em] text-gray-500 uppercase mb-2">IT Training Strategy</span>
+          <div class="bg-edsLightGray border border-[#E3E6F0] px-2 py-1.5 rounded text-[10px] italic text-gray-600 leading-tight">
+            "Vision for our organisation's technical capability growth?"
+          </div>
+        </div>
+
+        <!-- Quadrant: Tech-Stack Mastery (Top-Left) -->
+        <div tabindex="0" class="fw-quad fw-quad-1 absolute top-0 left-0 w-52">
+          <div class="fw-card bg-white border-l-[5px] border-edsDark p-3.5 rounded-lg shadow-sm border-y border-r border-[#E3E6F0] hover:shadow-md hover:-translate-y-1 text-left">
+            <h4 class="text-sm font-semibold text-edsDark mb-2">5. Tech-Stack Mastery</h4>
+            <ul class="space-y-1.5 mb-2 text-[12px] text-gray-700">
+              <li class="flex items-start gap-1.5"><svg class="w-3.5 h-3.5 mt-0.5 shrink-0" fill="none" stroke="#1B1D52" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Cloud, Kubernetes &amp; DevOps</li>
+              <li class="flex items-start gap-1.5"><svg class="w-3.5 h-3.5 mt-0.5 shrink-0" fill="none" stroke="#1B1D52" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>GenAI, LLMOps &amp; RAG</li>
+            </ul>
+            <div class="pt-2 border-t border-[#E3E6F0] text-[10px] italic text-gray-500 leading-snug">"Keep engineers current on AI, cloud &amp; emerging tech?"</div>
+          </div>
+        </div>
+
+        <!-- Quadrant: Curriculum & Learning Paths (Top-Right) -->
+        <div tabindex="0" class="fw-quad fw-quad-2 absolute top-0 right-0 w-52">
+          <div class="fw-card bg-white border-l-[5px] border-edsDark p-3.5 rounded-lg shadow-sm border-y border-r border-[#E3E6F0] hover:shadow-md hover:-translate-y-1 text-left">
+            <h4 class="text-sm font-semibold text-edsDark mb-2">2. Curriculum &amp; Paths</h4>
+            <ul class="space-y-1.5 mb-2 text-[12px] text-gray-700">
+              <li class="flex items-start gap-1.5"><svg class="w-3.5 h-3.5 mt-0.5 shrink-0" fill="none" stroke="#1B1D52" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Role-based paths</li>
+              <li class="flex items-start gap-1.5"><svg class="w-3.5 h-3.5 mt-0.5 shrink-0" fill="none" stroke="#1B1D52" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>AWS, Azure, GCP, CompTIA tracks</li>
+            </ul>
+            <div class="pt-2 border-t border-[#E3E6F0] text-[10px] italic text-gray-500 leading-snug">"Which paths fit our stack &amp; teams?"</div>
+          </div>
+        </div>
+
+        <!-- Quadrant: Hands-on Labs & Sandboxes (Bottom-Right) -->
+        <div tabindex="0" class="fw-quad fw-quad-3 absolute bottom-0 right-0 w-52">
+          <div class="fw-card bg-white border-l-[5px] border-edsDark p-3.5 rounded-lg shadow-sm border-y border-r border-[#E3E6F0] hover:shadow-md hover:-translate-y-1 text-left">
+            <h4 class="text-sm font-semibold text-edsDark mb-2">3. Hands-on Labs</h4>
+            <ul class="space-y-1.5 mb-2 text-[12px] text-gray-700">
+              <li class="flex items-start gap-1.5"><svg class="w-3.5 h-3.5 mt-0.5 shrink-0" fill="none" stroke="#1B1D52" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Cloud sandboxes (AWS, Azure)</li>
+              <li class="flex items-start gap-1.5"><svg class="w-3.5 h-3.5 mt-0.5 shrink-0" fill="none" stroke="#1B1D52" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Kubernetes &amp; MITRE ATT&amp;CK</li>
+            </ul>
+            <div class="pt-2 border-t border-[#E3E6F0] text-[10px] italic text-gray-500 leading-snug">"Where can engineers practice real workloads safely?"</div>
+          </div>
+        </div>
+
+        <!-- Quadrant: Skill Assessment & ROI (Bottom-Left) -->
+        <div tabindex="0" class="fw-quad fw-quad-4 absolute bottom-0 left-0 w-52">
+          <div class="fw-card bg-white border-l-[5px] border-edsDark p-3.5 rounded-lg shadow-sm border-y border-r border-[#E3E6F0] hover:shadow-md hover:-translate-y-1 text-left">
+            <h4 class="text-sm font-semibold text-edsDark mb-2">4. Assessment &amp; ROI</h4>
+            <ul class="space-y-1.5 mb-2 text-[12px] text-gray-700">
+              <li class="flex items-start gap-1.5"><svg class="w-3.5 h-3.5 mt-0.5 shrink-0" fill="none" stroke="#1B1D52" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Pre/post skill assessments</li>
+              <li class="flex items-start gap-1.5"><svg class="w-3.5 h-3.5 mt-0.5 shrink-0" fill="none" stroke="#1B1D52" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Lead time, MTTR &amp; deploys</li>
+            </ul>
+            <div class="pt-2 border-t border-[#E3E6F0] text-[10px] italic text-gray-500 leading-snug">"Measure proficiency gains &amp; engineering ROI?"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hub & Spoke (mobile / tablet stacked fallback) -->
+  <div class="lg:hidden max-w-3xl mx-auto space-y-4 text-left">
+    <!-- Hub -->
+    <div class="bg-white border-2 border-edsDark rounded-xl p-6 text-center">
+      <span class="text-[10px] font-bold tracking-[0.14em] text-gray-500 uppercase block mb-1">IT Training Strategy</span>
+      <h4 class="text-xl font-semibold text-edsDark mb-3">1. Strategy &amp; Vision</h4>
+      <div class="bg-edsLightGray border border-[#E3E6F0] px-4 py-2 rounded text-xs italic text-gray-600 inline-block">"What is the overarching vision for our organization's technical capability growth?"</div>
+    </div>
+    <!-- Quadrant cards (all identical styling) -->
+    <div class="bg-white border-l-[6px] border-edsDark rounded-lg p-6 shadow-sm border-y border-r border-[#E3E6F0]">
+      <h4 class="text-lg font-semibold text-edsDark mb-3">5. Tech-Stack Mastery</h4>
+      <ul class="space-y-2 text-sm text-gray-700"><li>• Cloud, Kubernetes &amp; DevOps depth</li><li>• Generative AI, LLMOps &amp; RAG</li></ul>
+    </div>
+    <div class="bg-white border-l-[6px] border-edsDark rounded-lg p-6 shadow-sm border-y border-r border-[#E3E6F0]">
+      <h4 class="text-lg font-semibold text-edsDark mb-3">2. Curriculum &amp; Learning Paths</h4>
+      <ul class="space-y-2 text-sm text-gray-700"><li>• Role-based paths (DevOps, SRE, Data, Security)</li><li>• AWS, Azure, GCP, CompTIA &amp; Cisco tracks</li></ul>
+    </div>
+    <div class="bg-white border-l-[6px] border-edsDark rounded-lg p-6 shadow-sm border-y border-r border-[#E3E6F0]">
+      <h4 class="text-lg font-semibold text-edsDark mb-3">3. Hands-on Labs &amp; Sandboxes</h4>
+      <ul class="space-y-2 text-sm text-gray-700"><li>• Cloud sandboxes (AWS, Azure, GCP)</li><li>• Kubernetes, MITRE ATT&amp;CK and CTF labs</li></ul>
+    </div>
+    <div class="bg-white border-l-[6px] border-edsDark rounded-lg p-6 shadow-sm border-y border-r border-[#E3E6F0]">
+      <h4 class="text-lg font-semibold text-edsDark mb-3">4. Skill Assessment &amp; ROI</h4>
+      <ul class="space-y-2 text-sm text-gray-700"><li>• Pre/post technical assessments &amp; cert pass-rates</li><li>• Engineering KPIs: lead time, MTTR, deploys</li></ul>
+    </div>
+  </div>
+</section>
+<!-- END: Welcome Banner + Framework -->
+
+<!-- BEGIN: Tab/Section Bar (sticky under header) -->
+<section id="section-tabs" class="bg-edsGray text-white sticky top-16 z-40 border-b border-white/10 shadow-md" data-purpose="section-tabs">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8 overflow-x-auto whitespace-nowrap scroll-x">
+    <nav class="flex gap-8 py-4 text-xs font-bold tracking-widest uppercase">
+      <a href="#overview" class="section-tab-link text-edsOrange border-b-2 border-edsOrange pb-2 -mb-px" data-target="overview">Overview</a>
+      <a href="#courses" class="section-tab-link text-gray-400 hover:text-white pb-2 border-b-2 border-transparent" data-target="courses">Courses</a>
+      <a href="#approach" class="section-tab-link text-gray-400 hover:text-white pb-2 border-b-2 border-transparent" data-target="approach">Our Approach</a>
+      <a href="#trainers" class="section-tab-link text-gray-400 hover:text-white pb-2 border-b-2 border-transparent" data-target="trainers">Trainers</a>
+      <a href="#pricing" class="section-tab-link text-gray-400 hover:text-white pb-2 border-b-2 border-transparent" data-target="pricing">Pricing</a>
+      <a href="#resources" class="section-tab-link text-gray-400 hover:text-white pb-2 border-b-2 border-transparent" data-target="resources">Resources</a>
+    </nav>
+  </div>
+</section>
+
+<style>
+  /* Offset anchor scroll so sticky header + sticky tabs don't cover section headings */
+  #overview, #courses, #approach, #trainers, #pricing, #resources {
+    scroll-margin-top: 120px;
+  }
+</style>
+
+<script>
+  (function () {
+    const links = document.querySelectorAll('.section-tab-link');
+    const ids = Array.from(links).map(l => l.getAttribute('data-target'));
+    const sections = ids.map(id => document.getElementById(id)).filter(Boolean);
+
+    function setActive(id) {
+      links.forEach(l => {
+        const match = l.getAttribute('data-target') === id;
+        l.classList.toggle('text-edsOrange', match);
+        l.classList.toggle('border-edsOrange', match);
+        l.classList.toggle('-mb-px', match);
+        l.classList.toggle('text-gray-400', !match);
+        l.classList.toggle('border-transparent', !match);
+      });
+    }
+
+    // Spy on scroll position to highlight current section
+    function onScroll() {
+      const offset = 140; // header (64) + tabs (~56) + buffer
+      let current = ids[0];
+      for (const s of sections) {
+        const rect = s.getBoundingClientRect();
+        if (rect.top - offset <= 0) current = s.id;
+      }
+      setActive(current);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+</script>
+<!-- END: Tab Bar -->
+
+<!-- BEGIN: Overview / Stats Showcase Section -->
+<section id="overview" class="bg-edsGray py-24 text-white" data-purpose="overview">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8">
+    <div class="mb-12 max-w-3xl">
+      <span class="text-[10px] font-bold tracking-widest text-gray-400 mb-4 block">OVERVIEW</span>
+      <h2 class="text-4xl md:text-5xl font-light mb-4">Technical training that compounds business value.</h2>
+      <p class="text-gray-400 text-lg">Edstellar's instructor-led IT training spans 24 categories and 60+ technologies, designed for measurable workforce impact.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      <div class="bg-black/40 border border-gray-700 rounded-lg p-10">
+        <div class="text-5xl font-light text-edsOrange mb-4">21%</div>
+        <p class="text-gray-300 leading-relaxed">Increase in productivity witnessed by organizations investing in technical skills training.</p>
+      </div>
+      <div class="bg-black/40 border border-gray-700 rounded-lg p-10">
+        <div class="text-5xl font-light text-edsOrange mb-4">$13.3T</div>
+        <p class="text-gray-300 leading-relaxed">Predicted size of the global technology market — driving demand for skilled technical talent.</p>
+      </div>
+      <div class="bg-black/40 border border-gray-700 rounded-lg p-10">
+        <div class="text-5xl font-light text-edsOrange mb-4">87%</div>
+        <p class="text-gray-300 leading-relaxed">CEOs say a strong technical talent pool is crucial for business success.</p>
+      </div>
+    </div>
+    <div class="flex items-center border-b border-gray-700 mb-12 text-xs font-bold tracking-widest pb-4 overflow-x-auto whitespace-nowrap scroll-x gap-6">
+      <button type="button" class="overview-tab text-edsOrange" data-target="programs">PROGRAMS</button>
+      <button type="button" class="overview-tab text-gray-500 hover:text-white" data-target="technologies">TECHNOLOGIES</button>
+      <button type="button" class="overview-tab text-gray-500 hover:text-white" data-target="certifications">CERTIFICATIONS</button>
+      <button type="button" class="overview-tab text-gray-500 hover:text-white" data-target="delivery-modes">DELIVERY</button>
+    </div>
+
+    <!-- PROGRAMS slide -->
+    <div class="overview-slide relative bg-white text-black rounded-lg overflow-hidden flex flex-col md:flex-row min-h-[420px]" data-slide="programs">
+      <div class="md:w-1/2 p-10 md:p-16 flex flex-col justify-center">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-3 uppercase">Programs</span>
+        <h3 class="text-3xl md:text-4xl font-light mb-6 tracking-tight">2,000+ instructor-led programs.</h3>
+        <p class="text-base md:text-lg text-gray-600 mb-8 max-w-md">Cutting-edge courses across AI, Cloud, Cybersecurity, DevOps, Data Science, Big Data, Blockchain, IoT, and beyond — every program tailored to your team's stack and objectives.</p>
+        <div class="flex flex-wrap gap-2 text-[11px] uppercase tracking-widest text-gray-500 font-semibold">
+          <span class="border border-gray-300 rounded-full px-3 py-1">AI &amp; ML</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Cloud</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Cybersecurity</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">DevOps</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Big Data</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Blockchain</span>
+        </div>
+      </div>
+      <div class="md:w-1/2 bg-[#f0f0f0] flex items-center justify-center p-8">
+        <img alt="Engineers collaborating" class="max-h-full object-cover rounded" src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=1200&q=80" />
+      </div>
+    </div>
+
+    <!-- TECHNOLOGIES slide -->
+    <div class="overview-slide hidden bg-white text-black rounded-lg overflow-hidden flex-col md:flex-row min-h-[420px]" data-slide="technologies">
+      <div class="md:w-1/2 p-10 md:p-16 flex flex-col justify-center">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-3 uppercase">Technologies</span>
+        <h3 class="text-3xl md:text-4xl font-light mb-6 tracking-tight">60+ technologies covered.</h3>
+        <p class="text-base md:text-lg text-gray-600 mb-8 max-w-md">From hyperscaler stacks to emerging frameworks — Edstellar trains your team on the exact technologies in your environment, not generic theory.</p>
+        <div class="flex flex-wrap gap-2 text-[11px] uppercase tracking-widest text-gray-500 font-semibold">
+          <span class="border border-gray-300 rounded-full px-3 py-1">Microsoft</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">AWS</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Azure</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Google Cloud</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Kubernetes</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Terraform</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Salesforce</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Oracle</span>
+        </div>
+      </div>
+      <div class="md:w-1/2 bg-[#f0f0f0] flex items-center justify-center p-8">
+        <img alt="Technology stack" class="max-h-full object-cover rounded" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" />
+      </div>
+    </div>
+
+    <!-- CERTIFICATIONS slide -->
+    <div class="overview-slide hidden bg-white text-black rounded-lg overflow-hidden flex-col md:flex-row min-h-[420px]" data-slide="certifications">
+      <div class="md:w-1/2 p-10 md:p-16 flex flex-col justify-center">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-3 uppercase">Certifications</span>
+        <h3 class="text-3xl md:text-4xl font-light mb-6 tracking-tight">Industry-recognized credentials.</h3>
+        <p class="text-base md:text-lg text-gray-600 mb-8 max-w-md">Prepare your team for the certifications hiring managers and auditors trust — with structured pathways, practice labs and exam coaching.</p>
+        <div class="flex flex-wrap gap-2 text-[11px] uppercase tracking-widest text-gray-500 font-semibold">
+          <span class="border border-gray-300 rounded-full px-3 py-1">CompTIA</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Cisco</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">AWS Certified</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Azure Certified</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">CISSP</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">PMP</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">ITIL</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">CKA / CKAD</span>
+        </div>
+      </div>
+      <div class="md:w-1/2 bg-[#f0f0f0] flex items-center justify-center p-8">
+        <img alt="Certifications" class="max-h-full object-cover rounded" src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=1200&q=80" />
+      </div>
+    </div>
+
+    <!-- DELIVERY slide -->
+    <div class="overview-slide hidden bg-white text-black rounded-lg overflow-hidden flex-col md:flex-row min-h-[420px]" data-slide="delivery-modes">
+      <div class="md:w-1/2 p-10 md:p-16 flex flex-col justify-center">
+        <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-3 uppercase">Delivery</span>
+        <h3 class="text-3xl md:text-4xl font-light mb-6 tracking-tight">Onsite, off-site, virtual.</h3>
+        <p class="text-base md:text-lg text-gray-600 mb-8 max-w-md">Global delivery in any language, on any schedule — with the same trainer quality and outcomes whether your team is co-located, hybrid or fully remote.</p>
+        <div class="flex flex-wrap gap-2 text-[11px] uppercase tracking-widest text-gray-500 font-semibold">
+          <span class="border border-gray-300 rounded-full px-3 py-1">Virtual ILT</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">On-site</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Off-site</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Blended</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Multi-language</span>
+          <span class="border border-gray-300 rounded-full px-3 py-1">Global</span>
+        </div>
+      </div>
+      <div class="md:w-1/2 bg-[#f0f0f0] flex items-center justify-center p-8">
+        <img alt="Training delivery" class="max-h-full object-cover rounded" src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=1200&q=80" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const tabs = document.querySelectorAll('.overview-tab');
+    const slides = document.querySelectorAll('.overview-slide');
+    function show(target) {
+      slides.forEach(s => {
+        const match = s.getAttribute('data-slide') === target;
+        s.classList.toggle('hidden', !match);
+        s.classList.toggle('flex', match);
+      });
+      tabs.forEach(t => {
+        const match = t.getAttribute('data-target') === target;
+        t.classList.toggle('text-edsOrange', match);
+        t.classList.toggle('text-gray-500', !match);
+      });
+    }
+    tabs.forEach(t => t.addEventListener('click', () => show(t.getAttribute('data-target'))));
+  })();
+</script>
+<!-- END: Overview Section -->
+
+<!-- BEGIN: News, Case Studies & Brochures -->
+<section id="insights" class="bg-edsLightGray py-24" data-purpose="news-cases-brochures">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <div>
+        <span class="text-[10px] font-bold tracking-widest text-gray-500 mb-2 block uppercase">News, Case Studies &amp; Brochures</span>
+        <h2 class="text-4xl font-light mb-2">Stay informed. See what works.</h2>
+        <p class="text-gray-500 max-w-2xl">Industry news, real-world client outcomes, and downloadable program brochures for IT &amp; Technical Training.</p>
+      </div>
+      <div class="flex gap-2 text-[10px] font-bold tracking-widest uppercase">
+        <button type="button" class="insights-tab bg-edsOrange text-edsDark py-2 px-4 rounded-full" data-target="news">News</button>
+        <button type="button" class="insights-tab bg-white text-gray-600 hover:bg-gray-200 py-2 px-4 rounded-full" data-target="case-studies">Case Studies</button>
+        <button type="button" class="insights-tab bg-white text-gray-600 hover:bg-gray-200 py-2 px-4 rounded-full" data-target="brochures">Brochures</button>
+      </div>
+    </div>
+
+    <!-- News -->
+    <div class="insights-panel grid grid-cols-1 md:grid-cols-3 gap-6" data-panel="news">
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="GenAI" class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6 flex-grow flex flex-col">
+          <span class="text-[10px] font-bold text-edsOrange mb-2 block uppercase">NEWS · AI</span>
+          <h3 class="font-bold text-base mb-3 leading-snug">Edstellar launches Generative AI &amp; LLMOps training track for enterprise teams</h3>
+          <p class="text-xs text-gray-500 leading-relaxed flex-grow">A new program covering RAG, vector stores, evaluation harnesses and production deployment — built with industry trainers and lab environments.</p>
+          <div class="border-t border-gray-200 mt-4 pt-3 flex justify-between items-center text-[11px] text-gray-500">
+            <span>April 28, 2026</span>
+            <span class="text-edsOrange">Read ›</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="Cloud FinOps" class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6 flex-grow flex flex-col">
+          <span class="text-[10px] font-bold text-edsOrange mb-2 block uppercase">NEWS · CLOUD</span>
+          <h3 class="font-bold text-base mb-3 leading-snug">Cloud FinOps demand jumps 38% as CFOs scrutinize GPU spend</h3>
+          <p class="text-xs text-gray-500 leading-relaxed flex-grow">Edstellar reports a sharp rise in enterprise enrollments for Cloud and AI cost-optimization programs in Q1 2026.</p>
+          <div class="border-t border-gray-200 mt-4 pt-3 flex justify-between items-center text-[11px] text-gray-500">
+            <span>April 14, 2026</span>
+            <span class="text-edsOrange">Read ›</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="Cybersecurity" class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6 flex-grow flex flex-col">
+          <span class="text-[10px] font-bold text-edsOrange mb-2 block uppercase">NEWS · CYBERSECURITY</span>
+          <h3 class="font-bold text-base mb-3 leading-snug">Edstellar partners with global SOC operator to scale red-team training</h3>
+          <p class="text-xs text-gray-500 leading-relaxed flex-grow">Joint program brings live-fire MITRE ATT&amp;CK simulations to enterprise blue and red teams worldwide.</p>
+          <div class="border-t border-gray-200 mt-4 pt-3 flex justify-between items-center text-[11px] text-gray-500">
+            <span>March 30, 2026</span>
+            <span class="text-edsOrange">Read ›</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Case Studies -->
+    <div class="insights-panel hidden grid-cols-1 md:grid-cols-3 gap-6" data-panel="case-studies">
+      <a href="#" class="bg-black text-white rounded-lg overflow-hidden flex flex-col news-card-hover">
+        <div class="relative h-56">
+          <img alt="Global bank" class="absolute inset-0 w-full h-full object-cover opacity-70" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase">Case Study · Banking</span>
+        </div>
+        <div class="p-6 flex-grow flex flex-col">
+          <h3 class="font-light text-lg mb-3 leading-snug">Global bank reduced cloud spend by 22% after FinOps upskilling</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">Edstellar trained 480 cloud engineers on FinOps practices, unit economics and rightsizing — saving the client $4.1M in 6 months.</p>
+          <div class="border-t border-gray-700 mt-4 pt-3 flex justify-between items-center text-[11px] text-gray-400">
+            <span>480 engineers · 6 months</span>
+            <span class="text-edsOrange">View case ›</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="bg-black text-white rounded-lg overflow-hidden flex flex-col news-card-hover">
+        <div class="relative h-56">
+          <img alt="Telecom" class="absolute inset-0 w-full h-full object-cover opacity-70" src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase">Case Study · Telecom</span>
+        </div>
+        <div class="p-6 flex-grow flex flex-col">
+          <h3 class="font-light text-lg mb-3 leading-snug">Tier-1 telecom cut deployment lead time 47% with DevOps training</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">A 12-week DevOps and SRE program for 220 engineers improved release velocity, reduced incident rates, and shortened MTTR by half.</p>
+          <div class="border-t border-gray-700 mt-4 pt-3 flex justify-between items-center text-[11px] text-gray-400">
+            <span>220 engineers · 12 weeks</span>
+            <span class="text-edsOrange">View case ›</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="bg-black text-white rounded-lg overflow-hidden flex flex-col news-card-hover">
+        <div class="relative h-56">
+          <img alt="Healthcare" class="absolute inset-0 w-full h-full object-cover opacity-70" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase">Case Study · Healthcare</span>
+        </div>
+        <div class="p-6 flex-grow flex flex-col">
+          <h3 class="font-light text-lg mb-3 leading-snug">Healthcare provider hardened security posture across 14 hospitals</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">A targeted Cybersecurity &amp; PII compliance program reduced phishing-success rate by 71% and aligned the org with HIPAA controls.</p>
+          <div class="border-t border-gray-700 mt-4 pt-3 flex justify-between items-center text-[11px] text-gray-400">
+            <span>1,200 staff · 14 sites</span>
+            <span class="text-edsOrange">View case ›</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Brochures -->
+    <div class="insights-panel hidden grid-cols-1 md:grid-cols-3 gap-6" data-panel="brochures">
+      <div class="bg-white rounded-lg p-6 flex flex-col custom-shadow news-card-hover">
+        <div class="rounded-lg aspect-[4/5] mb-5 overflow-hidden relative">
+          <img alt="IT & Technical Training Catalog cover" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 right-4 flex justify-between items-start">
+            <span class="text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">PDF · 32 pages</span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <h4 class="text-lg font-semibold leading-snug">IT &amp; Technical Training Catalog 2026</h4>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 mb-4 flex-grow">Full catalog of 2,000+ instructor-led IT &amp; Technical programs across AI, Cloud, Cybersecurity, DevOps and Data.</p>
+        <a href="#" class="bg-edsOrange text-edsDark text-[10px] font-bold py-2 px-4 rounded-full w-fit uppercase tracking-widest">Download PDF</a>
+      </div>
+      <div class="bg-white rounded-lg p-6 flex flex-col custom-shadow news-card-hover">
+        <div class="rounded-lg aspect-[4/5] mb-5 overflow-hidden relative">
+          <img alt="Cloud & FinOps Program Guide cover" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 right-4 flex justify-between items-start">
+            <span class="text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">PDF · 18 pages</span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <h4 class="text-lg font-semibold leading-snug">Cloud &amp; FinOps Program Guide</h4>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 mb-4 flex-grow">Detailed program outline, learning paths, lab environments and certification mapping for cloud and FinOps tracks.</p>
+        <a href="#" class="bg-edsOrange text-edsDark text-[10px] font-bold py-2 px-4 rounded-full w-fit uppercase tracking-widest">Download PDF</a>
+      </div>
+      <div class="bg-white rounded-lg p-6 flex flex-col custom-shadow news-card-hover">
+        <div class="rounded-lg aspect-[4/5] mb-5 overflow-hidden relative">
+          <img alt="Cybersecurity Training Brochure cover" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 right-4 flex justify-between items-start">
+            <span class="text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">PDF · 24 pages</span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <h4 class="text-lg font-semibold leading-snug">Cybersecurity Training Brochure</h4>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 mb-4 flex-grow">Pen-testing, IAM, network security, ransomware response and red-team simulation program details and outcomes.</p>
+        <a href="#" class="bg-edsOrange text-edsDark text-[10px] font-bold py-2 px-4 rounded-full w-fit uppercase tracking-widest">Download PDF</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const tabs = document.querySelectorAll('.insights-tab');
+    const panels = document.querySelectorAll('.insights-panel');
+    function show(target) {
+      panels.forEach(p => {
+        const match = p.getAttribute('data-panel') === target;
+        p.classList.toggle('hidden', !match);
+        p.classList.toggle('grid', match);
+      });
+      tabs.forEach(t => {
+        const match = t.getAttribute('data-target') === target;
+        t.classList.toggle('bg-edsOrange', match);
+        t.classList.toggle('text-black', match);
+        t.classList.toggle('bg-white', !match);
+        t.classList.toggle('text-gray-600', !match);
+      });
+    }
+    tabs.forEach(t => t.addEventListener('click', () => show(t.getAttribute('data-target'))));
+  })();
+</script>
+<!-- END: News, Case Studies & Brochures -->
+
+<!-- BEGIN: Learning Paths -->
+<section id="learning-paths" class="bg-white py-24" data-purpose="learning-paths">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <div class="max-w-2xl">
+        <span class="text-[10px] font-bold tracking-widest text-gray-500 mb-2 block uppercase">Learning Paths</span>
+        <h2 class="text-4xl font-light mb-3">Structured paths to in-demand IT roles.</h2>
+        <p class="text-gray-500">Curated multi-course journeys that take your team from foundational concepts to job-ready capability — mapped to roles, certifications, and outcomes.</p>
+      </div>
+      <a href="#" class="group inline-flex items-center gap-2 self-start md:self-end text-sm font-semibold text-edsDark hover:text-edsOrange whitespace-nowrap">
+        View all learning paths
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-edsOrange text-edsDark group-hover:translate-x-1 transition-transform">›</span>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Path 1 — Cloud Architect -->
+      <a href="#" class="bg-edsDark text-white rounded-lg overflow-hidden flex flex-col h-[480px] news-card-hover">
+        <div class="relative h-48 overflow-hidden">
+          <img alt="Cloud architect reviewing infrastructure on monitors" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-edsDark via-edsDark/40 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">Cloud</span>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-light leading-snug mb-3">Cloud Architect Path</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">From cloud fundamentals to multi-cloud architecture, FinOps and well-architected design across AWS, Azure and GCP.</p>
+          <div class="border-t border-gray-700 pt-4 mt-4">
+            <div class="flex justify-between items-center text-[11px] text-gray-400">
+              <span>8 courses · 120 hrs</span>
+              <span class="text-edsOrange">Intermediate</span>
+            </div>
+            <div class="flex justify-end mt-2"><span class="text-edsOrange text-2xl">›</span></div>
+          </div>
+        </div>
+      </a>
+      <!-- Path 2 — AI/ML Engineer -->
+      <a href="#" class="bg-edsDark text-white rounded-lg overflow-hidden flex flex-col h-[480px] news-card-hover">
+        <div class="relative h-48 overflow-hidden">
+          <img alt="AI engineer training a machine-learning model" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1655720033654-a4239dd42d10?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-edsDark via-edsDark/40 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">AI &amp; ML</span>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-light leading-snug mb-3">AI / ML Engineer Path</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">Python, ML foundations, deep learning, NLP, LLMOps and Generative AI deployment — production-ready, end-to-end.</p>
+          <div class="border-t border-gray-700 pt-4 mt-4">
+            <div class="flex justify-between items-center text-[11px] text-gray-400">
+              <span>10 courses · 160 hrs</span>
+              <span class="text-edsOrange">Advanced</span>
+            </div>
+            <div class="flex justify-end mt-2"><span class="text-edsOrange text-2xl">›</span></div>
+          </div>
+        </div>
+      </a>
+      <!-- Path 3 — Cybersecurity Specialist -->
+      <a href="#" class="bg-edsDark text-white rounded-lg overflow-hidden flex flex-col h-[480px] news-card-hover">
+        <div class="relative h-48 overflow-hidden">
+          <img alt="Cybersecurity analyst monitoring threats in a SOC" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-edsDark via-edsDark/40 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">Cybersecurity</span>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-light leading-snug mb-3">Cybersecurity Specialist Path</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">Network security, IAM, pen-testing, ransomware defense and red-team simulation aligned with MITRE ATT&amp;CK.</p>
+          <div class="border-t border-gray-700 pt-4 mt-4">
+            <div class="flex justify-between items-center text-[11px] text-gray-400">
+              <span>9 courses · 140 hrs</span>
+              <span class="text-edsOrange">Intermediate</span>
+            </div>
+            <div class="flex justify-end mt-2"><span class="text-edsOrange text-2xl">›</span></div>
+          </div>
+        </div>
+      </a>
+      <!-- Path 4 — DevOps & SRE -->
+      <a href="#" class="bg-edsDark text-white rounded-lg overflow-hidden flex flex-col h-[480px] news-card-hover">
+        <div class="relative h-48 overflow-hidden">
+          <img alt="DevOps engineer working on a CI/CD pipeline at terminal" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-edsDark via-edsDark/40 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">DevOps</span>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-light leading-snug mb-3">DevOps &amp; SRE Path</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">CI/CD, containers, Kubernetes, IaC, observability and incident response — ship faster with reliability.</p>
+          <div class="border-t border-gray-700 pt-4 mt-4">
+            <div class="flex justify-between items-center text-[11px] text-gray-400">
+              <span>7 courses · 110 hrs</span>
+              <span class="text-edsOrange">Intermediate</span>
+            </div>
+            <div class="flex justify-end mt-2"><span class="text-edsOrange text-2xl">›</span></div>
+          </div>
+        </div>
+      </a>
+      <!-- Path 5 — Data Scientist -->
+      <a href="#" class="bg-edsDark text-white rounded-lg overflow-hidden flex flex-col h-[480px] news-card-hover">
+        <div class="relative h-48 overflow-hidden">
+          <img alt="Data scientist analyzing charts and dashboards on a laptop" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-edsDark via-edsDark/40 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">Data</span>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-light leading-snug mb-3">Data Scientist Path</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">Statistics, SQL, Python, feature engineering, ML modelling, and MLOps — turn organizational data into decisions.</p>
+          <div class="border-t border-gray-700 pt-4 mt-4">
+            <div class="flex justify-between items-center text-[11px] text-gray-400">
+              <span>9 courses · 150 hrs</span>
+              <span class="text-edsOrange">Advanced</span>
+            </div>
+            <div class="flex justify-end mt-2"><span class="text-edsOrange text-2xl">›</span></div>
+          </div>
+        </div>
+      </a>
+      <!-- Path 6 — Full-Stack Developer -->
+      <a href="#" class="bg-edsDark text-white rounded-lg overflow-hidden flex flex-col h-[480px] news-card-hover">
+        <div class="relative h-48 overflow-hidden">
+          <img alt="Corporate full-stack developer coding on a laptop" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-edsDark via-edsDark/40 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">Software</span>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-light leading-snug mb-3">Full-Stack Developer Path</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">Modern frontend, API design, backend architecture, testing and performance — build production-grade systems.</p>
+          <div class="border-t border-gray-700 pt-4 mt-4">
+            <div class="flex justify-between items-center text-[11px] text-gray-400">
+              <span>8 courses · 130 hrs</span>
+              <span class="text-edsOrange">Beginner → Advanced</span>
+            </div>
+            <div class="flex justify-end mt-2"><span class="text-edsOrange text-2xl">›</span></div>
+          </div>
+        </div>
+      </a>
+      <!-- Path 7 — Data Engineering -->
+      <a href="#" class="bg-edsDark text-white rounded-lg overflow-hidden flex flex-col h-[480px] news-card-hover">
+        <div class="relative h-48 overflow-hidden">
+          <img alt="Data engineer building pipelines on multi-monitor workstation" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-edsDark via-edsDark/40 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">Big Data</span>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-light leading-snug mb-3">Data Engineering Path</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">Hadoop, Spark, ETL/ELT, lakehouse architecture, streaming pipelines and orchestration at enterprise scale.</p>
+          <div class="border-t border-gray-700 pt-4 mt-4">
+            <div class="flex justify-between items-center text-[11px] text-gray-400">
+              <span>7 courses · 120 hrs</span>
+              <span class="text-edsOrange">Intermediate</span>
+            </div>
+            <div class="flex justify-end mt-2"><span class="text-edsOrange text-2xl">›</span></div>
+          </div>
+        </div>
+      </a>
+      <!-- Path 8 — Blockchain Developer -->
+      <a href="#" class="bg-edsDark text-white rounded-lg overflow-hidden flex flex-col h-[480px] news-card-hover">
+        <div class="relative h-48 overflow-hidden">
+          <img alt="Blockchain developer writing smart-contract code" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1591488094006-1d4eb84fd16b?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-edsDark via-edsDark/40 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">Blockchain</span>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-light leading-snug mb-3">Blockchain Developer Path</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">Smart contracts, DeFi protocols, NFTs, cross-chain interoperability and security audits for Web3 builders.</p>
+          <div class="border-t border-gray-700 pt-4 mt-4">
+            <div class="flex justify-between items-center text-[11px] text-gray-400">
+              <span>6 courses · 100 hrs</span>
+              <span class="text-edsOrange">Intermediate</span>
+            </div>
+            <div class="flex justify-end mt-2"><span class="text-edsOrange text-2xl">›</span></div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="mt-12 flex justify-center">
+      <a href="#" class="inline-flex items-center gap-2 bg-edsOrange text-edsDark font-semibold py-3 px-7 rounded-full hover:bg-edsOrangeDark transition-colors text-sm">
+        Browse all learning paths
+        <span class="text-lg">›</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- END: Learning Paths -->
+
+<!-- BEGIN: Featured Courses (Dark Cards) -->
+<section id="courses" class="bg-white py-24" data-purpose="featured-courses">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8">
+    <span class="text-[10px] font-bold tracking-widest text-gray-500 mb-2 block uppercase">FEATURED COURSES</span>
+    <h2 class="text-4xl font-light mb-4">Brilliant training for everyday teams.</h2>
+    <p class="text-gray-500 mb-12">Driving capability, accelerating delivery.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 — FinOps for Generative AI -->
+      <a href="#" class="bg-black text-white rounded-lg overflow-hidden flex flex-col h-[520px] news-card-hover group cursor-pointer">
+        <div class="relative h-56 overflow-hidden">
+          <img alt="Engineer optimising LLM, GPU and cloud costs" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">CLOUD &amp; AI</span>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-xl font-light leading-snug mb-3">FinOps for Generative AI: LLM, GPU &amp; Cloud Costs</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">Optimise spend across LLMs, GPU clusters and cloud workloads — methods, dashboards and unit economics for AI cost discipline.</p>
+          <div class="border-t border-gray-700 pt-4 mt-4 flex justify-between items-center text-[11px] text-gray-400">
+            <span>12–24 hrs · VILT / On-site</span>
+            <span class="text-edsOrange text-2xl">›</span>
+          </div>
+        </div>
+      </a>
+      <!-- Card 2 — Cloud FinOps -->
+      <a href="#" class="bg-black text-white rounded-lg overflow-hidden flex flex-col h-[520px] news-card-hover group cursor-pointer">
+        <div class="relative h-56 overflow-hidden">
+          <img alt="Cloud architect reviewing cost dashboards across AWS, Azure and GCP" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">CLOUD COMPUTING</span>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-xl font-light leading-snug mb-3">Cloud FinOps Training</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">Build cloud cost-optimisation muscle across AWS, Azure and GCP — rightsizing, commitments, showback and cross-functional FinOps practice.</p>
+          <div class="border-t border-gray-700 pt-4 mt-4 flex justify-between items-center text-[11px] text-gray-400">
+            <span>12–24 hrs · VILT / On-site</span>
+            <span class="text-edsOrange text-2xl">›</span>
+          </div>
+        </div>
+      </a>
+      <!-- Card 3 — Blockchain for Business Professionals -->
+      <a href="#" class="bg-black text-white rounded-lg overflow-hidden flex flex-col h-[520px] news-card-hover group cursor-pointer">
+        <div class="relative h-56 overflow-hidden">
+          <img alt="Business team exploring blockchain and tokenisation use cases" class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=900&q=80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest text-edsOrange uppercase bg-black/60 px-2 py-1 rounded">BLOCKCHAIN</span>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-xl font-light leading-snug mb-3">Blockchain for Business Professionals</h3>
+          <p class="text-xs text-gray-400 leading-relaxed flex-grow">Decode blockchain, smart contracts, tokenisation and Web3 economics for product, finance and strategy leaders driving adoption.</p>
+          <div class="border-t border-gray-700 pt-4 mt-4 flex justify-between items-center text-[11px] text-gray-400">
+            <span>12–24 hrs · VILT / On-site</span>
+            <span class="text-edsOrange text-2xl">›</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- END: Featured Courses -->
+
+<!-- BEGIN: Course Grid (Light Gray) -->
+<section class="bg-edsLightGray py-24" data-purpose="course-grid">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-4">
+      <div>
+        <span class="text-[10px] font-bold tracking-widest text-gray-500 mb-2 block uppercase">All IT &amp; Technical Courses</span>
+        <h2 class="text-4xl font-light mb-2">Where capability begins</h2>
+        <p class="text-gray-500">Browse 2,000+ instructor-led programs across emerging and enterprise technology.</p>
+      </div>
+      <div class="flex items-center gap-3 text-xs text-gray-500">
+        <span>Sort by:</span>
+        <select class="border-gray-200 rounded-full text-xs py-1.5 pl-3 pr-8 focus:border-edsOrange focus:ring-edsOrange">
+          <option>Most Recent</option>
+          <option>A–Z</option>
+          <option>Z–A</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <!-- Course Card 1 -->
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="NFT Development" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6 flex-grow flex flex-col">
+          <span class="text-[10px] font-bold text-edsOrange block mb-2 uppercase">BLOCKCHAIN</span>
+          <h3 class="font-bold text-sm mb-3 leading-snug">NFT Development and Strategy</h3>
+          <p class="text-[11px] text-gray-500 leading-normal flex-grow">16–24 hrs · Instructor-led · Token standards, smart contract patterns, marketplace integration. <span class="text-edsOrange">›</span></p>
+        </div>
+      </a>
+      <!-- Course Card 2 -->
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="DeFi" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6 flex-grow flex flex-col">
+          <span class="text-[10px] font-bold text-edsOrange block mb-2 uppercase">BLOCKCHAIN</span>
+          <h3 class="font-bold text-sm mb-3 leading-snug">DeFi Fundamentals and Protocols</h3>
+          <p class="text-[11px] text-gray-500 leading-normal flex-grow">16–24 hrs · Instructor-led · AMMs, lending protocols, yield strategies, on-chain risk. <span class="text-edsOrange">›</span></p>
+        </div>
+      </a>
+      <!-- Course Card 3 -->
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="Cross-chain" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6 flex-grow flex flex-col">
+          <span class="text-[10px] font-bold text-edsOrange block mb-2 uppercase">BLOCKCHAIN</span>
+          <h3 class="font-bold text-sm mb-3 leading-snug">Cross-Chain Interoperability</h3>
+          <p class="text-[11px] text-gray-500 leading-normal flex-grow">16–24 hrs · Instructor-led · Bridges, IBC, message-passing patterns, security trade-offs. <span class="text-edsOrange">›</span></p>
+        </div>
+      </a>
+      <!-- Course Card 4 -->
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="PII" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6 flex-grow flex flex-col">
+          <span class="text-[10px] font-bold text-edsOrange block mb-2 uppercase">CYBERSECURITY</span>
+          <h3 class="font-bold text-sm mb-3 leading-snug">Personally Identifiable Information (PII)</h3>
+          <p class="text-[11px] text-gray-500 leading-normal flex-grow">8–16 hrs · Instructor-led · Compliance frameworks, masking, retention &amp; access controls. <span class="text-edsOrange">›</span></p>
+        </div>
+      </a>
+      <!-- Course Card 5 -->
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="Ransomware" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6 flex-grow flex flex-col">
+          <span class="text-[10px] font-bold text-edsOrange block mb-2 uppercase">CYBERSECURITY</span>
+          <h3 class="font-bold text-sm mb-3 leading-snug">Ransomware Prevention</h3>
+          <p class="text-[11px] text-gray-500 leading-normal flex-grow">8–16 hrs · Instructor-led · Threat detection, incident response, recovery playbooks. <span class="text-edsOrange">›</span></p>
+        </div>
+      </a>
+      <!-- Course Card 6 -->
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="RFM" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6 flex-grow flex flex-col">
+          <span class="text-[10px] font-bold text-edsOrange block mb-2 uppercase">DATA ANALYTICS</span>
+          <h3 class="font-bold text-sm mb-3 leading-snug">RFM Analysis</h3>
+          <p class="text-[11px] text-gray-500 leading-normal flex-grow">16–24 hrs · Instructor-led · Customer segmentation, cohort modeling, marketing ROI. <span class="text-edsOrange">›</span></p>
+        </div>
+      </a>
+      <!-- Course Card 7 -->
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="Threat sim" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6 flex-grow flex flex-col">
+          <span class="text-[10px] font-bold text-edsOrange block mb-2 uppercase">CYBERSECURITY</span>
+          <h3 class="font-bold text-sm mb-3 leading-snug">Advanced Cybersecurity Threat Simulation</h3>
+          <p class="text-[11px] text-gray-500 leading-normal flex-grow">16–24 hrs · Instructor-led · Red team scenarios, MITRE ATT&amp;CK mapping, tabletop exercises. <span class="text-edsOrange">›</span></p>
+        </div>
+      </a>
+      <!-- Course Card 8 -->
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="RAG" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6 flex-grow flex flex-col">
+          <span class="text-[10px] font-bold text-edsOrange block mb-2 uppercase">ARTIFICIAL INTELLIGENCE</span>
+          <h3 class="font-bold text-sm mb-3 leading-snug">Retrieval Augmented Generation (RAG)</h3>
+          <p class="text-[11px] text-gray-500 leading-normal flex-grow">12–24 hrs · Instructor-led · Vector stores, retrieval pipelines, evaluation frameworks. <span class="text-edsOrange">›</span></p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Pagination -->
+    <div class="flex items-center justify-between mt-12 pt-8 border-t border-gray-200 text-xs text-gray-500">
+      <span>Showing 1–8 of 2,000+ courses</span>
+      <div class="flex items-center gap-3">
+        <button class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center hover:border-edsOrange hover:text-edsOrange">‹</button>
+        <span class="font-semibold text-edsDark">1 / 114</span>
+        <button class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center hover:border-edsOrange hover:text-edsOrange">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END: Course Grid -->
+
+
+<!-- BEGIN: Approach (6-step) -->
+<section id="approach" class="bg-white py-24" data-purpose="approach">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8">
+    <span class="text-[10px] font-bold tracking-widest text-gray-500 mb-2 block uppercase">OUR APPROACH</span>
+    <h2 class="text-4xl font-light mb-4">A six-step training methodology</h2>
+    <p class="text-gray-500 mb-12 max-w-2xl">From consultation to evaluation — a structured approach that delivers measurable outcomes.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4">
+      <div class="bg-edsLightGray rounded-lg p-6">
+        <div class="text-3xl font-light text-edsOrange mb-3">01</div>
+        <h4 class="font-semibold text-sm mb-2">Consult</h4>
+        <p class="text-[11px] text-gray-500 leading-relaxed">Understand challenges and recommend training solutions.</p>
+      </div>
+      <div class="bg-edsLightGray rounded-lg p-6">
+        <div class="text-3xl font-light text-edsOrange mb-3">02</div>
+        <h4 class="font-semibold text-sm mb-2">Plan</h4>
+        <p class="text-[11px] text-gray-500 leading-relaxed">Develop a comprehensive strategy and rollout roadmap.</p>
+      </div>
+      <div class="bg-edsLightGray rounded-lg p-6">
+        <div class="text-3xl font-light text-edsOrange mb-3">03</div>
+        <h4 class="font-semibold text-sm mb-2">Align</h4>
+        <p class="text-[11px] text-gray-500 leading-relaxed">Match expert trainers with your team's objectives.</p>
+      </div>
+      <div class="bg-edsLightGray rounded-lg p-6">
+        <div class="text-3xl font-light text-edsOrange mb-3">04</div>
+        <h4 class="font-semibold text-sm mb-2">Customize</h4>
+        <p class="text-[11px] text-gray-500 leading-relaxed">Tailor course content to your stack and team needs.</p>
+      </div>
+      <div class="bg-edsLightGray rounded-lg p-6">
+        <div class="text-3xl font-light text-edsOrange mb-3">05</div>
+        <h4 class="font-semibold text-sm mb-2">Execute</h4>
+        <p class="text-[11px] text-gray-500 leading-relaxed">Run sessions with high engagement and interactivity.</p>
+      </div>
+      <div class="bg-edsLightGray rounded-lg p-6">
+        <div class="text-3xl font-light text-edsOrange mb-3">06</div>
+        <h4 class="font-semibold text-sm mb-2">Evaluate</h4>
+        <p class="text-[11px] text-gray-500 leading-relaxed">Measure tangible impact through feedback and analytics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END: Approach -->
+
+
+<!-- BEGIN: Why Edstellar (Incredible Starts Here pattern) -->
+<section class="bg-edsDark py-24 text-white" data-purpose="why-edstellar">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8">
+    <span class="text-[10px] font-bold tracking-widest text-gray-500 mb-2 block uppercase">WHY EDSTELLAR</span>
+    <h2 class="text-4xl font-light mb-4">Incredible training starts here</h2>
+    <p class="text-gray-400 mb-16 max-w-2xl">Four reasons L&amp;D leaders consolidate technical training with Edstellar.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="flex flex-col">
+        <div class="h-48 rounded-lg overflow-hidden mb-6">
+          <img alt="One-stop solution" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80" />
+        </div>
+        <h3 class="text-xl font-light mb-2">One-Stop Training Solution</h3>
+        <p class="text-xs text-gray-400 mb-6 leading-relaxed">2,000+ instructor-led courses across IT, Management, Leadership, Behavioral and Compliance domains.</p>
+        <a href="#" class="bg-edsOrange text-edsDark text-[10px] font-bold py-1.5 px-4 rounded-full w-fit uppercase tracking-widest">Learn more</a>
+      </div>
+      <div class="flex flex-col">
+        <div class="h-48 rounded-lg overflow-hidden mb-6">
+          <img alt="Training expertise" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80" />
+        </div>
+        <h3 class="text-xl font-light mb-2">Training Expertise</h3>
+        <p class="text-xs text-gray-400 mb-6 leading-relaxed">Hand-picked, certified, verified trainers with deep industry experience and adaptable teaching methods.</p>
+        <a href="#" class="bg-edsOrange text-edsDark text-[10px] font-bold py-1.5 px-4 rounded-full w-fit uppercase tracking-widest">Learn more</a>
+      </div>
+      <div class="flex flex-col">
+        <div class="h-48 rounded-lg overflow-hidden mb-6">
+          <img alt="Global delivery" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80" />
+        </div>
+        <h3 class="text-xl font-light mb-2">Global Delivery Capability</h3>
+        <p class="text-xs text-gray-400 mb-6 leading-relaxed">Onsite, offsite, virtual delivery — in any language, at any scale, anywhere your teams operate.</p>
+        <a href="#" class="bg-edsOrange text-edsDark text-[10px] font-bold py-1.5 px-4 rounded-full w-fit uppercase tracking-widest">Learn more</a>
+      </div>
+      <div class="flex flex-col">
+        <div class="h-48 rounded-lg overflow-hidden mb-6">
+          <img alt="Managed services" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=900&q=80" />
+        </div>
+        <h3 class="text-xl font-light mb-2">Managed Training Services</h3>
+        <p class="text-xs text-gray-400 mb-6 leading-relaxed">Needs analysis, consultation, pre/post-assessment, coaching and full-cycle program management.</p>
+        <a href="#" class="bg-edsOrange text-edsDark text-[10px] font-bold py-1.5 px-4 rounded-full w-fit uppercase tracking-widest">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END: Why Edstellar -->
+
+<!-- BEGIN: Trainers Showcase -->
+<section id="trainers" class="bg-white py-24" data-purpose="trainers">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <div class="max-w-2xl">
+        <span class="text-[10px] font-bold tracking-widest text-gray-500 mb-2 block uppercase">EXPERT TRAINERS</span>
+        <h2 class="text-4xl font-light mb-3">Trainers to meet your IT &amp; Technical needs</h2>
+        <p class="text-gray-500">Hand-picked, certified and verified trainers — every Edstellar trainer brings vendor certifications, deep practitioner experience, and a track record of high-impact corporate sessions.</p>
+      </div>
+      <a href="#" class="group inline-flex items-center gap-2 self-start md:self-end text-sm font-semibold text-edsDark hover:text-edsOrange whitespace-nowrap">
+        View all trainers
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-edsOrange text-edsDark group-hover:translate-x-1 transition-transform">›</span>
+      </a>
+    </div>
+
+    <!-- Trainer credentials strip -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+      <div class="bg-edsLightGray rounded-lg p-5">
+        <div class="text-3xl font-light text-edsDark">1,500+</div>
+        <p class="text-xs text-gray-500 mt-1">Verified IT &amp; Technical trainers</p>
+      </div>
+      <div class="bg-edsLightGray rounded-lg p-5">
+        <div class="text-3xl font-light text-edsDark">12+ yrs</div>
+        <p class="text-xs text-gray-500 mt-1">Average industry experience</p>
+      </div>
+      <div class="bg-edsLightGray rounded-lg p-5">
+        <div class="text-3xl font-light text-edsDark">60+</div>
+        <p class="text-xs text-gray-500 mt-1">Vendor certifications represented</p>
+      </div>
+      <div class="bg-edsLightGray rounded-lg p-5">
+        <div class="text-3xl font-light text-edsDark">4.8 ★</div>
+        <p class="text-xs text-gray-500 mt-1">Average learner rating</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Trainer 1: Deepak — Cloud / DevOps -->
+      <div class="bg-edsLightGray rounded-lg p-6 flex flex-col h-full">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-16 h-16 rounded-full bg-gray-200 overflow-hidden shrink-0">
+            <img alt="Deepak — Cloud & DevOps trainer" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" />
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1 text-sm font-semibold text-edsDark">Deepak <span class="text-edsOrange">✓</span></div>
+            <p class="text-[11px] text-gray-500">Pune, India · ★ 4.9 (312)</p>
+            <p class="text-[10px] text-gray-500 mt-0.5">Training since 2014 · 14 yrs in industry</p>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed mb-3">Cloud architect with hands-on delivery across BFSI and SaaS. Specialises in multi-cloud migration, Kubernetes platform engineering, and cloud-native security.</p>
+        <div class="flex flex-wrap gap-1.5 text-[9px] uppercase tracking-widest font-semibold text-edsDark mt-auto">
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">AWS Solutions Architect</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">CKA</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">Terraform</span>
+        </div>
+      </div>
+
+      <!-- Trainer 2: Devi — Data Science / ML -->
+      <div class="bg-edsLightGray rounded-lg p-6 flex flex-col h-full">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-16 h-16 rounded-full bg-gray-200 overflow-hidden shrink-0">
+            <img alt="Devi — Data Science & ML trainer" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" />
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1 text-sm font-semibold text-edsDark">Devi <span class="text-edsOrange">✓</span></div>
+            <p class="text-[11px] text-gray-500">Hyderabad, India · ★ 4.8 (264)</p>
+            <p class="text-[10px] text-gray-500 mt-0.5">Training since 2016 · 11 yrs in industry</p>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed mb-3">Lead Data Scientist with deep expertise in deep learning, NLP and MLOps. Has shipped production ML across pharma, retail and financial-services clients.</p>
+        <div class="flex flex-wrap gap-1.5 text-[9px] uppercase tracking-widest font-semibold text-edsDark mt-auto">
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">TensorFlow Cert.</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">Azure AI Engineer</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">Databricks ML</span>
+        </div>
+      </div>
+
+      <!-- Trainer 3: Akash — Cybersecurity -->
+      <div class="bg-edsLightGray rounded-lg p-6 flex flex-col h-full">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-16 h-16 rounded-full bg-gray-200 overflow-hidden shrink-0">
+            <img alt="Akash — Cybersecurity trainer" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" />
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1 text-sm font-semibold text-edsDark">Akash <span class="text-edsOrange">✓</span></div>
+            <p class="text-[11px] text-gray-500">Bengaluru, India · ★ 4.9 (411)</p>
+            <p class="text-[10px] text-gray-500 mt-0.5">Training since 2012 · 16 yrs in industry</p>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed mb-3">Offensive-security practitioner running red-team and pen-test programs for global enterprises. Mapping training to MITRE ATT&amp;CK and live SOC scenarios.</p>
+        <div class="flex flex-wrap gap-1.5 text-[9px] uppercase tracking-widest font-semibold text-edsDark mt-auto">
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">CISSP</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">OSCP</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">CEH</span>
+        </div>
+      </div>
+
+      <!-- Trainer 4: Sudha — Microsoft / Azure -->
+      <div class="bg-edsLightGray rounded-lg p-6 flex flex-col h-full">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-16 h-16 rounded-full bg-gray-200 overflow-hidden shrink-0">
+            <img alt="Sudha — Microsoft & Azure trainer" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" />
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1 text-sm font-semibold text-edsDark">Sudha <span class="text-edsOrange">✓</span></div>
+            <p class="text-[11px] text-gray-500">Hyderabad, India · ★ 4.9 (228)</p>
+            <p class="text-[10px] text-gray-500 mt-0.5">Training since 2013 · 13 yrs in industry</p>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed mb-3">Microsoft-stack specialist covering Azure cloud, Power Platform and M365 modern workplace. Trains enterprise teams on adoption, governance and security.</p>
+        <div class="flex flex-wrap gap-1.5 text-[9px] uppercase tracking-widest font-semibold text-edsDark mt-auto">
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">MCT</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">Azure Solutions Architect</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">M365 Expert</span>
+        </div>
+      </div>
+
+      <!-- Trainer 5: Sangeeta — Software Engineering / Full-Stack -->
+      <div class="bg-edsLightGray rounded-lg p-6 flex flex-col h-full">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-16 h-16 rounded-full bg-gray-200 overflow-hidden shrink-0">
+            <img alt="Sangeeta — Software engineering trainer" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80" />
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1 text-sm font-semibold text-edsDark">Sangeeta <span class="text-edsOrange">✓</span></div>
+            <p class="text-[11px] text-gray-500">Pune, India · ★ 4.8 (197)</p>
+            <p class="text-[10px] text-gray-500 mt-0.5">Training since 2015 · 12 yrs in industry</p>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed mb-3">Senior full-stack engineer-turned-trainer. Teaches modern JavaScript, React/Next.js, system design and API architecture for product engineering teams.</p>
+        <div class="flex flex-wrap gap-1.5 text-[9px] uppercase tracking-widest font-semibold text-edsDark mt-auto">
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">AWS Developer</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">Node.js Cert.</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">SAFe</span>
+        </div>
+      </div>
+
+      <!-- Trainer 6: Manas — Networking / Cisco -->
+      <div class="bg-edsLightGray rounded-lg p-6 flex flex-col h-full">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-16 h-16 rounded-full bg-gray-200 overflow-hidden shrink-0">
+            <img alt="Manas — Networking & Cisco trainer" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" />
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1 text-sm font-semibold text-edsDark">Manas <span class="text-edsOrange">✓</span></div>
+            <p class="text-[11px] text-gray-500">Bhilai, India · ★ 4.7 (148)</p>
+            <p class="text-[10px] text-gray-500 mt-0.5">Training since 2011 · 17 yrs in industry</p>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed mb-3">Veteran network architect across Cisco, Juniper and SD-WAN environments. Delivers programs in network security, IPv6 transition and zero-trust networking.</p>
+        <div class="flex flex-wrap gap-1.5 text-[9px] uppercase tracking-widest font-semibold text-edsDark mt-auto">
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">CCIE</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">CCNP Security</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">JNCIP</span>
+        </div>
+      </div>
+
+      <!-- Trainer 7: Lakshmi — Big Data / Data Engineering -->
+      <div class="bg-edsLightGray rounded-lg p-6 flex flex-col h-full">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-16 h-16 rounded-full bg-gray-200 overflow-hidden shrink-0">
+            <img alt="Lakshmi — Big Data & engineering trainer" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=200&q=80" />
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1 text-sm font-semibold text-edsDark">Lakshmi <span class="text-edsOrange">✓</span></div>
+            <p class="text-[11px] text-gray-500">Bengaluru, India · ★ 4.9 (276)</p>
+            <p class="text-[10px] text-gray-500 mt-0.5">Training since 2014 · 13 yrs in industry</p>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed mb-3">Data engineering lead specialising in Spark, Kafka and lakehouse architectures. Trains platform teams on building reliable streaming and batch pipelines at scale.</p>
+        <div class="flex flex-wrap gap-1.5 text-[9px] uppercase tracking-widest font-semibold text-edsDark mt-auto">
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">Databricks Engineer</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">Confluent Kafka</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">GCP Data Engineer</span>
+        </div>
+      </div>
+
+      <!-- Trainer 8: Dilip — DevOps / SRE -->
+      <div class="bg-edsLightGray rounded-lg p-6 flex flex-col h-full">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-16 h-16 rounded-full bg-gray-200 overflow-hidden shrink-0">
+            <img alt="Dilip — DevOps & SRE trainer" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80" />
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1 text-sm font-semibold text-edsDark">Dilip <span class="text-edsOrange">✓</span></div>
+            <p class="text-[11px] text-gray-500">Pune, India · ★ 4.8 (205)</p>
+            <p class="text-[10px] text-gray-500 mt-0.5">Training since 2013 · 14 yrs in industry</p>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed mb-3">Practising SRE running 24×7 platforms in fintech and e-commerce. Trains teams on CI/CD, observability, IaC and reliability engineering principles.</p>
+        <div class="flex flex-wrap gap-1.5 text-[9px] uppercase tracking-widest font-semibold text-edsDark mt-auto">
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">CKA + CKS</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">HashiCorp Vault</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">DevOps Inst.</span>
+        </div>
+      </div>
+
+      <!-- Trainer 9: Aditi — AI / Generative AI -->
+      <div class="bg-edsLightGray rounded-lg p-6 flex flex-col h-full">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-16 h-16 rounded-full bg-gray-200 overflow-hidden shrink-0">
+            <img alt="Aditi — AI & Generative AI trainer" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" />
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1 text-sm font-semibold text-edsDark">Aditi <span class="text-edsOrange">✓</span></div>
+            <p class="text-[11px] text-gray-500">New Delhi, India · ★ 4.9 (342)</p>
+            <p class="text-[10px] text-gray-500 mt-0.5">Training since 2018 · 9 yrs in industry</p>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed mb-3">Applied AI researcher building production GenAI systems. Trains enterprise teams on RAG, LLMOps, evaluation harnesses and responsible AI governance.</p>
+        <div class="flex flex-wrap gap-1.5 text-[9px] uppercase tracking-widest font-semibold text-edsDark mt-auto">
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">DeepLearning.AI</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">AWS ML Specialty</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">NVIDIA DLI</span>
+        </div>
+      </div>
+
+      <!-- Trainer 10: Adalarasu — Blockchain / Web3 -->
+      <div class="bg-edsLightGray rounded-lg p-6 flex flex-col h-full">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-16 h-16 rounded-full bg-gray-200 overflow-hidden shrink-0">
+            <img alt="Adalarasu — Blockchain & Web3 trainer" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" />
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1 text-sm font-semibold text-edsDark">Adalarasu <span class="text-edsOrange">✓</span></div>
+            <p class="text-[11px] text-gray-500">Chennai, India · ★ 4.8 (159)</p>
+            <p class="text-[10px] text-gray-500 mt-0.5">Training since 2017 · 10 yrs in industry</p>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed mb-3">Smart-contract engineer with audits across DeFi protocols. Trains banks and fintechs on Solidity, EVM patterns, tokenisation and Web3 security.</p>
+        <div class="flex flex-wrap gap-1.5 text-[9px] uppercase tracking-widest font-semibold text-edsDark mt-auto">
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">Certified Blockchain Architect</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">Hyperledger</span>
+          <span class="bg-white border border-gray-200 rounded-full px-2 py-1">Solidity</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- END: Trainers -->
+
+<!-- BEGIN: Pricing -->
+<section id="pricing" class="bg-edsGray py-24 text-white" data-purpose="pricing">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8">
+    <span class="text-[10px] font-bold tracking-widest text-gray-400 mb-2 block uppercase">Pricing</span>
+    <h2 class="text-4xl font-light mb-4">IT &amp; Technical group training packages</h2>
+    <p class="text-gray-400 mb-12 max-w-2xl">Choose the package that fits your team size — from SMBs to large enterprises. Custom plans available.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Starter -->
+      <div class="bg-black/40 border border-gray-700 rounded-lg p-8 flex flex-col">
+        <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase">Starter</span>
+        <div class="text-2xl font-light mt-4 mb-1">120 licenses</div>
+        <p class="text-sm text-gray-400 mb-6">64 hours group training (VILT / On-site). Tailored for SMBs.</p>
+        <ul class="text-xs text-gray-300 space-y-2 mb-8 flex-grow">
+          <li class="flex gap-2"><span class="text-edsOrange">✓</span> 120 trainee licenses</li>
+          <li class="flex gap-2"><span class="text-edsOrange">✓</span> 64 hours instructor-led training</li>
+          <li class="flex gap-2"><span class="text-edsOrange">✓</span> Pre &amp; post-assessment</li>
+        </ul>
+        <a href="#contact" class="border border-gray-500 text-white text-[10px] font-bold py-2 px-4 rounded-full w-fit uppercase tracking-widest hover:border-edsOrange hover:text-edsOrange">Get a Quote</a>
+      </div>
+      <!-- Growth (Most Popular) -->
+      <div class="bg-edsOrange text-edsDark rounded-lg p-8 flex flex-col relative">
+        <span class="absolute -top-3 right-4 bg-black text-edsOrange text-[10px] font-bold py-1 px-3 rounded-full uppercase tracking-widest">Most Popular</span>
+        <span class="text-[10px] font-bold tracking-widest uppercase">Growth</span>
+        <div class="text-2xl font-light mt-4 mb-1">320 licenses</div>
+        <p class="text-sm mb-6">160 hours group training (VILT / On-site). Ideal for growing SMBs.</p>
+        <ul class="text-xs space-y-2 mb-8 flex-grow">
+          <li class="flex gap-2"><span>✓</span> 320 trainee licenses</li>
+          <li class="flex gap-2"><span>✓</span> 160 hours instructor-led training</li>
+          <li class="flex gap-2"><span>✓</span> Pre &amp; post-assessment + analytics</li>
+          <li class="flex gap-2"><span>✓</span> Dedicated program manager</li>
+        </ul>
+        <a href="#contact" class="bg-black text-edsOrange text-[10px] font-bold py-2 px-4 rounded-full w-fit uppercase tracking-widest">Get a Quote</a>
+      </div>
+      <!-- Enterprise -->
+      <div class="bg-black/40 border border-gray-700 rounded-lg p-8 flex flex-col">
+        <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase">Enterprise</span>
+        <div class="text-2xl font-light mt-4 mb-1">800 licenses</div>
+        <p class="text-sm text-gray-400 mb-6">400 hours group training (VILT / On-site). Designed for large corporations.</p>
+        <ul class="text-xs text-gray-300 space-y-2 mb-8 flex-grow">
+          <li class="flex gap-2"><span class="text-edsOrange">✓</span> 800 trainee licenses</li>
+          <li class="flex gap-2"><span class="text-edsOrange">✓</span> 400 hours instructor-led training</li>
+          <li class="flex gap-2"><span class="text-edsOrange">✓</span> Skills matrix &amp; reporting</li>
+          <li class="flex gap-2"><span class="text-edsOrange">✓</span> Coaching add-on</li>
+        </ul>
+        <a href="#contact" class="border border-gray-500 text-white text-[10px] font-bold py-2 px-4 rounded-full w-fit uppercase tracking-widest hover:border-edsOrange hover:text-edsOrange">Get a Quote</a>
+      </div>
+      <!-- Custom -->
+      <div class="bg-black/40 border border-gray-700 rounded-lg p-8 flex flex-col">
+        <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase">Custom</span>
+        <div class="text-2xl font-light mt-4 mb-1">Unlimited</div>
+        <p class="text-sm text-gray-400 mb-6">Unlimited licenses &amp; duration. Designed for large corporations.</p>
+        <ul class="text-xs text-gray-300 space-y-2 mb-8 flex-grow">
+          <li class="flex gap-2"><span class="text-edsOrange">✓</span> Unlimited trainee licenses</li>
+          <li class="flex gap-2"><span class="text-edsOrange">✓</span> Unlimited training duration</li>
+          <li class="flex gap-2"><span class="text-edsOrange">✓</span> Bespoke program design</li>
+          <li class="flex gap-2"><span class="text-edsOrange">✓</span> Global delivery in any language</li>
+        </ul>
+        <a href="#contact" class="border border-gray-500 text-white text-[10px] font-bold py-2 px-4 rounded-full w-fit uppercase tracking-widest hover:border-edsOrange hover:text-edsOrange">Talk to Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END: Pricing -->
+
+<!-- BEGIN: Testimonials -->
+<section class="bg-white py-24" data-purpose="testimonials">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8">
+    <span class="text-[10px] font-bold tracking-widest text-gray-500 mb-2 block uppercase">CLIENT VOICES</span>
+    <h2 class="text-4xl font-light mb-12">What our clients say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-edsLightGray rounded-lg p-8">
+        <div class="text-edsOrange mb-4">★★★★★</div>
+        <p class="text-sm text-gray-700 leading-relaxed mb-6">"Edstellar's technical training offers superior hands-on labs and industry-relevant projects that delivered immediate ROI."</p>
+        <div class="border-t border-gray-300 pt-4">
+          <div class="text-sm font-semibold">Sarah Reynolds</div>
+          <div class="text-xs text-gray-500">CTO</div>
+        </div>
+      </div>
+      <div class="bg-edsLightGray rounded-lg p-8">
+        <div class="text-edsOrange mb-4">★★★★★</div>
+        <p class="text-sm text-gray-700 leading-relaxed mb-6">"Their customized curriculum addressed specific infrastructure needs, and instructors' industry experience made complex concepts accessible."</p>
+        <div class="border-t border-gray-300 pt-4">
+          <div class="text-sm font-semibold">Marcus Chen</div>
+          <div class="text-xs text-gray-500">IT Director</div>
+        </div>
+      </div>
+      <div class="bg-edsLightGray rounded-lg p-8">
+        <div class="text-edsOrange mb-4">★★★★★</div>
+        <p class="text-sm text-gray-700 leading-relaxed mb-6">"Ability to adapt content to our specific tech stack while maintaining depth of expertise was impressive. Team now confidently implementing automation."</p>
+        <div class="border-t border-gray-300 pt-4">
+          <div class="text-sm font-semibold">Anita Patel</div>
+          <div class="text-xs text-gray-500">DevOps Manager</div>
+        </div>
+      </div>
+      <div class="bg-edsLightGray rounded-lg p-8">
+        <div class="text-edsOrange mb-4">★★★★★</div>
+        <p class="text-sm text-gray-700 leading-relaxed mb-6">"Edstellar's comprehensive assessment identified skill gaps we hadn't recognized and delivered targeted training that improved project delivery timelines."</p>
+        <div class="border-t border-gray-300 pt-4">
+          <div class="text-sm font-semibold">James Wilson</div>
+          <div class="text-xs text-gray-500">Engineering Lead</div>
+        </div>
+      </div>
+      <div class="bg-edsLightGray rounded-lg p-8">
+        <div class="text-edsOrange mb-4">★★★★★</div>
+        <p class="text-sm text-gray-700 leading-relaxed mb-6">"Edstellar's blend of theoretical knowledge and practical application gave our team confidence and competence for our digital transformation."</p>
+        <div class="border-t border-gray-300 pt-4">
+          <div class="text-sm font-semibold">Eliza Morgan</div>
+          <div class="text-xs text-gray-500">Digital Transformation Director</div>
+        </div>
+      </div>
+      <div class="bg-edsDark text-white rounded-lg p-8 flex flex-col justify-between">
+        <div>
+          <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-3 block uppercase">Become a client</span>
+          <h3 class="text-2xl font-light leading-snug mb-4">Train your IT team with Edstellar.</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Talk to our consultants about a tailored technical training program for your organization.</p>
+        </div>
+        <a href="#contact" class="mt-6 bg-edsOrange text-edsDark text-[10px] font-bold py-2 px-4 rounded-full w-fit uppercase tracking-widest">Talk to Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END: Testimonials -->
+
+<!-- BEGIN: Resources / Blog -->
+<section id="resources" class="bg-edsLightGray py-24" data-purpose="resources">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8">
+    <span class="text-[10px] font-bold tracking-widest text-gray-500 mb-2 block uppercase">EDSTELLAR RESOURCES</span>
+    <h2 class="text-4xl font-light mb-4">Insights for L&amp;D leaders</h2>
+    <p class="text-gray-500 mb-12 max-w-2xl">Industry trends, expert insights, success stories and innovative training practices.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="Frontend skills" class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6">
+          <span class="text-[10px] font-bold text-edsOrange mb-2 block uppercase">BLOG · IN-DEMAND SKILLS</span>
+          <h3 class="font-bold text-base mb-3 leading-snug">10 Must-have Skills for a Frontend Developer in 2026</h3>
+          <p class="text-xs text-gray-500">January 23, 2026</p>
+        </div>
+      </a>
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="Talent mobility" class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6">
+          <span class="text-[10px] font-bold text-edsOrange mb-2 block uppercase">BLOG · WORKFORCE OPTIMIZATION</span>
+          <h3 class="font-bold text-base mb-3 leading-snug">5 Real-World Case Studies of Internal Talent Mobility Powered by Skill Mapping</h3>
+          <p class="text-xs text-gray-500">January 23, 2026</p>
+        </div>
+      </a>
+      <a href="#" class="bg-white rounded-lg overflow-hidden flex flex-col custom-shadow news-card-hover">
+        <img alt="System administrator" class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80" />
+        <div class="p-6">
+          <span class="text-[10px] font-bold text-edsOrange mb-2 block uppercase">BLOG · IN-DEMAND SKILLS</span>
+          <h3 class="font-bold text-base mb-3 leading-snug">10 Must-Have Skills for a System Administrator in 2026</h3>
+          <p class="text-xs text-gray-500">January 20, 2026</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- END: Resources -->
+
+<!-- BEGIN: Contact CTA + Footer Newsletter Pattern -->
+<section id="contact" class="bg-edsDark text-white py-24" data-purpose="contact">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <div>
+      <span class="text-[10px] font-bold tracking-widest text-edsOrange mb-2 block uppercase">Contact Us</span>
+      <h2 class="text-4xl font-light mb-4">Submit your training requirements.</h2>
+      <p class="text-gray-400 leading-relaxed mb-8 max-w-md">Tell us about your team's IT &amp; Technical training needs and we'll get back to you with a tailored proposal shortly.</p>
+      <div class="space-y-3 text-sm text-gray-400">
+        <div><span class="text-white font-semibold">Email:</span> contact@edstellar.com</div>
+        <div><span class="text-white font-semibold">USA:</span> +1 682 297 4830</div>
+        <div><span class="text-white font-semibold">UK:</span> +44 151 453 4009</div>
+        <div><span class="text-white font-semibold">India:</span> +91 636 483 3830</div>
+      </div>
+    </div>
+    <div class="bg-white text-black p-8 rounded-lg">
+      <form class="space-y-4">
+        <div>
+          <label class="block text-[10px] text-gray-500 mb-1 uppercase tracking-widest">Full Name*</label>
+          <input class="w-full border-gray-200 rounded-md focus:border-edsOrange focus:ring-edsOrange text-sm" placeholder="Full Name" type="text" />
+        </div>
+        <div>
+          <label class="block text-[10px] text-gray-500 mb-1 uppercase tracking-widest">Work Email*</label>
+          <input class="w-full border-gray-200 rounded-md focus:border-edsOrange focus:ring-edsOrange text-sm" placeholder="name@company.com" type="email" />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-[10px] text-gray-500 mb-1 uppercase tracking-widest">Country*</label>
+            <select class="w-full border-gray-200 rounded-md focus:border-edsOrange focus:ring-edsOrange text-sm">
+              <option>Select Country</option>
+              <option>United States</option>
+              <option>United Kingdom</option>
+              <option>India</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-[10px] text-gray-500 mb-1 uppercase tracking-widest">Phone*</label>
+            <input class="w-full border-gray-200 rounded-md focus:border-edsOrange focus:ring-edsOrange text-sm" placeholder="+1 555 555 5555" type="tel" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-[10px] text-gray-500 mb-1 uppercase tracking-widest">Training Requirements</label>
+          <textarea class="w-full border-gray-200 rounded-md focus:border-edsOrange focus:ring-edsOrange text-sm" rows="3" placeholder="Tell us about your team and training goals…"></textarea>
+        </div>
+        <div class="flex items-start space-x-2 py-1">
+          <input class="mt-1 rounded text-edsOrange focus:ring-edsOrange" id="privacy" type="checkbox" />
+          <label class="text-[10px] text-gray-500" for="privacy">I agree with the Edstellar Privacy Policy*</label>
+        </div>
+        <button type="submit" class="w-full bg-edsOrange text-edsDark font-bold py-3 rounded-md hover:bg-edsOrangeDark transition-colors uppercase text-xs tracking-widest">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- END: Contact -->
+
+<!-- BEGIN: Footer -->
+<footer class="bg-white pt-20 pb-10" data-purpose="footer">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10 mb-16">
+      <div class="col-span-2 md:col-span-1">
+        <div class="text-xl font-bold tracking-tight mb-4">edstellar<span class="text-edsOrange">.</span></div>
+        <p class="text-xs text-gray-500 leading-relaxed mb-6">A one-stop instructor-led corporate training and coaching solution that addresses organizational upskilling and talent transformation needs globally.</p>
+        <div class="flex space-x-3 text-gray-400">
+          <a href="#" class="hover:text-edsOrange">Li</a>
+          <a href="#" class="hover:text-edsOrange">Fb</a>
+          <a href="#" class="hover:text-edsOrange">X</a>
+          <a href="#" class="hover:text-edsOrange">Ig</a>
+          <a href="#" class="hover:text-edsOrange">Yt</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm mb-6 uppercase">Training Programs</h4>
+        <ul class="text-xs text-gray-500 space-y-3">
+          <li><a class="hover:text-edsOrange" href="#">IT &amp; Technical</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Management</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Leadership</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Behavioral</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Compliance</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Social Impact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm mb-6 uppercase">Excellence</h4>
+        <ul class="text-xs text-gray-500 space-y-3">
+          <li><a class="hover:text-edsOrange" href="#">Sales Excellence</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Marketing Excellence</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Operational Excellence</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Finance Excellence</a></li>
+          <li><a class="hover:text-edsOrange" href="#">HR Excellence</a></li>
+          <li><a class="hover:text-edsOrange" href="#">IT Excellence</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm mb-6 uppercase">Services</h4>
+        <ul class="text-xs text-gray-500 space-y-3">
+          <li><a class="hover:text-edsOrange" href="#">Consulting</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Talent Diagnostics</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Managed Training</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Coaching Solutions</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Training Delivery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm mb-6 uppercase">Platform</h4>
+        <ul class="text-xs text-gray-500 space-y-3">
+          <li><a class="hover:text-edsOrange" href="#">Skill Management Software</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Skills Matrix</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Stellar AI</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Skills Intelligence</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Schedule a Demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm mb-6 uppercase">Company</h4>
+        <ul class="text-xs text-gray-500 space-y-3">
+          <li><a class="hover:text-edsOrange" href="#">About Us</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Who We Serve</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Pricing</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Partner with Edstellar</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Careers</a></li>
+          <li><a class="hover:text-edsOrange" href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-400 gap-4">
+      <div class="flex items-center space-x-6">
+        <span class="border border-gray-200 rounded px-2 py-1 text-gray-500">ISO 9001:2015</span>
+        <span class="border border-gray-200 rounded px-2 py-1 text-gray-500">ISO 27001:2022</span>
+      </div>
+      <div class="flex flex-wrap gap-x-6 gap-y-2 justify-center">
+        <a class="hover:text-black" href="#">Modern Slavery Statement</a>
+        <a class="hover:text-black" href="#">Privacy Policy</a>
+        <a class="hover:text-black" href="#">Terms &amp; Conditions</a>
+        <span>© 2026 Edstellar. All rights reserved.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- END: Footer -->
+
+<!-- Back to top button -->
+<a href="#" class="fixed bottom-8 right-8 bg-edsDark text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors z-50">
+  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+</a>
+
+</body>
+</html>

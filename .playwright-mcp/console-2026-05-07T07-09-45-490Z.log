@@ -1,0 +1,28 @@
+[     850ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ https://business.udemy.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1:1
+[    1313ms] [LOG] No referrer available. @ https://business.udemy.com/wp-content/themes/udemy-business-child/assets/js/persist/persist.min.js?ver=1776962213:0
+[    1313ms] [LOG] Value of persisted_utm_type in sessionStorage: null @ https://business.udemy.com/wp-content/themes/udemy-business-child/assets/js/persist/persist.min.js?ver=1776962213:0
+[    1314ms] [LOG] Current URL: URL @ https://business.udemy.com/wp-content/themes/udemy-business-child/assets/js/persist/persist.min.js?ver=1776962213:0
+[    1315ms] [LOG] Current URL querystring:  @ https://business.udemy.com/wp-content/themes/udemy-business-child/assets/js/persist/persist.min.js?ver=1776962213:0
+[    1315ms] [LOG] Page hash value:  @ https://business.udemy.com/wp-content/themes/udemy-business-child/assets/js/persist/persist.min.js?ver=1776962213:0
+[    1315ms] [LOG] Initial cleaned URL querystring:  @ https://business.udemy.com/wp-content/themes/udemy-business-child/assets/js/persist/persist.min.js?ver=1776962213:0
+[    1315ms] [LOG] NO referrer available. @ https://business.udemy.com/wp-content/themes/udemy-business-child/assets/js/persist/persist.min.js?ver=1776962213:0
+[    1315ms] [LOG] Setting default utm_source and utm_medium to "direct". @ https://business.udemy.com/wp-content/themes/udemy-business-child/assets/js/persist/persist.min.js?ver=1776962213:0
+[    1315ms] [LOG] Updating URL on no referrer: https://business.udemy.com/instructors/?utm_source=direct&utm_medium=direct @ https://business.udemy.com/wp-content/themes/udemy-business-child/assets/js/persist/persist.min.js?ver=1776962213:0
+[    1499ms] [LOG] [utm_country sync] (none) → IN @ https://business.udemy.com/wp-content/themes/udemy-business-child/dist/marketing/js/scripts.min.js?ver=1776962216:0
+[    1996ms] [ERROR] Access to XMLHttpRequest at 'https://www.udemy.com/api-2.0/visits?utm_source=direct&utm_medium=direct' from origin 'https://business.udemy.com' has been blocked by CORS policy: The value of the 'Access-Control-Allow-Credentials' header in the response is '' which must be 'true' when the request's credentials mode is 'include'. The credentials mode of requests initiated by the XMLHttpRequest is controlled by the withCredentials attribute. @ https://business.udemy.com/instructors/?utm_source=direct&utm_medium=direct:0
+[    1997ms] [LOG] error  AxiosError @ https://business.udemy.com/wp-content/themes/udemy-business-child/dist/marketing/js/scripts.min.js?ver=1776962216:0
+[    2003ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://www.udemy.com/api-2.0/visits?utm_source=direct&utm_medium=direct:0
+[    2064ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://business.udemy.com/wp-content/cache/min/1/consent/2caf2f06-a6f6-45bb-b30e-2b9070e1f83f/2caf2f06-a6f6-45bb-b30e-2b9070e1f83f.json:0
+[    2139ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://business.udemy.com/wp-content/themes/udemy-business-child/assets/css/slick/fonts/slick.woff:0
+[    2294ms] [LOG] VWO Campaign Details: VWO not running or campaigns unavailable @ :0
+[    2367ms] SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at r.onload (https://business.udemy.com/wp-content/cache/min/1/scripttemplates/otSDKStub.js?ver=1778076548:1:13448)
+[    2481ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://pixel.pointmediatracker.com/kpi?c=udemy&tag_id=288&kpi=businessvisit&fpc=3c55d1bd-0660-446c-b8b43fa3cd77aad8&utm_medium=direct&utm_source=direct&utm_campaign=undefined&gtmcb=513837941:0
+[    2551ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://business.udemy.com/wp-content/themes/udemy-business-child/assets/css/slick/fonts/slick.ttf:0
+[    5039ms] [LOG] {country_code: BD, user_ip: 103.176.3.103} @ https://business.udemy.com/wp-content/themes/udemy-business-child/dist/marketing/js/scripts.min.js?ver=1776962216:0
+[    6323ms] [LOG] Max attempts reached: VWO did not initialize. @ https://business.udemy.com/wp-content/themes/udemy-business-child/assets/js/persist/persist.min.js?ver=1776962213:0
+[  122012ms] Error: Loading chunk wordpress-event-tracker failed.
+(timeout: https://www.udemy.com/staticx/wordpress/js/webpack/wordpress-event-tracker.bf25b11236a3e07c38ff.js)
+    at onScriptComplete (https://business.udemy.com/wp-content/cache/min/1/staticx/wordpress/js/webpack/entry-wordpress-manifest.999d737058dae19cb7de.min.js?ver=1778076548:12:308)
+    at https://business.udemy.com/wp-content/cache/min/1/staticx/wordpress/js/webpack/entry-wordpress-manifest.999d737058dae19cb7de.min.js?ver=1778076548:13:72

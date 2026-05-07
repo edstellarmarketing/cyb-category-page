@@ -1,0 +1,409 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Edstellar home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: EDSTELLAR
+      - navigation [ref=e6]:
+        - link "Categories" [ref=e8] [cursor=pointer]:
+          - /url: "#categories"
+        - link "Training Programs" [ref=e10] [cursor=pointer]:
+          - /url: "#catalog"
+        - link "For Business" [ref=e12] [cursor=pointer]:
+          - /url: "#business"
+        - link "Company" [ref=e14] [cursor=pointer]:
+          - /url: "#company"
+        - link "Resources" [ref=e16] [cursor=pointer]:
+          - /url: "#resources"
+        - link "Blog" [ref=e18] [cursor=pointer]:
+          - /url: "#blog"
+        - link "Get a Quote" [ref=e20] [cursor=pointer]:
+          - /url: "#quote"
+      - generic [ref=e21]:
+        - button "Search" [ref=e22]:
+          - img [ref=e23]
+        - button "Language" [ref=e27]:
+          - img [ref=e28]
+  - main [ref=e32]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - paragraph [ref=e37]: OUR TRAINERS
+        - heading "Learn from real-world experts who love to teach" [level=1] [ref=e38]
+        - paragraph [ref=e39]: Edstellar trainers bring hands-on industry experience into the corporate classroom.
+        - paragraph [ref=e40]: Of the 10,000+ subject-matter experts in our global network, only a carefully vetted fraction are deployed for Edstellar corporate engagements — practitioners with active industry credentials, proven facilitation skills, and a passion for adult learning.
+        - generic [ref=e41]:
+          - link "Meet Our Trainers" [ref=e42] [cursor=pointer]:
+            - /url: "#trainers-list"
+            - text: Meet Our Trainers
+            - generic [ref=e43]:
+              - img [ref=e44]
+              - img [ref=e46]
+          - link "Request a Trainer" [ref=e48] [cursor=pointer]:
+            - /url: "#contact"
+      - generic [ref=e50]:
+        - generic [ref=e53]:
+          - generic [ref=e54]: 10,000+
+          - generic [ref=e55]: Vetted subject-matter experts
+        - generic [ref=e58]:
+          - generic [ref=e59]: 180+
+          - generic [ref=e60]: Countries represented
+        - generic [ref=e63]:
+          - generic [ref=e64]: 4.8 / 5
+          - generic [ref=e65]: Average trainer rating
+        - generic [ref=e68]:
+          - generic [ref=e69]: 500+
+          - generic [ref=e70]: Corporate skills covered
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - heading "How we select our trainers" [level=2] [ref=e74]
+        - paragraph [ref=e75]: Of the thousands of experts in our network, only a fraction make it through to client engagements. Here's what we look for.
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - img [ref=e79]
+          - heading "Real-world subject matter experts" [level=3] [ref=e83]
+          - paragraph [ref=e84]: Every Edstellar trainer is an active industry practitioner — not a career academic. They bring frameworks, tools, and case studies from their own professional experience.
+        - generic [ref=e85]:
+          - img [ref=e87]
+          - heading "Diverse backgrounds & experiences" [level=3] [ref=e90]
+          - paragraph [ref=e91]: Our global trainer network spans 180+ countries and covers industries from financial services to manufacturing, healthcare to technology — so every team gets a relevant perspective.
+        - generic [ref=e92]:
+          - img [ref=e94]
+          - heading "Incentivised to keep content fresh" [level=3] [ref=e96]
+          - paragraph [ref=e97]: Through cohort feedback loops, post-training skill assessments, and direct learner reviews, our trainers have every reason to continuously update and sharpen their curricula.
+        - generic [ref=e98]:
+          - img [ref=e100]
+          - heading "Empowered by data" [level=3] [ref=e102]
+          - paragraph [ref=e103]: We share learner-skill-gap analytics with our trainers before every engagement, so they can calibrate content to your team's actual proficiency level and target outcomes.
+        - generic [ref=e104]:
+          - img [ref=e106]
+          - heading "Evaluated for quality and relevance" [level=3] [ref=e109]
+          - paragraph [ref=e110]: Each trainer goes through a multi-stage vetting process — credential verification, mock-session assessment, and learner NPS tracking. We retire trainers who fall below our quality bar.
+        - generic [ref=e111]:
+          - img [ref=e113]
+          - heading "A global community of native speakers" [level=3] [ref=e118]
+          - paragraph [ref=e119]: In addition to English, our trainer network delivers programmes in Arabic, French, German, Spanish, Portuguese, Japanese, Mandarin, and Hindi — in the learner's first language.
+    - generic [ref=e121]:
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - heading "Our trainers are leading subject matter experts" [level=2] [ref=e124]
+          - paragraph [ref=e125]: Meet a selection of Edstellar's top-rated corporate trainers — practitioners who teach from experience, not textbooks.
+        - generic [ref=e126]:
+          - button "Previous trainers" [disabled] [ref=e127]:
+            - img [ref=e128]
+          - button "Next trainers" [ref=e130]:
+            - img [ref=e131]
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - img "Rajiv Sharma" [ref=e136]
+            - generic [ref=e137]: Top Rated
+          - generic [ref=e138]:
+            - heading "Rajiv Sharma" [level=3] [ref=e139]
+            - paragraph [ref=e140]: Cybersecurity & Ethical Hacking
+            - generic [ref=e141]:
+              - generic [ref=e142]: "4.9"
+              - generic [ref=e143]:
+                - img [ref=e144]
+                - img [ref=e146]
+                - img [ref=e148]
+                - img [ref=e150]
+                - img [ref=e152]
+              - generic [ref=e154]: (3,210)
+            - paragraph [ref=e155]: Former CISO at a Fortune 500 bank. Certified CISSP, CEH, and OSCP. Designed and delivered red-team training programmes for 60+ enterprise security teams across APAC.
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - img "Anjali Mehta" [ref=e158]
+            - generic [ref=e159]: Most Requested
+          - generic [ref=e160]:
+            - heading "Anjali Mehta" [level=3] [ref=e161]
+            - paragraph [ref=e162]: Cloud Architecture & AWS
+            - generic [ref=e163]:
+              - generic [ref=e164]: "4.8"
+              - generic [ref=e165]:
+                - img [ref=e166]
+                - img [ref=e168]
+                - img [ref=e170]
+                - img [ref=e172]
+                - img [ref=e174]
+              - generic [ref=e176]: (2,785)
+            - paragraph [ref=e177]: AWS Solutions Architect Professional and Google Cloud Architect. Led cloud migration for three unicorn startups. Expert in multi-cloud strategy, FinOps, and DevSecOps pipelines.
+        - generic [ref=e178]:
+          - img "James O'Brien" [ref=e180]
+          - generic [ref=e181]:
+            - heading "James O'Brien" [level=3] [ref=e182]
+            - paragraph [ref=e183]: Leadership & Executive Presence
+            - generic [ref=e184]:
+              - generic [ref=e185]: "4.7"
+              - generic [ref=e186]:
+                - img [ref=e187]
+                - img [ref=e189]
+                - img [ref=e191]
+                - img [ref=e193]
+                - img [ref=e195]
+              - generic [ref=e197]: (1,940)
+            - paragraph [ref=e198]: Executive coach with 20 years of experience coaching C-suite leaders at FTSE 100 and S&P 500 companies. Author of 'The Deliberate Leader'. ICF-certified.
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - img "Priya Krishnamurthy" [ref=e201]
+            - generic [ref=e202]: Top Rated
+          - generic [ref=e203]:
+            - heading "Priya Krishnamurthy" [level=3] [ref=e204]
+            - paragraph [ref=e205]: Data Science & AI/ML
+            - generic [ref=e206]:
+              - generic [ref=e207]: "4.8"
+              - generic [ref=e208]:
+                - img [ref=e209]
+                - img [ref=e211]
+                - img [ref=e213]
+                - img [ref=e215]
+                - img [ref=e217]
+              - generic [ref=e219]: (4,120)
+            - paragraph [ref=e220]: Data science lead at a global analytics firm. Specialises in MLOps, predictive modelling, and building data teams. Delivered AI upskilling programmes for 40+ enterprise clients.
+        - generic [ref=e221]:
+          - img "Marco Delgado" [ref=e223]
+          - generic [ref=e224]:
+            - heading "Marco Delgado" [level=3] [ref=e225]
+            - paragraph [ref=e226]: Agile, Scrum & Project Management
+            - generic [ref=e227]:
+              - generic [ref=e228]: "4.7"
+              - generic [ref=e229]:
+                - img [ref=e230]
+                - img [ref=e232]
+                - img [ref=e234]
+                - img [ref=e236]
+                - img [ref=e238]
+              - generic [ref=e240]: (2,355)
+            - paragraph [ref=e241]: PMI-certified PMP and SAFe Program Consultant. Trained 5,000+ professionals in Agile transformation. Worked with Toyota, Siemens, and IBM on large-scale delivery frameworks.
+        - generic [ref=e242]:
+          - generic [ref=e243]:
+            - img "Fatima Al-Rashidi" [ref=e244]
+            - generic [ref=e245]: Top Rated
+          - generic [ref=e246]:
+            - heading "Fatima Al-Rashidi" [level=3] [ref=e247]
+            - paragraph [ref=e248]: ISO 27001 & GRC
+            - generic [ref=e249]:
+              - generic [ref=e250]: "4.9"
+              - generic [ref=e251]:
+                - img [ref=e252]
+                - img [ref=e254]
+                - img [ref=e256]
+                - img [ref=e258]
+                - img [ref=e260]
+              - generic [ref=e262]: (987)
+            - paragraph [ref=e263]: Lead auditor and GRC consultant with 15 years across banking, oil & gas, and public sector. Certified ISO 27001 Lead Auditor, CISM, and CRISC. Based in Dubai, trains globally.
+        - generic [ref=e264]:
+          - img "Hiroshi Tanaka" [ref=e266]
+          - generic [ref=e267]:
+            - heading "Hiroshi Tanaka" [level=3] [ref=e268]
+            - paragraph [ref=e269]: DevOps & Kubernetes
+            - generic [ref=e270]:
+              - generic [ref=e271]: "4.8"
+              - generic [ref=e272]:
+                - img [ref=e273]
+                - img [ref=e275]
+                - img [ref=e277]
+                - img [ref=e279]
+                - img [ref=e281]
+              - generic [ref=e283]: (1,650)
+            - paragraph [ref=e284]: Principal DevOps engineer turned trainer. CKA, CKS, and Terraform-certified. Delivered container orchestration workshops for engineering teams at Sony, Fujitsu, and Rakuten.
+        - generic [ref=e285]:
+          - img "Sarah Okafor" [ref=e287]
+          - generic [ref=e288]:
+            - heading "Sarah Okafor" [level=3] [ref=e289]
+            - paragraph [ref=e290]: Soft Skills & Communication
+            - generic [ref=e291]:
+              - generic [ref=e292]: "4.6"
+              - generic [ref=e293]:
+                - img [ref=e294]
+                - img [ref=e296]
+                - img [ref=e298]
+                - img [ref=e300]
+                - img [ref=e302]
+              - generic [ref=e304]: (3,890)
+            - paragraph [ref=e305]: Organizational psychologist and ICF-certified coach. Specialises in cross-cultural communication, negotiation, and high-performance team dynamics for global enterprises.
+      - generic [ref=e306]:
+        - button "Go to page 1" [ref=e307]
+        - button "Go to page 2" [ref=e308]
+        - button "Go to page 3" [ref=e309]
+        - button "Go to page 4" [ref=e310]
+        - button "Go to page 5" [ref=e311]
+    - generic [ref=e314]:
+      - img [ref=e315]
+      - blockquote [ref=e317]: "\"We've deployed Edstellar trainer-led programmes across three business units simultaneously. The quality of the facilitators was exceptional — they adapted content to our actual tools and threat environment, not a generic template. Our L&D team finally has measurable skill-delta data to present to the board.\""
+      - generic [ref=e318]:
+        - generic [ref=e320]: P
+        - generic [ref=e321]:
+          - generic [ref=e322]: Priya Krishnan
+          - generic [ref=e323]: Director of L&D · Global SaaS Company
+    - generic [ref=e325]:
+      - generic [ref=e326]:
+        - heading "Get instant access to 500+ corporate training programmes" [level=2] [ref=e327]
+        - paragraph [ref=e328]: Browse by skills area — all programmes are delivered by vetted Edstellar trainers in live, instructor-led sessions.
+      - generic [ref=e329]:
+        - button "Cybersecurity" [ref=e330]
+        - button "Cloud & DevOps" [ref=e331]
+        - button "Leadership & Management" [ref=e332]
+        - button "Data & AI" [ref=e333]
+      - generic [ref=e334]:
+        - link "CISSP Certification Prep" [ref=e335] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e336]: CISSP Certification Prep
+          - generic [ref=e337]:
+            - img [ref=e338]
+            - img [ref=e340]
+        - link "CEH v13 – Ethical Hacking" [ref=e342] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e343]: CEH v13 – Ethical Hacking
+          - generic [ref=e344]:
+            - img [ref=e345]
+            - img [ref=e347]
+        - link "SOC Analyst Bootcamp" [ref=e349] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e350]: SOC Analyst Bootcamp
+          - generic [ref=e351]:
+            - img [ref=e352]
+            - img [ref=e354]
+        - link "ISO 27001 Lead Auditor" [ref=e356] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e357]: ISO 27001 Lead Auditor
+          - generic [ref=e358]:
+            - img [ref=e359]
+            - img [ref=e361]
+        - link "CompTIA Security+" [ref=e363] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e364]: CompTIA Security+
+          - generic [ref=e365]:
+            - img [ref=e366]
+            - img [ref=e368]
+        - link "Incident Response & Forensics" [ref=e370] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e371]: Incident Response & Forensics
+          - generic [ref=e372]:
+            - img [ref=e373]
+            - img [ref=e375]
+      - link "View full course catalogue" [ref=e378] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e380]:
+      - paragraph [ref=e381]: PARTNER WITH EDSTELLAR
+      - heading "We're your strategic training partner to help move skills forward" [level=2] [ref=e382]
+      - paragraph [ref=e383]: From a single cohort to a multi-region enterprise upskilling programme — Edstellar places the right trainer, with the right curriculum, in front of your team. Let's build your learning roadmap together.
+      - generic [ref=e384]:
+        - link "Request a Demo" [ref=e385] [cursor=pointer]:
+          - /url: "#"
+        - link "Become a Trainer" [ref=e386] [cursor=pointer]:
+          - /url: "#"
+  - contentinfo [ref=e387]:
+    - generic [ref=e388]:
+      - separator [ref=e389]
+      - generic [ref=e390]:
+        - generic [ref=e391]:
+          - heading "Categories" [level=3] [ref=e392]
+          - list [ref=e393]:
+            - listitem [ref=e394]:
+              - link "Cybersecurity" [ref=e395] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e396]:
+              - link "Cloud Computing" [ref=e397] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e398]:
+              - link "Project Management" [ref=e399] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e400]:
+              - link "Data & Analytics" [ref=e401] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e402]:
+              - link "Leadership" [ref=e403] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e404]:
+              - link "DevOps" [ref=e405] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e406]:
+              - link "AI & Machine Learning" [ref=e407] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e408]:
+          - heading "Training Programs" [level=3] [ref=e409]
+          - list [ref=e410]:
+            - listitem [ref=e411]:
+              - link "CISSP Training" [ref=e412] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e413]:
+              - link "CEH v13 Training" [ref=e414] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e415]:
+              - link "CISM Training" [ref=e416] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e417]:
+              - link "CCSP Training" [ref=e418] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e419]:
+              - link "CompTIA Security+ Training" [ref=e420] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e421]:
+              - link "OSCP Training" [ref=e422] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e423]:
+              - link "ISO 27001 Lead Auditor Training" [ref=e424] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e425]:
+          - heading "Company" [level=3] [ref=e426]
+          - list [ref=e427]:
+            - listitem [ref=e428]:
+              - link "About Edstellar" [ref=e429] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e430]:
+              - link "Trainers" [ref=e431] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e432]:
+              - link "Contact Us" [ref=e433] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e434]:
+              - link "Become a Trainer" [ref=e435] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e436]:
+              - link "Careers" [ref=e437] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e438]:
+            - link "Facebook" [ref=e439] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e440]
+            - link "LinkedIn" [ref=e442] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e443]
+            - link "Instagram" [ref=e445] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e446]
+            - link "YouTube" [ref=e448] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e449]
+            - link "Threads" [ref=e451] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e452]
+        - generic [ref=e454]:
+          - heading "Get our cyber digest" [level=3] [ref=e455]
+          - generic [ref=e456]:
+            - generic [ref=e457]:
+              - generic [ref=e458]: Enter your name*
+              - textbox "Enter your name*" [ref=e459]
+            - generic [ref=e460]:
+              - generic [ref=e461]: Enter your work email*
+              - textbox "Enter your work email*" [ref=e462]
+            - generic [ref=e463]:
+              - checkbox "I agree with the Edstellar Privacy Policy*" [ref=e464]
+              - generic [ref=e465]: I agree with the Edstellar Privacy Policy*
+            - button "Subscribe" [ref=e466]
+      - separator [ref=e467]
+      - generic [ref=e468]:
+        - generic [ref=e469]: EDSTELLAR
+        - list [ref=e470]:
+          - listitem [ref=e471]:
+            - link "Cookie Statement" [ref=e472] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e473]:
+            - link "Terms of Use" [ref=e474] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e475]:
+            - link "Privacy Policy" [ref=e476] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e477]: Copyright © 2026 Edstellar. All rights reserved
+  - button "Open Next.js Dev Tools" [ref=e483] [cursor=pointer]:
+    - img [ref=e484]

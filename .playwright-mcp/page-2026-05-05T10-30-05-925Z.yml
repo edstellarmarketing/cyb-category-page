@@ -1,0 +1,935 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Edstellar home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: EDSTELLAR
+      - navigation [ref=e6]:
+        - link "Categories" [ref=e8] [cursor=pointer]:
+          - /url: "#categories"
+        - link "Training Programs" [ref=e10] [cursor=pointer]:
+          - /url: "#catalog"
+        - link "For Business" [ref=e12] [cursor=pointer]:
+          - /url: "#business"
+        - link "Company" [ref=e14] [cursor=pointer]:
+          - /url: "#company"
+        - link "Resources" [ref=e16] [cursor=pointer]:
+          - /url: "#resources"
+        - link "Blog" [ref=e18] [cursor=pointer]:
+          - /url: "#blog"
+        - link "Get a Quote" [ref=e20] [cursor=pointer]:
+          - /url: "#quote"
+      - generic [ref=e21]:
+        - button "Search" [ref=e22]:
+          - img [ref=e23]
+        - button "Language" [ref=e27]:
+          - img [ref=e28]
+  - main [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - img "Corporate cybersecurity training" [ref=e36]
+        - generic:
+          - img "BFSI cybersecurity training"
+        - generic:
+          - img "Healthcare cybersecurity training"
+        - generic:
+          - img "AI and Generative-AI cybersecurity training"
+        - generic [ref=e38]:
+          - generic [ref=e39]: "01"
+          - generic [ref=e41]: "04"
+        - generic [ref=e43]:
+          - generic [ref=e44]: Corporate Cybersecurity Training
+          - heading "Hardening security teams across every enterprise." [level=2] [ref=e45]:
+            - text: Hardening security teams
+            - text: across every enterprise.
+          - paragraph [ref=e46]: Edstellar is the corporate cybersecurity training partner of choice for CISOs and security leaders racing to upskill employees on offensive security, cloud security, GRC and AI-era threats. Our instructor-led cybersecurity training spans 200+ programs across 8 cyber domains, delivered virtually, on-site or off-site by vendor-certified trainers, so every cohort closes the cyber skills gap and turns learning into measurable security outcomes.
+          - generic [ref=e47]:
+            - link "Browse Training Programs" [ref=e48] [cursor=pointer]:
+              - /url: "#catalog"
+              - text: Browse Training Programs
+              - img [ref=e49]
+            - link "Enquire Now" [ref=e51] [cursor=pointer]:
+              - /url: "#contact"
+        - button "Previous slide" [ref=e52]:
+          - img [ref=e53]
+        - button "Next slide" [ref=e55]:
+          - img [ref=e56]
+      - navigation "Slide categories" [ref=e58]:
+        - generic [ref=e59]:
+          - 'button "Go to slide 1: FEATURED" [ref=e60]':
+            - generic [ref=e61]: FEATURED
+            - generic [ref=e62]: Corporate Cybersecurity Training
+          - 'button "Go to slide 2: BFSI" [ref=e63]':
+            - generic [ref=e64]: BFSI
+            - generic [ref=e65]: Banking, Insurance, Capital Markets
+          - 'button "Go to slide 3: HEALTHCARE" [ref=e66]':
+            - generic [ref=e67]: HEALTHCARE
+            - generic [ref=e68]: Hospitals, Pharma, MedTech
+          - 'button "Go to slide 4: AI SECURITY" [ref=e69]':
+            - generic [ref=e70]: AI SECURITY
+            - generic [ref=e71]: LLM Red-Teaming, MLOps, GenAI
+    - generic [ref=e72]:
+      - navigation "Breadcrumb" [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "Home" [ref=e77] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e78]: ›
+          - listitem [ref=e79]:
+            - link "All Training Programs" [ref=e80] [cursor=pointer]:
+              - /url: /courses
+          - listitem [ref=e81]: ›
+          - listitem [ref=e82]: Cybersecurity Training Programs
+      - generic [ref=e83]:
+        - heading "Customized Cybersecurity Training Programs for Enterprise teams" [level=1] [ref=e85]
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - paragraph [ref=e88]: Edstellar partners with enterprises to build deep cybersecurity capability across CISSP, CEH v13, CCSP, CISM, OSCP and emerging AI-security disciplines. Whether your team needs an entry-level SOC analyst track or a CISO-grade leadership program, every cohort is matched to vetted, vendor-certified trainers with hands-on enterprise practice.
+            - paragraph [ref=e89]: Every program is delivered onsite, off-site or virtually, in any language, and runs on our five-part transformation framework that turns learning into measurable security outcomes. Strategy, curriculum, hands-on labs, assessment and continuous mastery, engineered around your stack, your regulatory landscape and the security KPIs your board reports on.
+            - list [ref=e90]:
+              - listitem [ref=e91]:
+                - img [ref=e93]
+                - generic [ref=e95]:
+                  - strong [ref=e96]: Strategy-led design.
+                  - text: Every engagement starts with a capability roadmap aligned to your security goals.
+              - listitem [ref=e97]:
+                - img [ref=e99]
+                - generic [ref=e101]:
+                  - strong [ref=e102]: Hands-on by default.
+                  - text: Cloud sandboxes, MITRE ATT&CK and CTF labs power real-world practice.
+              - listitem [ref=e103]:
+                - img [ref=e105]
+                - generic [ref=e107]:
+                  - strong [ref=e108]: Measurable ROI.
+                  - text: Pre/post skill assessments, training outcomes and security KPIs.
+          - generic [ref=e110]:
+            - img
+            - generic [ref=e111]:
+              - heading "1. Strategy & Vision" [level=4] [ref=e112]
+              - generic [ref=e113]: Cyber Training Strategy
+              - generic [ref=e114]: “Vision for our organisation's cyber capability growth?”
+            - generic [ref=e116]:
+              - heading "5. Tech-Stack Mastery" [level=4] [ref=e117]
+              - list [ref=e118]:
+                - listitem [ref=e119]:
+                  - img [ref=e120]
+                  - text: Cloud security & Zero-Trust
+                - listitem [ref=e122]:
+                  - img [ref=e123]
+                  - text: GenAI security, LLM red-teaming
+              - generic [ref=e125]: “Keep engineers current on AI, cloud & emerging cyber tech?”
+            - generic [ref=e127]:
+              - heading "2. Customized Training" [level=4] [ref=e128]
+              - list [ref=e129]:
+                - listitem [ref=e130]:
+                  - img [ref=e131]
+                  - text: Role-based paths (SOC, Pentest, GRC)
+                - listitem [ref=e133]:
+                  - img [ref=e134]
+                  - text: Customized training programs per role
+              - generic [ref=e136]: “Which training programs fit our stack & teams?”
+            - generic [ref=e138]:
+              - heading "3. Hands-on Labs" [level=4] [ref=e139]
+              - list [ref=e140]:
+                - listitem [ref=e141]:
+                  - img [ref=e142]
+                  - text: Cloud sandboxes (AWS, Azure)
+                - listitem [ref=e144]:
+                  - img [ref=e145]
+                  - text: Kubernetes & MITRE ATT&CK
+              - generic [ref=e147]: “Where can engineers practice real workloads safely?”
+            - generic [ref=e149]:
+              - heading "4. Assessment & ROI" [level=4] [ref=e150]
+              - list [ref=e151]:
+                - listitem [ref=e152]:
+                  - img [ref=e153]
+                  - text: Pre/post skill assessments
+                - listitem [ref=e155]:
+                  - img [ref=e156]
+                  - text: MTTD, MTTR & skill improvement rates
+              - generic [ref=e158]: “Measure proficiency gains & security ROI?”
+        - generic [ref=e159]:
+          - generic [ref=e160]:
+            - heading "Cybersecurity training that compounds business value." [level=3] [ref=e162]
+            - paragraph [ref=e163]: Edstellar's instructor-led cybersecurity training spans 200+ programs across 8 cyber domains, designed for measurable workforce and risk-reduction impact.
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - paragraph [ref=e167]: 27%
+              - paragraph [ref=e168]: Average reduction in security incidents at organisations running continuous cybersecurity training programs.
+            - generic [ref=e169]:
+              - paragraph [ref=e171]: $10.5T
+              - paragraph [ref=e172]: Projected annual cost of global cybercrime by 2025, driving demand for skilled cyber talent.
+            - generic [ref=e173]:
+              - paragraph [ref=e175]: 74%
+              - paragraph [ref=e176]: CISOs say a strong cybersecurity talent pool is critical to business resilience.
+    - tablist "Corporate cybersecurity training program views" [ref=e179]:
+      - tab "The AI-era skills gap" [selected] [ref=e180]: The AI-era skills gap
+      - tab "Mitigating organizational risk" [ref=e182]: Mitigating organizational risk
+      - tab "Global cybersecurity trends" [ref=e184]: Global cybersecurity trends
+    - tabpanel "The AI-era skills gap" [ref=e186]:
+      - generic [ref=e189]:
+        - generic [ref=e190]:
+          - heading "The critical need for cybersecurity knowledge for teams in the AI era ." [level=2] [ref=e191]:
+            - text: The critical need for cybersecurity knowledge for teams in the
+            - generic [ref=e192]: AI era
+            - text: .
+          - generic [ref=e194]:
+            - paragraph [ref=e195]: Generative AI has compressed the attack cycle. Phishing kits now write themselves, model APIs leak intellectual property, and adversaries automate reconnaissance against any team that has not retrained for the new threat surface. The legacy playbook of annual awareness modules and a single SOC analyst with a CCNA cannot keep pace.
+            - paragraph [ref=e196]: The boards asking the hardest questions today are the ones whose security teams trained early. They have engineers fluent in LLM red-teaming, prompt-injection defense, MLOps security and AI governance, and incident-response drills that assume an AI-augmented adversary, not a human one.
+          - link "Build your AI-era roadmap" [ref=e198] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Build your AI-era roadmap
+            - generic [ref=e199]: →
+        - list [ref=e202]:
+          - listitem [ref=e203]:
+            - paragraph [ref=e205]: 47%
+            - generic [ref=e206]:
+              - paragraph [ref=e207]: of organizations cite a lack of in-house cyber expertise as the single biggest barrier to safely adopting AI.
+              - paragraph [ref=e208]: "Source: ISC2 Cybersecurity Workforce Study, 2025"
+          - listitem [ref=e209]:
+            - paragraph [ref=e211]: $4.88M
+            - generic [ref=e212]:
+              - paragraph [ref=e213]: average global cost of a data breach in 2024, the highest on record, with AI-driven attack chains accelerating dwell time.
+              - paragraph [ref=e214]: "Source: IBM Cost of a Data Breach Report, 2024"
+          - listitem [ref=e215]:
+            - paragraph [ref=e217]: 3.2x
+            - generic [ref=e218]:
+              - paragraph [ref=e219]: faster mean-time-to-contain at organizations whose security teams complete continuous, scenario-based cybersecurity training.
+              - paragraph [ref=e220]: "Source: Ponemon / IBM, 2024"
+    - generic [ref=e222]:
+      - heading "Every cybersecurity discipline your enterprise needs, in one trusted catalog." [level=2] [ref=e223]
+      - paragraph [ref=e224]: Edstellar partners with enterprise security leaders to deliver measurable workforce capability across every cybersecurity domain, program, learning path and delivery mode you need.
+      - generic [ref=e225]:
+        - button "TRAINING DOMAINS" [ref=e226]
+        - button "96 CYBERSECURITY TRAINING PROGRAMS" [ref=e227]
+        - button "LEARNING PATHS" [ref=e228]
+        - button "DELIVERY" [ref=e229]
+        - button "TRAINERS" [ref=e230]
+      - generic [ref=e231]:
+        - generic [ref=e232]: 96+
+        - generic [ref=e233]:
+          - paragraph [ref=e234]: Cybersecurity trainings live now
+          - paragraph [ref=e235]: Across 8domains within Edstellar's broader IT & Technical catalog of 2,000+ programs.
+      - generic [ref=e236]:
+        - link "Cybersecurity fundamentals 14 trainings Cybersecurity Fundamentals & Architecture Foundational programs covering CIA triad, security architecture, threat modelling and Zero-Trust principles. Explore domain" [ref=e237] [cursor=pointer]:
+          - /url: https://www.edstellar.com/category/cybersecurity-training
+          - generic [ref=e238]:
+            - img "Cybersecurity fundamentals" [ref=e239]
+            - generic [ref=e241]: 14 trainings
+          - generic [ref=e243]:
+            - heading "Cybersecurity Fundamentals & Architecture" [level=3] [ref=e244]
+            - paragraph [ref=e245]: Foundational programs covering CIA triad, security architecture, threat modelling and Zero-Trust principles.
+            - generic [ref=e246]:
+              - text: Explore domain
+              - img [ref=e247]
+        - link "Network security 12 trainings Network Security Firewalls, IDS/IPS, segmentation, Cisco/Palo Alto/Fortinet/Check Point, protect perimeters and east-west traffic. Explore domain" [ref=e249] [cursor=pointer]:
+          - /url: https://www.edstellar.com/category/cybersecurity-training
+          - generic [ref=e250]:
+            - img "Network security" [ref=e251]
+            - generic [ref=e253]: 12 trainings
+          - generic [ref=e255]:
+            - heading "Network Security" [level=3] [ref=e256]
+            - paragraph [ref=e257]: Firewalls, IDS/IPS, segmentation, Cisco/Palo Alto/Fortinet/Check Point, protect perimeters and east-west traffic.
+            - generic [ref=e258]:
+              - text: Explore domain
+              - img [ref=e259]
+        - link "Cloud security 11 trainings Cloud Security AWS / Azure / GCP security, CCSP, container hardening and cloud-native architecture for multi-cloud teams. Explore domain" [ref=e261] [cursor=pointer]:
+          - /url: https://www.edstellar.com/category/cybersecurity-training
+          - generic [ref=e262]:
+            - img "Cloud security" [ref=e263]
+            - generic [ref=e265]: 11 trainings
+          - generic [ref=e267]:
+            - heading "Cloud Security" [level=3] [ref=e268]
+            - paragraph [ref=e269]: AWS / Azure / GCP security, CCSP, container hardening and cloud-native architecture for multi-cloud teams.
+            - generic [ref=e270]:
+              - text: Explore domain
+              - img [ref=e271]
+        - link "Data privacy and security 10 trainings Data Privacy & Security GDPR, DPDP, CCPA, PII handling, DLP and encryption, keep regulated data safe across its lifecycle. Explore domain" [ref=e273] [cursor=pointer]:
+          - /url: https://www.edstellar.com/category/cybersecurity-training
+          - generic [ref=e274]:
+            - img "Data privacy and security" [ref=e275]
+            - generic [ref=e277]: 10 trainings
+          - generic [ref=e279]:
+            - heading "Data Privacy & Security" [level=3] [ref=e280]
+            - paragraph [ref=e281]: GDPR, DPDP, CCPA, PII handling, DLP and encryption, keep regulated data safe across its lifecycle.
+            - generic [ref=e282]:
+              - text: Explore domain
+              - img [ref=e283]
+        - link "Identity and access management 13 trainings Identity & Access Management Zero-trust, IAM, PAM, federated-identity, Okta, Azure AD, SailPoint, CyberArk, BeyondTrust and more. Explore domain" [ref=e285] [cursor=pointer]:
+          - /url: https://www.edstellar.com/category/cybersecurity-training
+          - generic [ref=e286]:
+            - img "Identity and access management" [ref=e287]
+            - generic [ref=e289]: 13 trainings
+          - generic [ref=e291]:
+            - heading "Identity & Access Management" [level=3] [ref=e292]
+            - paragraph [ref=e293]: Zero-trust, IAM, PAM, federated-identity, Okta, Azure AD, SailPoint, CyberArk, BeyondTrust and more.
+            - generic [ref=e294]:
+              - text: Explore domain
+              - img [ref=e295]
+        - link "Penetration testing 16 trainings Penetration Testing & Vulnerability Management CEH v13, OSCP, advanced threat simulation, web/app pentest, AD attacks and red-team operations. Explore domain" [ref=e297] [cursor=pointer]:
+          - /url: https://www.edstellar.com/category/cybersecurity-training
+          - generic [ref=e298]:
+            - img "Penetration testing" [ref=e299]
+            - generic [ref=e301]: 16 trainings
+          - generic [ref=e303]:
+            - heading "Penetration Testing & Vulnerability Management" [level=3] [ref=e304]
+            - paragraph [ref=e305]: CEH v13, OSCP, advanced threat simulation, web/app pentest, AD attacks and red-team operations.
+            - generic [ref=e306]:
+              - text: Explore domain
+              - img [ref=e307]
+        - link "Application security 9 trainings Application Security & DevSecOps Secure SDLC, OWASP Top 10, container & IaC scanning, CSSLP, embed security into every CI/CD pipeline. Explore domain" [ref=e309] [cursor=pointer]:
+          - /url: https://www.edstellar.com/category/cybersecurity-training
+          - generic [ref=e310]:
+            - img "Application security" [ref=e311]
+            - generic [ref=e313]: 9 trainings
+          - generic [ref=e315]:
+            - heading "Application Security & DevSecOps" [level=3] [ref=e316]
+            - paragraph [ref=e317]: Secure SDLC, OWASP Top 10, container & IaC scanning, CSSLP, embed security into every CI/CD pipeline.
+            - generic [ref=e318]:
+              - text: Explore domain
+              - img [ref=e319]
+        - link "Governance, risk and compliance 11 trainings Governance, Risk & Compliance CISM, CISA, CRISC, ISO 27001 Lead Auditor and SOC 2, operate audits, frameworks and risk programs. Explore domain" [ref=e321] [cursor=pointer]:
+          - /url: https://www.edstellar.com/category/cybersecurity-training
+          - generic [ref=e322]:
+            - img "Governance, risk and compliance" [ref=e323]
+            - generic [ref=e325]: 11 trainings
+          - generic [ref=e327]:
+            - heading "Governance, Risk & Compliance" [level=3] [ref=e328]
+            - paragraph [ref=e329]: CISM, CISA, CRISC, ISO 27001 Lead Auditor and SOC 2, operate audits, frameworks and risk programs.
+            - generic [ref=e330]:
+              - text: Explore domain
+              - img [ref=e331]
+    - generic [ref=e334]:
+      - heading "Industry-aligned cybersecurity training programs your security team can trust" [level=2] [ref=e335]
+      - paragraph [ref=e336]: A curated selection from Edstellar's 200+ enterprise cybersecurity training programs, delivered live, on-site or virtual, and backed by measurable skill outcomes.
+      - generic [ref=e337]:
+        - link "CyberArk training Identity & Access CyberArk Training 16 - 24 hrs Instructor-led (On-site/Virtual) Master Privileged Access Management with CyberArk, vault administration, PSM, CPM and policy-driven credential rotation. View program" [ref=e338] [cursor=pointer]:
+          - /url: https://www.edstellar.com/course/cyberark-training
+          - generic [ref=e339]:
+            - img "CyberArk training" [ref=e340]
+            - generic [ref=e341]: Identity & Access
+          - generic [ref=e343]:
+            - heading "CyberArk Training" [level=3] [ref=e344]
+            - generic [ref=e345]:
+              - generic [ref=e346]: 16 - 24 hrs
+              - generic [ref=e348]: Instructor-led (On-site/Virtual)
+            - paragraph [ref=e350]: Master Privileged Access Management with CyberArk, vault administration, PSM, CPM and policy-driven credential rotation.
+            - generic [ref=e351]:
+              - text: View program
+              - img [ref=e352]
+        - link "Ransomware prevention Threat Defense Ransomware Prevention 8 - 16 hrs Instructor-led (On-site/Virtual) Identify ransomware threats, prevent system breaches and build a resilient response playbook for your team. View program" [ref=e354] [cursor=pointer]:
+          - /url: https://www.edstellar.com/course/ransomware-prevention-training
+          - generic [ref=e355]:
+            - img "Ransomware prevention" [ref=e356]
+            - generic [ref=e357]: Threat Defense
+          - generic [ref=e359]:
+            - heading "Ransomware Prevention" [level=3] [ref=e360]
+            - generic [ref=e361]:
+              - generic [ref=e362]: 8 - 16 hrs
+              - generic [ref=e364]: Instructor-led (On-site/Virtual)
+            - paragraph [ref=e366]: Identify ransomware threats, prevent system breaches and build a resilient response playbook for your team.
+            - generic [ref=e367]:
+              - text: View program
+              - img [ref=e368]
+        - link "Threat simulation Offensive Security Advanced Cybersecurity Threat Simulation 24 - 32 hrs Instructor-led (On-site/Virtual) Hands-on red-team simulation lab covering APTs, lateral movement, AD attacks and post-exploitation in realistic enterprise environments. View program" [ref=e370] [cursor=pointer]:
+          - /url: https://www.edstellar.com/course/advanced-cybersecurity-threat-simulation-training
+          - generic [ref=e371]:
+            - img "Threat simulation" [ref=e372]
+            - generic [ref=e373]: Offensive Security
+          - generic [ref=e375]:
+            - heading "Advanced Cybersecurity Threat Simulation" [level=3] [ref=e376]
+            - generic [ref=e377]:
+              - generic [ref=e378]: 24 - 32 hrs
+              - generic [ref=e380]: Instructor-led (On-site/Virtual)
+            - paragraph [ref=e382]: Hands-on red-team simulation lab covering APTs, lateral movement, AD attacks and post-exploitation in realistic enterprise environments.
+            - generic [ref=e383]:
+              - text: View program
+              - img [ref=e384]
+        - link "PII training Data Privacy Personally Identifiable Information (PII) 8 - 16 hrs Instructor-led (On-site/Virtual) Identify and classify sensitive PII, apply data-minimization controls and align with GDPR, DPDP and CCPA obligations. View program" [ref=e386] [cursor=pointer]:
+          - /url: https://www.edstellar.com/course/personally-identifiable-information-pii-training
+          - generic [ref=e387]:
+            - img "PII training" [ref=e388]
+            - generic [ref=e389]: Data Privacy
+          - generic [ref=e391]:
+            - heading "Personally Identifiable Information (PII)" [level=3] [ref=e392]
+            - generic [ref=e393]:
+              - generic [ref=e394]: 8 - 16 hrs
+              - generic [ref=e396]: Instructor-led (On-site/Virtual)
+            - paragraph [ref=e398]: Identify and classify sensitive PII, apply data-minimization controls and align with GDPR, DPDP and CCPA obligations.
+            - generic [ref=e399]:
+              - text: View program
+              - img [ref=e400]
+      - generic [ref=e402]:
+        - generic [ref=e403]:
+          - heading "Looking for the full Edstellar cyber catalog?" [level=3] [ref=e404]
+          - paragraph [ref=e405]: Browse all 200+ training programs or get our latest program catalog by email.
+        - generic [ref=e406]:
+          - link "Request Catalog" [ref=e407] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Request Catalog
+            - img [ref=e408]
+          - link "All Training Programs" [ref=e410] [cursor=pointer]:
+            - /url: "#contact"
+            - text: All Training Programs
+            - img [ref=e411]
+    - generic [ref=e414]:
+      - heading "Trusted by security teams worldwide" [level=2] [ref=e415]
+      - paragraph [ref=e416]: 7,500+ vetted trainers, 2,000+ skills covered, and official partner status with the major cybersecurity industry bodies.
+      - generic [ref=e417]:
+        - link "Enterprise customers Trusted by enterprise security teams From Fortune 500 banks to global SaaS leaders, Edstellar trains in-house cyber teams across 100+ countries. Learn more" [ref=e418] [cursor=pointer]:
+          - /url: "#contact"
+          - img "Enterprise customers" [ref=e420]
+          - generic [ref=e421]:
+            - heading "Trusted by enterprise security teams" [level=3] [ref=e422]
+            - paragraph [ref=e423]: From Fortune 500 banks to global SaaS leaders, Edstellar trains in-house cyber teams across 100+ countries.
+            - generic [ref=e424]:
+              - text: Learn more
+              - img [ref=e425]
+        - link "Accreditation partners Accredited by the bodies that matter (ISC)², ISACA, EC-Council, CompTIA, PECB, AXELOS, official partner status across the credentials your team needs. Learn more" [ref=e427] [cursor=pointer]:
+          - /url: "#contact"
+          - img "Accreditation partners" [ref=e429]
+          - generic [ref=e430]:
+            - heading "Accredited by the bodies that matter" [level=3] [ref=e431]
+            - paragraph [ref=e432]: (ISC)², ISACA, EC-Council, CompTIA, PECB, AXELOS, official partner status across the credentials your team needs.
+            - generic [ref=e433]:
+              - text: Learn more
+              - img [ref=e434]
+      - generic [ref=e436]:
+        - paragraph [ref=e437]: Edstellar's trainer network now spans six continents and 100+ countries, from enterprise hubs in North America and Western Europe to fast-growing markets across Africa, the Middle East, and Asia-Pacific. Wherever your security teams operate, we deliver in-region, in-language, and aligned to local compliance regimes.
+        - generic [ref=e438]:
+          - img "Countries where Edstellar has delivered cybersecurity training" [ref=e439]
+          - generic "Casablanca, Morocco"
+          - generic "Cairo, Egypt"
+          - generic "Lagos, Nigeria"
+          - generic "Nairobi, Kenya"
+          - generic "Johannesburg, South Africa"
+          - generic "Cape Town, South Africa"
+          - generic "Madrid, Spain"
+          - generic "Rome, Italy"
+          - generic "Amsterdam, Netherlands"
+          - generic "Zurich, Switzerland"
+          - generic "Warsaw, Poland"
+          - generic "Stockholm, Sweden"
+          - generic "Oslo, Norway"
+          - generic "Beijing, China"
+          - generic "Shanghai, China"
+          - generic "Taipei, Taiwan"
+          - generic "Sydney, Australia"
+          - generic "Melbourne, Australia"
+        - generic [ref=e440]:
+          - paragraph [ref=e441]: Trusted by leading enterprises worldwide
+          - generic "Client logos" [ref=e442]:
+            - generic [ref=e443]:
+              - img "Microsoft" [ref=e445]
+              - img "Amazon" [ref=e447]
+              - img "Intel" [ref=e449]
+              - img "Adobe" [ref=e451]
+              - generic [ref=e452]:
+                - img "Tata Chemicals"
+              - generic [ref=e453]:
+                - img "Johnson & Johnson"
+              - generic [ref=e454]:
+                - img "Godrej"
+              - generic [ref=e455]:
+                - img "Visa"
+              - generic [ref=e456]:
+                - img "ABB"
+              - generic [ref=e457]:
+                - img "Emerson"
+              - generic [ref=e458]:
+                - img "Aditya Birla Group"
+              - generic [ref=e459]:
+                - img "Autodesk"
+              - img "Cummins" [ref=e461]
+              - img "Kellogg's" [ref=e463]
+              - img "NIIT" [ref=e465]
+              - img "TVS" [ref=e467]
+              - img "Uber" [ref=e469]
+              - img "Boston Consulting Group" [ref=e471]
+              - img "KPMG" [ref=e473]
+              - img "Sandvik" [ref=e475]
+              - img "Taylor & Francis" [ref=e477]
+              - img "Greystar" [ref=e479]
+              - img "Regeneron" [ref=e481]
+              - img "Dayforce" [ref=e483]
+    - generic [ref=e509]:
+      - generic [ref=e510]:
+        - generic [ref=e511]:
+          - heading "Turn Cybersecurity Training into Enterprise Capability ." [level=2] [ref=e512]:
+            - text: Turn Cybersecurity Training into
+            - generic [ref=e513]: Enterprise Capability
+            - text: .
+          - paragraph [ref=e515]: A Cybersecurity Center of Excellence is the operating model that defines how your organisation governs, develops and scales cybersecurity capability across every team and geography. Without one, skills stay fragmented, standards vary by team, and training investment rarely connects to business outcomes. With a CoE, every role has a defined competency baseline, every cohort is measured against it, and capability grows in step with the business. Edstellar partners with enterprise L&D and security leaders to deliver the workforce training foundation the CoE runs on — customised, instructor-led training programs mapped to your roles, your stack and the outcomes your leadership reports on.
+        - img "Cybersecurity team collaborating inside an enterprise security operations centre" [ref=e518]
+      - link "Partner with Edstellar" [ref=e520] [cursor=pointer]:
+        - /url: "#contact"
+        - text: Partner with Edstellar
+        - img [ref=e521]
+    - generic [ref=e524]:
+      - heading "Cybersecurity Group Training Packages & Pricing" [level=2] [ref=e525]
+      - paragraph [ref=e526]: Pre-paid training packs with built-in flexibility, pick the size that fits today, scale up tomorrow. All packages include domain trainers, an LSM and 2,000+ program access.
+      - generic [ref=e527]:
+        - generic [ref=e528]:
+          - heading "Starter" [level=3] [ref=e529]
+          - paragraph [ref=e530]: Pilot cohort training for small teams.
+          - generic [ref=e531]:
+            - generic [ref=e532]: "120"
+            - generic [ref=e533]: trainee slots
+          - list [ref=e534]:
+            - listitem [ref=e535]: 64 training hours
+            - listitem [ref=e537]: Up to 10 sessions
+            - listitem [ref=e539]: 6-month validity
+          - link "Enquire Now" [ref=e541] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Enquire Now
+            - img [ref=e542]
+        - generic [ref=e544]:
+          - generic [ref=e545]: Most Popular
+          - heading "Growth" [level=3] [ref=e547]
+          - paragraph [ref=e548]: Moderate training needs across multiple domains.
+          - generic [ref=e549]:
+            - generic [ref=e550]: "320"
+            - generic [ref=e551]: trainee slots
+          - list [ref=e552]:
+            - listitem [ref=e553]: 160 training hours
+            - listitem [ref=e555]: Up to 25 sessions
+            - listitem [ref=e557]: 9-month validity
+            - listitem [ref=e559]:
+              - generic [ref=e561]: Save up to 10%
+          - link "Enquire Now" [ref=e562] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Enquire Now
+            - img [ref=e563]
+        - generic [ref=e565]:
+          - heading "Enterprise" [level=3] [ref=e566]
+          - paragraph [ref=e567]: High-volume programs for global workforces.
+          - generic [ref=e568]:
+            - generic [ref=e569]: "800"
+            - generic [ref=e570]: trainee slots
+          - list [ref=e571]:
+            - listitem [ref=e572]: 400 training hours
+            - listitem [ref=e574]: Up to 60 sessions
+            - listitem [ref=e576]: 12-month validity
+            - listitem [ref=e578]:
+              - generic [ref=e580]: Save up to 20%
+          - link "Enquire Now" [ref=e581] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Enquire Now
+            - img [ref=e582]
+        - generic [ref=e584]:
+          - heading "Custom" [level=3] [ref=e585]
+          - paragraph [ref=e586]: Unlimited slots, costed per employee.
+          - generic [ref=e587]:
+            - generic [ref=e588]: Unlimited
+            - generic [ref=e589]: trainee slots
+          - list [ref=e590]:
+            - listitem [ref=e591]: Unlimited training hours
+            - listitem [ref=e593]: Tailored sessions
+            - listitem [ref=e595]: Annual contract
+          - link "Talk to Sales" [ref=e597] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Talk to Sales
+            - img [ref=e598]
+      - generic [ref=e600]:
+        - heading "Every IT & Technical package includes" [level=3] [ref=e601]
+        - paragraph [ref=e602]: No hidden fees, these engineering-grade benefits ship with Starter, Growth, Enterprise and Custom alike.
+        - generic [ref=e603]:
+          - generic [ref=e604]:
+            - img [ref=e606]
+            - generic [ref=e608]:
+              - paragraph [ref=e609]: 200+ IT & Technical programs
+              - paragraph [ref=e610]: Cybersecurity, Cloud, DevOps, AI/ML, Data, Networking, Microsoft, AWS, Azure, Cisco, CompTIA, across 24 IT & Technical categories.
+          - generic [ref=e611]:
+            - img [ref=e613]
+            - generic [ref=e615]:
+              - paragraph [ref=e616]: 1,500+ technical trainers
+              - paragraph [ref=e617]: Vendor-certified, hands-on practitioners, matched to your tech stack, language and timezone in 100+ countries.
+          - generic [ref=e618]:
+            - img [ref=e620]
+            - generic [ref=e622]:
+              - paragraph [ref=e623]: Hands-on labs included
+              - paragraph [ref=e624]: Cloud sandboxes (AWS/Azure/GCP), Kubernetes playgrounds, MITRE ATT&CK ranges and CTF environments shipped with every cohort.
+          - generic [ref=e625]:
+            - img [ref=e627]
+            - generic [ref=e629]:
+              - paragraph [ref=e630]: Virtual, on-site or hybrid ILT
+              - paragraph [ref=e631]: Live instructor-led delivery for engineering teams, co-located, distributed or fully remote, in any timezone.
+          - generic [ref=e632]:
+            - img [ref=e634]
+            - generic [ref=e636]:
+              - paragraph [ref=e637]: Skill assessments & ROI
+              - paragraph [ref=e638]: Pre/post technical assessments, skill mastery tracking and engineering KPIs, lead time, MTTR and deploys.
+          - generic [ref=e639]:
+            - img [ref=e641]
+            - generic [ref=e643]:
+              - paragraph [ref=e644]: Trainer-fit trial sessions
+              - paragraph [ref=e645]: Validate technical depth on your real stack before committing the cohort, trial sessions with your shortlisted trainer.
+      - generic [ref=e646]:
+        - generic [ref=e647]:
+          - heading "Need a custom rollout, specialized programs or coaching add-ons?" [level=3] [ref=e648]
+          - paragraph [ref=e649]: Talk to our learning services team, coaching, content development, custom programs and on-site delivery.
+        - generic [ref=e650]:
+          - link "Talk to Sales" [ref=e651] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Talk to Sales
+            - img [ref=e652]
+          - link "See full pricing page" [ref=e654] [cursor=pointer]:
+            - /url: "#contact"
+            - text: See full pricing page
+            - img [ref=e655]
+    - generic [ref=e658]:
+      - generic [ref=e659]:
+        - generic [ref=e660]:
+          - heading "A proven approach trusted by enterprise security leaders" [level=2] [ref=e661]
+          - paragraph [ref=e662]: From discovery to mastery in five steps. A consultative, outcome-led methodology that turns cybersecurity training into measurable capability inside your organisation.
+        - link "Start with a discovery call" [ref=e663] [cursor=pointer]:
+          - /url: "#contact"
+          - text: Start with a discovery call
+          - img [ref=e664]
+      - list [ref=e668]:
+        - listitem [ref=e669]:
+          - generic [ref=e670]: "01"
+          - heading "Discover" [level=3] [ref=e671]
+          - paragraph [ref=e672]: "We meet with your CISO and L&D team to map current cyber capabilities against role-based benchmarks. Output: a prioritised skill-gap report with ROI-aligned objectives."
+        - listitem [ref=e673]:
+          - generic [ref=e674]: "02"
+          - heading "Design" [level=3] [ref=e675]
+          - paragraph [ref=e676]: We build a custom curriculum mapped to NICE Framework and NIST roles, then shortlist vendor-certified trainers from our 1,500+ network for trial sessions on your real stack.
+        - listitem [ref=e677]:
+          - generic [ref=e678]: "03"
+          - heading "Deliver" [level=3] [ref=e679]
+          - paragraph [ref=e680]: Instructor-led sessions, virtual, on-site or hybrid, in your language, with hands-on labs, cloud sandboxes, MITRE ATT&CK ranges and CTF environments shipped with every cohort.
+        - listitem [ref=e681]:
+          - generic [ref=e682]: "04"
+          - heading "Assess" [level=3] [ref=e683]
+          - paragraph [ref=e684]: Pre and post technical assessments, skill mastery tracking, lab benchmarks and engineering KPIs. Every cohort closes with a measurable skills delta.
+        - listitem [ref=e685]:
+          - generic [ref=e686]: "05"
+          - heading "Optimise" [level=3] [ref=e687]
+          - paragraph [ref=e688]: Quarterly retrospectives, refresher modules, skill-refresh tracking and a dedicated Learning Services Manager driving long-term cyber ROI.
+    - generic [ref=e690]:
+      - generic [ref=e691]:
+        - generic [ref=e692]:
+          - heading "Proven impact from enterprise cybersecurity leaders" [level=2] [ref=e693]
+          - paragraph [ref=e694]: CISOs, heads of security and L&D leaders on what changed after partnering with Edstellar for cybersecurity training.
+        - link "Become the next case study" [ref=e695] [cursor=pointer]:
+          - /url: "#contact"
+          - text: Become the next case study
+          - img [ref=e696]
+      - generic [ref=e698]:
+        - figure "Anita Sharma CISO · Tier-1 Indian Bank" [ref=e699]:
+          - img [ref=e700]
+          - blockquote [ref=e702]: “Edstellar's CISSP preparation program got our SOC team exam-ready in 12 weeks. Pre and post skill scores improved by 38%, with measurable gains across all eight domains.”
+          - generic [ref=e703]:
+            - generic [ref=e704]: A
+            - generic [ref=e705]:
+              - paragraph [ref=e706]: Anita Sharma
+              - paragraph [ref=e707]: CISO · Tier-1 Indian Bank
+        - figure "Marcus Reyes VP, Security Operations · US Hospital System" [ref=e708]:
+          - img [ref=e709]
+          - blockquote [ref=e711]: “Closed-batch CEH v13 training tailored to our healthcare environment. The trainer brought live MITRE ATT&CK simulations matched to our Epic and Cerner stack.”
+          - generic [ref=e712]:
+            - generic [ref=e713]: M
+            - generic [ref=e714]:
+              - paragraph [ref=e715]: Marcus Reyes
+              - paragraph [ref=e716]: VP, Security Operations · US Hospital System
+        - figure "Priya Krishnan Director of L&D · Global SaaS Company" [ref=e717]:
+          - img [ref=e718]
+          - blockquote [ref=e720]: “The five-part framework changed how we measure training ROI. We went from attendance reporting to MTTD-driven security KPIs the board actually reads.”
+          - generic [ref=e721]:
+            - generic [ref=e722]: P
+            - generic [ref=e723]:
+              - paragraph [ref=e724]: Priya Krishnan
+              - paragraph [ref=e725]: Director of L&D · Global SaaS Company
+      - generic [ref=e726]:
+        - generic [ref=e727]:
+          - paragraph [ref=e728]: 4.8 / 5
+          - paragraph [ref=e729]: Average learner rating across cyber cohorts
+        - generic [ref=e730]:
+          - paragraph [ref=e731]: 94%
+          - paragraph [ref=e732]: Post-training skill improvement rate
+        - generic [ref=e733]:
+          - paragraph [ref=e734]: 100+
+          - paragraph [ref=e735]: Enterprise security teams trained
+    - generic [ref=e737]:
+      - generic [ref=e738]:
+        - generic [ref=e739]:
+          - heading "Proof, playbooks and templates." [level=2] [ref=e740]
+          - paragraph [ref=e741]: Customer outcomes, ready-to-share collateral, expert sessions and board-ready templates, built to help technology and learning leaders evaluate, internally champion and roll out cyber training programs with confidence.
+        - link "Browse all resources" [ref=e742] [cursor=pointer]:
+          - /url: "#contact"
+          - text: Browse all resources
+          - img [ref=e743]
+      - generic [ref=e745]:
+        - button "CASE STUDIES" [ref=e746] [cursor=pointer]
+        - button "BROCHURES" [ref=e747] [cursor=pointer]
+        - button "VIDEOS" [ref=e748] [cursor=pointer]
+        - button "TEMPLATES" [ref=e749] [cursor=pointer]
+        - button "NEWS" [ref=e750] [cursor=pointer]
+      - generic [ref=e751]:
+        - link "Banking and finance security BFSI Securing Banks, Insurers and Capital Markets Custom curricula covering PCI-DSS, RBI/SEBI guidelines, fraud analytics and Zero-Trust banking, delivered to teams at 50+ Tier-1 financial institutions." [ref=e752] [cursor=pointer]:
+          - /url: https://www.edstellar.com/case-studies
+          - img "Banking and finance security" [ref=e754]
+          - generic [ref=e755]:
+            - generic [ref=e756]: BFSI
+            - heading "Securing Banks, Insurers and Capital Markets" [level=3] [ref=e757]
+            - paragraph [ref=e758]:
+              - text: Custom curricula covering PCI-DSS, RBI/SEBI guidelines, fraud analytics and Zero-Trust banking, delivered to teams at 50+ Tier-1 financial institutions.
+              - img [ref=e759]
+        - link "Healthcare cybersecurity HEALTHCARE HIPAA, HITRUST and Medical Device Cybersecurity Train clinical, IT and OT teams on patient-data protection, FDA pre-market guidance and ransomware response in hospital environments." [ref=e761] [cursor=pointer]:
+          - /url: https://www.edstellar.com/case-studies
+          - img "Healthcare cybersecurity" [ref=e763]
+          - generic [ref=e764]:
+            - generic [ref=e765]: HEALTHCARE
+            - heading "HIPAA, HITRUST and Medical Device Cybersecurity" [level=3] [ref=e766]
+            - paragraph [ref=e767]:
+              - text: Train clinical, IT and OT teams on patient-data protection, FDA pre-market guidance and ransomware response in hospital environments.
+              - img [ref=e768]
+        - link "Government cybersecurity GOVERNMENT & DEFENCE Sovereign Cyber Programs for Public-Sector Teams Closed-batch CISSP, CEH and offensive-security training designed for defence, intelligence and critical-infrastructure agencies." [ref=e770] [cursor=pointer]:
+          - /url: https://www.edstellar.com/case-studies
+          - img "Government cybersecurity" [ref=e772]
+          - generic [ref=e773]:
+            - generic [ref=e774]: GOVERNMENT & DEFENCE
+            - heading "Sovereign Cyber Programs for Public-Sector Teams" [level=3] [ref=e775]
+            - paragraph [ref=e776]:
+              - text: Closed-batch CISSP, CEH and offensive-security training designed for defence, intelligence and critical-infrastructure agencies.
+              - img [ref=e777]
+        - link "SaaS cybersecurity SAAS & TECH Cloud-native AppSec for Engineering Teams DevSecOps, Kubernetes hardening, API security and supply-chain security workshops tuned for product and platform engineering teams." [ref=e779] [cursor=pointer]:
+          - /url: https://www.edstellar.com/case-studies
+          - img "SaaS cybersecurity" [ref=e781]
+          - generic [ref=e782]:
+            - generic [ref=e783]: SAAS & TECH
+            - heading "Cloud-native AppSec for Engineering Teams" [level=3] [ref=e784]
+            - paragraph [ref=e785]:
+              - text: DevSecOps, Kubernetes hardening, API security and supply-chain security workshops tuned for product and platform engineering teams.
+              - img [ref=e786]
+    - generic [ref=e789]:
+      - heading "Build resilient cybersecurity teams that scale with your enterprise" [level=2] [ref=e790]
+      - paragraph [ref=e791]: Edstellar gives security leaders proven ways to upskill their workforce, codify capability, and keep pace with an evolving threat landscape.
+      - generic [ref=e792]:
+        - generic [ref=e793]:
+          - img "Skills matrix" [ref=e795]
+          - heading "Skills Matrix" [level=3] [ref=e796]
+          - paragraph [ref=e797]: Map your team's current skills against role-based cyber competencies and identify training gaps.
+          - link "Learn more" [ref=e798] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=e799]:
+          - img "Virtual classroom" [ref=e801]
+          - heading "Live Virtual Classrooms" [level=3] [ref=e802]
+          - paragraph [ref=e803]: Interactive instructor-led sessions across every timezone with hands-on labs and breakout rooms.
+          - link "Learn more" [ref=e804] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=e805]:
+          - img "Custom curriculum" [ref=e807]
+          - heading "Custom Curriculum" [level=3] [ref=e808]
+          - paragraph [ref=e809]: Bespoke cyber programs tuned to your stack, regulations, and threat model, built with your CISO.
+          - link "Learn more" [ref=e810] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=e811]:
+          - img "Resource library" [ref=e813]
+          - heading "Resource Library" [level=3] [ref=e814]
+          - paragraph [ref=e815]: Whitepapers, exam-prep guides, podcasts and on-demand sessions for continuous learning.
+          - link "Learn more" [ref=e816] [cursor=pointer]:
+            - /url: "#contact"
+    - generic [ref=e819]:
+      - generic [ref=e820]:
+        - heading "Contact Us" [level=2] [ref=e821]
+        - paragraph [ref=e822]: Submit your Training Requirements below and we'll get in touch with you shortly.
+        - generic [ref=e823]:
+          - generic [ref=e824]:
+            - paragraph [ref=e825]: Email
+            - link "contact@edstellar.com" [ref=e826] [cursor=pointer]:
+              - /url: mailto:contact@edstellar.com
+          - generic [ref=e827]:
+            - paragraph [ref=e828]: Talk to a learning advisor
+            - list [ref=e829]:
+              - listitem [ref=e830]:
+                - generic [ref=e831]: USA
+                - link "+1 682 297 4830" [ref=e832] [cursor=pointer]:
+                  - /url: tel:+16822974830
+              - listitem [ref=e833]:
+                - generic [ref=e834]: United Kingdom
+                - link "+44 151 453 4009" [ref=e835] [cursor=pointer]:
+                  - /url: tel:+441514534009
+              - listitem [ref=e836]:
+                - generic [ref=e837]: India
+                - link "+91 636 483 3830" [ref=e838] [cursor=pointer]:
+                  - /url: tel:+916364833830
+          - generic [ref=e839]:
+            - paragraph [ref=e840]: What you get
+            - list [ref=e841]:
+              - listitem [ref=e842]:
+                - img [ref=e843]
+                - text: Free training-needs analysis call within 24 hours
+              - listitem [ref=e845]:
+                - img [ref=e846]
+                - text: Custom proposal aligned to your team's cyber roadmap
+              - listitem [ref=e848]:
+                - img [ref=e849]
+                - text: Vendor-certified trainer shortlist with sample sessions
+      - generic [ref=e852]:
+        - generic [ref=e853]:
+          - generic [ref=e854]:
+            - generic [ref=e855]: Full Name*
+            - textbox "Full Name*" [ref=e856]:
+              - /placeholder: Enter your full name
+          - generic [ref=e857]:
+            - generic [ref=e858]: Work Email*
+            - textbox "Work Email*" [ref=e859]:
+              - /placeholder: name@company.com
+          - generic [ref=e860]:
+            - generic [ref=e861]: Company Name*
+            - textbox "Company Name*" [ref=e862]:
+              - /placeholder: Acme Corp.
+          - generic [ref=e863]:
+            - generic [ref=e864]: Job Title*
+            - textbox "Job Title*" [ref=e865]:
+              - /placeholder: CISO / Director of L&D / Head of IT
+          - generic [ref=e866]:
+            - generic [ref=e867]: Country*
+            - combobox "Country*" [ref=e868]:
+              - option "Select country" [selected]
+              - option "United States"
+              - option "United Kingdom"
+              - option "India"
+              - option "Australia"
+              - option "Canada"
+              - option "United Arab Emirates"
+              - option "Singapore"
+              - option "Germany"
+              - option "France"
+              - option "Saudi Arabia"
+              - option "Japan"
+              - option "Other"
+            - img
+          - generic [ref=e869]:
+            - generic [ref=e870]: Phone Number*
+            - textbox "Phone Number*" [ref=e871]:
+              - /placeholder: +1 201 555 0123
+        - generic [ref=e872]:
+          - generic [ref=e873]: Tell us about your training requirements
+          - textbox "Tell us about your training requirements" [ref=e874]:
+            - /placeholder: Team size, target roles, skill development goals, preferred delivery (virtual / on-site), timeline...
+        - paragraph [ref=e875]:
+          - text: By submitting this form, you agree to receive communications from Edstellar. We respect your privacy, see our
+          - link "Privacy Policy" [ref=e876] [cursor=pointer]:
+            - /url: "#"
+          - text: .
+        - button "Submit" [ref=e877]:
+          - text: Submit
+          - img [ref=e878]
+  - contentinfo [ref=e880]:
+    - generic [ref=e881]:
+      - separator [ref=e882]
+      - generic [ref=e883]:
+        - generic [ref=e884]:
+          - heading "Categories" [level=3] [ref=e885]
+          - list [ref=e886]:
+            - listitem [ref=e887]:
+              - link "Cybersecurity" [ref=e888] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e889]:
+              - link "Cloud Computing" [ref=e890] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e891]:
+              - link "Project Management" [ref=e892] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e893]:
+              - link "Data & Analytics" [ref=e894] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e895]:
+              - link "Leadership" [ref=e896] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e897]:
+              - link "DevOps" [ref=e898] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e899]:
+              - link "AI & Machine Learning" [ref=e900] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e901]:
+          - heading "Training Programs" [level=3] [ref=e902]
+          - list [ref=e903]:
+            - listitem [ref=e904]:
+              - link "CISSP Training" [ref=e905] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e906]:
+              - link "CEH v13 Training" [ref=e907] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e908]:
+              - link "CISM Training" [ref=e909] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e910]:
+              - link "CCSP Training" [ref=e911] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e912]:
+              - link "CompTIA Security+ Training" [ref=e913] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e914]:
+              - link "OSCP Training" [ref=e915] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e916]:
+              - link "ISO 27001 Lead Auditor Training" [ref=e917] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e918]:
+          - heading "Company" [level=3] [ref=e919]
+          - list [ref=e920]:
+            - listitem [ref=e921]:
+              - link "About Edstellar" [ref=e922] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e923]:
+              - link "Trainers" [ref=e924] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e925]:
+              - link "Contact Us" [ref=e926] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e927]:
+              - link "Become a Trainer" [ref=e928] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e929]:
+              - link "Careers" [ref=e930] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e931]:
+            - link "Facebook" [ref=e932] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e933]
+            - link "LinkedIn" [ref=e935] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e936]
+            - link "Instagram" [ref=e938] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e939]
+            - link "YouTube" [ref=e941] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e942]
+            - link "Threads" [ref=e944] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e945]
+        - generic [ref=e947]:
+          - heading "Get our cyber digest" [level=3] [ref=e948]
+          - generic [ref=e949]:
+            - generic [ref=e950]:
+              - generic [ref=e951]: Enter your name*
+              - textbox "Enter your name*" [ref=e952]
+            - generic [ref=e953]:
+              - generic [ref=e954]: Enter your work email*
+              - textbox "Enter your work email*" [ref=e955]
+            - generic [ref=e956]:
+              - checkbox "I agree with the Edstellar Privacy Policy*" [ref=e957]
+              - generic [ref=e958]: I agree with the Edstellar Privacy Policy*
+            - button "Subscribe" [ref=e959]
+      - separator [ref=e960]
+      - generic [ref=e961]:
+        - generic [ref=e962]: EDSTELLAR
+        - list [ref=e963]:
+          - listitem [ref=e964]:
+            - link "Cookie Statement" [ref=e965] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e966]:
+            - link "Terms of Use" [ref=e967] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e968]:
+            - link "Privacy Policy" [ref=e969] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e970]: Copyright © 2026 Edstellar. All rights reserved
+  - button "Open Next.js Dev Tools" [ref=e976] [cursor=pointer]:
+    - img [ref=e977]

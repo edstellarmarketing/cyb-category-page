@@ -1,0 +1,24 @@
+[     144ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1517ms] [LOG] [Fast Refresh] done in 1483ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1699ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1782ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1935ms] [WARNING] Image with src "/images/cyber/hero-cyber-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1937ms] [WARNING] Image with src "/images/cyber/hero-industry-bfsi.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1939ms] [WARNING] Image with src "/images/cyber/hero-industry-healthcare.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    1941ms] [WARNING] Image with src "/images/cyber/hero-ai-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   10862ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   15615ms] [LOG] [Fast Refresh] done in 4859ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   16031ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   16229ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   86666ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   86705ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  173777ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  173800ms] [LOG] [Fast Refresh] done in 95ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  213617ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  213652ms] [LOG] [Fast Refresh] done in 85ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  218678ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[  218691ms] [LOG] [Fast Refresh] done in 95ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431

@@ -1,0 +1,14 @@
+[     133ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    2755ms] [LOG] [Fast Refresh] done in 2724ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    2914ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    3003ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    3095ms] [WARNING] Image with src "/images/cyber/hero-cyber-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    3097ms] [WARNING] Image with src "/images/cyber/hero-industry-bfsi.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    3099ms] [WARNING] Image with src "/images/cyber/hero-industry-healthcare.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[    3111ms] [WARNING] Image with src "/images/cyber/hero-ai-it.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   53108ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431
+[   53691ms] [LOG] [Fast Refresh] done in 185ms @ http://localhost:3001/_next/static/chunks/06~j_next_dist_0nqb7nl._.js:2431

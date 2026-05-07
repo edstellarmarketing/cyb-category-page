@@ -1,0 +1,1105 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+      - /url: "#content"
+    - generic [ref=e6]:
+      - link "Udemy Business" [ref=e8] [cursor=pointer]:
+        - /url: https://business.udemy.com/
+        - img "Udemy Business" [ref=e9]
+      - generic [ref=e10]:
+        - navigation "menu":
+          - generic:
+            - generic:
+              - generic:
+                - list:
+                  - listitem [ref=e11]:
+                    - button "What we do" [ref=e12]
+                  - listitem [ref=e13]:
+                    - button "How we do it" [ref=e14]
+                  - listitem [ref=e15]:
+                    - button "Resources" [ref=e16]
+                  - listitem [ref=e17]:
+                    - button "Plans" [ref=e18]
+                  - listitem [ref=e19]:
+                    - button "AI Transformation" [ref=e20]:
+                      - text: AI Transformation
+                      - generic [ref=e21]: 
+                  - listitem [ref=e22]:
+                    - button "Switch site language" [ref=e23] [cursor=pointer]
+                    - text: 
+                  - listitem [ref=e24]:
+                    - link "Get started" [ref=e25] [cursor=pointer]:
+                      - /url: https://business.udemy.com/request-demo/
+                  - listitem [ref=e26]:
+                    - button "Login" [ref=e27]
+  - main [ref=e31]:
+    - article [ref=e32]:
+      - generic [ref=e40]:
+        - generic [ref=e47]:
+          - heading "OUR INSTRUCTORS" [level=6] [ref=e48]
+          - heading "Learn from real-world experts who love to teach" [level=1] [ref=e49]:
+            - text: Learn from
+            - emphasis [ref=e50]: real-world experts
+            - text: who love to teach
+          - paragraph [ref=e51]: Udemy Business instructors bring their experience to the online classroom.
+          - link "View all course topics for leading expert" [ref=e53] [cursor=pointer]:
+            - /url: https://business.udemy.com/course-collection/
+            - button "View all course topics for leading expert" [ref=e54]: View all course topics
+        - figure [ref=e58]
+      - generic [ref=e68]:
+        - generic [ref=e73]:
+          - heading "How we select our instructors" [level=3] [ref=e74]
+          - paragraph [ref=e75]: Of the 90K+ instructors on Udemy, only a fraction are selected to teach for Udemy Business.
+        - generic [ref=e78]:
+          - generic [ref=e88]:
+            - heading "Real-world subject matter experts" [level=5] [ref=e89]
+            - paragraph [ref=e90]: Our instructor community includes thought leaders, best-selling authors, executive coaches, real-world practitioners, and award-winning professors.
+          - generic [ref=e100]:
+            - heading "Diverse backgrounds & experiences" [level=5] [ref=e101]
+            - paragraph [ref=e102]: Our unique marketplace model enables us to attract instructors from over 180 countries across a wide range of industries, verticals, and skills.
+          - generic [ref=e112]:
+            - heading "Incentivized to maintain fresh content" [level=5] [ref=e113]
+            - paragraph [ref=e114]: Through course ratings, reviews, and direct messaging, our instructors receive regular feedback that helps them identify areas of improvement and ensure freshness and quality.
+        - generic [ref=e117]:
+          - generic [ref=e127]:
+            - heading "Empowered by data" [level=5] [ref=e128]
+            - paragraph [ref=e129]: We analyze learning data points and expose key trends to our instructors to help them identify new and emerging skills to keep your team ahead of the rest.
+          - generic [ref=e139]:
+            - heading "Evaluated for quality and relevance" [level=5] [ref=e140]
+            - paragraph [ref=e141]: We continuously vet our instructors through a combination of manual and automated curation tactics and social proof. We listen to learners to understand what resonates.
+          - generic [ref=e151]:
+            - heading "A global community of native speakers" [level=5] [ref=e152]
+            - paragraph [ref=e153]: In addition to our English content, our international course collection features 9,200+ courses taught by native-speaking subject matter experts in French, Spanish, German, Portuguese, Japanese, Arabic, Turkish, Mandarin, and Indonesian, so your employees can learn in their native language.
+      - generic [ref=e163]:
+        - heading "Our instructors are leading subject matter experts" [level=2] [ref=e169]
+        - generic [ref=e170]:
+          - region "carousel" [ref=e171]:
+            - generic [ref=e173]:
+              - group [ref=e174]:
+                - generic [ref=e176]:
+                  - heading [level=4] [ref=e177]: Imtiaz Ahmed
+                  - generic [ref=e178]:
+                    - generic [ref=e179]:
+                      - text: "4.6"
+                      - img [ref=e180]
+                    - generic [ref=e181]: (74,627)
+                  - paragraph [ref=e182]: Award winning Udemy instructor who is highly experienced in big data technologies and enterprise software architectures.
+                  - generic [ref=e183]:
+                    - generic [ref=e184]: "Top Courses:"
+                    - link [ref=e185] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/the-complete-oracle-sql-certification-course/
+                      - text: The Complete Oracle SQL Certification Course
+              - group [ref=e186]:
+                - generic [ref=e188]:
+                  - heading [level=4] [ref=e189]: Randi Zuckerberg
+                  - generic [ref=e190]:
+                    - generic [ref=e191]:
+                      - text: "4.5"
+                      - img [ref=e192]
+                    - generic [ref=e193]: (866)
+                  - paragraph [ref=e194]: Entrepreneur, investor, advisor, bestselling author, and tech media personality. After noticing that she was one of way too few women in tech, she founded Zuckerberg Media.
+                  - generic [ref=e195]:
+                    - generic [ref=e196]: "Top Courses:"
+                    - link [ref=e197] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/master-your-personal-brand-like-a-marketing-pro/
+                      - text: Master Your Personal Brand Like a Marketing Pro
+              - group [ref=e198]:
+                - generic [ref=e200]:
+                  - heading [level=4] [ref=e201]: Deborah Grayson Riegel
+                  - generic [ref=e202]:
+                    - generic [ref=e203]:
+                      - text: "4.5"
+                      - img [ref=e204]
+                    - generic [ref=e205]: (833)
+                  - paragraph [ref=e206]: Instructor of Management Communication at the Wharton School of UPenn. speaker and coach for at Columbia Business School and Duke, consultant for Amazon, BlackRock, Bloomberg, and more.
+                  - generic [ref=e207]:
+                    - generic [ref=e208]: "Top Courses:"
+                    - link [ref=e209] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/communicatebrilliantly/
+                      - text: "Smart Tips: Communication"
+              - group "slide 28" [ref=e210]:
+                - generic [ref=e212]:
+                  - heading "Kevin Dorsey (KD)" [level=4] [ref=e213]
+                  - generic [ref=e214]:
+                    - generic [ref=e215]:
+                      - text: "4.5"
+                      - img "4.5 out of 5 Star" [ref=e216]
+                    - generic [ref=e217]: (834)
+                  - paragraph [ref=e218]: B2B Sales thought leader. InsideSales Top 10 Sales Leader, Crunchbase Top Sales Leaders You Should Know, TOPO Sales Development Exec of the Year, LinkedIn Top Sales Voices, and more.
+                  - generic [ref=e219]:
+                    - generic [ref=e220]: "Top Courses:"
+                    - 'link "B2B Sales Masterclass: People-Focused Selling" [ref=e221] [cursor=pointer]':
+                      - /url: https://www.udemy.com/course/b2b-sales-masterclass-people-focused-selling/
+              - group "slide 1 (centered)" [ref=e222]:
+                - generic [ref=e224]:
+                  - heading "Jun Sakai" [level=4] [ref=e225]
+                  - generic [ref=e226]:
+                    - generic [ref=e227]:
+                      - text: "4.5"
+                      - img "4.5 out of 5 Star" [ref=e228]
+                    - generic [ref=e229]: (24,820)
+                  - paragraph [ref=e230]: Jun Sakai is a software engineer, published author, and former professional soccer player – Teaches in Japanese
+                  - generic [ref=e231]:
+                    - generic [ref=e232]: "Top Courses:"
+                    - link "現役シリコンバレーエンジニアが教えるPython 3 入門 + 応用 +アメリカのシリコンバレー流コードスタイル" [ref=e233] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/python-beginner/
+              - group "slide 2" [ref=e234]:
+                - generic [ref=e236]:
+                  - heading "Daragh Walsh" [level=4] [ref=e237]
+                  - generic [ref=e238]:
+                    - generic [ref=e239]:
+                      - text: "4.4"
+                      - img "4.4 out of 5 Star" [ref=e240]
+                    - generic [ref=e241]: (195,894)
+                  - paragraph [ref=e242]: My mission is to help people succeed by giving them the skills they need to grow their own businesses or build new careers.
+                  - generic [ref=e243]:
+                    - generic [ref=e244]: "Top Course:"
+                    - link "The Complete Digital Marketing Course – 12 Courses in 1" [ref=e245] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/learn-digital-marketing-course/
+              - group [ref=e246]:
+                - generic [ref=e248]:
+                  - heading [level=4] [ref=e249]: Crystal Richards
+                  - generic [ref=e250]:
+                    - generic [ref=e251]:
+                      - text: "4.4"
+                      - img [ref=e252]
+                    - generic [ref=e253]: (1,208)
+                  - paragraph [ref=e254]: Principal and Owner of MindsparQ™, MHA, and a certified project manager with PMP and PMI-ACP credentials
+                  - generic [ref=e255]:
+                    - generic [ref=e256]: "Top Course:"
+                    - link [ref=e257] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/agile-in-30-minutes/
+                      - text: Agile Project Management in 30 Minutes
+              - group [ref=e258]:
+                - generic [ref=e260]:
+                  - heading [level=4] [ref=e261]: Alexis Haselberger
+                  - generic [ref=e262]:
+                    - generic [ref=e263]:
+                      - text: "4.5"
+                      - img [ref=e264]
+                    - generic [ref=e265]: (18,266)
+                  - paragraph [ref=e266]: Time management and productivity coach. Spent 15+ years managing operations and HR at several early stage startups. SPHR and SHRM-SCP certified
+                  - generic [ref=e267]:
+                    - generic [ref=e268]: "Top Course:"
+                    - link [ref=e269] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/do-more-stress-less/
+                      - text: "Time Management Mastery: Do More, Stress Less"
+              - group [ref=e270]:
+                - generic [ref=e272]:
+                  - heading [level=4] [ref=e273]: Todd Birzer
+                  - generic [ref=e274]:
+                    - generic [ref=e275]:
+                      - text: "4.5"
+                      - img [ref=e276]
+                    - generic [ref=e277]: (7,950)
+                  - paragraph [ref=e278]: Principal consultant at Kevolve Product Management, author of Becoming a More Strategic Product Manager, and has an MBA from Wharton at the University of Pennsylvania.
+                  - generic [ref=e279]:
+                    - generic [ref=e280]: "Top Course:"
+                    - link [ref=e281] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/productmanagement101/
+                      - text: Product Management 101
+              - group [ref=e282]:
+                - generic [ref=e284]:
+                  - heading [level=4] [ref=e285]: Mohsen Hassan
+                  - generic [ref=e286]:
+                    - generic [ref=e287]:
+                      - text: "4.6"
+                      - img [ref=e288]
+                    - generic [ref=e289]: (72,637)
+                  - paragraph [ref=e290]: "Having studied and worked in the field, Mohsen has developed a deep understanding of the financial industry’s many facets: Long-term investing, shorter-term trading, and automation."
+                  - generic [ref=e291]:
+                    - generic [ref=e292]: Top Course
+                    - link [ref=e293] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/foundation-course/
+                      - text: The Complete Foundation Stock Trading Course
+              - group [ref=e294]:
+                - generic [ref=e296]:
+                  - heading [level=4] [ref=e297]: Diego Davila
+                  - generic [ref=e298]:
+                    - generic [ref=e299]:
+                      - text: "4.4"
+                      - img [ref=e300]
+                    - generic [ref=e301]: (118,782)
+                  - paragraph [ref=e302]: Spanish entrepreneur and digital marketing innovator – Teaches in Spanish
+                  - generic [ref=e303]:
+                    - generic [ref=e304]: "Top Courses:"
+                    - link [ref=e305] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/marketingdigital/
+                      - text: Curso Completo de Marketing Digital – 23 Cursos em 1
+              - group [ref=e306]:
+                - generic [ref=e308]:
+                  - heading [level=4] [ref=e309]: Pilar Sanchez Albaladejo
+                  - generic [ref=e310]:
+                    - generic [ref=e311]:
+                      - text: "4.6"
+                      - img [ref=e312]
+                    - generic [ref=e313]: (25,205)
+                  - paragraph [ref=e314]: Brazilian Portuguese agile coach and project management expert – Teaches in Portuguese
+                  - generic [ref=e315]:
+                    - generic [ref=e316]: "Top Courses:"
+                    - link [ref=e317] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/formacao-total-em-scrum/
+                      - text: "Certificação Scrum Master: Curso Preparatório COMPLETO"
+              - group [ref=e318]:
+                - generic [ref=e320]:
+                  - heading [level=4] [ref=e321]: Angelika Froech
+                  - generic [ref=e322]:
+                    - generic [ref=e323]:
+                      - text: "4.3"
+                      - img [ref=e324]
+                    - generic [ref=e325]: (262)
+                  - paragraph [ref=e326]: Seminar leader and coach who advises people and companies on the topics of self-management and the development of their potential – Teaches in German
+                  - generic [ref=e327]:
+                    - generic [ref=e328]: "Top Courses:"
+                    - link [ref=e329] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/lehrinhalte-fuer-seminare-und-vortraege-ausarbeiten/
+                      - text: Lehrinhalte für Seminare und Vorträge ausarbeiten
+              - group [ref=e330]:
+                - generic [ref=e332]:
+                  - heading [level=4] [ref=e333]: Thibault Houdon
+                  - generic [ref=e334]:
+                    - generic [ref=e335]:
+                      - text: "4.7"
+                      - img [ref=e336]
+                    - generic [ref=e337]: (6,422)
+                  - paragraph [ref=e338]: Python Instructor and 3D generalist – Teaches in French
+                  - generic [ref=e339]:
+                    - generic [ref=e340]: "Top Courses:"
+                    - link [ref=e341] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/formation-complete-python/
+                      - text: La Formation Complète Python
+              - group [ref=e342]:
+                - generic [ref=e344]:
+                  - heading [level=4] [ref=e345]: Josh Paulsen
+                  - generic [ref=e346]:
+                    - generic [ref=e347]:
+                      - text: "4.5"
+                      - img [ref=e348]
+                    - generic [ref=e349]: (30,808)
+                  - paragraph [ref=e350]: Productivity and Goals Coach to Leaders and Entrepreneurs
+                  - generic [ref=e351]:
+                    - generic [ref=e352]: "Top Courses:"
+                    - link [ref=e353] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/productivity-and-time-management/
+                      - text: Productivity and Time Management for the Overwhelmed
+              - group [ref=e354]:
+                - generic [ref=e356]:
+                  - heading [level=4] [ref=e357]: Melissa Crowhurst
+                  - generic [ref=e358]:
+                    - generic [ref=e359]:
+                      - text: "4.8"
+                      - img [ref=e360]
+                    - generic [ref=e361]: (36,424)
+                  - paragraph [ref=e362]: Reiki Master Teacher, Inspirational Coach, Author, Speaker
+                  - generic [ref=e363]:
+                    - generic [ref=e364]: "Top Courses:"
+                    - link [ref=e365] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/learn-to-meditate/
+                      - text: Learn Meditation with Certification to Guide Others
+              - group [ref=e366]:
+                - generic [ref=e368]:
+                  - heading [level=4] [ref=e369]: Ritu RIyat
+                  - generic [ref=e370]:
+                    - generic [ref=e371]:
+                      - text: "4.4"
+                      - img [ref=e372]
+                    - generic [ref=e373]: (7,128)
+                  - paragraph [ref=e374]: Public health professional, applied meditation coach and founder of The Stress Detox specializing in helping individuals and organizations reduce stress and burnout.
+                  - generic [ref=e375]:
+                    - generic [ref=e376]: "Top Courses:"
+                    - link [ref=e377] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/stress-management-reduce-stress-and-burnout-in-the-workplace/
+                      - text: "The Stress Detox: A Stress Management Framework for Leaders"
+              - group [ref=e378]:
+                - generic [ref=e380]:
+                  - heading [level=4] [ref=e381]: Beth Payne
+                  - generic [ref=e382]:
+                    - generic [ref=e383]:
+                      - text: "4.5"
+                      - img [ref=e384]
+                    - generic [ref=e385]: (1,047)
+                  - paragraph [ref=e386]: Resilience expert helping people thrive in adversity
+                  - generic [ref=e387]:
+                    - generic [ref=e388]: "Top Courses:"
+                    - link [ref=e389] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/resilience-leadership/
+                      - text: Resilience Leadership
+              - group [ref=e390]:
+                - generic [ref=e392]:
+                  - heading [level=4] [ref=e393]: Robin Hills
+                  - generic [ref=e394]:
+                    - generic [ref=e395]:
+                      - text: "4.4"
+                      - img [ref=e396]
+                    - generic [ref=e397]: (40,769)
+                  - paragraph [ref=e398]: Business Psychologist, Emotional Intelligence Trainer
+                  - generic [ref=e399]:
+                    - generic [ref=e400]: "Top Courses:"
+                    - link [ref=e401] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/conflict-management-with-emotional-intelligence/
+                      - text: Conflict Management with Emotional Intelligence
+              - group [ref=e402]:
+                - generic [ref=e404]:
+                  - heading [level=4] [ref=e405]: Hassan Osman
+                  - generic [ref=e406]:
+                    - generic [ref=e407]:
+                      - text: "4.5"
+                      - img [ref=e408]
+                    - generic [ref=e409]: (50,929)
+                  - paragraph [ref=e410]: Virtual Teams & PM Expert; Bestselling Author; Leader at Cisco
+                  - generic [ref=e411]:
+                    - generic [ref=e412]: "Top Courses:"
+                    - link [ref=e413] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/write-better-emails/
+                      - text: "Write Better Emails: Tactics for Smarter Team Communication"
+              - group [ref=e414]:
+                - generic [ref=e416]:
+                  - heading [level=4] [ref=e417]: Leila Bulling Towne
+                  - generic [ref=e418]:
+                    - generic [ref=e419]:
+                      - text: "4.5"
+                      - img [ref=e420]
+                    - generic [ref=e421]: (28,138)
+                  - paragraph [ref=e422]: Executive coach specializing in helping leaders decide what to say and how to say it. Her work has been featured in Forbes, Women’s Health, BBC, WSJ, Marketplace Radio, Fast Company, SHRM, and others.
+                  - generic [ref=e423]:
+                    - generic [ref=e424]: "Top Courses:"
+                    - link [ref=e425] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/emotional-intelligence-at-work-learn-from-your-emotions/
+                      - text: "Emotional Intelligence at Work: Learn from Your Emotions"
+              - group [ref=e426]:
+                - generic [ref=e428]:
+                  - heading [level=4] [ref=e429]: Marie Deveaux
+                  - generic [ref=e430]:
+                    - generic [ref=e431]:
+                      - text: "4.5"
+                      - img [ref=e432]
+                    - generic [ref=e433]: (2,687)
+                  - paragraph [ref=e434]: Executive leadership coach and Founder of High Tides Consulting. Advises companies like Facebook, Spotify, L’Oreal, UBS and Prudential.
+                  - generic [ref=e435]:
+                    - generic [ref=e436]: "Top Courses:"
+                    - link [ref=e437] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/the-essential-guide-for-effective-managers/
+                      - text: The Essential Guide for Effective Managers
+              - group [ref=e438]:
+                - generic [ref=e440]:
+                  - heading [level=4] [ref=e441]: Andrei Dumitrescu
+                  - generic [ref=e442]:
+                    - generic [ref=e443]:
+                      - text: "4.6"
+                      - img [ref=e444]
+                    - generic [ref=e445]: (5,421)
+                  - paragraph [ref=e446]: DevOps Engineer and Professional Trainer
+                  - generic [ref=e447]:
+                    - generic [ref=e448]: "Top Courses:"
+                    - link [ref=e449] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/master-python-network-automation-for-network-engineers/
+                      - text: Master Network Automation with Python for Network Engineers
+              - group [ref=e450]:
+                - generic [ref=e452]:
+                  - heading [level=4] [ref=e453]: Chandra Lingam
+                  - generic [ref=e454]:
+                    - generic [ref=e455]:
+                      - text: "4.6"
+                      - img [ref=e456]
+                    - generic [ref=e457]: (8,381)
+                  - paragraph [ref=e458]: Expert on Amazon Web Services, mission-critical systems, and machine learning.
+                  - generic [ref=e459]:
+                    - generic [ref=e460]: "Top Courses:"
+                    - link [ref=e461] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/aws-machine-learning-a-complete-guide-with-python/
+                      - text: AWS Certified Machine Learning Specialty (MLS-C01)
+              - group [ref=e462]:
+                - generic [ref=e464]:
+                  - heading [level=4] [ref=e465]: Kevin Brown
+                  - generic [ref=e466]:
+                    - generic [ref=e467]:
+                      - text: "4.5"
+                      - img [ref=e468]
+                    - generic [ref=e469]: (21,692)
+                  - paragraph [ref=e470]: Windows, Azure, AWS, Cisco, Security Instructor & Author
+                  - generic [ref=e471]:
+                    - generic [ref=e472]: "Top Courses:"
+                    - link [ref=e473] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/azure-fundamentals-az-900-certification/
+                      - text: "Azure Fundamentals: AZ-900 Certification +Practice Questions"
+              - group [ref=e474]:
+                - generic [ref=e476]:
+                  - heading [level=4] [ref=e477]: David Bombal
+                  - generic [ref=e478]:
+                    - generic [ref=e479]:
+                      - text: "4.6"
+                      - img [ref=e480]
+                    - generic [ref=e481]: (96,313)
+                  - paragraph [ref=e482]: "CCIE #11023, over 15 years of network training experience"
+                  - generic [ref=e483]:
+                    - generic [ref=e484]: "Top Courses:"
+                    - link [ref=e485] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/
+                      - text: The Complete Networking Fundamentals Course. Your CCNA start
+              - group [ref=e486]:
+                - generic [ref=e488]:
+                  - heading [level=4] [ref=e489]: Mohammad Azam
+                  - generic [ref=e490]:
+                    - generic [ref=e491]:
+                      - text: "4.6"
+                      - img [ref=e492]
+                    - generic [ref=e493]: (7,901)
+                  - paragraph [ref=e494]: Apple Featured iOS Developer and iOS Instructor
+                  - generic [ref=e495]:
+                    - generic [ref=e496]: "Top Courses:"
+                    - link [ref=e497] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/mastering-mvvm-for-ios/
+                      - text: MVVM Design Pattern Using Swift in iOS
+              - group [ref=e498]:
+                - generic [ref=e500]:
+                  - heading [level=4] [ref=e501]: Penny de Byl
+                  - generic [ref=e502]:
+                    - generic [ref=e503]:
+                      - text: "4.6"
+                      - img [ref=e504]
+                    - generic [ref=e505]: (17,525)
+                  - paragraph [ref=e506]: International Award Winning Professor & Best Selling Author
+                  - generic [ref=e507]:
+                    - generic [ref=e508]: "Top Courses:"
+                    - link [ref=e509] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/artificial-intelligence-in-unity/
+                      - text: The Beginner’s Guide to Artificial Intelligence in Unity
+              - group [ref=e510]:
+                - generic [ref=e512]:
+                  - heading [level=4] [ref=e513]: Imtiaz Ahmed
+                  - generic [ref=e514]:
+                    - generic [ref=e515]:
+                      - text: "4.6"
+                      - img [ref=e516]
+                    - generic [ref=e517]: (74,627)
+                  - paragraph [ref=e518]: Award winning Udemy instructor who is highly experienced in big data technologies and enterprise software architectures.
+                  - generic [ref=e519]:
+                    - generic [ref=e520]: "Top Courses:"
+                    - link [ref=e521] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/the-complete-oracle-sql-certification-course/
+                      - text: The Complete Oracle SQL Certification Course
+              - group [ref=e522]:
+                - generic [ref=e524]:
+                  - heading [level=4] [ref=e525]: Randi Zuckerberg
+                  - generic [ref=e526]:
+                    - generic [ref=e527]:
+                      - text: "4.5"
+                      - img [ref=e528]
+                    - generic [ref=e529]: (866)
+                  - paragraph [ref=e530]: Entrepreneur, investor, advisor, bestselling author, and tech media personality. After noticing that she was one of way too few women in tech, she founded Zuckerberg Media.
+                  - generic [ref=e531]:
+                    - generic [ref=e532]: "Top Courses:"
+                    - link [ref=e533] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/master-your-personal-brand-like-a-marketing-pro/
+                      - text: Master Your Personal Brand Like a Marketing Pro
+              - group [ref=e534]:
+                - generic [ref=e536]:
+                  - heading [level=4] [ref=e537]: Deborah Grayson Riegel
+                  - generic [ref=e538]:
+                    - generic [ref=e539]:
+                      - text: "4.5"
+                      - img [ref=e540]
+                    - generic [ref=e541]: (833)
+                  - paragraph [ref=e542]: Instructor of Management Communication at the Wharton School of UPenn. speaker and coach for at Columbia Business School and Duke, consultant for Amazon, BlackRock, Bloomberg, and more.
+                  - generic [ref=e543]:
+                    - generic [ref=e544]: "Top Courses:"
+                    - link [ref=e545] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/communicatebrilliantly/
+                      - text: "Smart Tips: Communication"
+              - group [ref=e546]:
+                - generic [ref=e548]:
+                  - heading [level=4] [ref=e549]: Kevin Dorsey (KD)
+                  - generic [ref=e550]:
+                    - generic [ref=e551]:
+                      - text: "4.5"
+                      - img [ref=e552]
+                    - generic [ref=e553]: (834)
+                  - paragraph [ref=e554]: B2B Sales thought leader. InsideSales Top 10 Sales Leader, Crunchbase Top Sales Leaders You Should Know, TOPO Sales Development Exec of the Year, LinkedIn Top Sales Voices, and more.
+                  - generic [ref=e555]:
+                    - generic [ref=e556]: "Top Courses:"
+                    - link [ref=e557] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/b2b-sales-masterclass-people-focused-selling/
+                      - text: "B2B Sales Masterclass: People-Focused Selling"
+              - group [ref=e558]:
+                - generic [ref=e560]:
+                  - heading [level=4] [ref=e561]: Jun Sakai
+                  - generic [ref=e562]:
+                    - generic [ref=e563]:
+                      - text: "4.5"
+                      - img [ref=e564]
+                    - generic [ref=e565]: (24,820)
+                  - paragraph [ref=e566]: Jun Sakai is a software engineer, published author, and former professional soccer player – Teaches in Japanese
+                  - generic [ref=e567]:
+                    - generic [ref=e568]: "Top Courses:"
+                    - link [ref=e569] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/python-beginner/
+                      - text: 現役シリコンバレーエンジニアが教えるPython 3 入門 + 応用 +アメリカのシリコンバレー流コードスタイル
+              - group [ref=e570]:
+                - generic [ref=e572]:
+                  - heading [level=4] [ref=e573]: Daragh Walsh
+                  - generic [ref=e574]:
+                    - generic [ref=e575]:
+                      - text: "4.4"
+                      - img [ref=e576]
+                    - generic [ref=e577]: (195,894)
+                  - paragraph [ref=e578]: My mission is to help people succeed by giving them the skills they need to grow their own businesses or build new careers.
+                  - generic [ref=e579]:
+                    - generic [ref=e580]: "Top Course:"
+                    - link [ref=e581] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/learn-digital-marketing-course/
+                      - text: The Complete Digital Marketing Course – 12 Courses in 1
+              - group [ref=e582]:
+                - generic [ref=e584]:
+                  - heading [level=4] [ref=e585]: Crystal Richards
+                  - generic [ref=e586]:
+                    - generic [ref=e587]:
+                      - text: "4.4"
+                      - img [ref=e588]
+                    - generic [ref=e589]: (1,208)
+                  - paragraph [ref=e590]: Principal and Owner of MindsparQ™, MHA, and a certified project manager with PMP and PMI-ACP credentials
+                  - generic [ref=e591]:
+                    - generic [ref=e592]: "Top Course:"
+                    - link [ref=e593] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/agile-in-30-minutes/
+                      - text: Agile Project Management in 30 Minutes
+              - group [ref=e594]:
+                - generic [ref=e596]:
+                  - heading [level=4] [ref=e597]: Alexis Haselberger
+                  - generic [ref=e598]:
+                    - generic [ref=e599]:
+                      - text: "4.5"
+                      - img [ref=e600]
+                    - generic [ref=e601]: (18,266)
+                  - paragraph [ref=e602]: Time management and productivity coach. Spent 15+ years managing operations and HR at several early stage startups. SPHR and SHRM-SCP certified
+                  - generic [ref=e603]:
+                    - generic [ref=e604]: "Top Course:"
+                    - link [ref=e605] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/do-more-stress-less/
+                      - text: "Time Management Mastery: Do More, Stress Less"
+              - group [ref=e606]:
+                - generic [ref=e608]:
+                  - heading [level=4] [ref=e609]: Todd Birzer
+                  - generic [ref=e610]:
+                    - generic [ref=e611]:
+                      - text: "4.5"
+                      - img [ref=e612]
+                    - generic [ref=e613]: (7,950)
+                  - paragraph [ref=e614]: Principal consultant at Kevolve Product Management, author of Becoming a More Strategic Product Manager, and has an MBA from Wharton at the University of Pennsylvania.
+                  - generic [ref=e615]:
+                    - generic [ref=e616]: "Top Course:"
+                    - link [ref=e617] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/productmanagement101/
+                      - text: Product Management 101
+              - group [ref=e618]:
+                - generic [ref=e620]:
+                  - heading [level=4] [ref=e621]: Mohsen Hassan
+                  - generic [ref=e622]:
+                    - generic [ref=e623]:
+                      - text: "4.6"
+                      - img [ref=e624]
+                    - generic [ref=e625]: (72,637)
+                  - paragraph [ref=e626]: "Having studied and worked in the field, Mohsen has developed a deep understanding of the financial industry’s many facets: Long-term investing, shorter-term trading, and automation."
+                  - generic [ref=e627]:
+                    - generic [ref=e628]: Top Course
+                    - link [ref=e629] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/foundation-course/
+                      - text: The Complete Foundation Stock Trading Course
+              - group [ref=e630]:
+                - generic [ref=e632]:
+                  - heading [level=4] [ref=e633]: Diego Davila
+                  - generic [ref=e634]:
+                    - generic [ref=e635]:
+                      - text: "4.4"
+                      - img [ref=e636]
+                    - generic [ref=e637]: (118,782)
+                  - paragraph [ref=e638]: Spanish entrepreneur and digital marketing innovator – Teaches in Spanish
+                  - generic [ref=e639]:
+                    - generic [ref=e640]: "Top Courses:"
+                    - link [ref=e641] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/marketingdigital/
+                      - text: Curso Completo de Marketing Digital – 23 Cursos em 1
+              - group [ref=e642]:
+                - generic [ref=e644]:
+                  - heading [level=4] [ref=e645]: Pilar Sanchez Albaladejo
+                  - generic [ref=e646]:
+                    - generic [ref=e647]:
+                      - text: "4.6"
+                      - img [ref=e648]
+                    - generic [ref=e649]: (25,205)
+                  - paragraph [ref=e650]: Brazilian Portuguese agile coach and project management expert – Teaches in Portuguese
+                  - generic [ref=e651]:
+                    - generic [ref=e652]: "Top Courses:"
+                    - link [ref=e653] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/formacao-total-em-scrum/
+                      - text: "Certificação Scrum Master: Curso Preparatório COMPLETO"
+              - group [ref=e654]:
+                - generic [ref=e656]:
+                  - heading [level=4] [ref=e657]: Angelika Froech
+                  - generic [ref=e658]:
+                    - generic [ref=e659]:
+                      - text: "4.3"
+                      - img [ref=e660]
+                    - generic [ref=e661]: (262)
+                  - paragraph [ref=e662]: Seminar leader and coach who advises people and companies on the topics of self-management and the development of their potential – Teaches in German
+                  - generic [ref=e663]:
+                    - generic [ref=e664]: "Top Courses:"
+                    - link [ref=e665] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/lehrinhalte-fuer-seminare-und-vortraege-ausarbeiten/
+                      - text: Lehrinhalte für Seminare und Vorträge ausarbeiten
+              - group [ref=e666]:
+                - generic [ref=e668]:
+                  - heading [level=4] [ref=e669]: Thibault Houdon
+                  - generic [ref=e670]:
+                    - generic [ref=e671]:
+                      - text: "4.7"
+                      - img [ref=e672]
+                    - generic [ref=e673]: (6,422)
+                  - paragraph [ref=e674]: Python Instructor and 3D generalist – Teaches in French
+                  - generic [ref=e675]:
+                    - generic [ref=e676]: "Top Courses:"
+                    - link [ref=e677] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/formation-complete-python/
+                      - text: La Formation Complète Python
+              - group [ref=e678]:
+                - generic [ref=e680]:
+                  - heading [level=4] [ref=e681]: Josh Paulsen
+                  - generic [ref=e682]:
+                    - generic [ref=e683]:
+                      - text: "4.5"
+                      - img [ref=e684]
+                    - generic [ref=e685]: (30,808)
+                  - paragraph [ref=e686]: Productivity and Goals Coach to Leaders and Entrepreneurs
+                  - generic [ref=e687]:
+                    - generic [ref=e688]: "Top Courses:"
+                    - link [ref=e689] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/productivity-and-time-management/
+                      - text: Productivity and Time Management for the Overwhelmed
+              - group [ref=e690]:
+                - generic [ref=e692]:
+                  - heading [level=4] [ref=e693]: Melissa Crowhurst
+                  - generic [ref=e694]:
+                    - generic [ref=e695]:
+                      - text: "4.8"
+                      - img [ref=e696]
+                    - generic [ref=e697]: (36,424)
+                  - paragraph [ref=e698]: Reiki Master Teacher, Inspirational Coach, Author, Speaker
+                  - generic [ref=e699]:
+                    - generic [ref=e700]: "Top Courses:"
+                    - link [ref=e701] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/learn-to-meditate/
+                      - text: Learn Meditation with Certification to Guide Others
+              - group [ref=e702]:
+                - generic [ref=e704]:
+                  - heading [level=4] [ref=e705]: Ritu RIyat
+                  - generic [ref=e706]:
+                    - generic [ref=e707]:
+                      - text: "4.4"
+                      - img [ref=e708]
+                    - generic [ref=e709]: (7,128)
+                  - paragraph [ref=e710]: Public health professional, applied meditation coach and founder of The Stress Detox specializing in helping individuals and organizations reduce stress and burnout.
+                  - generic [ref=e711]:
+                    - generic [ref=e712]: "Top Courses:"
+                    - link [ref=e713] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/stress-management-reduce-stress-and-burnout-in-the-workplace/
+                      - text: "The Stress Detox: A Stress Management Framework for Leaders"
+              - group [ref=e714]:
+                - generic [ref=e716]:
+                  - heading [level=4] [ref=e717]: Beth Payne
+                  - generic [ref=e718]:
+                    - generic [ref=e719]:
+                      - text: "4.5"
+                      - img [ref=e720]
+                    - generic [ref=e721]: (1,047)
+                  - paragraph [ref=e722]: Resilience expert helping people thrive in adversity
+                  - generic [ref=e723]:
+                    - generic [ref=e724]: "Top Courses:"
+                    - link [ref=e725] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/resilience-leadership/
+                      - text: Resilience Leadership
+              - group [ref=e726]:
+                - generic [ref=e728]:
+                  - heading [level=4] [ref=e729]: Robin Hills
+                  - generic [ref=e730]:
+                    - generic [ref=e731]:
+                      - text: "4.4"
+                      - img [ref=e732]
+                    - generic [ref=e733]: (40,769)
+                  - paragraph [ref=e734]: Business Psychologist, Emotional Intelligence Trainer
+                  - generic [ref=e735]:
+                    - generic [ref=e736]: "Top Courses:"
+                    - link [ref=e737] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/conflict-management-with-emotional-intelligence/
+                      - text: Conflict Management with Emotional Intelligence
+              - group [ref=e738]:
+                - generic [ref=e740]:
+                  - heading [level=4] [ref=e741]: Hassan Osman
+                  - generic [ref=e742]:
+                    - generic [ref=e743]:
+                      - text: "4.5"
+                      - img [ref=e744]
+                    - generic [ref=e745]: (50,929)
+                  - paragraph [ref=e746]: Virtual Teams & PM Expert; Bestselling Author; Leader at Cisco
+                  - generic [ref=e747]:
+                    - generic [ref=e748]: "Top Courses:"
+                    - link [ref=e749] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/write-better-emails/
+                      - text: "Write Better Emails: Tactics for Smarter Team Communication"
+              - group [ref=e750]:
+                - generic [ref=e752]:
+                  - heading [level=4] [ref=e753]: Leila Bulling Towne
+                  - generic [ref=e754]:
+                    - generic [ref=e755]:
+                      - text: "4.5"
+                      - img [ref=e756]
+                    - generic [ref=e757]: (28,138)
+                  - paragraph [ref=e758]: Executive coach specializing in helping leaders decide what to say and how to say it. Her work has been featured in Forbes, Women’s Health, BBC, WSJ, Marketplace Radio, Fast Company, SHRM, and others.
+                  - generic [ref=e759]:
+                    - generic [ref=e760]: "Top Courses:"
+                    - link [ref=e761] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/emotional-intelligence-at-work-learn-from-your-emotions/
+                      - text: "Emotional Intelligence at Work: Learn from Your Emotions"
+              - group [ref=e762]:
+                - generic [ref=e764]:
+                  - heading [level=4] [ref=e765]: Marie Deveaux
+                  - generic [ref=e766]:
+                    - generic [ref=e767]:
+                      - text: "4.5"
+                      - img [ref=e768]
+                    - generic [ref=e769]: (2,687)
+                  - paragraph [ref=e770]: Executive leadership coach and Founder of High Tides Consulting. Advises companies like Facebook, Spotify, L’Oreal, UBS and Prudential.
+                  - generic [ref=e771]:
+                    - generic [ref=e772]: "Top Courses:"
+                    - link [ref=e773] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/the-essential-guide-for-effective-managers/
+                      - text: The Essential Guide for Effective Managers
+              - group [ref=e774]:
+                - generic [ref=e776]:
+                  - heading [level=4] [ref=e777]: Andrei Dumitrescu
+                  - generic [ref=e778]:
+                    - generic [ref=e779]:
+                      - text: "4.6"
+                      - img [ref=e780]
+                    - generic [ref=e781]: (5,421)
+                  - paragraph [ref=e782]: DevOps Engineer and Professional Trainer
+                  - generic [ref=e783]:
+                    - generic [ref=e784]: "Top Courses:"
+                    - link [ref=e785] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/master-python-network-automation-for-network-engineers/
+                      - text: Master Network Automation with Python for Network Engineers
+              - group [ref=e786]:
+                - generic [ref=e788]:
+                  - heading [level=4] [ref=e789]: Chandra Lingam
+                  - generic [ref=e790]:
+                    - generic [ref=e791]:
+                      - text: "4.6"
+                      - img [ref=e792]
+                    - generic [ref=e793]: (8,381)
+                  - paragraph [ref=e794]: Expert on Amazon Web Services, mission-critical systems, and machine learning.
+                  - generic [ref=e795]:
+                    - generic [ref=e796]: "Top Courses:"
+                    - link [ref=e797] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/aws-machine-learning-a-complete-guide-with-python/
+                      - text: AWS Certified Machine Learning Specialty (MLS-C01)
+              - group [ref=e798]:
+                - generic [ref=e800]:
+                  - heading [level=4] [ref=e801]: Kevin Brown
+                  - generic [ref=e802]:
+                    - generic [ref=e803]:
+                      - text: "4.5"
+                      - img [ref=e804]
+                    - generic [ref=e805]: (21,692)
+                  - paragraph [ref=e806]: Windows, Azure, AWS, Cisco, Security Instructor & Author
+                  - generic [ref=e807]:
+                    - generic [ref=e808]: "Top Courses:"
+                    - link [ref=e809] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/azure-fundamentals-az-900-certification/
+                      - text: "Azure Fundamentals: AZ-900 Certification +Practice Questions"
+              - group [ref=e810]:
+                - generic [ref=e812]:
+                  - heading [level=4] [ref=e813]: David Bombal
+                  - generic [ref=e814]:
+                    - generic [ref=e815]:
+                      - text: "4.6"
+                      - img [ref=e816]
+                    - generic [ref=e817]: (96,313)
+                  - paragraph [ref=e818]: "CCIE #11023, over 15 years of network training experience"
+                  - generic [ref=e819]:
+                    - generic [ref=e820]: "Top Courses:"
+                    - link [ref=e821] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/
+                      - text: The Complete Networking Fundamentals Course. Your CCNA start
+              - group [ref=e822]:
+                - generic [ref=e824]:
+                  - heading [level=4] [ref=e825]: Mohammad Azam
+                  - generic [ref=e826]:
+                    - generic [ref=e827]:
+                      - text: "4.6"
+                      - img [ref=e828]
+                    - generic [ref=e829]: (7,901)
+                  - paragraph [ref=e830]: Apple Featured iOS Developer and iOS Instructor
+                  - generic [ref=e831]:
+                    - generic [ref=e832]: "Top Courses:"
+                    - link [ref=e833] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/mastering-mvvm-for-ios/
+                      - text: MVVM Design Pattern Using Swift in iOS
+              - group [ref=e834]:
+                - generic [ref=e836]:
+                  - heading [level=4] [ref=e837]: Penny de Byl
+                  - generic [ref=e838]:
+                    - generic [ref=e839]:
+                      - text: "4.6"
+                      - img [ref=e840]
+                    - generic [ref=e841]: (17,525)
+                  - paragraph [ref=e842]: International Award Winning Professor & Best Selling Author
+                  - generic [ref=e843]:
+                    - generic [ref=e844]: "Top Courses:"
+                    - link [ref=e845] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/artificial-intelligence-in-unity/
+                      - text: The Beginner’s Guide to Artificial Intelligence in Unity
+              - group [ref=e846]:
+                - generic [ref=e848]:
+                  - heading [level=4] [ref=e849]: Imtiaz Ahmed
+                  - generic [ref=e850]:
+                    - generic [ref=e851]:
+                      - text: "4.6"
+                      - img [ref=e852]
+                    - generic [ref=e853]: (74,627)
+                  - paragraph [ref=e854]: Award winning Udemy instructor who is highly experienced in big data technologies and enterprise software architectures.
+                  - generic [ref=e855]:
+                    - generic [ref=e856]: "Top Courses:"
+                    - link [ref=e857] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/the-complete-oracle-sql-certification-course/
+                      - text: The Complete Oracle SQL Certification Course
+              - group [ref=e858]:
+                - generic [ref=e860]:
+                  - heading [level=4] [ref=e861]: Randi Zuckerberg
+                  - generic [ref=e862]:
+                    - generic [ref=e863]:
+                      - text: "4.5"
+                      - img [ref=e864]
+                    - generic [ref=e865]: (866)
+                  - paragraph [ref=e866]: Entrepreneur, investor, advisor, bestselling author, and tech media personality. After noticing that she was one of way too few women in tech, she founded Zuckerberg Media.
+                  - generic [ref=e867]:
+                    - generic [ref=e868]: "Top Courses:"
+                    - link [ref=e869] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/master-your-personal-brand-like-a-marketing-pro/
+                      - text: Master Your Personal Brand Like a Marketing Pro
+              - group [ref=e870]:
+                - generic [ref=e872]:
+                  - heading [level=4] [ref=e873]: Deborah Grayson Riegel
+                  - generic [ref=e874]:
+                    - generic [ref=e875]:
+                      - text: "4.5"
+                      - img [ref=e876]
+                    - generic [ref=e877]: (833)
+                  - paragraph [ref=e878]: Instructor of Management Communication at the Wharton School of UPenn. speaker and coach for at Columbia Business School and Duke, consultant for Amazon, BlackRock, Bloomberg, and more.
+                  - generic [ref=e879]:
+                    - generic [ref=e880]: "Top Courses:"
+                    - link [ref=e881] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/communicatebrilliantly/
+                      - text: "Smart Tips: Communication"
+              - group [ref=e882]:
+                - generic [ref=e884]:
+                  - heading [level=4] [ref=e885]: Kevin Dorsey (KD)
+                  - generic [ref=e886]:
+                    - generic [ref=e887]:
+                      - text: "4.5"
+                      - img [ref=e888]
+                    - generic [ref=e889]: (834)
+                  - paragraph [ref=e890]: B2B Sales thought leader. InsideSales Top 10 Sales Leader, Crunchbase Top Sales Leaders You Should Know, TOPO Sales Development Exec of the Year, LinkedIn Top Sales Voices, and more.
+                  - generic [ref=e891]:
+                    - generic [ref=e892]: "Top Courses:"
+                    - link [ref=e893] [cursor=pointer]:
+                      - /url: https://www.udemy.com/course/b2b-sales-masterclass-people-focused-selling/
+                      - text: "B2B Sales Masterclass: People-Focused Selling"
+          - generic [ref=e894]:
+            - button [ref=e895] [cursor=pointer]
+            - tablist [ref=e898]:
+              - tab "Go to slide 1" [ref=e899] [cursor=pointer]:
+                - button "Go to slide 1" [ref=e900]
+              - tab "Go to slide 2" [ref=e901] [cursor=pointer]:
+                - button "Go to slide 2" [ref=e902]
+              - tab "Go to slide 3" [ref=e903] [cursor=pointer]:
+                - button "Go to slide 3" [ref=e904]
+              - tab "Go to slide 4" [ref=e905] [cursor=pointer]:
+                - button "Go to slide 4" [ref=e906]
+              - tab "Go to slide 5" [ref=e907] [cursor=pointer]:
+                - button "Go to slide 5" [ref=e908]
+              - tab "Go to slide 6" [ref=e909] [cursor=pointer]:
+                - button "Go to slide 6" [ref=e910]
+              - tab "Go to slide 7" [ref=e911] [cursor=pointer]:
+                - button "Go to slide 7" [ref=e912]
+              - tab "Go to slide 8" [ref=e913] [cursor=pointer]:
+                - button "Go to slide 8" [ref=e914]
+              - tab "Go to slide 9" [ref=e915] [cursor=pointer]:
+                - button "Go to slide 9" [ref=e916]
+              - tab "Go to slide 10" [ref=e917] [cursor=pointer]:
+                - button "Go to slide 10" [ref=e918]
+              - tab "Go to slide 11" [ref=e919] [cursor=pointer]:
+                - button "Go to slide 11" [ref=e920]
+              - tab "Go to slide 12" [ref=e921] [cursor=pointer]:
+                - button "Go to slide 12" [ref=e922]
+              - tab "Go to slide 13" [ref=e923] [cursor=pointer]:
+                - button "Go to slide 13" [ref=e924]
+              - tab "Go to slide 14" [ref=e925] [cursor=pointer]:
+                - button "Go to slide 14" [ref=e926]
+              - tab "Go to slide 15" [ref=e927] [cursor=pointer]:
+                - button "Go to slide 15" [ref=e928]
+              - tab "Go to slide 16" [ref=e929] [cursor=pointer]:
+                - button "Go to slide 16" [ref=e930]
+              - tab "Go to slide 17" [ref=e931] [cursor=pointer]:
+                - button "Go to slide 17" [ref=e932]
+              - tab "Go to slide 18" [ref=e933] [cursor=pointer]:
+                - button "Go to slide 18" [ref=e934]
+              - tab "Go to slide 19" [ref=e935] [cursor=pointer]:
+                - button "Go to slide 19" [ref=e936]
+              - tab "Go to slide 20" [ref=e937] [cursor=pointer]:
+                - button "Go to slide 20" [ref=e938]
+              - tab "Go to slide 21" [ref=e939] [cursor=pointer]:
+                - button "Go to slide 21" [ref=e940]
+              - tab "Go to slide 22" [ref=e941] [cursor=pointer]:
+                - button "Go to slide 22" [ref=e942]
+              - tab "Go to slide 23" [ref=e943] [cursor=pointer]:
+                - button "Go to slide 23" [ref=e944]
+              - tab "Go to slide 24" [ref=e945] [cursor=pointer]:
+                - button "Go to slide 24" [ref=e946]
+              - tab "Go to slide 25" [ref=e947] [cursor=pointer]:
+                - button "Go to slide 25" [ref=e948]
+              - tab "Go to slide 26" [ref=e949] [cursor=pointer]:
+                - button "Go to slide 26" [ref=e950]
+              - tab "Go to slide 27" [ref=e951] [cursor=pointer]:
+                - button "Go to slide 27" [ref=e952]
+              - tab "Go to slide 28" [ref=e953] [cursor=pointer]:
+                - button "Go to slide 28" [ref=e954]
+            - button [ref=e955] [cursor=pointer]
+      - generic [ref=e964]:
+        - figure [ref=e967]
+        - generic [ref=e972]:
+          - generic [ref=e975]: We’ve extended consistent L&D opportunities across the whole business using Udemy Business. We can map people’s career ambitions, build appropriate team structures, and even design our own highly technical content to anticipate future needs.
+          - generic [ref=e981]:
+            - generic [ref=e983]: Crisly González
+            - generic [ref=e985]: Tech Performance Enablement Manager
+      - generic [ref=e990]:
+        - heading "Get instant access to 30,000+ courses" [level=3] [ref=e996]
+        - generic [ref=e999]:
+          - generic [ref=e1001]:
+            - figure [ref=e1003]
+            - heading "Business Skills" [level=4] [ref=e1004]
+            - link "View Courses for Business skill" [ref=e1006] [cursor=pointer]:
+              - /url: https://business.udemy.com/business-training/
+              - text: View courses
+          - generic [ref=e1008]:
+            - figure [ref=e1010]
+            - heading "Tech Skills" [level=4] [ref=e1011]
+            - link "View Courses for Tech skill" [ref=e1013] [cursor=pointer]:
+              - /url: https://business.udemy.com/tech-training/
+              - text: View courses
+          - generic [ref=e1015]:
+            - figure [ref=e1017]
+            - heading "Leadership & Management Skills" [level=4] [ref=e1018]:
+              - text: Leadership &
+              - text: Management Skills
+            - link "View Courses for Leadership & Management" [ref=e1020] [cursor=pointer]:
+              - /url: https://business.udemy.com/leadership-and-management-training/
+              - text: View courses
+          - generic [ref=e1022]:
+            - figure [ref=e1024]
+            - heading "Wellness Skills" [level=4] [ref=e1025]
+            - link "View Courses for Wellness Skills" [ref=e1027] [cursor=pointer]:
+              - /url: https://business.udemy.com/wellness-training/
+              - text: View courses
+        - link "Get the full course collection" [ref=e1034] [cursor=pointer]:
+          - /url: https://business.udemy.com/course-collection/
+          - button "Get the full course collection" [ref=e1035]
+      - generic [ref=e1045]:
+        - heading "We’re your strategic learning partner to help move skills forward" [level=2] [ref=e1046]:
+          - text: We’re your strategic learning
+          - emphasis [ref=e1047]: partner
+          - text: to help move skills forward
+        - link "Request a demo today" [ref=e1049] [cursor=pointer]:
+          - /url: https://business.udemy.com/request-demo/
+          - button "Request a demo today" [ref=e1050]
+  - contentinfo [ref=e1051]:
+    - generic [ref=e1052]:
+      - navigation "Footer" [ref=e1053]:
+        - list [ref=e1055]:
+          - listitem [ref=e1056]:
+            - link "Udemy.com" [ref=e1057] [cursor=pointer]:
+              - /url: https://www.udemy.com/
+          - listitem [ref=e1058]:
+            - link "About Us" [ref=e1059] [cursor=pointer]:
+              - /url: https://business.udemy.com/about/
+          - listitem [ref=e1060]:
+            - link "Events" [ref=e1061] [cursor=pointer]:
+              - /url: https://business.udemy.com/resources/?sort_order=_sfm_event_date_start+asc+date&_sft_resource_type=events-industry,events-udemy-business
+          - listitem [ref=e1062]:
+            - link "Partners & Integrations" [ref=e1063] [cursor=pointer]:
+              - /url: https://business.udemy.com/partners-and-integrations/
+          - listitem [ref=e1064]:
+            - link "Partner with Udemy" [ref=e1065] [cursor=pointer]:
+              - /url: https://business.udemy.com/partner-with-udemy/
+          - listitem [ref=e1066]:
+            - link "Take a product tour" [ref=e1067] [cursor=pointer]:
+              - /url: https://business.udemy.com/product-tour/
+          - listitem [ref=e1068]:
+            - link "News" [ref=e1069] [cursor=pointer]:
+              - /url: https://investors.udemy.com/news-events/news-releases
+          - listitem [ref=e1070]:
+            - link "Investor Relations" [ref=e1071] [cursor=pointer]:
+              - /url: https://investors.udemy.com/
+          - listitem [ref=e1072]:
+            - link "Careers – we're hiring!" [ref=e1073] [cursor=pointer]:
+              - /url: https://about.udemy.com/careers/
+              - text: Careers –
+              - emphasis [ref=e1074]: we're hiring!
+        - list [ref=e1076]:
+          - listitem [ref=e1077]:
+            - link "Contact Us" [ref=e1078] [cursor=pointer]:
+              - /url: https://about.udemy.com/company/#contact
+          - listitem [ref=e1079]:
+            - link "Help" [ref=e1080] [cursor=pointer]:
+              - /url: https://business-support.udemy.com/hc/en-us
+          - listitem [ref=e1081]:
+            - link "Terms & conditions" [ref=e1082] [cursor=pointer]:
+              - /url: https://www.udemy.com/terms/
+          - listitem [ref=e1083]:
+            - link "Privacy policy" [ref=e1084] [cursor=pointer]:
+              - /url: https://www.udemy.com/terms/privacy/
+          - listitem [ref=e1085]:
+            - link "Sitemap" [ref=e1086] [cursor=pointer]:
+              - /url: https://business.udemy.com/sitemap/
+        - generic [ref=e1087]:
+          - generic [ref=e1088]: Follow us
+          - list [ref=e1089]:
+            - listitem [ref=e1090]:
+              - link "Udemy on LinkedIn" [ref=e1091] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/udemy/
+                - generic [ref=e1092]: 
+            - listitem [ref=e1093]:
+              - link "Udemy on Facebook" [ref=e1094] [cursor=pointer]:
+                - /url: https://www.facebook.com/udemy
+                - generic [ref=e1095]: 
+            - listitem [ref=e1096]:
+              - link "Udemy on X" [ref=e1097] [cursor=pointer]:
+                - /url: https://x.com/udemy
+                - generic [ref=e1098]: 
+            - listitem [ref=e1099]:
+              - link "Udemy on Instagram" [ref=e1100] [cursor=pointer]:
+                - /url: https://www.instagram.com/udemy/
+                - generic [ref=e1101]: 
+          - button "Switch site language" [ref=e1102] [cursor=pointer]: English
+          - text: 
+      - generic [ref=e1103]:
+        - paragraph [ref=e1105]: Reviewers recommend learning with Udemy Business
+        - generic [ref=e1106]:
+          - img "TIME award for World's Top EdTech Companies of 2024" [ref=e1108]
+          - img "G2 Badge for Best Software 2026 - Top 50 Education Products" [ref=e1110]
+    - generic [ref=e1111]:
+      - link "Go to homepage" [ref=e1114] [cursor=pointer]:
+        - /url: https://business.udemy.com
+        - img [ref=e1115]
+      - link "© 2026 Udemy, Inc." [ref=e1124] [cursor=pointer]:
+        - /url: https://www.udemy.com/
+  - generic [ref=e1125]:
+    - generic "AI assistant" [ref=e1126]
+    - generic "After AI assistant" [ref=e1127]
