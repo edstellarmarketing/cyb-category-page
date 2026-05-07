@@ -347,12 +347,31 @@ const PROGRAMS: Program[] = [
   },
 ];
 
+const PROGRAMS_PER_PAGE = 4;
+
 export function ChipChangesTabber() {
   const [activeTab, setActiveTab] = useState<
     "domains" | "programs" | "paths" | "delivery" | "trainers"
   >("domains");
   const [activePath, setActivePath] = useState(0);
   const path = LEARNING_PATHS[activePath];
+
+  const [programSearch, setProgramSearch] = useState("");
+  const [programPage, setProgramPage] = useState(1);
+
+  const filteredPrograms = PROGRAMS.filter((p) => {
+    const q = programSearch.trim().toLowerCase();
+    if (!q) return true;
+    return (
+      p.title.toLowerCase().includes(q) ||
+      p.category.toLowerCase().includes(q) ||
+      p.description.toLowerCase().includes(q)
+    );
+  });
+  const programPageCount = Math.max(1, Math.ceil(filteredPrograms.length / PROGRAMS_PER_PAGE));
+  const safeProgramPage = Math.min(programPage, programPageCount);
+  const programStart = (safeProgramPage - 1) * PROGRAMS_PER_PAGE;
+  const pagedPrograms = filteredPrograms.slice(programStart, programStart + PROGRAMS_PER_PAGE);
 
   return (
     <section id="catalog" className="bg-[#0c0c0c] text-white py-16 md:py-20">
@@ -542,44 +561,82 @@ export function ChipChangesTabber() {
                   className="text-[15px] leading-[1.55] text-white sm:text-[16px] md:text-[17px]"
                   style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
                 >
-                  Edstellar continuously updates courseware as new versions, tools, and threat techniques emerge in the cybersecurity space, so every cohort trains on what attackers and auditors are looking at right now.
+                  Edstellar continuously updates and adds new training programs as cybersecurity tools, platform versions, compliance standards, and threat techniques evolve, ensuring every cohort learns what attackers, security teams, and auditors are focused on today.
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-              <div className="max-w-3xl">
-                <h3
-                  className="mb-4 text-[24px] leading-[1.1] sm:text-[30px] lg:text-[36px]"
-                  style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
-                >
-                  96 Enterprise-grade cybersecurity programs, ready to deploy
-                </h3>
-                <p
-                  className="text-[15px] leading-[1.5] text-eds-gray-500 md:text-[17px]"
-                  style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
-                >
-                  A live catalog of {TOTAL_TRAININGS}+ cybersecurity programs across {DOMAINS.length}{" "}domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes.
-                </p>
-              </div>
-              <a
-                href="https://www.edstellar.com/category/cybersecurity-training"
-                target="_blank"
-                rel="noopener"
-                className="group/cta inline-flex shrink-0 items-center gap-2 self-start rounded-full bg-[#6366F1] px-6 py-3 text-[14px] uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#4F46E5] md:self-center"
-                style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
+            <div className="max-w-3xl">
+              <h3
+                className="mb-4 text-[24px] leading-[1.1] sm:text-[30px] lg:text-[36px]"
+                style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
               >
-                View all programs
-                <ArrowRightIcon
-                  width={16}
-                  height={16}
-                  className="transition-transform group-hover/cta:translate-x-0.5"
-                />
-              </a>
+                96 Corporate Cybersecurity Training Programs Aligned to Industry Needs
+              </h3>
+              <p
+                className="text-[15px] leading-[1.5] text-eds-gray-500 md:text-[17px]"
+                style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+              >
+                A live catalog of {TOTAL_TRAININGS}+ cybersecurity programs across {DOMAINS.length}{" "}domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes.
+              </p>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              {PROGRAMS.map((p) => (
+            {/* Search input */}
+            <div className="mt-8 flex flex-col gap-3 rounded-xl border border-eds-gray-200 bg-eds-gray-50 px-4 py-3 sm:flex-row sm:items-center sm:gap-4">
+              <div className="flex flex-1 items-center gap-3">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="shrink-0 text-eds-gray-400"
+                  aria-hidden
+                >
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m20 20-3.5-3.5" />
+                </svg>
+                <input
+                  type="search"
+                  value={programSearch}
+                  onChange={(e) => {
+                    setProgramSearch(e.target.value);
+                    setProgramPage(1);
+                  }}
+                  placeholder="Search programs by title, category, or keyword"
+                  aria-label="Search cybersecurity programs"
+                  className="w-full bg-transparent text-[14px] text-black placeholder:text-eds-gray-400 focus:outline-none md:text-[15px]"
+                  style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+                />
+                {programSearch && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setProgramSearch("");
+                      setProgramPage(1);
+                    }}
+                    className="shrink-0 text-[12px] uppercase tracking-[0.12em] text-eds-gray-500 hover:text-[#6366F1]"
+                    style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
+                  >
+                    Clear
+                  </button>
+                )}
+              </div>
+              <p
+                className="text-[12px] text-eds-gray-500 sm:text-right"
+                style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+              >
+                {filteredPrograms.length === 0
+                  ? "No programs match your search"
+                  : `Showing ${programStart + 1}-${Math.min(programStart + PROGRAMS_PER_PAGE, filteredPrograms.length)} of ${filteredPrograms.length}`}
+              </p>
+            </div>
+
+            <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {pagedPrograms.map((p) => (
                 <a
                   key={p.title}
                   href={p.href}
@@ -639,6 +696,86 @@ export function ChipChangesTabber() {
               ))}
             </div>
 
+            {/* Empty state */}
+            {filteredPrograms.length === 0 && (
+              <div className="mt-6 rounded-xl border border-dashed border-eds-gray-300 bg-eds-gray-50 px-6 py-10 text-center">
+                <p
+                  className="text-[15px] text-eds-gray-500"
+                  style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+                >
+                  No programs match &ldquo;{programSearch}&rdquo;. Try a different keyword or{" "}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setProgramSearch("");
+                      setProgramPage(1);
+                    }}
+                    className="text-[#6366F1] underline-offset-2 hover:underline"
+                    style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
+                  >
+                    clear the search
+                  </button>
+                  .
+                </p>
+              </div>
+            )}
+
+            {/* Pagination */}
+            {programPageCount > 1 && (
+              <nav
+                aria-label="Programs pagination"
+                className="mt-6 flex flex-col items-center justify-between gap-3 sm:flex-row"
+              >
+                <p
+                  className="text-[12px] text-eds-gray-500"
+                  style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+                >
+                  Page {safeProgramPage} of {programPageCount}
+                </p>
+                <div className="flex items-center gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => setProgramPage((p) => Math.max(1, p - 1))}
+                    disabled={safeProgramPage === 1}
+                    className="inline-flex h-9 items-center gap-1.5 rounded-full border border-eds-gray-300 px-3 text-[12px] uppercase tracking-[0.12em] text-eds-gray-500 transition-colors hover:border-[#6366F1] hover:text-[#6366F1] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-eds-gray-300 disabled:hover:text-eds-gray-500"
+                    style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
+                  >
+                    <ArrowRightIcon width={14} height={14} className="rotate-180" />
+                    Prev
+                  </button>
+                  {Array.from({ length: programPageCount }, (_, i) => i + 1).map((n) => {
+                    const active = n === safeProgramPage;
+                    return (
+                      <button
+                        key={n}
+                        type="button"
+                        onClick={() => setProgramPage(n)}
+                        aria-current={active ? "page" : undefined}
+                        className={`inline-flex h-9 min-w-9 items-center justify-center rounded-full border px-3 text-[13px] transition-colors ${
+                          active
+                            ? "border-[#6366F1] bg-[#6366F1] text-white"
+                            : "border-eds-gray-300 text-eds-gray-500 hover:border-[#6366F1] hover:text-[#6366F1]"
+                        }`}
+                        style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
+                      >
+                        {n}
+                      </button>
+                    );
+                  })}
+                  <button
+                    type="button"
+                    onClick={() => setProgramPage((p) => Math.min(programPageCount, p + 1))}
+                    disabled={safeProgramPage === programPageCount}
+                    className="inline-flex h-9 items-center gap-1.5 rounded-full border border-eds-gray-300 px-3 text-[12px] uppercase tracking-[0.12em] text-eds-gray-500 transition-colors hover:border-[#6366F1] hover:text-[#6366F1] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-eds-gray-300 disabled:hover:text-eds-gray-500"
+                    style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
+                  >
+                    Next
+                    <ArrowRightIcon width={14} height={14} />
+                  </button>
+                </div>
+              </nav>
+            )}
+
             <div
               className="mt-8 flex flex-col items-center justify-between gap-4 rounded-xl border border-eds-gray-200 bg-[#F5F3FF] px-5 py-4 text-center md:flex-row md:text-left"
             >
@@ -646,8 +783,8 @@ export function ChipChangesTabber() {
                 className="text-[14px] text-eds-gray-500 md:text-[15px]"
                 style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
               >
-                Looking for a specific training program, vendor track, or
-                role-based solution? Our team can match you to any of the
+                Looking for a specific training program or role-based
+                training solution? Our team can match you to any of the
                 {" "}{TOTAL_TRAININGS}+{" "}programs in the live catalog, or build a custom program around your exact stack, roles, and threat model.
               </p>
               <a
