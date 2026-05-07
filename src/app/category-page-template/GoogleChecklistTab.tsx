@@ -29,34 +29,34 @@ type CheckGroup = {
 const GROUPS: CheckGroup[] = [
   {
     id: "people-first",
-    label: "People-First Content Test",
-    googlePrinciple: "Do you have an existing or intended audience for your business or site that would find the content useful if they came directly to you?",
+    label: "Test 1: People-First vs Search-Engine-First",
+    googlePrinciple: "Is the content primarily made to attract visits from search engines? If the answer is yes, the page is search-engine-first content and will be downranked. Google's systems are designed to surface content created for people, not for algorithms. Every content decision on an Edstellar category page must pass all five people-first signals.",
     accentColor: "#6366F1",
     items: [
       {
         id: "p1",
-        text: "The page was created for an existing enterprise audience for this category (e.g. Cybersecurity: L&D Directors, CISOs, Security Leaders) — not primarily to rank for keywords.",
-        why: "Google: \"Do you have an existing or intended audience who would find the content useful if they came directly to you?\" — if the honest answer is no, the page is search-engine-first.",
+        text: "Q1: The page exists for a real enterprise audience (e.g. Cybersecurity: L&D Directors, CISOs, Security Leaders) who would find it useful if they arrived directly — not primarily to capture search traffic.",
+        why: "Google Q1: \"Do you have an existing or intended audience who would find this useful if they came directly to you?\" If the honest answer is no, the page is search-engine-first.",
       },
       {
         id: "p2",
-        text: "Every section answers a real buyer question and would remain on the page even if it had zero SEO value.",
-        why: "Google: \"Is the content primarily made to attract visits from search engines?\" — if removing a section would hurt rankings but not hurt readers, it exists for the algorithm.",
+        text: "Q2: Every section demonstrates first-hand expertise — specific program names, real compliance frameworks, accurate professional terminology — not generic content that could describe any training vendor.",
+        why: "Google Q2: \"Does the content demonstrate first-hand expertise and depth of knowledge?\" Naming the real frameworks and job titles for this category (not generic equivalents) is the primary expertise signal.",
       },
       {
         id: "p3",
-        text: "After reading, a visitor can make an informed enquiry decision without needing to search elsewhere.",
-        why: "Google: \"After reading your content, will someone leave feeling they've learned enough to achieve their goal?\"",
+        text: "Q3: The page has one clear primary purpose — helping enterprise buyers evaluate and engage Edstellar for this category's group training — not to capture adjacent keyword traffic.",
+        why: "Google Q3: \"Does the site have a primary purpose or focus?\" A page designed purely for SEO has no genuine primary purpose. If removing a section would hurt rankings but not hurt readers, it exists for the algorithm.",
       },
       {
         id: "p4",
-        text: "The page delivers a satisfying experience — it does not leave readers feeling they need better information from another source.",
-        why: "Google: \"Does your content leave readers feeling like they need to search again to get better information from other sources?\"",
+        text: "Q4: After reading, a visitor can make an informed enquiry decision without needing to search elsewhere.",
+        why: "Google Q4: \"After reading, will someone feel they've learned enough to achieve their goal?\" If they still need to search to complete their evaluation, the page has not served them.",
       },
       {
         id: "p5",
-        text: "The page is equally useful to a buyer arriving via email, referral, or direct — not only via organic search.",
-        why: "Google: \"Does your site have a primary purpose or focus?\" — a page designed purely for SEO has no genuine primary purpose.",
+        text: "Q5: The page delivers a satisfying experience — it does not leave readers feeling they need better information from another source.",
+        why: "Google Q5: \"Will someone leave feeling they've had a satisfying experience?\" Forced keyword phrasing, thin answers, and generic copy all degrade reading experience and are detectable as search-engine-first intent.",
       },
     ],
   },
