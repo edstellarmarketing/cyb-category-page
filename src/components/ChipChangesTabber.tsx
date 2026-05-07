@@ -102,16 +102,16 @@ const LEARNING_PATHS: LearningPath[] = [
     label: "SOC ANALYST",
     cardTitle: "SOC Analyst Path",
     cardDescription:
-      "From log analysis to incident triage, Security+, CySA+, Splunk and SIEM/SOAR fundamentals build the L1â†’L3 SOC career ladder.",
+      "From log analysis to incident triage, Security+, CySA+, Splunk and SIEM/SOAR fundamentals build the L1→L3 SOC career ladder.",
     image: "/images/cyber/path-soc.jpg",
     imageAlt: "SOC analyst",
-    href: "/learning-paths/soc-analyst-v2",
+    href: "https://www.edstellar.com/learning-paths/soc-analyst",
   },
   {
     label: "PENETRATION TESTER",
     cardTitle: "Penetration Tester Path",
     cardDescription:
-      "CEH v13 â†’ OSCP â†’ OSEP, offensive security curriculum covering web, network, Active Directory and red-team operations.",
+      "CEH v13 → OSCP → OSEP, offensive security curriculum covering web, network, Active Directory and red-team operations.",
     image: "/images/cyber/path-pentest.jpg",
     imageAlt: "Penetration tester",
     href: "https://www.edstellar.com/learning-paths/penetration-tester",
@@ -129,7 +129,7 @@ const LEARNING_PATHS: LearningPath[] = [
     label: "GRC MANAGER",
     cardTitle: "Governance, Risk & Compliance Path",
     cardDescription:
-      "CISA â†’ CRISC â†’ CISM with ISO 27001 Lead Auditor, runs audits, frameworks and risk programs at the enterprise level.",
+      "CISA → CRISC → CISM with ISO 27001 Lead Auditor, runs audits, frameworks and risk programs at the enterprise level.",
     image: "/images/cyber/path-grc-mgr.jpg",
     imageAlt: "GRC manager",
     href: "https://www.edstellar.com/learning-paths/grc-manager",
@@ -138,7 +138,7 @@ const LEARNING_PATHS: LearningPath[] = [
     label: "SECURITY ARCHITECT",
     cardTitle: "Security Architect Path",
     cardDescription:
-      "CISSP â†’ SABSA â†’ Microsoft SC-100, define Zero-Trust architectures and security reference models for the whole business.",
+      "CISSP → SABSA → Microsoft SC-100, define Zero-Trust architectures and security reference models for the whole business.",
     image: "/images/cyber/path-architect.jpg",
     imageAlt: "Security architect",
     href: "https://www.edstellar.com/learning-paths/security-architect",
@@ -270,7 +270,7 @@ const PROGRAMS: Program[] = [
   },
   {
     category: "Threat Defense",
-    title: "Ransomware Prevention",
+    title: "Ransomware Prevention Training",
     duration: "8 - 16 hrs",
     delivery: "Instructor-led (On-site/Virtual)",
     description:
@@ -281,7 +281,7 @@ const PROGRAMS: Program[] = [
   },
   {
     category: "Offensive Security",
-    title: "Advanced Cybersecurity Threat Simulation",
+    title: "Advanced Cybersecurity Threat Simulation Training",
     duration: "24 - 32 hrs",
     delivery: "Instructor-led (On-site/Virtual)",
     description:
@@ -292,7 +292,7 @@ const PROGRAMS: Program[] = [
   },
   {
     category: "Data Privacy",
-    title: "Personally Identifiable Information (PII)",
+    title: "Personally Identifiable Information (PII) Training",
     duration: "8 - 16 hrs",
     delivery: "Instructor-led (On-site/Virtual)",
     description:
@@ -325,7 +325,7 @@ const PROGRAMS: Program[] = [
   },
   {
     category: "Ethical Hacking",
-    title: "CEH v13 (AI-Augmented)",
+    title: "CEH v13 (AI-Augmented) Training",
     duration: "40 hrs",
     delivery: "Instructor-led (On-site/Virtual)",
     description:
@@ -336,7 +336,7 @@ const PROGRAMS: Program[] = [
   },
   {
     category: "GRC",
-    title: "ISO 27001 Lead Auditor",
+    title: "ISO 27001 Lead Auditor Training",
     duration: "40 hrs",
     delivery: "Instructor-led (On-site/Virtual)",
     description:
@@ -387,8 +387,9 @@ export function ChipChangesTabber() {
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
           Edstellar partners with enterprise security leaders to deliver
-          measurable workforce capability across every cybersecurity domain,
-          program, learning path and delivery mode you need.
+          measurable workforce capability through group cybersecurity training
+          programs covering every domain, learning path and delivery mode
+          you need.
         </p>
 
         <div
@@ -429,11 +430,12 @@ export function ChipChangesTabber() {
                   className="text-[15px] leading-[1.5] text-eds-gray-500 md:text-[17px]"
                   style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
                 >
-                  A global bench of hand-picked cybersecurity practitioners,
-                  spanning India, Singapore, the UK and beyond. Every
-                  Edstellar trainer brings deep practitioner experience across
-                  SOC, offensive security, cloud security and GRC, and a track
-                  record of high-impact corporate cohorts.
+                  Every Edstellar cybersecurity trainer passes a multi-stage
+                  vetting process: technical assessment, delivery evaluation
+                  by a senior reviewer, reference checks from past corporate
+                  cohorts, and a trial session before joining the active bench.
+                  Our 1,500+ vetted trainers span India, Singapore, the UK and
+                  beyond, covering SOC, offensive security, cloud security and GRC.
                 </p>
               </div>
               <a
@@ -577,7 +579,7 @@ export function ChipChangesTabber() {
                 className="text-[15px] leading-[1.5] text-eds-gray-500 md:text-[17px]"
                 style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
               >
-                A live catalog of {TOTAL_TRAININGS}+ cybersecurity programs across {DOMAINS.length}{" "}domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes.
+                A live catalog of {TOTAL_TRAININGS}+ cybersecurity group training programs across {DOMAINS.length}{" "}domains, delivered live, on-site or virtual, every program backed by certified trainers and measurable skill outcomes.
               </p>
             </div>
 

@@ -223,11 +223,10 @@ export function WelcomeStrip() {
             style={{ color: "#374151", fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
           >
             Edstellar is the cybersecurity training company enterprises rely on
-            to build deep capability across CISSP, CEH v13, CCSP, CISM, OSCP
-            and emerging AI-security disciplines. Whether your security teams
-            need entry-level skilling, role-specific upskilling, or senior-level
-            reskilling, every group training cohort is matched to vetted,
-            certified trainers with hands-on enterprise practice.
+            to build capability across CISSP, CEH v13, OSCP and AI-security.
+            Whether teams need entry-level skilling or role-specific upskilling,
+            every group training cohort is matched to vetted, certified trainers
+            with hands-on practice.
           </p>
           <p
             className="mb-8 text-[16px] leading-[1.6] sm:text-[18px]"
@@ -237,12 +236,10 @@ export function WelcomeStrip() {
             <strong style={{ color: "#1B1D52", fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}>
               customized instructor-led training
             </strong>{" "}
-            program is delivered onsite, off-site or virtually, in any language,
-            and runs on our five-part transformation framework that turns employee
-            training into measurable security outcomes. Strategy, curriculum,
-            hands-on labs, assessment and continuous mastery, engineered around
-            your stack, your regulatory landscape and the security KPIs your
-            board reports on.
+            program is delivered on-site, off-site or virtual in any language,
+            from new-hire cohorts to teams reskilling across security domains.
+            It runs on our five-part framework that turns employee training into
+            measurable security outcomes your board reports on.
           </p>
           <ul className="space-y-3">
             <CheckBullet>
@@ -416,7 +413,7 @@ export function WelcomeStrip() {
             className="mx-auto mt-4 max-w-2xl text-[15px] leading-[1.5] sm:text-[16px]"
             style={{ color: "#374151", fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
           >
-            Edstellar&apos;s instructor-led cybersecurity training spans 200+
+            Edstellar&apos;s instructor-led cybersecurity group training spans 200+
             programs across 8 cyber domains, designed for measurable workforce
             and risk-reduction impact.
           </p>
@@ -425,19 +422,22 @@ export function WelcomeStrip() {
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
           {[
             {
-              stat: "27%",
+              stat: "60%",
               caption:
-                "Average reduction in security incidents at organisations running continuous cybersecurity training programs.",
+                "Of confirmed data breaches involve the human element. Trained teams are the most direct line of defence.",
+              source: "Verizon DBIR 2025",
             },
             {
-              stat: "$10.5T",
+              stat: "$12.2T",
               caption:
-                "Projected annual cost of global cybercrime by 2025, driving demand for skilled cyber talent.",
+                "Projected annual cost of global cybercrime by 2031, driving urgent demand for skilled security teams.",
+              source: "Cybersecurity Ventures 2025",
             },
             {
-              stat: "74%",
+              stat: "59%",
               caption:
-                "CISOs say a strong cybersecurity talent pool is critical to business resilience.",
+                "Of enterprise security teams report critical or significant skills gaps, up 15 points year-on-year.",
+              source: "ISC2 Workforce Study 2025",
             },
           ].map((s) => (
             <div
@@ -460,6 +460,12 @@ export function WelcomeStrip() {
                 style={{ color: "#374151", fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
               >
                 {s.caption}
+              </p>
+              <p
+                className="mt-3 text-[11px] uppercase tracking-[0.1em]"
+                style={{ color: "#9CA3AF", fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+              >
+                {s.source}
               </p>
             </div>
           ))}

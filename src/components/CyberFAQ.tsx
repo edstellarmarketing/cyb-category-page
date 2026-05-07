@@ -9,51 +9,51 @@ type FAQ = {
 const FAQS: FAQ[] = [
   {
     q: "Which roles and designations should attend Edstellar's cybersecurity training programs?",
-    a: "Edstellar's cybersecurity group training programs are built for enterprise security and IT teams. Roles that benefit most include SOC analysts, cloud security engineers, penetration testers, GRC analysts, security architects, DevSecOps engineers, and incident response leads. L&D teams upskilling or reskilling employees into security functions can use Edstellar's role-mapping service to identify the right program for each designation before enrolling a cohort.",
+    a: "Edstellar's cybersecurity group training is built for enterprise security and IT teams. Roles include SOC analysts, cloud security engineers, penetration testers, GRC analysts, security architects, DevSecOps engineers, and incident response leads. Edstellar's role-mapping service identifies the right program for each designation.",
   },
   {
     q: "How are the cybersecurity training programs delivered?",
-    a: "All programs are delivered instructor-led, either on-site at your office premises or virtually through VILT (Virtual Instructor-Led Training). There are no self-paced or recorded modules. Every session is live, facilitated by a certified cybersecurity practitioner, and structured as a closed cohort for your team only. You choose the format, location, language, and schedule.",
+    a: "All programs are delivered instructor-led: on-site at your premises or virtually via VILT. No self-paced or recorded modules. Every session is live, run by a certified cybersecurity practitioner as a closed cohort for your team. You choose format, location, language, and schedule.",
   },
   {
     q: "Can the training program be customized for our organization's specific requirements?",
-    a: "Yes. Edstellar does not deliver off-the-shelf catalog programs. Every cybersecurity training program is designed around your threat model, your technology stack, your team's current capability level, and your compliance obligations. The customization process starts with a discovery call where we map your roles and skill gaps before a trainer is shortlisted or a schedule is confirmed.",
+    a: "Yes. Every cybersecurity training program is designed around your threat model, technology stack, team capability level, and compliance obligations. No off-the-shelf catalog programs. The process starts with a discovery call to map roles and skill gaps before a trainer is shortlisted.",
   },
   {
     q: "How many employees can attend a cybersecurity group training cohort?",
-    a: "Edstellar runs focused cohorts from as few as 5 trainees for specialist security teams up to enterprise-wide rollouts of 800 or more employees. For large organizations, we run parallel cohorts across multiple locations simultaneously to maintain training consistency across sites. Group size does not affect program quality since every cohort is instructor-led, not self-paced.",
+    a: "Edstellar runs cohorts from 5 trainees for specialist teams to enterprise-wide rollouts of 800 or more. For large organizations, parallel cohorts run across multiple locations simultaneously. Group size does not affect quality: every cohort is instructor-led, not self-paced.",
   },
   {
     q: "What is the difference between ILT and VILT?",
-    a: "ILT (Instructor-Led Training) is on-site, in-person delivery where a certified trainer is physically present at your premises. VILT (Virtual Instructor-Led Training) is the live online equivalent, delivered in real time via a virtual classroom platform. Both formats are instructor-led and include hands-on labs and live trainer interaction. The choice between ILT and VILT is based on your team's location and logistics, not a quality difference.",
+    a: "ILT (Instructor-Led Training) is on-site, in-person delivery with a certified trainer at your premises. VILT (Virtual Instructor-Led Training) is the live online equivalent, in real time. Both include hands-on labs and live interaction. The choice depends on your location and logistics, not quality.",
   },
   {
-    q: "How long does a cybersecurity group training program typically last?",
-    a: "Duration ranges from 8 hours for focused single-skill or awareness programs to 32 or more hours for advanced red-team, penetration testing, or architecture-level programs. Most group training cohorts are delivered over 2 to 5 days, with modular scheduling available to spread sessions across multiple weeks to minimize business disruption.",
+    q: "How do we select the right cybersecurity corporate training provider?",
+    a: "Look for a provider that designs programs around your threat model, not a generic catalog. Key criteria: certified practitioners, closed-cohort instructor-led delivery, pre and post skill assessments, trainer trial sessions, and post-program reporting your CISO can present to the board.",
   },
   {
     q: "How does Edstellar vet and select cybersecurity trainers?",
-    a: "Every trainer in Edstellar's network of 1,500+ cybersecurity practitioners goes through a multi-stage vetting process: a technical domain assessment, a live delivery evaluation, and ongoing client feedback reviews. Trainers are matched to your engagement based on domain expertise, technology stack alignment, industry experience, and geographic availability. You can request a trial session with your shortlisted trainer before committing your cohort.",
+    a: "Every trainer in Edstellar's 1,500+ network passes a multi-stage vetting: technical domain assessment, live delivery evaluation, and ongoing client feedback. Trainers are matched by domain expertise, stack alignment, and geography. You can request a trial session before committing your cohort.",
   },
   {
     q: "How is the effectiveness of the training measured?",
-    a: "Edstellar uses pre and post technical skill assessments for every cohort to establish a measurable skills delta. Results are benchmarked against role-based competency frameworks and reported in a post-program delivery summary. L&D teams receive outcome data on individual and team-level skill improvement that can be mapped to security KPIs such as MTTD, MTTR, and vulnerability remediation rates.",
+    a: "Every cohort runs pre and post technical skill assessments to establish a measurable skills delta. Results are benchmarked against role-based frameworks and reported in a post-program delivery summary. Outcome data maps to security KPIs including MTTD, MTTR, and vulnerability remediation rates.",
   },
   {
     q: "Which industries does Edstellar deliver cybersecurity training for?",
-    a: "Edstellar delivers cybersecurity training programs across banking and financial services, healthcare, manufacturing, government and defense, technology and SaaS, retail, energy, and telecoms, across 100+ countries. Programs are adapted to the regulatory context of each sector, covering frameworks such as PCI-DSS, HIPAA, NIST, ISO 27001, and SEBI guidelines depending on the industry.",
+    a: "Edstellar delivers cybersecurity training across banking, healthcare, manufacturing, government, technology, retail, energy, and telecoms in 100+ countries. Programs are adapted to each sector's regulatory context, covering PCI-DSS, HIPAA, NIST, ISO 27001, and SEBI guidelines.",
   },
   {
-    q: "Can the training be conducted at our office premises?",
-    a: "Yes. Edstellar's on-site instructor-led training deploys a certified cybersecurity trainer to your location across 100+ countries. The trainer brings all course materials, lab environments, and scenario simulations. On-site delivery is available for any group size and any geography, with scheduling coordinated around your team's availability and business calendar.",
+    q: "Why is group training more effective for employees than individual licenses?",
+    a: "Group training aligns an entire team on the same threat model, playbooks, and response patterns. Individual licenses create uneven skill baselines. Cohort-based instruction builds team muscle memory for joint scenarios such as incident response, which self-paced platforms cannot replicate.",
   },
   {
     q: "How is pricing structured for cybersecurity group training?",
-    a: "Pricing is based on cohort size, program duration, and delivery format. Edstellar offers four group training packages: Starter (120 trainee licenses, 64 hours), Growth (320 licenses, 160 hours), Enterprise (800 licenses, 400 hours), and Custom for unlimited rollouts. All packages include trainer fees, lab environments, pre and post skill assessments, and a dedicated Learning Services Manager. Contact us for a custom quote.",
+    a: "Pricing is based on cohort size, duration, and delivery format. Four packages: Starter (120 licenses, 64 hrs), Growth (320 licenses, 160 hrs), Enterprise (800 licenses, 400 hrs), and Custom for unlimited rollouts. All include trainer fees, labs, skill assessments, and a Learning Services Manager.",
   },
   {
     q: "Are there prerequisites for joining a cybersecurity training program?",
-    a: "Prerequisites vary by program level. Entry-level skilling programs for new hires or lateral movers into security roles have no formal prerequisites. Intermediate programs in cloud security or GRC typically require some domain familiarity, while advanced programs in penetration testing or red-teaming require prior hands-on experience. Edstellar's pre-enrollment skill-mapping exercise identifies the right level for each role in your team.",
+    a: "Prerequisites vary by level. Entry-level programs have no formal prerequisites. Intermediate cloud security or GRC programs require some domain familiarity. Advanced penetration testing or red-teaming requires prior hands-on experience. Edstellar's skill-mapping identifies the right level for each role.",
   },
 ];
 
@@ -170,7 +170,7 @@ export function CyberFAQ() {
             className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#6366F1] px-6 py-3 text-[14px] uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#4F46E5]"
             style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
           >
-            Enquire Now
+            Ask Our Learning Services Team
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>

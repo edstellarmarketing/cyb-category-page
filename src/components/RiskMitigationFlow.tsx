@@ -10,23 +10,23 @@ const STEPS: FlowStep[] = [
   {
     num: "01",
     title: "Detect",
-    body: "Trained SOC analysts triage AI-augmented intrusions earlier. Dwell time drops, signal-to-noise improves, and the organization stops paying for hours of unnoticed lateral movement.",
-    metric: "−58%",
-    metricCaption: "median dwell-time reduction",
+    body: "Trained SOC analysts triage AI-augmented intrusions earlier. Dwell time drops, signal-to-noise improves, and the organization stops paying for days of unnoticed lateral movement.",
+    metric: "194 days",
+    metricCaption: "avg. breach identify time",
   },
   {
     num: "02",
     title: "Respond",
-    body: "Hands-on incident-response drills turn runbooks into muscle memory. Cross-functional teams rehearse cloud, OT, and identity scenarios so that the first hour of a breach is rehearsed, not improvised.",
-    metric: "−41%",
-    metricCaption: "mean-time-to-contain",
+    body: "Instructor-led hands-on incident-response drills turn runbooks into muscle memory. Cross-functional teams rehearse cloud, OT, and identity scenarios so the first hour of a breach is rehearsed, not improvised.",
+    metric: "64 days",
+    metricCaption: "avg. containment time",
   },
   {
     num: "03",
     title: "Govern",
-    body: "GRC fluency turns audits into evidence. Engineers, risk officers, and product leaders speak the same regulatory language across DORA, NIS2, SEC Cyber Rules, and emerging AI legislation, and prove it on demand.",
-    metric: "+2.4x",
-    metricCaption: "audit-evidence velocity",
+    body: "Organisations with severe security staffing shortages paid $1.76M more per breach in 2024. GRC-fluent teams turn audits into evidence across DORA, NIS2, SEC Cyber Rules and emerging AI legislation.",
+    metric: "+$1.76M",
+    metricCaption: "breach cost: staffing gap",
   },
 ];
 
@@ -185,9 +185,8 @@ export function RiskMitigationFlow() {
             fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif",
           }}
         >
-          Indicative impact ranges drawn from IBM / Ponemon Cost of a Data
-          Breach 2024 and Verizon DBIR 2024 telemetry; outcomes vary by sector
-          and program design.
+          Benchmark figures: IBM Cost of a Data Breach Report 2024. Averages
+          vary by sector, organisation size, and security program maturity.
         </p>
       </div>
     </section>

@@ -9,7 +9,7 @@ const BLOGS: NewsCardType[] = [
       "An analysis of the human failure patterns behind enterprise ransomware breaches and why structured security awareness training and employee skilling interventions actually change outcomes.",
     image: "/images/cyber/industry-bfsi.jpg",
     imageAlt: "Ransomware threat analysis",
-    href: "#",
+    href: "#contact",
   },
   {
     category: "TRAINING GUIDES",
@@ -18,16 +18,16 @@ const BLOGS: NewsCardType[] = [
       "A step-by-step guide for L&D and security leaders to map roles, identify skill gaps, design cohort programs and measure outcomes.",
     image: "/images/cyber/more-curriculum.jpg",
     imageAlt: "Role-based training guide",
-    href: "#",
+    href: "#contact",
   },
   {
     category: "INDUSTRY TRENDS",
     title: "The 2026 Enterprise Cybersecurity Skills Gap Report",
     description:
-      "Survey findings from 1,200+ enterprise security and L&D leaders on where skill gaps are widest, where training budgets are going, and what is working.",
+      "Analysis for enterprise security and L&D leaders on where cybersecurity skill gaps are widest in 2026, where training budgets are being allocated, and what structured group training interventions are working.",
     image: "/images/cyber/cert-aws-sec.jpg",
     imageAlt: "Skills gap report",
-    href: "#",
+    href: "#contact",
   },
   {
     category: "L&D STRATEGY",
@@ -36,7 +36,7 @@ const BLOGS: NewsCardType[] = [
       "A practical guide for L&D leaders on framing employee training investment, reskilling budgets and group training ROI in the language of risk reduction and measurable security outcomes.",
     image: "/images/cyber/hero-team-training.jpg",
     imageAlt: "CISO buy-in",
-    href: "#",
+    href: "#contact",
   },
 ];
 

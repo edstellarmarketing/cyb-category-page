@@ -55,7 +55,7 @@ const PACKAGES: Package[] = [
   },
   {
     name: "Custom Package",
-    tagline: "Designed for large corporations",
+    tagline: "Unlimited scale for global enterprise rollouts",
     licenses: "Unlimited",
     hours: "Unlimited",
   },
@@ -108,7 +108,7 @@ function PriceCard({ pkg }: { pkg: Package }) {
           style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
         >
           <span className="h-1.5 w-1.5 rounded-full bg-white" />
-          Most Popular
+          Best for Growing Teams
         </span>
       )}
       <h3
@@ -164,7 +164,7 @@ function PriceCard({ pkg }: { pkg: Package }) {
         }`}
         style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
       >
-        Enquire Now
+        Get a Quote
         <ArrowRightIcon width={16} height={16} className="transition-transform group-hover/cta:translate-x-0.5" />
       </a>
     </div>
@@ -315,7 +315,7 @@ export function CorporatePricing() {
               className="inline-flex items-center gap-2 rounded-full bg-[#6366F1] px-6 py-3 text-[14px] uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#4F46E5]"
               style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
             >
-              Enquire Now
+              Talk to a Learning Advisor
               <ArrowRightIcon width={16} height={16} />
             </a>
           </div>

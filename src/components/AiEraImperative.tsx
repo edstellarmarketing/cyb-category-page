@@ -18,10 +18,10 @@ const GAP_STATS: GapStat[] = [
     source: "IBM Cost of a Data Breach Report, 2024",
   },
   {
-    metric: "3.2x",
+    metric: "$258K",
     caption:
-      "faster mean-time-to-contain at organizations whose security teams complete continuous, scenario-based cybersecurity training.",
-    source: "Ponemon / IBM, 2024",
+      "average breach savings at organizations that deploy employee cybersecurity training, the top-ranked mitigation factor.",
+    source: "IBM Cost of a Data Breach Report, 2024",
   },
 ];
 
@@ -77,11 +77,11 @@ export function AiEraImperative() {
                     "'Riona Sans Light', Helvetica, Arial, sans-serif",
                 }}
               >
-                The boards asking the hardest questions today are the ones
-                whose security teams trained early. They have engineers
-                fluent in LLM red-teaming, prompt-injection defense, MLOps
-                security and AI governance, and incident-response drills
-                that assume an AI-augmented adversary, not a human one.
+                The organizations getting ahead have security teams trained
+                early through instructor-led group training on LLM
+                red-teaming, prompt-injection defense, MLOps security and
+                AI governance, with incident-response drills built for
+                AI-augmented adversaries.
               </p>
             </div>
 

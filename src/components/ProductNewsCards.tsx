@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowRightIcon } from "@/components/icons";
 
-type Course = {
+type Program = {
   category: string;
   title: string;
   duration: string;
@@ -12,7 +12,7 @@ type Course = {
   href: string;
 };
 
-const COURSES: Course[] = [
+const PROGRAMS: Program[] = [
   {
     category: "Identity & Access",
     title: "CyberArk Training",
@@ -26,7 +26,7 @@ const COURSES: Course[] = [
   },
   {
     category: "Threat Defense",
-    title: "Ransomware Prevention",
+    title: "Ransomware Prevention Training",
     duration: "8 - 16 hrs",
     delivery: "Instructor-led (On-site/Virtual)",
     description:
@@ -37,7 +37,7 @@ const COURSES: Course[] = [
   },
   {
     category: "Offensive Security",
-    title: "Advanced Cybersecurity Threat Simulation",
+    title: "Advanced Cybersecurity Threat Simulation Training",
     duration: "24 - 32 hrs",
     delivery: "Instructor-led (On-site/Virtual)",
     description:
@@ -48,7 +48,7 @@ const COURSES: Course[] = [
   },
   {
     category: "Data Privacy",
-    title: "Personally Identifiable Information (PII)",
+    title: "Personally Identifiable Information (PII) Training",
     duration: "8 - 16 hrs",
     delivery: "Instructor-led (On-site/Virtual)",
     description:
@@ -59,18 +59,18 @@ const COURSES: Course[] = [
   },
 ];
 
-function CourseCard({ course }: { course: Course }) {
+function ProgramCard({ program }: { program: Program }) {
   return (
     <a
-      href={course.href}
+      href={program.href}
       target="_blank"
       rel="noopener"
       className="eds-arrow-link group flex h-full flex-col overflow-hidden rounded-xl border border-eds-gray-200 bg-white transition-all hover:-translate-y-0.5 hover:border-[#6366F1]/40 hover:shadow-lg"
     >
       <div className="relative aspect-[3/2] overflow-hidden bg-[#0c0c0c]">
         <Image
-          src={course.image}
-          alt={course.imageAlt}
+          src={program.image}
+          alt={program.imageAlt}
           fill
           sizes="(max-width: 768px) 100vw, 25vw"
           className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
@@ -80,7 +80,7 @@ function CourseCard({ course }: { course: Course }) {
           style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
         >
           <span className="h-1.5 w-1.5 rounded-full bg-[#6366F1]" />
-          {course.category}
+          {program.category}
         </span>
       </div>
       <div className="flex flex-1 flex-col gap-3 px-5 py-5 sm:px-6">
@@ -88,24 +88,24 @@ function CourseCard({ course }: { course: Course }) {
           className="text-[20px] leading-[1.2] text-black sm:text-[22px]"
           style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
         >
-          {course.title}
+          {program.title}
         </h3>
         <div
           className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[13px] text-eds-gray-500"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
           <span className="inline-flex items-center gap-1.5">
-            <span className="h-1 w-1 rounded-full bg-[#6366F1]" /> {course.duration}
+            <span className="h-1 w-1 rounded-full bg-[#6366F1]" /> {program.duration}
           </span>
           <span className="inline-flex items-center gap-1.5">
-            <span className="h-1 w-1 rounded-full bg-[#6366F1]" /> {course.delivery}
+            <span className="h-1 w-1 rounded-full bg-[#6366F1]" /> {program.delivery}
           </span>
         </div>
         <p
           className="text-[15px] leading-[1.4] text-black sm:text-[16px]"
           style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
         >
-          {course.description}
+          {program.description}
         </p>
         <span
           className="mt-auto inline-flex items-center gap-1.5 pt-2 text-[13px] uppercase tracking-[0.14em] text-[#6366F1]"
@@ -137,8 +137,8 @@ export function ProductNewsCards() {
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {COURSES.map((c) => (
-            <CourseCard key={c.title} course={c} />
+          {PROGRAMS.map((c) => (
+            <ProgramCard key={c.title} program={c} />
           ))}
         </div>
 
@@ -163,7 +163,7 @@ export function ProductNewsCards() {
               className="inline-flex items-center gap-2 rounded-full border border-black px-6 py-3 text-[14px] uppercase tracking-[0.12em] text-black transition-colors hover:border-[#6366F1] hover:text-[#6366F1]"
               style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
             >
-              View All Training Programs
+              Browse the Full Program Catalog
               <ArrowRightIcon width={16} height={16} />
             </a>
           </div>

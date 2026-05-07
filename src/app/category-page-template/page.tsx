@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CategoryPageTabs } from "./CategoryPageTabs";
 
 export const metadata: Metadata = {
   title: "Category Page Template | Edstellar",
@@ -45,7 +46,7 @@ const SECTIONS: PageSection[] = [
     component: "HeroSlider.tsx",
     goal:
       "Establish category authority in the first 3 seconds. The visitor must immediately understand: Edstellar delivers instructor-led, customized group training for this category, for enterprises, at scale. Each slide targets a different industry vertical or use case to broaden the demand capture surface.",
-    audience: "CISOs, VPs of Engineering, L&D Directors, Security Leaders",
+    audience: "Enterprise decision-makers entering the category page (e.g. Cybersecurity: CISOs, VPs of Engineering, L&D Directors, Security Leaders)",
     fields: [
       {
         element: "Slide category label",
@@ -149,7 +150,7 @@ const SECTIONS: PageSection[] = [
     component: "WelcomeStrip.tsx",
     goal:
       "SEO anchor and content authority. The H1 fixes the primary keyword for search. The overview copy builds trust with L&D buyers by naming the full scope of capability: skilling, upskilling, reskilling, group training, customized delivery. The five-part framework diagram shows Edstellar's methodology is systematic, not ad-hoc.",
-    audience: "L&D Directors, HR Heads, Procurement, CISOs",
+    audience: "L&D Directors, HR Heads, Procurement, relevant C-suite (e.g. Cybersecurity: CISOs)",
     fields: [
       {
         element: "H1 heading",
@@ -293,7 +294,7 @@ const SECTIONS: PageSection[] = [
     component: "TrainingProgramTabs.tsx + AiEraImperative.tsx + RiskMitigationFlow.tsx + GlobalCyberTrends.tsx",
     goal:
       "Build urgency and context. Show the visitor why the enterprise needs this training right now. Three tabs cover: the AI-era skills gap in this domain, how structured training reduces organizational risk, and global trends driving demand. This section converts skeptical visitors by making inaction feel dangerous.",
-    audience: "CISOs, Board-level stakeholders, Security Programme Managers",
+    audience: "Senior stakeholders needing credibility signals (e.g. Cybersecurity: CISOs, Board-level stakeholders, Security Programme Managers)",
     fields: [
       {
         element: "Tab 1 label",
@@ -339,7 +340,7 @@ const SECTIONS: PageSection[] = [
     component: "ChipChangesTabber.tsx",
     goal:
       "Let buyers browse the full program catalog by domain. This section answers 'What specific programs do you offer?' with domain chips and program cards. The depth of the catalog (200+ programs) builds confidence that Edstellar covers every sub-domain, not just the obvious ones.",
-    audience: "L&D Managers, Security Team Leads, Procurement",
+    audience: "L&D Managers, Team Leads, Procurement (e.g. Cybersecurity: Security Team Leads)",
     fields: [
       {
         element: "Section intro description (Programs tab paragraph)",
@@ -465,7 +466,7 @@ const SECTIONS: PageSection[] = [
     component: "ProductNewsCards.tsx",
     goal:
       "Showcase four hand-picked programs that represent the breadth of the category. This section removes the need to browse — it surfaces the highest-value programs for the most common buyer use cases. The catalog CTA strip below converts browsers who want to go deeper.",
-    audience: "L&D Managers, Security Team Leads, CISOs scanning quickly",
+    audience: "L&D Managers, Team Leads, senior stakeholders scanning quickly (e.g. Cybersecurity: Security Team Leads, CISOs)",
     fields: [
       {
         element: "Section heading",
@@ -572,9 +573,9 @@ const SECTIONS: PageSection[] = [
     name: "CustomersPartners (Why Edstellar)",
     component: "CustomersPartners.tsx",
     goal:
-      "Answer the buyer's most important question: 'Why Edstellar over SANS, OffSec, EC-Council, Cybrary, or Infosec?' This section must land five convictions: (1) Edstellar builds programs, it doesn't sell catalog seats. (2) Edstellar vets trainers and offers a trial session before commitment. (3) Edstellar tracks skill change in CISO/board-level KPI language — MTTD, MTTR, vulnerability remediation rates. (4) Edstellar delivers at enterprise scale — parallel cohorts, multi-site, same week. (5) Every engagement has one named Learning Services Manager who owns it end to end. The global map, proof strip, and client logos provide geographic and social proof.",
+      "Answer the buyer's most important question: 'Why Edstellar over competing training providers in this category?' This section must land five convictions: (1) Edstellar builds programs, it doesn't sell catalog seats. (2) Edstellar vets trainers and offers a trial session before commitment. (3) Edstellar tracks skill change in KPI language relevant to the category (e.g. Cybersecurity: MTTD, MTTR, vulnerability remediation rates). (4) Edstellar delivers at enterprise scale — parallel cohorts, multi-site, same week. (5) Every engagement has one named Learning Services Manager who owns it end to end. The global map, proof strip, and client logos provide geographic and social proof.",
     audience:
-      "CISOs and Security Leaders comparing training vendors, L&D Heads finalizing a shortlist",
+      "Category decision-makers comparing training vendors, L&D Heads finalizing a shortlist (e.g. Cybersecurity: CISOs and Security Leaders)",
     fields: [
       {
         element: "Heading",
@@ -730,7 +731,7 @@ const SECTIONS: PageSection[] = [
     goal:
       "Turn abstract claims of enterprise delivery into concrete, scannable proof. The carousel sits between EnterpriseProofStrip and CorporatePricing and showcases 8–12 industry-anonymized engagements. Each card lets a buyer self-select into their own vertical; each click opens a dedicated /case-studies/[slug] page that demonstrates Edstellar's methodology and outcomes WITHOUT exposing client names. This section answers the post-proof-strip question 'Who like me has Edstellar actually delivered for?' while keeping confidentiality intact.",
     audience:
-      "CISOs and Security Leaders looking for vertical-specific proof, L&D Directors evaluating relevance, procurement validating references",
+      "Category decision-makers looking for vertical-specific proof, L&D Directors evaluating relevance, procurement validating references (e.g. Cybersecurity: CISOs and Security Leaders)",
     fields: [
       {
         element: "Section heading",
@@ -1028,8 +1029,8 @@ const SECTIONS: PageSection[] = [
     name: "OurApproach",
     component: "OurApproach.tsx",
     goal:
-      "Eliminate process uncertainty. L&D buyers need to know what happens after they enquire. The five steps (Discover, Design, Deliver, Assess, Optimise) show Edstellar is a consultative partner, not a training vendor who sends a login link. This section directly counters the SANS/Cybrary model of self-paced catalog access.",
-    audience: "L&D Directors, Security Programme Managers, Procurement evaluating process fit",
+      "Eliminate process uncertainty. L&D buyers need to know what happens after they enquire. The five steps (Discover, Design, Deliver, Assess, Optimise) show Edstellar is a consultative partner, not a training vendor who sends a login link. This section directly counters the self-paced catalog-access model that most competing platforms offer.",
+    audience: "L&D Directors, Programme Managers, Procurement evaluating process fit (e.g. Cybersecurity: Security Programme Managers)",
     fields: [
       {
         element: "Section heading",
@@ -1160,7 +1161,7 @@ const SECTIONS: PageSection[] = [
     component: "ClientVoices.tsx",
     goal:
       "Social proof from peers in similar roles. The visitor must see a CISO, L&D Director, or Security Manager saying that Edstellar's instructor-led group training delivered measurable team capability improvement. Testimonials are about the training experience and business outcome, not about passing an exam or earning a certification.",
-    audience: "CISOs and L&D Heads on the verge of shortlisting",
+    audience: "Senior decision-makers on the verge of shortlisting (e.g. Cybersecurity: CISOs and L&D Heads)",
     fields: [
       {
         element: "Section heading",
@@ -1217,7 +1218,7 @@ const SECTIONS: PageSection[] = [
     component: "BusinessNewsCards.tsx",
     goal:
       "Thought leadership and SEO depth. Four blog cards signal that Edstellar understands the market, not just the training catalog. Card topics cover: threat intelligence, training program design, industry trends, and L&D strategy — the four content pillars that enterprise buyers search for when researching training investments.",
-    audience: "L&D Managers, Security Analysts, CISOs doing background research",
+    audience: "L&D Managers and domain researchers doing background research (e.g. Cybersecurity: Security Analysts, CISOs)",
     fields: [
       {
         element: "Section heading",
@@ -1368,7 +1369,7 @@ const SECTIONS: PageSection[] = [
     component: "FAQ accordion component",
     goal:
       "Convert late-stage researchers and remove the last objections before enquiry. Buyers who scroll to FAQs are serious — they need specific answers on delivery, customization, audience fit, and pricing. FAQs also carry significant long-tail keyword value for search. Every answer must reinforce Edstellar's USPs: instructor-led, customized, group training, measurable outcomes.",
-    audience: "L&D Directors and Procurement finalizing vendor evaluation, CISOs validating fit",
+    audience: "L&D Directors and Procurement finalizing vendor evaluation, senior stakeholders validating fit (e.g. Cybersecurity: CISOs)",
     fields: [
       {
         element: "Section heading",
@@ -1664,30 +1665,6 @@ const SECTIONS: PageSection[] = [
   },
 ];
 
-const KEYWORDS_TABLE = [
-  { kw: "[category] training company", min: 1, sections: "Welcome — Para 1 opening sentence only. Pattern: 'Edstellar is the [category] training company enterprises rely on'. Do not repeat — one anchored use is sufficient; over-use signals keyword stuffing." },
-  { kw: "[category] corporate training company", min: 1, sections: "About (CustomersPartners) — Goal statement opening sentence only. Pattern: 'Edstellar is a dedicated [category] corporate training company built for enterprise workforce development'." },
-  { kw: "[category] training provider", min: 1, sections: "About (CustomersPartners) — Goal statement closing sentence only. Pattern: 'As a [category] training provider operating in 100+ countries'." },
-  { kw: "instructor-led", min: 10, sections: "Hero, Welcome, Catalog, Featured, About, Pricing, Approach, FAQs (×3 min), Contact" },
-  { kw: "customized instructor-led training", min: 4, sections: "Welcome (bold), About, Pricing, Contact" },
-  { kw: "group training", min: 8, sections: "Hero, Welcome, About, Pricing, Blog, FAQs (×2 min)" },
-  { kw: "upskill / upskilling", min: 5, sections: "Hero, Welcome, About, Pricing, FAQs" },
-  { kw: "reskill / reskilling", min: 4, sections: "Hero, Welcome, About, Blog, FAQs" },
-  { kw: "skilling", min: 2, sections: "Welcome, About" },
-  { kw: "employee training", min: 4, sections: "Welcome, About, Featured, Blog" },
-  { kw: "on-site", min: 5, sections: "Hero, Welcome, Pricing, Approach, FAQs" },
-  { kw: "virtual / VILT / ILT", min: 4, sections: "Hero, Welcome, Pricing, Approach, FAQs" },
-  { kw: "vetted", min: 2, sections: "Welcome, About" },
-  { kw: "certified trainers", min: 3, sections: "Hero, Welcome, Approach" },
-  { kw: "measurable outcomes", min: 3, sections: "Hero, Welcome, About, Blog, FAQs" },
-  { kw: "cohort / closed cohort", min: 2, sections: "FAQs, Pricing" },
-  { kw: "training program (not 'course')", min: 10, sections: "All sections — FAQs must use this, never 'course'" },
-  { kw: "ILT (defined)", min: 1, sections: "FAQs — must define ILT vs VILT in at least one answer" },
-  { kw: "VILT (defined)", min: 1, sections: "FAQs — must define ILT vs VILT in at least one answer" },
-  { kw: "security awareness training", min: 1, sections: "Blog (card 1)" },
-  { kw: "[category] workforce development", min: 1, sections: "About" },
-  { kw: "role-mapping / role-based", min: 1, sections: "FAQs (Target Audience or Prerequisites)" },
-];
 
 const PROCESS_STEPS = [
   {
@@ -1712,33 +1689,16 @@ const PROCESS_STEPS = [
   },
   {
     num: "5",
-    title: "Run the competitor differentiation checklist",
-    desc: "Before marking the page ready, verify every question in the checklist at the bottom of this guide is answered by the page copy. If any question is unanswered, find the right section and add the missing proof point.",
+    title: "Run the Google Helpful Content Checklist",
+    desc: "Before marking the page ready, open the Google Helpful Content Checklist tab and verify every item passes for the new category page. If any item is unmet, find the right section and add the missing proof point.",
   },
   {
     num: "6",
-    title: "Run the keyword frequency check",
-    desc: "Count appearances of each keyword in the table below across the full page. If any keyword is below its minimum count, find the most natural place in the section noted and add it.",
+    title: "Run the keyword placement check",
+    desc: "Open the Keywords to Target tab and verify each cluster's pinned and natural placement requirements are met across the full page. Check that no frequency targets from any cluster are missing.",
   },
 ];
 
-const COMPETITOR_CHECKLIST = [
-  "Does the page say Edstellar builds the program (not sells a catalog seat)?",
-  "Does the page mention trainer vetting (not just 'expert trainers')?",
-  "Does the page say on-site or virtual (not only online / virtual)?",
-  "Does the page reference local compliance or in-region delivery?",
-  "Does the page speak L&D language: skilling, upskilling, reskilling, workforce development?",
-  "Does the page mention measurable skill outcomes (not just pass rates or session completion)?",
-  "Does the page address both small group and large enterprise rollouts?",
-  "Is 'customized instructor-led training' bolded in the WelcomeStrip paragraph 2?",
-  "Is 'instructor-led' present in at least 10 places across the full page (including FAQs)?",
-  "Is the delivery field on every program card locked to 'Instructor-led (On-site/Virtual)'?",
-  "Does the FAQ section have 8–12 questions (not fewer, not more)?",
-  "Is the Target Audience FAQ the first FAQ and does it name at least 5 specific job designations?",
-  "Does at least one FAQ define ILT and VILT and clarify both are live instructor-led formats?",
-  "Are all FAQ answers one paragraph only, with no bullet lists or subheadings inside the answer?",
-  "Does the testimonials section reference instructor-led group training and measurable outcomes — not exam prep or certification?",
-];
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
@@ -1888,8 +1848,75 @@ export default function CategoryPageTemplate() {
         </div>
       </div>
 
-      {/* ── Section-by-section ── */}
-      <main className="mx-auto max-w-6xl px-6 py-14 space-y-10">
+      {/* ── Global Writing Rules (always visible) ── */}
+      <div className="border-b" style={{ backgroundColor: NAVY, borderColor: "#2D2F6B" }}>
+        <div className="mx-auto max-w-6xl px-6 py-10">
+          <p
+            className="mb-1 text-[11px] uppercase tracking-[0.22em]"
+            style={{ color: LIME, fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
+          >
+            Always Apply
+          </p>
+          <h2
+            className="mb-6 text-[22px] text-white"
+            style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
+          >
+            Global Writing Rules
+          </h2>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { label: "No em-dashes", body: "Replace every — with a period, comma, or colon. No exceptions. This rule is violated frequently — check every section after writing." },
+              { label: "No 'Course'", body: "Always use 'program', 'training program', or 'training programs'. 'Course' is only allowed inside FAQ answers." },
+              { label: "No accreditation claims", body: "Edstellar is not an accreditation body. Never write 'Edstellar-certified', 'certified by Edstellar', 'official training partner of [body]', or anything that implies Edstellar grants or is affiliated with industry certifications." },
+              { label: "No guessed URLs", body: "CTAs link only to #contact, #catalog, or a confirmed edstellar.com URL. Never invent or guess a URL for a program, blog, or page." },
+              { label: "No 'vendor-certified'", body: "Always 'certified trainers'. The word 'vendor-certified' has been removed from all components. Do not reintroduce it." },
+              { label: "Instructor-led is #1 USP", body: "The phrase 'instructor-led' must appear at minimum 8 times per category page: in the hero, H1 section, catalog, featured programs, about, pricing, and approach sections." },
+              { label: "Bold 'customized instructor-led training'", body: "In WelcomeStrip paragraph 2, the phrase 'customized instructor-led training' must be wrapped in <strong> tags. This is the primary USP visual anchor on the page." },
+              { label: "No eyebrow headings", body: "Do not place a small uppercase label above any section heading. Section headings must stand alone. The only exception is the slide category label inside HeroSlider, which is scoped to the hero slide UI." },
+              { label: "LOCKED fields stay locked", body: "Delivery format on program cards, blockquote in About section, and package names and license counts must not be changed between categories." },
+              { label: "No two adjacent sections with the same background", body: "Every section must alternate between bg-white and bg-[#F5F3FF]. Two consecutive sections with the same background colour merge visually. Audit every section in render order before publishing." },
+            ].map((rule) => (
+              <div
+                key={rule.label}
+                className="rounded-xl border border-white/10 bg-white/5 p-5"
+              >
+                <p className="text-[14px] text-white" style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}>
+                  {rule.label}
+                </p>
+                <p className="mt-2 text-[13px] leading-[1.55] text-white/65" style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}>
+                  {rule.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <CategoryPageTabs
+        rulesContent={
+          <main className="mx-auto max-w-6xl px-6 py-14 space-y-10">
+
+        {/* Scope banner */}
+        <div
+          className="flex items-start gap-3 rounded-xl border px-5 py-4"
+          style={{ backgroundColor: "#EFF6FF", borderColor: "#BFDBFE" }}
+        >
+          <span className="mt-0.5 shrink-0 text-[15px]" style={{ color: "#2563EB" }}>ℹ</span>
+          <div>
+            <p
+              className="text-[13px] leading-[1.5]"
+              style={{ color: "#1E3A8A", fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}
+            >
+              These section rules apply to every Edstellar category page — Leadership, Data Science, Project Management, Cybersecurity, and any future category.
+            </p>
+            <p
+              className="mt-1 text-[12px] leading-[1.55]"
+              style={{ color: "#1D4ED8", fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+            >
+              Where specific roles, frameworks, or compliance terms appear in examples (CISSP, SOC analyst, BFSI, PCI-DSS, etc.) they reference the Cybersecurity category page for illustration. Replace with your category&apos;s equivalent job titles, certifications, industry verticals, and compliance context.
+            </p>
+          </div>
+        </div>
 
         {SECTIONS.map((sec) => (
           <article
@@ -2046,156 +2073,16 @@ export default function CategoryPageTemplate() {
           </article>
         ))}
 
-        {/* ── Keyword frequency table ── */}
-        <section
-          id="keywords"
-          className="rounded-2xl border bg-white overflow-hidden"
-          style={{ borderColor: BORDER }}
-        >
-          <div className="px-7 py-6" style={{ backgroundColor: NAVY }}>
-            <p className="text-[11px] uppercase tracking-[0.2em]" style={{ color: LIME, fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}>
-              Full-Page Audit
-            </p>
-            <h2 className="mt-1 text-[24px] text-white" style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}>
-              Keyword Frequency Targets
-            </h2>
-          </div>
-          <p
-            className="px-7 py-5 text-[14px] leading-[1.6] border-b"
-            style={{ color: "#374151", borderColor: BORDER, backgroundColor: LIGHT, fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
-          >
-            After writing all sections, count each keyword across the full page. If any keyword appears fewer times than the minimum below, find the most natural place in the listed sections and add it before publishing.
-          </p>
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-[13px]" style={{ borderCollapse: "collapse" }}>
-              <thead>
-                <tr style={{ backgroundColor: "#F9FAFB", borderBottom: `1px solid ${BORDER}` }}>
-                  {["Keyword", "Min. Appearances", "Sections to Check"].map((h) => (
-                    <th key={h} className="px-6 py-3 font-normal" style={{ color: GRAY, fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif", fontSize: "11px", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-                      {h}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {KEYWORDS_TABLE.map((row, i) => (
-                  <tr key={row.kw} style={{ borderBottom: `1px solid ${BORDER}`, backgroundColor: i % 2 === 0 ? "#fff" : "#FAFAFA" }}>
-                    <td className="px-6 py-3.5">
-                      <KeywordPill>{row.kw}</KeywordPill>
-                    </td>
-                    <td className="px-6 py-3.5">
-                      <span
-                        className="inline-flex h-7 w-7 items-center justify-center rounded-full text-[13px] text-white"
-                        style={{ backgroundColor: INDIGO, fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif" }}
-                      >
-                        {row.min}
-                      </span>
-                    </td>
-                    <td className="px-6 py-3.5 text-[13px]" style={{ color: GRAY, fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}>
-                      {row.sections}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        {/* ── Competitor differentiation checklist ── */}
-        <section
-          id="checklist"
-          className="rounded-2xl border bg-white overflow-hidden"
-          style={{ borderColor: BORDER }}
-        >
-          <div className="px-7 py-6" style={{ backgroundColor: NAVY }}>
-            <p className="text-[11px] uppercase tracking-[0.2em]" style={{ color: LIME, fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}>
-              Pre-Publish
-            </p>
-            <h2 className="mt-1 text-[24px] text-white" style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}>
-              Competitor Differentiation Checklist
-            </h2>
-          </div>
-          <p
-            className="px-7 py-5 text-[14px] leading-[1.6] border-b"
-            style={{ color: "#374151", borderColor: BORDER, backgroundColor: LIGHT, fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
-          >
-            Every item below must be answerable with &ldquo;yes&rdquo; before the page goes live.
-            These are the questions SANS, OffSec, EC-Council, Cybrary and Infosec Institute do not answer clearly on their category pages — this is Edstellar&apos;s white space.
-          </p>
-          <ul className="divide-y" style={{ borderColor: BORDER }}>
-            {COMPETITOR_CHECKLIST.map((item, i) => (
-              <li
-                key={i}
-                className="flex items-start gap-4 px-7 py-4"
-                style={{ backgroundColor: i % 2 === 0 ? "#fff" : "#FAFAFA" }}
-              >
-                <span
-                  className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded border-2 text-[10px]"
-                  style={{ borderColor: INDIGO, color: INDIGO }}
-                >
-                  ✓
-                </span>
-                <span
-                  className="text-[14px] leading-[1.55]"
-                  style={{ color: "#374151", fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
-                >
-                  {item}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        {/* ── Global writing rules ── */}
-        <section
-          id="rules"
-          className="rounded-2xl border overflow-hidden"
-          style={{ borderColor: BORDER, backgroundColor: NAVY }}
-        >
-          <div className="px-7 py-6">
-            <p className="text-[11px] uppercase tracking-[0.2em]" style={{ color: LIME, fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}>
-              Always Apply
-            </p>
-            <h2 className="mt-1 text-[24px] text-white" style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}>
-              Global Writing Rules
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 gap-4 px-7 pb-8 sm:grid-cols-2">
-            {[
-              { label: "No em-dashes", body: "Replace every — with a period, comma, or colon. No exceptions. This rule is violated frequently — check every section after writing." },
-              { label: "No 'Course'", body: "Always use 'program', 'training program', or 'training programs'. 'Course' is only allowed inside FAQ answers." },
-              { label: "No accreditation claims", body: "Edstellar is not an accreditation body and is not a training partner for any certification-providing governing body. Never write 'Edstellar-certified', 'certified by Edstellar', 'official training partner of [body]', 'authorized training provider for [body]', or anything that implies Edstellar grants or is affiliated with industry certifications." },
-              { label: "No guessed URLs", body: "CTAs link only to #contact, #catalog, or a confirmed edstellar.com URL. Never invent or guess a URL for a program, blog, or page." },
-              { label: "No 'vendor-certified'", body: "Always 'certified trainers'. The word 'vendor-certified' has been removed from all components. Do not reintroduce it." },
-              { label: "Instructor-led is #1 USP", body: "The phrase 'instructor-led' must appear at minimum 8 times per category page. It must appear in the hero, H1 section, catalog, featured programs, about, pricing, and approach sections." },
-              { label: "Bold 'customized instructor-led training'", body: "In WelcomeStrip paragraph 2, the phrase 'customized instructor-led training' must be wrapped in <strong> tags. This is the primary USP visual anchor on the page." },
-              { label: "No eyebrow headings", body: "Do not place a small uppercase label above any section heading. Section headings must stand alone and carry the section identity without an eyebrow. The only exception is the slide category label inside HeroSlider, which is scoped to the hero slide UI." },
-              { label: "LOCKED fields stay locked", body: "Delivery format on program cards, blockquote in About section, and package names and license counts must not be changed between categories." },
-              { label: "No two adjacent sections with the same background", body: "Every section must alternate between bg-white and bg-[#F5F3FF]. Two consecutive sections with the same background colour merge visually into one block and destroy page rhythm. Before finalising the page, audit every section in render order and fix any match." },
-            ].map((rule) => (
-              <div
-                key={rule.label}
-                className="rounded-xl border border-white/10 bg-white/5 p-5"
-              >
-                <p className="text-[14px] text-white" style={{ fontFamily: "'Riona Sans Regular', Helvetica, Arial, sans-serif" }}>
-                  {rule.label}
-                </p>
-                <p className="mt-2 text-[13px] leading-[1.55] text-white/65" style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}>
-                  {rule.body}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-      </main>
+          </main>
+        }
+      />
 
       {/* ── Sticky section nav ── */}
       <nav
         className="fixed right-5 top-1/2 z-50 hidden -translate-y-1/2 flex-col gap-2 xl:flex"
         aria-label="Jump to section"
       >
-        {[...SECTIONS.map(s => ({ id: s.id, label: s.num })), { id: "keywords", label: "KW" }, { id: "checklist", label: "✓" }, { id: "rules", label: "R" }].map((item) => (
+        {SECTIONS.map(s => ({ id: s.id, label: s.num })).map((item) => (
           <a
             key={item.id}
             href={`#${item.id}`}

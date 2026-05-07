@@ -19,7 +19,7 @@ const CASES: CaseStudy[] = CASE_STUDIES.map((c) => ({
   description: c.cardDescription,
   image: c.cardImage,
   alt: c.hero.alt,
-  modalSlug: "fmcg-workforce-cyber-awareness",
+  modalSlug: c.slug,
 }));
 
 // Page theme accents (match the site's indigo palette)

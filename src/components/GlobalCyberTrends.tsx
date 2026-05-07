@@ -4,11 +4,11 @@ function ThreatVolumeChart() {
   // Cybercrime cost in trillions USD per year (estimates).
   // Cybersecurity Ventures projections.
   const data: SparkPoint[] = [
-    { x: 0, y: 6.0 },   // 2021
-    { x: 1, y: 7.0 },   // 2022
-    { x: 2, y: 8.0 },   // 2023
-    { x: 3, y: 9.5 },   // 2024
-    { x: 4, y: 10.5 },  // 2025
+    { x: 0, y: 6.0 },    // 2021
+    { x: 1, y: 8.0 },    // 2023
+    { x: 2, y: 9.5 },    // 2024
+    { x: 3, y: 10.5 },   // 2025
+    { x: 4, y: 12.2 },   // 2031 projection
   ];
   const width = 480;
   const height = 140;
@@ -36,7 +36,7 @@ function ThreatVolumeChart() {
   return (
     <svg
       role="img"
-      aria-label="Global cybercrime cost trend, 2021 to 2025"
+      aria-label="Global cybercrime cost trend, 2021 to 2031 projection"
       viewBox={`0 0 ${width} ${height}`}
       className="h-32 w-full"
       preserveAspectRatio="none"
@@ -71,54 +71,41 @@ function ThreatVolumeChart() {
   );
 }
 
-type RegionBar = { region: string; pct: number };
-
-const SKILL_GAP_REGIONS: RegionBar[] = [
-  { region: "Asia-Pacific", pct: 38 },
-  { region: "Europe", pct: 26 },
-  { region: "North America", pct: 22 },
-  { region: "Rest of world", pct: 14 },
+const SKILL_GAP_REGIONS = [
+  { region: "Asia-Pacific", note: "Largest share of the global gap" },
+  { region: "North America", note: "Active workforce contracted 2.7%" },
+  { region: "Europe", note: "Active workforce declined in 2024" },
 ];
 
-function SkillGapBars() {
+function SkillGapRegions() {
   return (
     <ul className="space-y-3">
       {SKILL_GAP_REGIONS.map((r) => (
-        <li key={r.region}>
-          <div className="flex items-baseline justify-between">
+        <li key={r.region} className="flex items-start gap-2.5">
+          <span
+            className="mt-1.5 h-2 w-2 shrink-0 rounded-full"
+            style={{ backgroundColor: "#1B1D52" }}
+          />
+          <div>
             <span
               className="text-[13px]"
               style={{
-                color: "#374151",
-                fontFamily:
-                  "'Riona Sans Regular', Helvetica, Arial, sans-serif",
+                color: "#1B1D52",
+                fontFamily: "'Riona Sans Bold', Helvetica, Arial, sans-serif",
+                fontWeight: 700,
               }}
             >
               {r.region}
             </span>
             <span
-              className="text-[13px]"
+              className="ml-2 text-[12px]"
               style={{
-                color: "#1B1D52",
-                fontFamily:
-                  "'Riona Sans Bold', Helvetica, Arial, sans-serif",
-                fontWeight: 700,
+                color: "#6B7280",
+                fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif",
               }}
             >
-              {r.pct}%
+              {r.note}
             </span>
-          </div>
-          <div
-            className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full"
-            style={{ backgroundColor: "#E3E6F0" }}
-          >
-            <div
-              className="h-full rounded-full"
-              style={{
-                width: `${r.pct}%`,
-                backgroundColor: "#1B1D52",
-              }}
-            />
           </div>
         </li>
       ))}
@@ -267,7 +254,7 @@ export function GlobalCyberTrends() {
                     "'Riona Sans Light', Helvetica, Arial, sans-serif",
                 }}
               >
-                $10.5T
+                $12.2T
               </span>
               <span
                 className="text-[14px] sm:text-[15px]"
@@ -277,7 +264,7 @@ export function GlobalCyberTrends() {
                     "'Riona Sans Light', Helvetica, Arial, sans-serif",
                 }}
               >
-                projected annual cost of cybercrime, 2025
+                projected annual cybercrime cost by 2031
               </span>
             </div>
             <div className="mt-6">
@@ -291,10 +278,10 @@ export function GlobalCyberTrends() {
                 }}
               >
                 <span>2021</span>
-                <span>2022</span>
                 <span>2023</span>
                 <span>2024</span>
                 <span>2025</span>
+                <span>2031</span>
               </div>
             </div>
             <p
@@ -307,7 +294,8 @@ export function GlobalCyberTrends() {
             >
               Cybercrime is now larger than the global illegal drug economy
               and growing faster than any individual security budget. Capacity
-              has to come from trained people, not headcount alone.
+              has to come from well-trained people in group training programs,
+              not headcount alone.
             </p>
             <p
               className="mt-3 text-[12px]"
@@ -317,7 +305,7 @@ export function GlobalCyberTrends() {
                   "'Riona Sans Light', Helvetica, Arial, sans-serif",
               }}
             >
-              Source: Cybersecurity Ventures, 2024 outlook.
+              Source: Cybersecurity Ventures, Official Cybercrime Report 2025.
             </p>
           </article>
 
@@ -344,7 +332,7 @@ export function GlobalCyberTrends() {
                     "'Riona Sans Light', Helvetica, Arial, sans-serif",
                 }}
               >
-                4.0M
+                4.8M
               </span>
               <span
                 className="text-[14px] sm:text-[15px]"
@@ -358,7 +346,7 @@ export function GlobalCyberTrends() {
               </span>
             </div>
             <div className="mt-6">
-              <SkillGapBars />
+              <SkillGapRegions />
             </div>
             <p
               className="mt-5 text-[12px]"
@@ -368,8 +356,8 @@ export function GlobalCyberTrends() {
                   "'Riona Sans Light', Helvetica, Arial, sans-serif",
               }}
             >
-              Region split estimated. Source: ISC2 Cybersecurity Workforce
-              Study, 2024.
+              Source: ISC2 Cybersecurity Workforce Study, 2024. Regional
+              data directional.
             </p>
           </article>
 
@@ -469,7 +457,7 @@ export function GlobalCyberTrends() {
                     "'Riona Sans Light', Helvetica, Arial, sans-serif",
                 }}
               >
-                +1,265%
+                41x
               </span>
               <span
                 className="text-[13px] sm:text-[14px]"
@@ -479,7 +467,7 @@ export function GlobalCyberTrends() {
                     "'Riona Sans Light', Helvetica, Arial, sans-serif",
                 }}
               >
-                YoY rise in malicious phishing emails
+                increase in malicious emails since ChatGPT launched
               </span>
             </div>
             <div className="mt-6 flex items-center gap-5">
@@ -508,7 +496,7 @@ export function GlobalCyberTrends() {
                   "'Riona Sans Light', Helvetica, Arial, sans-serif",
               }}
             >
-              Source: SlashNext State of Phishing 2024; vector mix indicative.
+              Source: SlashNext Phishing Intelligence Report, 2024. Radar values illustrative.
             </p>
           </article>
         </div>

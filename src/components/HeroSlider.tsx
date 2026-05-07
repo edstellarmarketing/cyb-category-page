@@ -27,7 +27,7 @@ const SLIDES: HeroSlide[] = [
     description:
       "Edstellar is the corporate cybersecurity training partner of choice for CISOs and security leaders racing to upskill and reskill employees on offensive security, cloud security, GRC and AI-era threats. Our instructor-led cybersecurity group training spans 200+ programs across 8 cyber domains, delivered virtually, on-site or off-site by certified trainers, so every cohort closes the cyber skills gap and turns learning into measurable security outcomes.",
     primaryCta: "Browse Training Programs",
-    secondaryCta: "Enquire Now",
+    secondaryCta: "Get a Training Proposal",
     image: "/images/cyber/hero-cyber-it.jpg",
     imageAlt: "Corporate cybersecurity training",
     stripLabel: "FEATURED",
@@ -40,7 +40,7 @@ const SLIDES: HeroSlide[] = [
     description:
       "BFSI leaders rely on Edstellar's instructor-led cybersecurity training to upskill and reskill SOC, pen-test and GRC employees on PCI-DSS, RBI / SEBI guidelines, fraud analytics and Zero-Trust banking. Customized cybersecurity group training programs designed for corporate security teams, delivered virtually or on-site, with hands-on labs and certified instructors.",
     primaryCta: "Browse Training Programs",
-    secondaryCta: "Enquire Now",
+    secondaryCta: "Get a Training Proposal",
     image: "/images/cyber/hero-industry-bfsi.jpg",
     imageAlt: "BFSI cybersecurity training",
     stripLabel: "BFSI",
@@ -53,7 +53,7 @@ const SLIDES: HeroSlide[] = [
     description:
       "Hospitals, payers, pharma and medtech firms partner with Edstellar for instructor-led cybersecurity group training on HIPAA, HITRUST, medical-device security and ransomware response. Customized employee training programs for healthcare security teams, delivered virtually or on-site, to upskill, reskill and build workforce-wide cyber readiness for the next decade of regulated digital care.",
     primaryCta: "Browse Training Programs",
-    secondaryCta: "Enquire Now",
+    secondaryCta: "Get a Training Proposal",
     image: "/images/cyber/hero-industry-healthcare.jpg",
     imageAlt: "Healthcare cybersecurity training",
     stripLabel: "HEALTHCARE",
@@ -66,7 +66,7 @@ const SLIDES: HeroSlide[] = [
     description:
       "SaaS, fintech and AI-first enterprises deploy Edstellar's instructor-led cybersecurity group training to upskill and reskill employees on LLM red-teaming, prompt-injection defence, MLOps security and AI governance. Customized employee training programs for security teams entering the GenAI era, with hands-on labs and certified instructors.",
     primaryCta: "Browse Training Programs",
-    secondaryCta: "Enquire Now",
+    secondaryCta: "Get a Training Proposal",
     image: "/images/cyber/hero-ai-it.jpg",
     imageAlt: "AI and Generative-AI cybersecurity training",
     stripLabel: "AI SECURITY",
@@ -218,7 +218,7 @@ export function HeroSlider() {
         </button>
       </div>
 
-      {/* Slide-names strip â€” ends the page fold */}
+      {/* Slide-names strip: ends the page fold */}
       <nav
         className="shrink-0 border-t border-white/10 bg-[#0c0c0c]/95"
         aria-label="Slide categories"

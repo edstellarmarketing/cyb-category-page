@@ -37,20 +37,19 @@ export function ContactForm() {
     <section id="contact" className="bg-white py-16 md:py-20">
       <div className="eds-page-center">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
-          {/* Left column â€” heading + supporting contact info */}
+          {/* Left column: heading + supporting contact info */}
           <div className="lg:col-span-5">
             <h2
               className="text-[36px] leading-[1.05] sm:text-[42px] lg:text-[48px]"
               style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
             >
-              Contact Us
+              Get a Quote for Your Customized Instructor-led Training Program
             </h2>
             <p
               className="mt-4 max-w-md text-[17px] leading-[1.4] sm:text-[18px]"
               style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
             >
-              Submit your Training Requirements below and we&apos;ll get in
-              touch with you shortly.
+              Tell us about your team and we&apos;ll put together a customized instructor-led training proposal, on-site or virtual, with a trainer shortlist and a discovery session.
             </p>
 
             <div className="mt-10 space-y-6">
@@ -112,7 +111,7 @@ export function ContactForm() {
                   {[
                     "Free training-needs analysis call within 24 hours",
                     "Custom proposal aligned to your team's cyber roadmap",
-                    "certified trainer shortlist with sample sessions",
+                    "Certified trainer shortlist with sample sessions",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2.5">
                       <svg
@@ -136,7 +135,7 @@ export function ContactForm() {
             </div>
           </div>
 
-          {/* Right column â€” form */}
+          {/* Right column: form */}
           <div className="lg:col-span-7">
             <form
               onSubmit={(e) => e.preventDefault()}
@@ -244,7 +243,7 @@ export function ContactForm() {
               >
                 By submitting this form, you agree to receive communications from
                 Edstellar. We respect your privacy, see our{" "}
-                <a href="#" className="text-[#6366F1] hover:underline">Privacy Policy</a>.
+                <a href="https://www.edstellar.com/privacy-policy" className="text-[#6366F1] hover:underline">Privacy Policy</a>.
               </p>
 
               <button
@@ -252,7 +251,7 @@ export function ContactForm() {
                 className="group/cta mt-6 inline-flex items-center gap-2 rounded-full bg-[#6366F1] px-8 py-3.5 text-[14px] uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#4F46E5]"
                 style={{ fontFamily: "'Riona Sans Medium', Helvetica, Arial, sans-serif" }}
               >
-                Submit
+                Send My Training Requirements
                 <ArrowRightIcon
                   width={16}
                   height={16}

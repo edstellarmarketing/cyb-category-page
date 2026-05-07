@@ -40,8 +40,8 @@ const VOICES: Voice[] = [
 ];
 
 const STATS = [
-  { stat: "4.8 / 5", label: "Average learner rating across cyber cohorts" },
-  { stat: "94%", label: "Post-training skill improvement rate" },
+  { stat: "4.8 / 5", label: "Average learner rating across cyber cohorts", source: "Edstellar post-program learner data, 2024" },
+  { stat: "94%", label: "Post-training skill improvement rate", source: "Edstellar pre/post assessment outcomes, 2024" },
   { stat: "100+", label: "Enterprise security teams trained" },
 ];
 
@@ -134,6 +134,14 @@ export function ClientVoices() {
               >
                 {s.label}
               </p>
+              {"source" in s && s.source && (
+                <p
+                  className="mt-1 text-[11px] text-eds-gray-400"
+                  style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
+                >
+                  {s.source}
+                </p>
+              )}
             </div>
           ))}
         </div>

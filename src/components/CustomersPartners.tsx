@@ -75,7 +75,7 @@ export function CustomersPartners() {
               className="mt-5 text-[16px] leading-[1.6] text-[#374151] sm:text-[17px]"
               style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
             >
-              Edstellar is a dedicated cybersecurity corporate training company built for enterprise workforce development, not individual learners. Unlike course marketplaces, Edstellar designs every skilling, upskilling, and reskilling program around your threat model and delivers it through instructor-led group training led by industry practitioners. As a cybersecurity training provider operating in 100+ countries, every engagement is tied to measurable outcomes your CISO and board can act on.
+              Edstellar is a dedicated cybersecurity corporate training company built for enterprise workforce development, not individual learners. Unlike course marketplaces, Edstellar designs every upskilling and reskilling program around your threat model and delivers it through instructor-led group training led by industry practitioners. As a cybersecurity training provider operating in 100+ countries, every engagement is tied to measurable outcomes your CISO and board can act on.
             </p>
             <blockquote
               className="mt-8 border-l-4 border-[#C5E826] pl-5 text-[17px] leading-[1.5] text-[#1B1D52] sm:text-[18px]"
@@ -90,7 +90,7 @@ export function CustomersPartners() {
               className="text-[16px] leading-[1.75] text-[#4B5563] sm:text-[17px]"
               style={{ fontFamily: "'Riona Sans Light', Helvetica, Arial, sans-serif" }}
             >
-              Our goal at Edstellar is to help your security teams shift from reacting to threats to actively owning your organisation&apos;s cyber defence capability. Whether you are skilling new hires, upskilling existing employees, or reskilling lateral movers into security roles, every cybersecurity workforce development program we deliver is built by industry practitioners and mapped to the roles, tools, and compliance frameworks your business runs on.
+              Our goal at Edstellar is to help your security teams shift from reacting to threats to actively owning your organisation&apos;s cyber defence capability. Whether you are skilling new hires or reskilling lateral movers into security roles, every cybersecurity workforce development program we deliver is built by industry practitioners and mapped to the roles, tools, and compliance frameworks your business runs on.
             </p>
           </div>
         </div>
